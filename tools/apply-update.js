@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 /* ============================================================
-   应用编辑模式导出的更新 → 写回 assets/data/content.js
-   用法：node tools/apply-update.js geo-update-home.json
+   应用编辑模式导出的更新 → 写回内容数据文件
+   ------------------------------------------------------------
+   用法：node tools/apply-update.js geo-update-home-zh.json [...]
+
+   · payload.lang = 'en' → 写入 assets/data/content.en.js
+     payload.lang = 'zh' 或缺失 → 写入 assets/data/content.js
+   · 采用「按行定位 + 就地替换」的方式写回，保留原文件的注释与排版
+   · 同一段文字在文件中出现多次且只改了其中一处时，会跳过并报告，
+     避免误改（这种情况请手动改一次）
    ============================================================ */
 'use strict';
 const fs = require('fs');
@@ -9,7 +16,10 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
-const CONTENT_FILE = path.join(ROOT, 'assets', 'data', 'content.js');
+const FILES = {
+  zh: { file: path.join(ROOT, 'assets', 'data', 'content.js'), global: 'SITE_DATA' },
+  en: { file: path.join(ROOT, 'assets', 'data', 'content.en.js'), global: 'SITE_DATA_EN' }
+};
 
 const args = process.argv.slice(2);
 if (!args.length) {
@@ -17,69 +27,98 @@ if (!args.length) {
   process.exit(1);
 }
 
-/* 读取当前 content.js（JS 对象字面量，用 vm 求值） */
-function readContent() {
-  const src = fs.readFileSync(CONTENT_FILE, 'utf8');
-  const start = src.indexOf('{');
-  const end = src.lastIndexOf('}');
-  if (start < 0 || end < 0) throw new Error('content.js 结构异常');
+/* 读取数据文件并求值 */
+function readData(target) {
+  const src = fs.readFileSync(target.file, 'utf8');
   const sandbox = { window: {} };
   vm.createContext(sandbox);
-  vm.runInContext(src, sandbox, { filename: 'content.js' });
-  if (!sandbox.window.SITE_DATA) throw new Error('未找到 SITE_DATA');
-  return { src, json: sandbox.window.SITE_DATA };
+  vm.runInContext(src, sandbox, { filename: path.basename(target.file) });
+  const data = sandbox.window[target.global];
+  if (!data) throw new Error(`${path.basename(target.file)} 中未找到 ${target.global}`);
+  return { src, data };
 }
 
 function getPath(obj, p) {
   return p.split('.').reduce((o, k) => (o == null ? undefined : o[k]), obj);
 }
 
-function setPath(obj, p, val) {
-  const parts = p.split('.');
-  let cur = obj;
-  for (let i = 0; i < parts.length - 1; i++) {
-    if (cur[parts[i]] == null) cur[parts[i]] = /^\d+$/.test(parts[i + 1]) ? [] : {};
-    cur = cur[parts[i]];
-  }
-  cur[parts[parts.length - 1]] = val;
+/* 把字符串渲染成 JS 字面量（与原文件风格一致：单引号） */
+function literal(s) {
+  return "'" + String(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
 }
 
-const { src, json } = readContent();
-let applied = 0;
-const missing = [];
+/* 在源码中定位某个字符串字面量所在行；返回行号数组 */
+function findLiteralLines(src, value) {
+  const lit = literal(value);
+  const alt = '"' + String(value).replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+  const lines = src.split('\n');
+  const hits = [];
+  lines.forEach((line, i) => {
+    if (line.includes(lit) || line.includes(alt)) hits.push(i);
+  });
+  return hits;
+}
 
-for (const file of args) {
-  const payload = JSON.parse(fs.readFileSync(path.resolve(file), 'utf8'));
-  const page = json.pages[payload.page];
-  if (!page) {
-    console.error(`✗ 跳过 ${file}：找不到页面 ${payload.page}`);
-    continue;
-  }
-  for (const [p, val] of Object.entries(payload.overrides || {})) {
-    const target = getPath(page, p);
-    if (typeof target !== 'string') {
-      missing.push(`${payload.page} → ${p}`);
+/* ---------- 主流程 ---------- */
+const byLang = { zh: [], en: [] };
+for (const f of args) {
+  const payload = JSON.parse(fs.readFileSync(path.resolve(f), 'utf8'));
+  const lang = payload.lang === 'en' ? 'en' : 'zh';
+  byLang[lang].push(payload);
+}
+
+let totalApplied = 0;
+let totalSkipped = 0;
+
+for (const lang of ['zh', 'en']) {
+  const list = byLang[lang];
+  if (!list.length) continue;
+  const target = FILES[lang];
+  const { src, data } = readData(target);
+
+  let lines = src.split('\n');
+  let applied = 0;
+  const skipped = [];
+
+  for (const payload of list) {
+    const page = data.pages[payload.page];
+    if (!page) {
+      console.error(`✗ 跳过 ${payload.page}：找不到页面`);
       continue;
     }
-    setPath(page, p, val);
-    applied++;
+    for (const [p, val] of Object.entries(payload.overrides || {})) {
+      const old = getPath(page, p);
+      if (typeof old !== 'string') { skipped.push(`${payload.page} → ${p}（路径不存在）`); continue; }
+      if (old === val) continue;
+
+      const hits = findLiteralLines(lines.join('\n'), old);
+      if (hits.length === 1) {
+        const i = hits[0];
+        const lit = literal(old);
+        const alt = '"' + String(old).replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+        lines[i] = lines[i].split(lit).join(literal(val)).split(alt).join(literal(val));
+        applied++;
+      } else if (hits.length === 0) {
+        skipped.push(`${payload.page} → ${p}（原文未找到，可能已被改过）`);
+      } else {
+        skipped.push(`${payload.page} → ${p}（原文出现 ${hits.length} 次，需手动确认）`);
+      }
+    }
+    if (payload.updated) data.meta.updated = payload.updated;
   }
-  if (payload.updated) {
-    json.meta.updated = payload.updated;
+
+  if (applied) {
+    fs.writeFileSync(target.file, lines.join('\n'));
   }
-  console.log(`✓ ${payload.page}：已应用 ${Object.keys(payload.overrides || {}).length} 处`);
+  totalApplied += applied;
+  totalSkipped += skipped.length;
+  console.log(`✓ ${lang === 'en' ? '英文' : '中文'}：已应用 ${applied} 处 → ${path.basename(target.file)}`);
+  if (skipped.length) {
+    console.warn(`  ⚠ ${skipped.length} 处需手动处理：`);
+    skipped.slice(0, 8).forEach(s => console.warn('    ' + s));
+    if (skipped.length > 8) console.warn(`    ... 还有 ${skipped.length - 8} 处`);
+  }
 }
 
-if (missing.length) {
-  console.warn(`\n⚠ ${missing.length} 处路径未匹配（已跳过）：`);
-  missing.slice(0, 10).forEach(m => console.warn('  ' + m));
-}
-
-/* 写回，保留头部注释 */
-const headerEnd = src.indexOf('*/') + 2;
-const header = src.slice(0, headerEnd);
-const body = 'window.SITE_DATA = ' + JSON.stringify(json, null, 2) + ';\n';
-fs.writeFileSync(CONTENT_FILE, header + '\n\n' + body);
-
-console.log(`\n共应用 ${applied} 处更新，已写入 assets/data/content.js`);
-console.log(`版本：${json.meta.version} · 更新于 ${json.meta.updated}`);
+console.log(`\n共应用 ${totalApplied} 处更新${totalSkipped ? `，${totalSkipped} 处需手动处理` : ''}`);
+console.log('提示：改完内容后运行  node tools/build-i18n.js  校验中英文结构是否仍然一致');

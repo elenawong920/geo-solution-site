@@ -23,6 +23,9 @@
 | 海外 GEO 解决方案 | `overseas.html` | 海外 GEO 产品介绍 202608 |
 | AI 用户意图洞察 | `insight.html` | 京东空调豆包意图洞察报告 |
 
+**中英双语**：导航栏右侧有 `中 / EN` 切换按钮，三个页面都已完整翻译。
+访问 `?lang=en` 可直接进入英文版（分享给海外客户时用这个链接）。
+
 **目录结构**
 
 ```
@@ -30,16 +33,43 @@ geo-site/
 ├── index.html                  国内 GEO 主页
 ├── overseas.html               海外 GEO 主页
 ├── insight.html                意图洞察报告页
-└── assets/
-    ├── data/content.js         ★ 所有文案和数据都在这里（改这个就够了）
-    ├── css/main.css            样式（京东红 KV、响应式）
-    ├── js/app.js               渲染引擎 + 编辑模式逻辑
-    └── img/                    图片资源
+├── assets/
+│   ├── data/content.js         ★ 中文文案（改这个就够了）
+│   ├── data/content.en.js      ★ 英文文案（与中文文件结构完全一致）
+│   ├── css/main.css            样式（京东红 KV、响应式）
+│   ├── js/app.js               渲染引擎 + 语言切换 + 编辑模式逻辑
+│   └── img/                    图片资源
+└── tools/
+    ├── build-i18n.js           中英文结构一致性校验（改完务必跑一次）
+    ├── build-singlefile.js     生成单文件版
+    └── apply-update.js         把编辑模式导出的 JSON 回写到内容文件
 ```
 
 ---
 
-## 二、三种更新方式（按省事程度排序）
+## 二、语言切换怎么工作
+
+| 项 | 说明 |
+|---|---|
+| 切换按钮 | 导航栏右侧 `中 / EN`，桌面与移动端都有 |
+| 语言判定优先级 | URL `?lang=en` → 上次选择（localStorage）→ 浏览器语言 → 中文 |
+| 切换时保留 | 当前选中的 Tab、展开的 FAQ、滚动位置、所在页面 |
+| 跨页保持 | 站内链接自动带上 `?lang=en`，即使 localStorage 不可用也不丢 |
+| 分享链接 | `...?lang=en&sharecode=XXX` 可直接发英文版给海外客户 |
+
+**改英文文案**：编辑 `assets/data/content.en.js`，与中文文件一一对应。
+改完必须跑一次结构校验：
+
+```bash
+node tools/build-i18n.js
+```
+
+它会检查两个文件的键、数组长度、叶子类型是否完全一致，并列出未翻译的中文。
+（洞察页「种子词」区的中文是**有意保留**的原始数据，白名单已登记。）
+
+---
+
+## 三、三种更新方式（按省事程度排序）
 
 ### 方式 A：手机上直接改（最省事，适合临时改几个字）
 
@@ -51,16 +81,21 @@ https://你的链接/index.html?edit=1
 
 - 页面上所有文字都可以**直接点击修改**
 - 改动自动保存在你本机浏览器里
-- 改完点右下角「**导出更新**」，会下载一个 `geo-update-home.json`
+- 改完点右下角「**导出更新**」，会下载一个 `geo-update-home-zh.json` 或 `geo-update-home-en.json`
+  （文件名后缀标明语言，中英文各存各的，不会互相覆盖）
 - 把这个文件发给我，我帮你同步到线上链接，客户就能看到最新内容
 - 点「重置」可放弃本机所有改动
+- 要改英文版，先点导航栏的 `EN` 切到英文，再加 `?edit=1`
 
 > 适合：改个数字、换个说法、加一句活动信息
 > 注意：改动只存在你的手机/电脑上，换设备看不到；正式生效以我同步到线上为准。
 
-### 方式 B：改 content.js（适合批量改）
+### 方式 B：改内容文件（适合批量改）
 
-用任何文本编辑器打开 `assets/data/content.js`，改里面的文字或数字，保存即可。
+用任何文本编辑器打开 `assets/data/content.js`（中文）或 `assets/data/content.en.js`（英文），
+改里面的文字或数字，保存即可。
+
+> 改完英文文件后，**务必跑一次** `node tools/build-i18n.js` 校验结构一致。
 
 结构长这样：
 
@@ -100,7 +135,7 @@ metrics: [
 
 ---
 
-## 三、线上发布与同步
+## 四、线上发布与同步
 
 - 站点发布后，链接地址**固定不变**，每次更新都是覆盖同一份内容
 - 客户已经打开的链接会在刷新后看到新内容
@@ -108,7 +143,7 @@ metrics: [
 
 ---
 
-## 四、常见问题
+## 五、常见问题
 
 **Q：手机上分享效果怎么样？**
 已按微信内置浏览器做过适配：390px 宽单列布局、顶部折叠菜单、表格可左右滑动、字体与间距都为移动端调过。
@@ -124,7 +159,7 @@ metrics: [
 
 ---
 
-## 五、素材来源与说明
+## 六、素材来源与说明
 
 站内引用的市场数据与案例数据均来自你提供的 5 份材料，未做外部估算：
 
@@ -137,3 +172,34 @@ metrics: [
 
 **已交叉核对**：站内所有百分比均与原 PDF 逐条比对，案例指标（京东空调 / 厨具 / 家政、海外四案例）与交付流程表已按原表校正。
 
+---
+
+## 七、推到 GitHub Pages（可选，微信可直开）
+
+仓库：`https://github.com/elenawong920/geo-solution-site`
+线上：`https://elenawong920.github.io/geo-solution-site/`
+
+**为什么需要这一步**：WorkBuddy 分享链接在微信内置浏览器里会被网关按 UA 拦截，
+GitHub Pages 的 `github.io` 域名微信可以正常打开。
+
+**首次推送需要一次性授权**：WorkBuddy 自带的 GitHub 连接器只有只读权限，
+所以需要一个有写权限的 Personal Access Token：
+
+1. 打开 https://github.com/settings/personal-access-tokens/new
+2. Token name 填 `geo-site-push`，Expiration 选 30 或 90 天
+3. **Repository access → Only select repositories → 勾选 `geo-solution-site`**
+4. **Repository permissions → Contents: Read and write**（其他权限留空）
+5. Generate token，复制（只显示一次）
+
+拿到 token 后执行：
+
+```bash
+cd geo-site
+GH_TOKEN=ghp_xxx node tools/push-github.js
+```
+
+脚本用 GitHub REST API 完成「建 blob → 建 tree → 建 commit → 更新分支指针」，
+一次提交全部文件，Pages 会在 1–2 分钟内自动重建。
+
+**Token 用完可以随时撤销**：GitHub → Settings → Developer settings →
+Personal access tokens → 点 token 旁的 Delete。

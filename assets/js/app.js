@@ -7,7 +7,127 @@
   'use strict';
 
   var D = window.SITE_DATA || (window.SITE_DATA = {});
+  /* 中文数据单独留一份引用：切到英文时 window.SITE_DATA 会被英文覆盖，
+     没有这份引用就切不回中文了 */
+  var DATA_ZH = D;
   var uidCounter = 0;
+  /* 单文件模式下当前页容器（多文件版本为 null，即整页） */
+  var PAGE_SCOPE = null;
+  function currentScope() { return PAGE_SCOPE || document; }
+
+  /* ---------- 多语言：中文（已内联）/ 英文（按需懒加载） ---------- */
+  var LANGS = {
+    zh: { file: 'assets/data/content.js', global: 'SITE_DATA', htmlLang: 'zh-CN', label: '中', full: '中文' },
+    en: { file: 'assets/data/content.en.js', global: 'SITE_DATA_EN', htmlLang: 'en', label: 'EN', full: 'English' }
+  };
+  var LANG_KEY = 'geo-lang';
+  var curLang = 'zh';
+
+  function detectLang() {
+    /* 1. URL 参数优先（便于把英文链接直接发给客户） */
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      if (q && LANGS[q]) return q;
+    } catch (e) {}
+    /* 2. 上次选择 */
+    try {
+      var saved = localStorage.getItem(LANG_KEY);
+      if (saved && LANGS[saved]) return saved;
+    } catch (e) {}
+    /* 3. 浏览器语言 */
+    var nav = (navigator.language || 'zh').toLowerCase();
+    if (nav.indexOf('zh') !== 0 && nav.indexOf('en') === 0) return 'en';
+    return 'zh';
+  }
+
+  /* 懒加载某语言的数据文件；中文已在 HTML 中内联，无需再取 */
+  function loadLangData(lang, cb) {
+    if (lang === 'zh') { cb(DATA_ZH); return; }
+    if (window.SITE_DATA_EN) { cb(window.SITE_DATA_EN); return; }
+    var s = document.createElement('script');
+    s.src = LANGS.en.file;
+    s.onload = function () { cb(window.SITE_DATA_EN); };
+    s.onerror = function () { cb(DATA_ZH); };
+    document.head.appendChild(s);
+  }
+
+  /* 切换语言前记录界面状态，切换后原样恢复 */
+  function captureUIState() {
+    var root = currentScope();
+    var st = { tabs: [], faq: [], scrollY: window.scrollY, hash: location.hash };
+    /* 用「第几个 tabs 组件」做键，而不是 data-group —— 后者每次渲染都会重新生成 */
+    Array.prototype.forEach.call(root.querySelectorAll('.tabs'), function (bar) {
+      var btns = bar.querySelectorAll('.tabs__btn');
+      var act = bar.querySelector('.tabs__btn.is-active');
+      st.tabs.push(act ? Array.prototype.indexOf.call(btns, act) : 0);
+    });
+    var faqItems = root.querySelectorAll('.faq__item');
+    Array.prototype.forEach.call(faqItems, function (item, i) {
+      if (item.querySelector('.faq__q.is-open')) st.faq.push(i);
+    });
+    return st;
+  }
+
+  function restoreUIState(st) {
+    if (!st) return;
+    var root = currentScope();
+    /* 恢复选中的 tab */
+    Array.prototype.forEach.call(root.querySelectorAll('.tabs'), function (bar, i) {
+      var idx = (st.tabs || [])[i];
+      if (idx == null) return;
+      var btns = bar.querySelectorAll('.tabs__btn');
+      if (btns[idx]) btns[idx].click();
+    });
+    /* 恢复展开的 FAQ */
+    var items = root.querySelectorAll('.faq__item');
+    (st.faq || []).forEach(function (i) {
+      var item = items[i];
+      if (item) {
+        var q = item.querySelector('.faq__q');
+        if (q && !q.classList.contains('is-open')) q.click();
+      }
+    });
+    /* 恢复滚动位置与锚点 */
+    if (st.hash && st.hash.length > 1) {
+      var t = root.querySelector(st.hash);
+      if (t) { t.scrollIntoView(); return; }
+    }
+    window.scrollTo(0, st.scrollY || 0);
+  }
+
+  function applyLangToDoc(lang) {
+    document.documentElement.setAttribute('lang', LANGS[lang].htmlLang);
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta && meta.getAttribute('data-zh')) {
+      meta.setAttribute('content', lang === 'en' ? meta.getAttribute('data-en') : meta.getAttribute('data-zh'));
+    }
+  }
+
+  function syncLangUrl(lang) {
+    try {
+      var u = new URL(location.href);
+      if (lang === 'en') u.searchParams.set('lang', 'en');
+      else u.searchParams.delete('lang');
+      history.replaceState(null, '', u.toString());
+    } catch (e) {}
+  }
+
+  function switchLang(lang, cb) {
+    if (!LANGS[lang] || lang === curLang) { if (cb) cb(); return; }
+    var st = captureUIState();
+    loadLangData(lang, function (data) {
+      curLang = lang;
+      D = data || D;
+      window.SITE_DATA = D;
+      try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+      syncLangUrl(lang);
+      applyLangToDoc(lang);
+      renderPage(currentPageKey());
+      propagateShareCode();
+      restoreUIState(st);
+      if (cb) cb();
+    });
+  }
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -19,6 +139,15 @@
 
   function t(path, val) {
     if (val == null) return '';
+    /* 兜底：内容项若误传对象，取其中的文本字段，绝不输出 [object Object] */
+    if (typeof val === 'object' && !Array.isArray(val)) {
+      var field = ['text', 'label', 'title', 'desc', 'value', 'name'].filter(function (k) {
+        return typeof val[k] === 'string';
+      })[0];
+      if (!field) return '';
+      path = path + '.' + field;
+      val = val[field];
+    }
     if (!ED.on) return esc(val);
     return '<span data-edit="' + esc(path) + '">' + esc(val) + '</span>';
   }
@@ -211,7 +340,13 @@
   R.plats = function (b, p) {
     var h = '<div class="plats reveal">';
     (b.items || []).forEach(function (it, i) {
-      h += '<span class="plat' + (it.hot ? ' plat--red' : '') + '">' + t(p + '.items.' + i, it) + '</span>';
+      /* 词条有两种写法：纯字符串，或 { text, hot } 对象（hot 用于高亮品牌词） */
+      var obj = (it !== null && typeof it === 'object');
+      var field = obj ? (typeof it.text === 'string' ? 'text' : (typeof it.label === 'string' ? 'label' : '')) : '';
+      var text = obj ? (field ? it[field] : '') : it;
+      var hot = obj ? !!it.hot : false;
+      var path = obj ? p + '.items.' + i + (field ? '.' + field : '') : p + '.items.' + i;
+      h += '<span class="plat' + (hot ? ' plat--red' : '') + '">' + t(path, text) + '</span>';
     });
     return h + '</div>';
   };
@@ -261,13 +396,13 @@
       h += '<div class="card card--accent"><div class="card__no">' + t(p + '.items.' + i + '.no', it.no) + '</div>';
       h += '<h3 class="card__title">' + t(p + '.items.' + i + '.name', it.name) + '</h3>';
       h += '<p class="card__desc" style="margin-bottom:12px">' + t(p + '.items.' + i + '.role', it.role) + '</p>';
-      h += '<div class="bar__note" style="margin-bottom:4px"><b>主要抓手</b></div><ul class="card__list">';
+      h += '<div class="bar__note" style="margin-bottom:4px"><b>' + esc(it.handlesLabel || '主要抓手') + '</b></div><ul class="card__list">';
       (it.handles || []).forEach(function (x, j) { h += '<li>' + t(p + '.items.' + i + '.handles.' + j, x) + '</li>'; });
       h += '</ul>';
-      h += '<div class="bar__note" style="margin:14px 0 4px"><b>核心结果</b></div><ul class="card__list">';
+      h += '<div class="bar__note" style="margin:14px 0 4px"><b>' + esc(it.resultsLabel || '核心结果') + '</b></div><ul class="card__list">';
       (it.results || []).forEach(function (x, j) { h += '<li>' + t(p + '.items.' + i + '.results.' + j, x) + '</li>'; });
       h += '</ul>';
-      if (it.goal) h += '<div class="bar__note" style="margin-top:12px">优化目标：' + t(p + '.items.' + i + '.goal', it.goal) + '</div>';
+      if (it.goal) h += '<div class="bar__note" style="margin-top:12px">' + esc(it.goalLabel || '优化目标') + '：' + t(p + '.items.' + i + '.goal', it.goal) + '</div>';
       h += '</div>';
     });
     return h + '</div>';
@@ -328,7 +463,7 @@
     if (nav) {
       nav.innerHTML =
         '<div class="container nav__inner">' +
-          '<a class="nav__logo" href="index.html"><img src="assets/img/logo-jd.png" alt="京东科技"><span class="nav__tag">GEO</span></a>' +
+          '<a class="nav__logo" href="index.html"><img src="assets/img/logo-jd.png" alt="' + esc(D.meta.brand || '京东科技') + '"><span class="nav__tag">GEO</span></a>' +
           '<button class="nav__toggle" id="navToggle" type="button" aria-label="展开导航" aria-expanded="false">' +
             '<span></span><span></span><span></span>' +
           '</button>' +
@@ -336,6 +471,12 @@
             (page.nav || []).map(function (n) {
               return '<a href="' + esc(n.href) + '" data-nav="' + esc(n.href) + '">' + esc(n.label) + '</a>';
             }).join('') +
+            /* 窄屏时顶部 CTA 隐藏，这个按钮在折叠菜单里顶上 */
+            '<a class="nav__links__cta" href="index.html#contact">' + esc(D.meta.ctaLabel || '获取方案') + '</a>' +
+          '</div>' +
+          '<div class="lang" id="langSwitch" role="group" aria-label="Language">' +
+            '<button type="button" class="lang__btn' + (curLang === 'zh' ? ' is-active' : '') + '" data-lang="zh">中</button>' +
+            '<button type="button" class="lang__btn' + (curLang === 'en' ? ' is-active' : '') + '" data-lang="en">EN</button>' +
           '</div>' +
           '<a class="nav__cta" href="index.html#contact">' + esc(D.meta.ctaLabel || '获取方案') + '</a>' +
         '</div>';
@@ -375,7 +516,7 @@
       foot.innerHTML =
         '<div class="container">' +
         '<div class="footer__top"><div class="footer__brand">' +
-          '<img src="assets/img/logo-jd.png" alt="京东科技">' +
+          '<img src="assets/img/logo-jd.png" alt="' + esc(D.meta.brand || '京东科技') + '">' +
           '<p>' + esc(D.footer.brand) + '</p></div>' +
         '<div class="footer__cols">' +
           (D.footer.cols || []).map(function (c) {
@@ -386,7 +527,7 @@
           }).join('') +
         '</div></div>' +
         '<div class="footer__bottom"><span>' + esc(D.footer.copy) + '</span>' +
-          '<span class="footer__ver">' + esc(D.meta.version) + ' · 更新于 ' + esc(D.meta.updated) + '</span>' +
+          '<span class="footer__ver">' + esc(D.meta.version) + ' · ' + esc(D.meta.updatedLabel || '更新于') + ' ' + esc(D.meta.updated) + '</span>' +
         '</div></div>';
     }
 
@@ -394,10 +535,28 @@
   }
 
   /* ---------- 交互 ---------- */
-  function initInteractions() {
+  function initInteractions(scope) {
+    var q = function (sel) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); };
+    var q1 = function (sel) { return (scope || document).querySelector(sel); };
+
+    /* 语言切换 */
+    var langBox = q1('#langSwitch');
+    if (langBox) {
+      langBox.addEventListener('click', function (e) {
+        var btn = e.target.closest ? e.target.closest('.lang__btn') : null;
+        if (!btn) return;
+        var lang = btn.getAttribute('data-lang');
+        if (!lang || lang === curLang) return;
+        btn.classList.add('is-loading');
+        switchLang(lang, function () {
+          btn.classList.remove('is-loading');
+        });
+      });
+    }
+
     /* 移动端导航展开 */
-    var navToggle = document.getElementById('navToggle');
-    var navLinks = document.getElementById('navLinks');
+    var navToggle = q1('#navToggle');
+    var navLinks = q1('#navLinks');
     if (navToggle && navLinks) {
       navToggle.addEventListener('click', function () {
         var open = document.body.classList.toggle('nav-open');
@@ -412,7 +571,7 @@
     }
 
     /* FAQ 手风琴 */
-    Array.prototype.forEach.call(document.querySelectorAll('.faq__q'), function (btn) {
+    q('.faq__q').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var ans = btn.nextElementSibling;
         var open = btn.classList.toggle('is-open');
@@ -421,10 +580,10 @@
     });
 
     /* Tabs */
-    Array.prototype.forEach.call(document.querySelectorAll('.tabs'), function (bar) {
+    q('.tabs').forEach(function (bar) {
       var btns = bar.querySelectorAll('.tabs__btn');
       var group = bar.getAttribute('data-group');
-      var panels = group ? document.querySelectorAll('.tab-panel[data-group="' + group + '"]') : [];
+      var panels = group ? q('.tab-panel[data-group="' + group + '"]') : [];
       Array.prototype.forEach.call(btns, function (btn) {
         btn.addEventListener('click', function () {
           var target = btn.getAttribute('data-tab');
@@ -433,18 +592,18 @@
           Array.prototype.forEach.call(panels, function (p) {
             p.classList.toggle('is-active', p.id === target);
           });
-          observeReveal();
+          observeReveal(scope);
         });
       });
     });
 
-    observeReveal();
-    observeBars();
-    observeNav();
+    observeReveal(scope);
+    observeBars(scope);
+    observeNav(scope);
   }
 
-  function observeReveal() {
-    var els = document.querySelectorAll('.reveal:not(.is-in)');
+  function observeReveal(scope) {
+    var els = Array.prototype.slice.call((scope || document).querySelectorAll('.reveal:not(.is-in)'));
     if (!('IntersectionObserver' in window)) {
       Array.prototype.forEach.call(els, function (e) { e.classList.add('is-in'); });
       return;
@@ -457,8 +616,8 @@
     Array.prototype.forEach.call(els, function (e) { io.observe(e); });
   }
 
-  function observeBars() {
-    var fills = document.querySelectorAll('.bar__fill');
+  function observeBars(scope) {
+    var fills = Array.prototype.slice.call((scope || document).querySelectorAll('.bar__fill'));
     if (!('IntersectionObserver' in window)) {
       Array.prototype.forEach.call(fills, function (f) { f.style.width = f.getAttribute('data-pct') + '%'; });
       return;
@@ -474,20 +633,21 @@
     Array.prototype.forEach.call(fills, function (f) { io.observe(f); });
   }
 
-  function observeNav() {
-    var links = document.querySelectorAll('[data-nav]');
+  function observeNav(scope) {
+    var root = scope || document;
+    var links = Array.prototype.slice.call(root.querySelectorAll('[data-nav]'));
     if (!links.length) return;
-    var sections = Array.prototype.map.call(links, function (a) {
+    var sections = links.map(function (a) {
       var href = a.getAttribute('data-nav');
       if (href.indexOf('#') !== 0) return null;
-      return document.querySelector(href);
+      return root.querySelector(href);
     }).filter(Boolean);
     if (!sections.length) return;
     var onScroll = function () {
       var y = window.scrollY + 120;
       var cur = null;
       sections.forEach(function (s) { if (s.offsetTop <= y) cur = s.id; });
-      Array.prototype.forEach.call(links, function (a) {
+      links.forEach(function (a) {
         var h = a.getAttribute('data-nav');
         a.classList.toggle('is-active', h === '#' + cur);
       });
@@ -518,7 +678,7 @@
     ED.on = true;
     document.body.classList.add('editing');
 
-    var storeKey = 'geo-overrides-' + pageKey;
+    var storeKey = 'geo-overrides-' + pageKey + '-' + curLang;
     try { ED.overrides = JSON.parse(localStorage.getItem(storeKey) || '{}'); } catch (e) { ED.overrides = {}; }
 
     /* 应用本机已保存的覆盖 */
@@ -550,45 +710,55 @@
       Object.keys(ED.overrides).forEach(function (k) { merged[k] = ED.overrides[k]; });
       Object.keys(ov).forEach(function (k) { merged[k] = ov[k]; });
       try { localStorage.setItem(storeKey, JSON.stringify(merged)); } catch (e) {}
-      var payload = { page: pageKey, updated: new Date().toISOString().slice(0, 10), overrides: merged };
+      var payload = { page: pageKey, lang: curLang, updated: new Date().toISOString().slice(0, 10), overrides: merged };
       var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       var a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = 'geo-update-' + pageKey + '.json';
+      a.download = 'geo-update-' + pageKey + '-' + curLang + '.json';
       a.click();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-      alert('已导出 ' + Object.keys(merged).length + ' 处更新。\n把这个文件发给我，我就能同步到线上链接。');
+      alert('已导出 ' + Object.keys(merged).length + ' 处更新（' + LANGS[curLang].full + '）。\n把这个文件发给我，我就能同步到线上链接。');
     });
 
     document.getElementById('edReset').addEventListener('click', function () {
       try { localStorage.removeItem(storeKey); } catch (e) {}
-      location.href = location.pathname;
+      location.href = location.pathname + location.search;
     });
 
     return true;
   }
 
-  /* ---------- 分享码透传 ---------- */
+  /* ---------- 分享码与语言参数透传 ---------- */
   function propagateShareCode() {
     var code = new URLSearchParams(location.search).get('sharecode');
-    if (!code) return;
+    var lang = curLang === 'en' ? 'en' : '';
+    if (!code && !lang) return;
     var links = document.querySelectorAll('a[href]');
     Array.prototype.forEach.call(links, function (a) {
       var href = a.getAttribute('href');
       if (!href || href.charAt(0) === '#' || /^(https?:|mailto:|tel:|javascript:)/.test(href)) return;
-      if (href.indexOf('sharecode=') >= 0) return;
       /* 保持 #锚点在最后：page.html#sec?code= 是错的 */
       var hash = '';
       var hi = href.indexOf('#');
       if (hi >= 0) { hash = href.slice(hi); href = href.slice(0, hi); }
       var sep = href.indexOf('?') >= 0 ? '&' : '?';
-      a.setAttribute('href', href + sep + 'sharecode=' + encodeURIComponent(code) + hash);
+      var extra = [];
+      if (code && href.indexOf('sharecode=') < 0) extra.push('sharecode=' + encodeURIComponent(code));
+      if (lang && href.indexOf('lang=') < 0) extra.push('lang=' + lang);
+      if (!extra.length) return;
+      a.setAttribute('href', href + sep + extra.join('&') + hash);
     });
   }
 
   /* ---------- 启动 ---------- */
   var pageKey = document.body.getAttribute('data-page') || 'home';
-  window.SITE_DATA = D;
-  if (!initEditor(pageKey)) renderPage(pageKey);
-  propagateShareCode();
+  function currentPageKey() { return pageKey; }
+
+  curLang = detectLang();
+  loadLangData(curLang, function (data) {
+    if (data) { D = data; window.SITE_DATA = D; }
+    applyLangToDoc(curLang);
+    if (!initEditor(pageKey)) renderPage(pageKey);
+    propagateShareCode();
+  });
 })();

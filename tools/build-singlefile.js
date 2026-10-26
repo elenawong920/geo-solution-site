@@ -2,6 +2,7 @@
 /* ============================================================
    把三页站点打包成单个自包含 HTML 文件
    · CSS / JS 内联，图片转 base64 data URI
+   · 中英文两套内容都内联，语言切换无需联网
    · 用 hash 路由在同一文件内切换三个页面
    产物：geo-site-singlefile/京东科技GEO解决方案.html
    ============================================================ */
@@ -19,7 +20,6 @@ const readBin = (p) => fs.readFileSync(path.join(SRC, p.replace(/^\/+/, '')));
 /* ---- 图片转 data URI ---- */
 const imgExt = { '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml' };
 const dataUri = (rel) => {
-  const abs = path.join(SRC, rel.replace(/^\/+/, ''));
   const ext = path.extname(rel).toLowerCase();
   return `data:${imgExt[ext] || 'application/octet-stream'};base64,` + readBin(rel).toString('base64');
 };
@@ -27,12 +27,32 @@ const dataUri = (rel) => {
 /* ---- CSS 内联 ---- */
 const css = read('assets/css/main.css');
 
-/* ---- content.js：把图片路径换成 data URI ---- */
-let contentJs = read('assets/data/content.js');
-const imgRefs = [...contentJs.matchAll(/'(assets\/img\/[^']+)'/g)].map(m => m[1]);
-[...new Set(imgRefs)].forEach(rel => {
-  contentJs = contentJs.split(`'${rel}'`).join(`'${dataUri(rel)}'`);
-});
+/* ---- 图片池：两份内容共用同一份 base64，避免重复内联 ---- */
+const IMG_POOL = {};
+function poolImage(rel) {
+  if (!IMG_POOL[rel]) IMG_POOL[rel] = dataUri(rel);
+  return IMG_POOL[rel];
+}
+
+/* ---- 内容文件：图片路径改为引用图片池 + 跨页链接转 hash ---- */
+function prepContent(rel) {
+  let s = read(rel);
+  const imgRefs = [...new Set([...s.matchAll(/'(assets\/img\/[^']+)'/g)].map(m => m[1]))];
+  imgRefs.forEach(r => {
+    poolImage(r);
+    /* 'assets/img/x.jpg' → window.__IMG["assets/img/x.jpg"]（表达式位置，可直接替换） */
+    s = s.split(`'${r}'`).join(`window.__IMG[${JSON.stringify(r)}]`);
+  });
+  /* 跨页链接转 hash 路由 */
+  s = s.replace(/'index\.html#contact'/g, "'#/contact'");
+  s = s.replace(/'overseas\.html'/g, "'#/overseas'");
+  s = s.replace(/'insight\.html'/g, "'#/insight'");
+  s = s.replace(/href: 'index\.html'/g, "href: '#/home'");
+  return s;
+}
+
+const contentZh = prepContent('assets/data/content.js');
+const contentEn = prepContent('assets/data/content.en.js');
 
 /* ---- app.js：加 hash 路由 ---- */
 let appJs = read('assets/js/app.js');
@@ -41,7 +61,7 @@ let appJs = read('assets/js/app.js');
 appJs = appJs.split('"assets/img/logo-jd.png"').join(`"${dataUri('assets/img/logo-jd.png')}"`);
 appJs = appJs.split("'assets/img/logo-jd.png'").join(`'${dataUri('assets/img/logo-jd.png')}'`);
 
-/* 把「按 body 属性取页面」改成「按 hash 取页面」，并把三页合并渲染 */
+/* 把「按 body 属性取页面」改成「按 hash 取页面」 */
 appJs = appJs.replace(
   /var pageKey = document\.body\.getAttribute\('data-page'\) \|\| 'home';/,
   `var pageKey = (location.hash || '').replace(/^#\\/?/, '') || 'home';
@@ -53,11 +73,21 @@ appJs = appJs.replace(
    注意：必须注入到 app.js 主 IIFE 内部，否则拿不到 pageKey / renderPage
    hash 形如 #/overseas（切页）或 #/overseas#delivery（切页+滚动到区块）*/
 appJs = appJs.replace(
-  `  if (!initEditor(pageKey)) renderPage(pageKey);
-  propagateShareCode();
+  `  curLang = detectLang();
+  loadLangData(curLang, function (data) {
+    if (data) { D = data; window.SITE_DATA = D; }
+    applyLangToDoc(curLang);
+    if (!initEditor(pageKey)) renderPage(pageKey);
+    propagateShareCode();
+  });
 })();`,
-  `  if (!initEditor(pageKey)) renderPage(pageKey);
-  propagateShareCode();
+  `  curLang = detectLang();
+  loadLangData(curLang, function (data) {
+    if (data) { D = data; window.SITE_DATA = D; }
+    applyLangToDoc(curLang);
+    if (!initEditor(pageKey)) renderPage(pageKey);
+    propagateShareCode();
+  });
 
   /* ---------- hash 路由（单文件模式） ---------- */
   var PAGES = ['home', 'overseas', 'insight'];
@@ -88,16 +118,16 @@ appJs = appJs.replace(
 );
 
 /* 三页外壳：把每个 HTML 的 body 内联进一个模板，用 JS 切换 */
-function shell(pageKey, title, desc) {
+function shell(pageKey) {
   return `
 <div class="page" data-for="${pageKey}"${pageKey === 'home' ? '' : ' hidden'}>
-  <nav class="nav" id="nav-${pageKey}"></nav>
-  <main id="main-${pageKey}"></main>
-  <footer class="footer" id="footer-${pageKey}"></footer>
+  <nav class="nav"></nav>
+  <main></main>
+  <footer class="footer"></footer>
 </div>`;
 }
 
-/* 渲染引擎改造：按 page 找对应容器 */
+/* 渲染引擎改造：按 page 找对应容器，并记录当前作用域 */
 appJs = appJs.replace(
   `  function renderPage(pageKey) {
     var page = (D.pages || {})[pageKey];
@@ -106,7 +136,8 @@ appJs = appJs.replace(
     var page = (D.pages || {})[pageKey];
     if (!page) return;
     var scoped = document.querySelector('.page[data-for="' + pageKey + '"]');
-    if (!scoped) scoped = document.body;`
+    if (!scoped) scoped = document.body;
+    PAGE_SCOPE = scoped;`
 );
 appJs = appJs.replace(
   `    var nav = document.getElementById('nav');
@@ -127,92 +158,17 @@ appJs = appJs.replace(
     if (foot && D.footer) {`
 );
 
-/* 页面切换时同步显示/隐藏，并把交互绑定限制在当前页容器内 */
+/* 页面切换时同步显示/隐藏 */
 appJs = appJs.replace(
   `    initInteractions();
   }`,
-  `    /* 单文件模式：切换显示的 page 容器 */
-    var all = document.querySelectorAll('.page');
+  `    var all = document.querySelectorAll('.page');
     Array.prototype.forEach.call(all, function (el) {
       el.hidden = (el.getAttribute('data-for') !== pageKey);
     });
 
     initInteractions(scoped);
   }`
-);
-
-/* initInteractions 支持限定容器，避免多页重复绑定 */
-appJs = appJs.replace(
-  `  function initInteractions() {`,
-  `  function initInteractions(scope) {
-    var q = function (sel) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); };
-    var q1 = function (sel) { return (scope || document).querySelector(sel); };`
-);
-appJs = appJs.replace(
-  `    var navToggle = document.getElementById('navToggle');
-    var navLinks = document.getElementById('navLinks');`,
-  `    var navToggle = q1('#navToggle');
-    var navLinks = q1('#navLinks');`
-);
-appJs = appJs.replace(
-  `    Array.prototype.forEach.call(document.querySelectorAll('.faq__q'), function (btn) {`,
-  `    q('.faq__q').forEach(function (btn) {`
-);
-appJs = appJs.replace(
-  `    Array.prototype.forEach.call(document.querySelectorAll('.tabs'), function (bar) {`,
-  `    q('.tabs').forEach(function (bar) {`
-);
-appJs = appJs.replace(
-  `      var panels = group ? document.querySelectorAll('.tab-panel[data-group="' + group + '"]') : [];
-      Array.prototype.forEach.call(btns, function (btn) {`,
-  `      var panels = group ? q('.tab-panel[data-group="' + group + '"]') : [];
-      btns.forEach(function (btn) {`
-);
-appJs = appJs.replace(
-  `    observeReveal();
-    observeBars();
-    observeNav();`,
-  `    observeReveal(scope);
-    observeBars(scope);
-    observeNav(scope);`
-);
-appJs = appJs.replace(
-  `  function observeReveal() {
-    var els = document.querySelectorAll('.reveal:not(.is-in)');`,
-  `  function observeReveal(scope) {
-    var els = Array.prototype.slice.call((scope || document).querySelectorAll('.reveal:not(.is-in)'));`
-);
-appJs = appJs.replace(
-  `  function observeBars() {
-    var fills = document.querySelectorAll('.bar__fill');`,
-  `  function observeBars(scope) {
-    var fills = Array.prototype.slice.call((scope || document).querySelectorAll('.bar__fill'));`
-);
-appJs = appJs.replace(
-  `  function observeNav() {
-    var links = document.querySelectorAll('[data-nav]');`,
-  `  function observeNav(scope) {
-    var links = Array.prototype.slice.call((scope || document).querySelectorAll('[data-nav]'));`
-);
-appJs = appJs.replace(
-  `    var sections = Array.prototype.map.call(links, function (a) {`,
-  `    var sections = links.map(function (a) {`
-);
-appJs = appJs.replace(
-  `      var href = a.getAttribute('data-nav');
-      if (href.indexOf('#') !== 0) return null;
-      return document.querySelector(href);
-    }).filter(Boolean);`,
-  `      var href = a.getAttribute('data-nav');
-      if (href.indexOf('#') !== 0) return null;
-      return (scope || document).querySelector(href);
-    }).filter(Boolean);`
-);
-appJs = appJs.replace(
-  `      Array.prototype.forEach.call(links, function (a) {
-        var h = a.getAttribute('data-nav');`,
-  `      links.forEach(function (a) {
-        var h = a.getAttribute('data-nav');`
 );
 
 /* 导航链接：单文件模式下带上当前页前缀，形如 #/home#delivery */
@@ -245,22 +201,21 @@ appJs = appJs.replace(
 
 /* 重置编辑时回到当前页而不是根路径 */
 appJs = appJs.replace(
-  `      location.href = location.pathname;`,
+  `      location.href = location.pathname + location.search;`,
   `      location.href = location.pathname + '#/' + pageKey;`
 );
 
-/* 内容里的跨页链接（.html）转 hash */
-contentJs = contentJs.replace(/'index\.html#contact'/g, "'#/contact'");
-contentJs = contentJs.replace(/'overseas\.html'/g, "'#/overseas'");
-contentJs = contentJs.replace(/'insight\.html'/g, "'#/insight'");
-contentJs = contentJs.replace(/href: 'index\.html'/g, "href: '#/home'");
+/* 单文件模式下不改写 URL（避免 file:// 地址被加上查询参数） */
+appJs = appJs.replace(
+  `  function syncLangUrl(lang) {
+    try {`,
+  `  function syncLangUrl(lang) {
+    if (location.protocol === 'file:') return;
+    try {`
+);
 
 /* ---- 组装单文件 ---- */
-const pages = [
-  { key: 'home', title: '国内 GEO 解决方案' },
-  { key: 'overseas', title: '海外 GEO 解决方案' },
-  { key: 'insight', title: 'AI 用户意图洞察' }
-];
+const pages = ['home', 'overseas', 'insight'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -268,7 +223,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>京东科技 GEO 生成式引擎优化</title>
-<meta name="description" content="京东科技企业级生成式引擎优化（GEO）解决方案：覆盖豆包、千问、DeepSeek、元宝等主流 AI 场景，提供 AI 认知体检、意图问题库、AIGC 内容与信源策略、采信提权、监测复盘的全链路交付。">
+<meta name="description" data-zh="京东科技企业级生成式引擎优化（GEO）解决方案：覆盖豆包、千问、DeepSeek、元宝等主流 AI 场景，提供 AI 认知体检、意图问题库、AIGC 内容与信源策略、采信提权、监测复盘的全链路交付。" data-en="JD Technology enterprise-grade Generative Engine Optimization (GEO): covering Doubao, Qwen, DeepSeek, Yuanbao and other leading AI scenarios, with end-to-end delivery across AI perception audits, intent question banks, AIGC content and source strategy, citation boosting, and monitoring and review." content="京东科技企业级生成式引擎优化（GEO）解决方案：覆盖豆包、千问、DeepSeek、元宝等主流 AI 场景，提供 AI 认知体检、意图问题库、AIGC 内容与信源策略、采信提权、监测复盘的全链路交付。">
 <meta name="theme-color" content="#E1251B">
 <meta property="og:type" content="website">
 <meta property="og:title" content="京东科技 GEO 生成式引擎优化">
@@ -279,9 +234,15 @@ ${css}
 </style>
 </head>
 <body data-page="home">
-${pages.map(p => shell(p.key)).join('\n')}
+${pages.map(p => shell(p)).join('\n')}
 <script>
-${contentJs}
+window.__IMG = ${JSON.stringify(IMG_POOL, null, 0)};
+</script>
+<script>
+${contentZh}
+</script>
+<script>
+${contentEn}
 </script>
 <script>
 ${appJs}
