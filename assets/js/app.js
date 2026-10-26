@@ -149,7 +149,37 @@
       val = val[field];
     }
     if (!ED.on) return esc(val);
-    return '<span data-edit="' + esc(path) + '">' + esc(val) + '</span>';
+    return '<span data-edit="' + esc(path) + '" contenteditable="true">' + esc(val) + '</span>';
+  }
+
+  /* 富文本：把白名单里的行内标签原样保留，其余内容一律转义。
+     —— 内容里写的 <b>分类名</b> 要真正加粗，而不是把标签当文字显示出来。
+     实现上先把标签抠出来、普通文本转义后再拼回去，因此无需「反转义」，
+     也天然挡住了 <script> 与带属性的标签（如 <b onclick=...>）。
+     编辑模式下用 data-raw 保存原文，回写时按原文写回，不会丢标签。 */
+  var RICH_TAGS = ['b', 'strong', 'em', 'i', 'br', 'span'];
+  var RICH_RE = new RegExp('<\\/?(?:' + RICH_TAGS.join('|') + ')\\s*>', 'gi');
+
+  function rich(path, val) {
+    if (val == null) return '';
+    if (typeof val === 'object' && !Array.isArray(val)) return t(path, val);
+    var raw = String(val);
+    var out = '';
+    var last = 0;
+    raw.replace(RICH_RE, function (m, offset) {
+      out += esc(raw.slice(last, offset));
+      out += m;
+      last = offset + m.length;
+      return m;
+    });
+    out += esc(raw.slice(last));
+    if (!ED.on) return out;
+    return '<span data-edit="' + esc(path) + '" data-raw="' + esc(raw) + '" contenteditable="true">' + out + '</span>';
+  }
+
+  /* 去掉富文本原文里的标签，用于判断用户是否真的改动了这段文字 */
+  function stripTags(s) {
+    return String(s == null ? '' : s).replace(/<\/?[a-zA-Z][^>]*>/g, '');
   }
 
   /* ---------- 区块渲染器：每个函数接收 (block, pathPrefix) ---------- */
@@ -385,7 +415,7 @@
     var h = '<div class="gallery reveal">';
     (b.items || []).forEach(function (it, i) {
       h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" loading="lazy">' +
-           '<figcaption class="shot__cap">' + t(p + '.items.' + i + '.cap', it.cap) + '</figcaption></figure>';
+           '<figcaption class="shot__cap">' + rich(p + '.items.' + i + '.cap', it.cap) + '</figcaption></figure>';
     });
     return h + '</div>';
   };
@@ -703,7 +733,15 @@
       var ov = {};
       Array.prototype.forEach.call(document.querySelectorAll('[data-edit]'), function (el) {
         var p = el.getAttribute('data-edit');
-        var v = el.textContent;
+        /* 富文本节点用 data-raw 存原文（保留 <b> 等标签）。
+           若用户确实改了这段文字，则以用户输入的纯文本为准。 */
+        var raw = el.getAttribute('data-raw');
+        var v;
+        if (raw == null) {
+          v = el.textContent;
+        } else {
+          v = (el.textContent === stripTags(raw)) ? raw : el.textContent;
+        }
         if (getPath(page, p) !== v) ov[p] = v;
       });
       var merged = {};
