@@ -35,7 +35,7 @@ const SRC = path.resolve(__dirname, '..');
 
 /* 站点里要同步的文件（与仓库结构一一对应） */
 const ITEMS = [
-  'index.html', 'overseas.html', 'insight.html', '.nojekyll',
+  'index.html', 'overseas.html', 'insight.html', 'pharma.html', '.nojekyll',
   'README.md', '微信打开方案.md',
   'assets', 'tools'
 ];
