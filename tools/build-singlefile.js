@@ -37,18 +37,27 @@ function poolImage(rel) {
 /* ---- 内容文件：图片路径改为引用图片池 + 跨页链接转 hash ---- */
 function prepContent(rel) {
   let s = read(rel);
-  const imgRefs = [...new Set([...s.matchAll(/'(assets\/img\/[^']+)'/g)].map(m => m[1]))];
+  const imgRefs = [...new Set([...s.matchAll(/["'](assets\/img\/[^"']+)["']/g)].map(m => m[1]))];
   imgRefs.forEach(r => {
     poolImage(r);
-    /* 'assets/img/x.jpg' → window.__IMG["assets/img/x.jpg"]（表达式位置，可直接替换） */
+    /* 图片路径 → window.__IMG["assets/img/x.jpg"]，同时兼容单双引号数据文件 */
     s = s.split(`'${r}'`).join(`window.__IMG[${JSON.stringify(r)}]`);
+    s = s.split(`"${r}"`).join(`window.__IMG[${JSON.stringify(r)}]`);
   });
   /* 跨页链接转 hash 路由 */
-  s = s.replace(/'index\.html#contact'/g, "'#/contact'");
-  s = s.replace(/'overseas\.html'/g, "'#/overseas'");
-  s = s.replace(/'insight\.html'/g, "'#/insight'");
-  s = s.replace(/href: 'index\.html'/g, "href: '#/home'");
-  s = s.replace(/href: 'pharma\.html'/g, "href: '#/pharma'");
+  const routes = {
+    'index.html#contact': '#/home#contact',
+    'index.html': '#/home',
+    'overseas.html': '#/overseas',
+    'insight.html': '#/insight',
+    'pharma.html': '#/pharma',
+    'insurance.html': '#/insurance',
+    'tourism.html': '#/tourism'
+  };
+  Object.keys(routes).forEach(href => {
+    s = s.split(`'${href}'`).join(`'${routes[href]}'`);
+    s = s.split(`"${href}"`).join(`"${routes[href]}"`);
+  });
   return s;
 }
 
@@ -65,8 +74,15 @@ appJs = appJs.split("'assets/img/logo-jd.png'").join(`'${dataUri('assets/img/log
 /* 把「按 body 属性取页面」改成「按 hash 取页面」 */
 appJs = appJs.replace(
   /var pageKey = document\.body\.getAttribute\('data-page'\) \|\| 'home';/,
-  `var pageKey = (location.hash || '').replace(/^#\\/?/, '') || 'home';
-  if (!['home', 'overseas', 'insight'].includes(pageKey)) pageKey = 'home';
+  `var __initialHash = (location.hash || '').replace(/^#\\/?/, '');
+  var __initialSection = '';
+  var __initialSectionPos = __initialHash.indexOf('#');
+  if (__initialSectionPos >= 0) {
+    __initialSection = __initialHash.slice(__initialSectionPos + 1);
+    __initialHash = __initialHash.slice(0, __initialSectionPos);
+  }
+  var pageKey = __initialHash || 'home';
+  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'].includes(pageKey)) pageKey = 'home';
   document.body.setAttribute('data-page', pageKey);`
 );
 
@@ -88,10 +104,16 @@ appJs = appJs.replace(
     applyLangToDoc(curLang);
     if (!initEditor(pageKey)) renderPage(pageKey);
     propagateShareCode();
+    if (__initialSection) {
+      setTimeout(function () {
+        var initialTarget = document.querySelector('.page[data-for="' + pageKey + '"] #' + __initialSection);
+        if (initialTarget) initialTarget.scrollIntoView();
+      }, 60);
+    }
   });
 
   /* ---------- hash 路由（单文件模式） ---------- */
-  var PAGES = ['home', 'overseas', 'insight', 'pharma'];
+  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'];
   function parseHash() {
     var raw = (location.hash || '').replace(/^#\\/?/, '');
     var sec = '';
@@ -110,7 +132,7 @@ appJs = appJs.replace(
     }
     if (h.section) {
       var target = document.querySelector('.page[data-for="' + h.page + '"] #' + h.section);
-      if (target) setTimeout(function () { target.scrollIntoView({ behavior: 'smooth' }); }, 60);
+      if (target) setTimeout(function () { target.scrollIntoView(); }, 60);
     } else {
       window.scrollTo(0, 0);
     }
@@ -219,7 +241,7 @@ appJs = appJs.replace(
 );
 
 /* ---- 组装单文件 ---- */
-const pages = ['home', 'overseas', 'insight', 'pharma'];
+const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">

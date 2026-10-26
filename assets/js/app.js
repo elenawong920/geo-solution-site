@@ -87,8 +87,8 @@
         if (q && !q.classList.contains('is-open')) q.click();
       }
     });
-    /* 恢复滚动位置与锚点 */
-    if (st.hash && st.hash.length > 1) {
+    /* 恢复滚动位置与锚点：只处理页内 #section，不把单文件 #/page 路由当选择器 */
+    if (st.hash && /^#[A-Za-z][\w-]*$/.test(st.hash)) {
       var t = root.querySelector(st.hash);
       if (t) { t.scrollIntoView(); return; }
     }
@@ -415,10 +415,13 @@
   R.industryBar = function (b, p) {
     var h = '<div class="indbar"><div class="container indbar__inner">';
     (b.items || []).forEach(function (it, i) {
+      var label = t(p + '.items.' + i + '.label', it.label);
       if (it.active) {
-        h += '<span class="indbar__item is-active">' + t(p + '.items.' + i + '.label', it.label) + '</span>';
+        h += '<span class="indbar__item is-active" aria-current="page">' + label + '</span>';
+      } else if (it.href) {
+        h += '<a class="indbar__item" href="' + esc(it.href) + '">' + label + '</a>';
       } else {
-        h += '<span class="indbar__item is-soon">' + t(p + '.items.' + i + '.label', it.label) +
+        h += '<span class="indbar__item is-soon">' + label +
              '<em>' + t(p + '.items.' + i + '.note', it.note || '即将上线') + '</em></span>';
       }
     });
@@ -573,14 +576,11 @@
             (page.nav || []).map(function (n) {
               return '<a href="' + esc(n.href) + '" data-nav="' + esc(n.href) + '">' + esc(n.label) + '</a>';
             }).join('') +
-            /* 窄屏时顶部 CTA 隐藏，这个按钮在折叠菜单里顶上 */
-            '<a class="nav__links__cta" href="index.html#contact">' + esc(D.meta.ctaLabel || '获取方案') + '</a>' +
           '</div>' +
           '<div class="lang" id="langSwitch" role="group" aria-label="Language">' +
             '<button type="button" class="lang__btn' + (curLang === 'zh' ? ' is-active' : '') + '" data-lang="zh">中</button>' +
             '<button type="button" class="lang__btn' + (curLang === 'en' ? ' is-active' : '') + '" data-lang="en">EN</button>' +
           '</div>' +
-          '<a class="nav__cta" href="index.html#contact">' + esc(D.meta.ctaLabel || '获取方案') + '</a>' +
         '</div>';
     }
 
@@ -741,7 +741,8 @@
     if (!links.length) return;
     var sections = links.map(function (a) {
       var href = a.getAttribute('data-nav');
-      if (href.indexOf('#') !== 0) return null;
+      /* 单文件跨页路由形如 #/pharma，不是页内元素 ID，不能传给 querySelector */
+      if (!/^#[A-Za-z][\w-]*$/.test(href)) return null;
       return root.querySelector(href);
     }).filter(Boolean);
     if (!sections.length) return;

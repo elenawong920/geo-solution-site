@@ -5,7 +5,7 @@
 微信内置浏览器（iOS/Android）**打不开** WorkBuddy 分享链接 —— 是分享网关按 UA 拦截的，改网页代码无法绕过。
 **详细方案见同目录 `微信打开方案.md`**，里面有两条可落地的路：
 
-- **方案 A（推荐）**：GitHub Pages，微信可直开、且能持续更新 → 需要你手动建一次仓库
+- **方案 A（推荐，已完成）**：GitHub Pages，微信可直开、且能持续更新
 - **方案 B（零配置）**：单文件版 `geo-site-singlefile/京东科技GEO解决方案.html`，直接当文件发微信
 
 本 README 讲的是站点本身的结构与内容更新方法。
@@ -14,8 +14,7 @@
 
 ## 一、这是什么
 
-把 5 份 GEO 产品材料（内部介绍手册 / 通用版对外介绍 / 海外 GEO / OnePage / 豆包意图洞察）
-整合成一个**对外可分享的产品介绍网站**。3 个页面：
+把多份 GEO 产品与行业材料整合成一个**对外可分享的产品介绍网站**。目前共 6 个页面：
 
 | 页面 | 文件 | 内容来源 |
 |---|---|---|
@@ -23,8 +22,14 @@
 | 海外 GEO 解决方案 | `overseas.html` | 海外 GEO 产品介绍 202608 |
 | AI 用户意图洞察 | `insight.html` | 京东空调豆包意图洞察报告 |
 | 医药健康行业方案 | `pharma.html` | 京东科技 GEO 医药健康行业方案（含案例）1010 |
+| 保险行业方案 | `insurance.html` | 京东科技面向保险行业 GEO 通用方案介绍 202608 |
+| 文旅行业方案 | `tourism.html` | 京东科技 GEO 对外介绍版【文旅】含案例 20261009 |
 
-**中英双语**：导航栏右侧有 `中 / EN` 切换按钮，三个页面都已完整翻译。
+**2026-10-27 信息架构优化**：首页“什么是 GEO”与“核心价值”合并；交付统一为五阶段；
+指标合并为“定义 + 口径 + 管理用途”一张表；全站移除重复的“获取方案”按钮，
+销售联系集中放在页脚。行业客户可直接进入各自的独立页面，并通过行业栏切换。
+
+**中英双语**：导航栏右侧有 `中 / EN` 切换按钮，六个页面都已完整翻译。
 访问 `?lang=en` 可直接进入英文版（分享给海外客户时用这个链接）。
 
 **目录结构**
@@ -35,6 +40,8 @@ geo-site/
 ├── overseas.html               海外 GEO 主页
 ├── insight.html                意图洞察报告页
 ├── pharma.html                 医药健康行业方案页
+├── insurance.html              保险行业方案页
+├── tourism.html                文旅行业方案页
 ├── assets/
 │   ├── data/content.js         ★ 中文文案（改这个就够了）
 │   ├── data/content.en.js      ★ 英文文案（与中文文件结构完全一致）
@@ -163,9 +170,11 @@ metrics: [
 
 ## 六、素材来源与说明
 
-站内引用的市场数据与案例数据均来自你提供的 5 份材料，未做外部估算：
+站内引用的市场数据与案例数据均来自你提供的材料，未做外部估算：
 
 - 六大指标计算口径、平台用户画像 → 内部介绍手册（画像引自 QuestMobile《2026 年 AI 电商与消费品类 GEO 研究报告》）
+- 保险意图模型、合规机制与金融案例 → 京东科技面向保险行业 GEO 通用方案介绍 202608
+- 文旅场景、产品矩阵与六组案例 → 京东科技 GEO 对外介绍版【文旅】含案例 20261009
 - AI 大模型三榜数据 → 内部介绍手册内嵌图（更新日期 2026-10-21），含 A 榜 C 端 App MAU（国内基模 / 海外模型两个子榜）、B 榜 B 端 Web 月访问量、C 榜 API 调用量
 - 国内案例、海外案例、ChatGPT 广告与 Reddit 数据 → 通用版对外介绍、海外 GEO 产品介绍
 - 种子词与意图分布 → 京东空调豆包意图洞察报告（数据范围 2026-08-17 ~ 2026-09-15）
@@ -202,7 +211,7 @@ https://github.com/elenawong920/geo-solution-site/settings/keys/new
 
 ---
 
-## 八、新增一个行业方案页（保险 / 汽车 / B2B …）
+## 八、新增一个行业方案页（汽车 / B2B …）
 
 已按可扩展的方式做好，新增行业只需三步，不用改渲染引擎：
 
@@ -218,10 +227,12 @@ https://github.com/elenawong920/geo-solution-site/settings/keys/new
 **3. 加进导航与单文件版**：
 
 - 顶部导航：在 `pages.home.nav` / `pages.insight.nav` 里加一项 `{ label: '行业方案', href: 'insurance.html' }`
-- 行业切换栏：改 `pages.pharma.sections[0].items`（`type: 'industryBar'`），
-  把 `active: true` 移到新行业，其余去掉 `active` 即显示「即将上线」
-- 单文件版：`tools/build-singlefile.js` 里的 `pages` 数组加页面名，
-  并在 `prepContent()` 里加一条 `href: 'insurance.html'` → `href: '#/insurance'`
+- 行业切换栏：更新每个行业页 `sections[0].items`（`type: 'industryBar'`），
+  当前行业设 `active: true`；已上线行业填写 `href`，未上线行业只保留 `note: '即将上线'`。
+  三个现有行业页都要同步，保证客户在任意行业页之间可直接切换。
+- 单文件版：`tools/build-singlefile.js` 里的 `pages` 数组和启动白名单加页面名，
+  并在 `prepContent()` 的 `routes` 中增加 `'industry.html': '#/industry'`。
+- 推送清单：`tools/push-github.js` 的 `ITEMS` 中加入新 HTML 文件，避免漏发。
 
 **可复用的区块类型**：`hero` `secHead` `cards` `eras` `stats` `compare` `table` `flow` `roadmap`
 `checks` `notice` `cases` `cta` `split` `platforms` `bars` `gallery` `tabs` `plats`
