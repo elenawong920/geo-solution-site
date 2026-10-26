@@ -28,7 +28,8 @@ window.SITE_DATA_EN = {
         items: [
           { text: 'Domestic GEO Solution', href: 'index.html' },
           { text: 'Overseas GEO Solution', href: 'overseas.html' },
-          { text: 'AI User Intent Insights', href: 'insight.html' }
+          { text: 'AI User Intent Insights', href: 'insight.html' },
+          { text: 'Pharma and Healthcare', href: 'pharma.html' }
         ]
       },
       {
@@ -70,6 +71,7 @@ window.SITE_DATA_EN = {
         { label: 'Delivery', href: '#delivery' },
         { label: 'Metrics', href: '#metrics' },
         { label: 'Cases', href: '#cases' },
+        { label: 'Industries', href: 'pharma.html' },
         { label: 'FAQ', href: '#faq' }
       ],
       sections: [
@@ -1470,7 +1472,8 @@ handles: ['High-quality primary sources', 'Transparent citations', 'Latest facts
         { label: 'Seed Words', href: '#seed' },
         { label: 'Tiers', href: '#level' },
         { label: 'Intents', href: '#intent' },
-        { label: 'Insights', href: '#conclusion' }
+        { label: 'Insights', href: '#conclusion' },
+        { label: 'Industries', href: 'pharma.html' }
       ],
       sections: [
         {
@@ -1706,6 +1709,727 @@ handles: ['High-quality primary sources', 'Transparent citations', 'Latest facts
               buttons: [
                 { label: 'Get a Similar Report', href: '#contact' },
                 { label: 'See the GEO Solution', href: 'index.html', style: 'ghost' }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    /* ============================================================
+       PHARMA — Pharma and Healthcare Industry GEO Solution
+       Adding a new industry: copy pages.pharma and rewrite the content
+       ============================================================ */
+    pharma: {
+      title: 'Pharma and Healthcare GEO Solution',
+      nav: [
+        { label: 'Why It Changed', href: '#why' },
+        { label: 'What GEO Is', href: '#what' },
+        { label: 'How It Works', href: '#how' },
+        { label: 'The Loop', href: '#loop' },
+        { label: 'Scenarios and Delivery', href: '#scenes' },
+        { label: 'Metrics', href: '#kpi' },
+        { label: 'Capabilities', href: '#capability' },
+        { label: 'Case Studies', href: '#cases' },
+        { label: 'Contact', href: '#contact' }
+      ],
+      sections: [
+        /* ===== Industry switcher ===== */
+        {
+          type: 'industryBar',
+          items: [
+            { label: 'Pharma and Healthcare', active: true },
+            { label: 'Insurance', note: 'Coming soon' },
+            { label: 'Automotive', note: 'Coming soon' },
+            { label: 'B2B', note: 'Coming soon' }
+          ]
+        },
+
+        /* ===== Hero ===== */
+        {
+          type: 'hero',
+          kicker: 'JD Technology · GEO Solution for Pharma and Healthcare',
+          title: ['In the Age of AI Search', 'A New Growth Entry Point for Healthcare Brands'],
+          accentLines: [1],
+          desc: 'Make your brand seen, stated accurately and trusted across AI search, AI Q&A, AI summaries and AI recommendations.',
+          sub: 'Covering Doubao, Qwen, DeepSeek, Yuanbao, ChatGPT and Claude | End-to-end loop: diagnosis, claims and assets, content and sources, monitoring and review',
+          buttons: [
+            { label: 'Explore the Solution', href: '#why' },
+            { label: 'Get a Tailored Plan', href: '#contact', style: 'ghost' }
+          ],
+          meta: [
+            { value: '5', label: 'High-value scenario types' },
+            { value: '8', label: 'Delivered case studies' },
+            { value: '5', label: 'Pilot deliverables' },
+            { value: '3 months', label: 'Standard loop cycle' }
+          ]
+        },
+
+        /* ===== Why it changed ===== */
+        {
+          type: 'section', id: 'why', tone: 'surface',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'Why',
+              title: 'AI Search Is Changing How Healthcare Decisions Are Made',
+              desc: 'Users no longer type keywords. They describe symptoms, situations and dilemmas directly to AI.'
+            },
+            {
+              type: 'cards', cols: 4,
+              items: [
+                {
+                  no: '01',
+                  title: 'Search behaviour: keyword search to natural-language questions',
+                  desc: 'Users ask things like "what is best for dry, irritated eyes?" or "how should people with chronic conditions choose nutrition products"'
+                },
+                {
+                  no: '02',
+                  title: 'Information format: link lists to AI-synthesised answers',
+                  desc: 'Brands are no longer just competing for rankings. They are competing for a trusted seat inside the answer'
+                },
+                {
+                  no: '03',
+                  title: 'Decision path: browsing many pages to AI-assisted judgement',
+                  desc: 'AI filters the information first, then shapes whether the user consults, buys or seeks medical care'
+                },
+                {
+                  no: '04',
+                  title: 'Competition: ranking competition to answer-slot competition',
+                  desc: 'Who gets cited, who gets recommended and who gets described accurately are the new competitive variables'
+                }
+              ]
+            },
+            {
+              type: 'notice',
+              icon: '※',
+              title: 'In One Sentence',
+              desc: 'AI has moved the decision entry point from the search results page to the answer itself. Brands now compete for a seat in that answer.'
+            }
+          ]
+        },
+
+        /* ===== What GEO is ===== */
+        {
+          type: 'section', id: 'what',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'What',
+              title: 'GEO Is Brand Knowledge Asset Building for AI Answers',
+              desc: 'GEO is not just content publishing. It gives AI a stable, truthful and citable source of information, and continuously improves how the brand is recognised, cited, recommended and accurately described across AI search, Q&A, summaries and recommendations.'
+            },
+            {
+              type: 'cards', cols: 4,
+              items: [
+                {
+                  title: 'What we optimise',
+                  desc: 'AI search, AI Q&A, AI summaries and AI recommendations — every AI entry point through which users reach healthcare information'
+                },
+                {
+                  title: 'What we measure',
+                  desc: 'Recommendation rate, positive sentiment rate, mention rate and accuracy rate — four metrics that together define brand performance on AI'
+                },
+                {
+                  title: 'What we build',
+                  desc: 'Brand content, product content, educational content, FAQs and authoritative sources — a reusable knowledge asset base'
+                },
+                {
+                  title: 'What we deliver',
+                  desc: 'A presence inside AI answers that compounds into a long-term digital asset, rather than a one-off content placement'
+                }
+              ]
+            }
+          ]
+        },
+
+        /* ===== How it works 01 / 02 ===== */
+        {
+          type: 'section', id: 'how', tone: 'surface',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'How 01',
+              title: 'One Closed Loop for Every AI-Side Brand Problem',
+              desc: 'From being unfindable to being unmeasurable, each maps directly to knowledge, claims, sources and metrics.'
+            },
+            {
+              type: 'cards', cols: 3,
+              items: [
+                {
+                  title: 'AI cannot find the brand',
+                  desc: 'Build brand, product and user-question knowledge bases so AI has recognisable, citable brand material'
+                },
+                {
+                  title: 'AI describes the brand inaccurately',
+                  desc: 'Unify medical phrasing, product boundaries, applicable scenarios, contraindication reminders and compliant scripts'
+                },
+                {
+                  title: 'AI does not recommend the brand first',
+                  desc: 'Optimise content structure, strengthen authoritative sources, and build out category semantics and differentiated content matrices'
+                },
+                {
+                  title: 'Competitors surface more often',
+                  desc: 'Run a competitor AI visibility diagnosis to identify high-value questions and content gaps'
+                },
+                {
+                  title: 'Results cannot be measured',
+                  desc: 'Establish AI mention rate, citation rate, recommendation rate, accuracy rate, competitor comparison and risk-answer rate'
+                }
+              ]
+            },
+            {
+              type: 'secHead',
+              kicker: 'How 02',
+              title: 'Our Approach Prioritises Growth, Assets and Risk Control',
+              desc: 'Compared with generic GEO methods, a healthcare solution demands deeper industry understanding and a reviewable delivery model.'
+            },
+            {
+              type: 'compare',
+              head: ['Dimension', 'Generic GEO', 'JD Technology Healthcare GEO'],
+              rows: [
+                ['Service positioning', 'Content optimisation and keyword coverage', 'Brand growth and knowledge asset building, balancing awareness, trust and long-term reuse'],
+                ['Industry understanding', 'Mostly generic methods', 'Covers healthcare scenarios, user decision journeys and compliant-claims requirements'],
+                ['Technology', 'Tooling checks and content outsourcing', 'Combines AI, big data, cloud and marketing technology into a closed loop from diagnosis to review'],
+                ['Delivery model', 'Weighted towards publishing and coverage', 'Diagnosis, knowledge base, content matrix, source building and monitoring review in one'],
+                ['Business value', 'Raises the odds of being mentioned by AI', 'Raises awareness, trust, lead quality and risk control, with results that can be measured']
+              ]
+            }
+          ]
+        },
+
+        /* ===== How 03: the full loop ===== */
+        {
+          type: 'section', id: 'loop',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'How 03',
+              title: 'The Full Healthcare GEO Loop: Capability x Cadence x Compliance',
+              desc: 'Turn brand materials, medical evidence and compliant phrasing into knowledge assets that AI can understand, cite and reuse.'
+            },
+            {
+              type: 'flow',
+              items: [
+                { no: '01', title: 'Diagnosis', desc: 'AI brand health check | competitor visibility scan | core question identification' },
+                { no: '02', title: 'Knowledge', desc: 'Brand / product / disease-category knowledge bases | compliant-claims library' },
+                { no: '03', title: 'Content', desc: 'Education | comparison | Q&A | scenarios | expert content' },
+                { no: '04', title: 'Distribution', desc: 'Official site | media | encyclopaedia | vertical platforms | JD Health touchpoints' },
+                { no: '05', title: 'Monitoring', desc: 'AI mention rate | answer placement | accuracy | competitor comparison | risk answers' },
+                { no: '06', title: 'Review', desc: 'Weekly and monthly review of questions, content, competitors and risk answers, with continuous iteration' }
+              ]
+            },
+            {
+              type: 'secHead',
+              kicker: 'Cadence',
+              title: 'Four Stages, a Three-Month Closed Loop'
+            },
+            {
+              type: 'roadmap',
+              items: [
+                { no: '01', title: 'Brief and Diagnosis', desc: 'Align on category, platform and KPI | brand and competitor health check | identify risk and opportunity questions' },
+                { no: '02', title: 'Claims and Assets', desc: 'Map medical phrasing boundaries | knowledge base, FAQ and compliance library | build the high-frequency question bank' },
+                { no: '03', title: 'Content and Sources', desc: 'Educational, Q&A and comparison content | coordinate official site, media and vertical platforms | strengthen AI-citable material' },
+                { no: '04', title: 'Monitoring and Review', desc: 'Multi-model, multi-frequency sampling | weekly and monthly correction | replicate the playbook across products and channels' }
+              ]
+            },
+            {
+              type: 'cards', cols: 3,
+              items: [
+                {
+                  no: 'Month 1',
+                  title: 'Diagnosis and claims',
+                  desc: 'Health check and question bank completed'
+                },
+                {
+                  no: 'Month 2',
+                  title: 'Assets and content',
+                  desc: 'Knowledge base goes live and enters AI answers'
+                },
+                {
+                  no: 'Month 3',
+                  title: 'Monitoring and review',
+                  desc: 'Stable data and a replicable playbook'
+                }
+              ]
+            },
+            {
+              type: 'checks',
+              title: 'Healthcare Compliance Baseline',
+              items: [
+                'No absolute claims; never beyond the approved labelling',
+                'Prescription drugs and medical devices must state risks and contraindications',
+                'All content must pass compliance review before publishing',
+                'No efficacy claims without evidence-based support'
+              ]
+            }
+          ]
+        },
+
+        /* ===== How 04 / 05: scenarios and delivery ===== */
+        {
+          type: 'section', id: 'scenes', tone: 'surface',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'How 04',
+              title: 'Five High-Value Scenario Types to Cover First',
+              desc: 'The closer a scenario sits to the real questions users ask, the more likely it is to become an optimisable, monitorable and reusable question asset.'
+            },
+            {
+              type: 'cards', cols: 3,
+              items: [
+                { no: '01', title: 'Disease education', desc: 'Chronic disease management, common symptoms and prevention — educational question types' },
+                { no: '02', title: 'Medication education', desc: 'Dosage, precautions and contraindication reminders — medication safety question types' },
+                { no: '03', title: 'Category selection', desc: 'How to choose and combine drugs, devices and nutrition and wellness products' },
+                { no: '04', title: 'Brand comparison', desc: 'Brand differences, target populations and product advantages — comparison question types' },
+                { no: '05', title: 'Purchase decision', desc: 'Online pharmacy purchases, repurchase advice and regimen bundles — purchase-stage questions' }
+              ]
+            },
+            {
+              type: 'secHead',
+              kicker: 'How 05',
+              title: 'Pilot Deliverables: What You Receive During the Engagement',
+              desc: 'Five core deliverables: AI market analysis report, tailored GEO service plan, brand knowledge base, content distribution and indexing monitoring report, and periodic GEO performance reports.'
+            },
+            {
+              type: 'cards', cols: 4,
+              items: [
+                {
+                  no: '01',
+                  title: 'Insight and plan',
+                  list: [
+                    'AI market analysis report, 1 copy',
+                    'Tailored GEO service plan, 1 copy',
+                    'Covering diagnosis, strategy, cadence and compliance'
+                  ]
+                },
+                {
+                  no: '02',
+                  title: 'Asset accumulation',
+                  list: [
+                    'Brand knowledge base, 1 set',
+                    'Covering brand, product, disease and compliant phrasing',
+                    'Reusable long term, not a one-off placement'
+                  ]
+                },
+                {
+                  no: '03',
+                  title: 'Distribution and monitoring',
+                  list: [
+                    'Content distribution and indexing monitoring report',
+                    'Covering distribution and indexing across platforms',
+                    'Flagging missing indexing and negative answers promptly'
+                  ]
+                },
+                {
+                  no: '04',
+                  title: 'Periodic performance reports',
+                  list: [
+                    'Periodic GEO optimisation performance report',
+                    'Including positive sentiment rate and mention rate',
+                    'Tracking changes in mention rate and other key metrics'
+                  ]
+                }
+              ]
+            },
+            {
+              type: 'notice',
+              icon: '※',
+              title: 'Note',
+              desc: 'The five deliverables cover the full GEO service cycle. Specific scope and measurement basis are subject to the delivery checklist agreed by both parties.'
+            }
+          ]
+        },
+
+        /* ===== How 06 / 09: metrics and platform profiles ===== */
+        {
+          type: 'section', id: 'kpi',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'How 06',
+              title: 'KPIs Cover Visibility, Accuracy and Risk Control',
+              desc: 'Healthcare GEO metrics cannot stop at mentions. They must also track citations, recommendations, accuracy, competitors and risk performance.'
+            },
+            {
+              type: 'cards', cols: 3,
+              items: [
+                { no: '01', title: 'AI mention rate', desc: 'How often the brand appears in target AI answers | measures: visibility' },
+                { no: '02', title: 'Citation rate', desc: 'Share of brand content or authoritative sources that AI cites and adopts | measures: trust' },
+                { no: '03', title: 'Recommendation rate', desc: 'How often the brand is proactively recommended during category selection | measures: priority' },
+                { no: '04', title: 'Accuracy rate', desc: 'Correctness of statements about the product, scenarios and contraindication boundaries | measures: accuracy' },
+                { no: '05', title: 'SOV (Share of Voice)', desc: 'Difference in answer slots and share of voice between the brand and competitors | measures: competition' },
+                { no: '06', title: 'Positive sentiment rate', desc: 'Share of wrong, exaggerated, out-of-bounds or negative answers | measures: risk control' }
+              ]
+            },
+            {
+              type: 'secHead',
+              kicker: 'How 09',
+              title: 'Healthcare User Profiles by AI Platform',
+              desc: 'Decision journeys differ across AI platforms, so GEO strategy has to be adapted accordingly. Source: QuestMobile, September 2026.'
+            },
+            {
+              type: 'table',
+              head: ['AI platform (monthly active users)', 'User profile and decision preferences', 'GEO adaptation priorities'],
+              rows: [
+                [
+                  'Doubao · 314M',
+                  'Family health decision-makers: frequent questions on OTC, paediatric medicine and supplements; accustomed to describing symptoms conversationally ("my child has a 38-degree fever, what should I do?")',
+                  'Conversational Q&A content, scenario-based symptom answers, science content accumulated on Douyin'
+                ],
+                [
+                  'Qwen · 272M',
+                  'Health consumption shoppers: asking about medicine often comes with purchase decisions (ingredient comparison, dosage, side effects); habit of "ask while buying"',
+                  'E-commerce scenario medicine Q&A, product ingredient and efficacy FAQs, purchase decision-chain optimisation'
+                ],
+                [
+                  'DeepSeek · 134M',
+                  'Knowledgeable patients with chronic conditions and their families: probing pathophysiology, drug interactions, originator versus generic; expecting evidence',
+                  'Structured drug knowledge, interaction comparison tables, evidence-based literature citation optimisation'
+                ],
+                [
+                  'Yuanbao · 96.93M',
+                  'Middle-aged and elderly patients with chronic conditions (hypertension, diabetes) and their adult children: trust official accounts and personal referrals',
+                  'Authoritative medical science on public accounts, WeChat Search health Q&A, senior-friendly phrasing optimisation'
+                ],
+                [
+                  'ChatGPT / Claude · mainstream overseas',
+                  'Cross-border healthcare users: overseas purchases, English literature lookup, cross-border treatment enquiries; highly compliance-sensitive',
+                  'English drug knowledge bases, cross-border compliant phrasing, overseas authoritative sources (PubMed / FDA / EMA)'
+                ]
+              ]
+            }
+          ]
+        },
+
+        /* ===== How 07 / 08: JD capabilities and differentiation ===== */
+        {
+          type: 'section', id: 'capability', tone: 'surface',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'How 07',
+              title: 'JD Capabilities Carry Healthcare GEO from Insight to Conversion',
+              desc: 'The solution converts JD Technology capabilities in AI, big data, cloud and marketing technology into healthcare delivery capability.'
+            },
+            {
+              type: 'cards', cols: 4,
+              items: [
+                {
+                  title: 'Healthcare scenarios',
+                  desc: 'JD Health, pharma e-commerce and health consumption content touchpoints sit naturally inside healthcare decision journeys'
+                },
+                {
+                  title: 'Consumer decision data',
+                  desc: 'In-site search, reviews and Q&A capture real demand signals that can be traced back to high-value AI questions'
+                },
+                {
+                  title: 'Knowledge asset capability',
+                  desc: 'Knowledge bases, FAQs, Schema and compliant phrasing let brand material be recognised by AI consistently'
+                },
+                {
+                  title: 'AI monitoring and review',
+                  desc: 'Multi-model sampling, dashboard monitoring, competitor and risk review — measurable and correctable'
+                }
+              ]
+            },
+            {
+              type: 'notice',
+              icon: '※',
+              title: 'Applicable case directions',
+              desc: 'OTC | Medical devices | Nutrition and wellness | Chronic disease management | New product launch | Category defence'
+            },
+            {
+              type: 'secHead',
+              kicker: 'How 08',
+              title: 'Four Core Differentiators',
+              desc: 'Ecosystem data, exclusive technology and cross-industry validation build the preferred citation chain for AI, while vertical medical models co-build the knowledge base with us.'
+            },
+            {
+              type: 'cards', cols: 4,
+              items: [
+                {
+                  no: '01',
+                  title: 'JD ecosystem data advantage',
+                  desc: 'Trending-search data from Doubao (exclusive), JD.com, Xiaohongshu, Douyin, WeChat and Weibo makes the questions we optimise more accurate and closer to how users actually speak'
+                },
+                {
+                  no: '02',
+                  title: 'Exclusive JD Cloud optimisation technology',
+                  desc: 'A high-authority media matrix plus citation optimisation and structured Schema builds the AI preferred-citation chain, taking effect faster (as quick as one month) with stable outcomes'
+                },
+                {
+                  no: '03',
+                  title: 'Validated across industries',
+                  desc: 'Proven in 3C, home appliances, travel and culture and other industries. The GEO team that builds it for JD.com now brings that capability to clients, so optimisation quality is better guaranteed'
+                },
+                {
+                  no: '04',
+                  title: 'Deep partnership with vertical medical models',
+                  desc: 'Mapped directly onto the knowledge base — Xiaohe Doctor, Dawei Doctor and others — so brand content reaches the medical vertical AI knowledge base, delivering coverage across both general-purpose and vertical healthcare AI'
+                }
+              ]
+            },
+            {
+              type: 'notice',
+              icon: '※',
+              title: 'Capability note',
+              desc: 'The four capabilities combined with vertical model co-building put your brand content into both general-purpose AI answers and medical vertical AI answers.'
+            }
+          ]
+        },
+
+        /* ===== Who has done it: case studies ===== */
+        {
+          type: 'section', id: 'cases', tone: 'dark',
+          blocks: [
+            {
+              type: 'secHead',
+              kicker: 'Who has done it',
+              title: 'Healthcare GEO Case Study Overview',
+              desc: 'Covering eight high-value scenario types: OTC, supplements, medical aesthetics filler, light medical aesthetics chains, medical-grade skincare, men\'s health, eye health and innovative drugs.'
+            },
+            {
+              type: 'table',
+              head: ['No.', 'Industry / type', 'Engagement', 'Core outcome'],
+              rows: [
+                ['1', 'OTC | Gynaecological external-use TCM medicine', 'Large-sample diagnosis', 'Brand visibility 18.3%, rank 1 on brand dimension'],
+                ['2', 'Supplements | Vitamin C', 'Periodic monitoring', '86 articles published, all three keyword KPIs exceeded'],
+                ['3', 'Medical aesthetics | Hyaluronic acid filler', 'Periodic placement', '8,642 AI citations, 58.3% hit rate'],
+                ['4', 'Medical-grade skincare | Device-registered', '3 months', 'AI mention rate 8% to 68%, TOP3 0% to 62%'],
+                ['5', "Men\'s health | Prescription drug", '6 months', 'AI mention rate 6% to 72%, recommendation share 0% to 68%'],
+                ['6', 'Eye health chain | Myopia control', '3 months', 'AI mention rate 0% to 90%, TOP3 0% to 83%'],
+                ['7', 'Innovative drug | Prescription drug', '3 months (first week)', 'AI mention rate 0% to 26% over two weeks'],
+                ['8', 'Light medical aesthetics chain | Owned clinics', 'Full cycle (closed)', 'AI mention rate 0% to 77.03%, 500 articles published']
+              ]
+            },
+            {
+              type: 'secHead',
+              kicker: 'Case details',
+              title: 'Eight Projects: Problems, Solutions, Results'
+            },
+            {
+              type: 'caseStudy',
+              labels: {
+                pains: 'Industry problems',
+                solutions: 'Solution',
+                result: 'Result',
+                note: 'Key insight'
+              },
+              items: [
+                {
+                  no: '01',
+                  tag: 'OTC | Gynaecological external-use TCM medicine',
+                  title: 'Broad symptom-entry scenario',
+                  sub: 'Rank 1 on the brand dimension, yet 74.8% of category answer slots are held by generic drug names',
+                  metrics: [
+                    { label: 'Brand visibility', value: '18.3%' },
+                    { label: 'Recommendation rate', value: '12.9%' },
+                    { label: 'Top-3 recommendation rate', value: '11.9%' },
+                    { label: 'Monitoring sample', value: '480 items' }
+                  ],
+                  pains: [
+                    'Rank 1 on the brand dimension, with all four branded competitors far behind (Competitor A 2.1% / B 3.5% / C 9.4% / D 7.5%)',
+                    'But across the full drug universe, 74.8% of category answer slots are held by generic names such as clotrimazole',
+                    'The brand is covered by generic drug names and stays out of recommended answers for high-intent broad-symptom questions'
+                  ],
+                  solutions: [
+                    'Shift the content theme from "is the brand good" to "when should a TCM external-use option apply", attaching to the second half of the generic-name decision chain',
+                    'Target the medical platforms AI cites most often — Mint Health, Miaoshou Doctor, China Pharmaceutical Information Query Platform and Baidu Health — rather than general news sites',
+                    'Compliance line: OTC content carries no efficacy promises or cure claims; indications and usage scenarios replace them'
+                  ],
+                  note: 'Brand X does not compete in the brand league. The GEO battlefield is not "beating competitors" but making AI present TCM external-use options as a distinct choice alongside the generic names it would otherwise give.'
+                },
+                {
+                  no: '02',
+                  tag: 'Supplements | Vitamin C',
+                  title: 'Brand X vitamin C under a listed pharma company',
+                  sub: 'Vitamin and mineral supplement category | Everyday health scenario',
+                  metrics: [
+                    { label: 'Monitoring sample', value: '300 items' },
+                    { label: 'Articles published', value: '86' },
+                    { label: 'Monitoring points', value: '6' },
+                    { label: 'KPI achievement', value: 'All exceeded' }
+                  ],
+                  pains: [
+                    'Vitamin and mineral supplements belong to everyday health scenarios, where questions are scattered and general: "how to supplement", "when to take it", "what to combine it with"',
+                    'The category has many brands and highly homogeneous answers, so it is hard for a brand to appear consistently in high-frequency everyday health Q&A',
+                    'Content placement lacks rhythm, making it hard to tell after publishing which content AI actually cited'
+                  ],
+                  solutions: [
+                    'Use a "super-article" content strategy to plan structures that one article can get cited by multiple engines, matching each platform preference',
+                    'After source analysis, place content according to where AI actually cites, instead of spreading effort evenly by platform reach',
+                    'Publish 86 articles across the full cycle, tracking and correcting continuously'
+                  ],
+                  result: '86 articles published across the full cycle, with all three keyword KPIs exceeded.'
+                },
+                {
+                  no: '03',
+                  tag: 'Medical aesthetics | Hyaluronic acid filler',
+                  title: 'Brand X imported hyaluronic acid filler',
+                  sub: 'Class III medical device | Facial contouring and anti-wrinkle scenarios',
+                  metrics: [
+                    { label: 'Articles published', value: '78' },
+                    { label: 'Keywords covered', value: '10' },
+                    { label: 'AI citations', value: '8,642' },
+                    { label: 'Hit rate', value: '58.3%' }
+                  ],
+                  pains: [
+                    'Medical aesthetics is a light-aesthetics customer acquisition scenario with long decision chains and strict compliance, relying heavily on authoritative sources',
+                    'An imported hyaluronic acid brand needs citable authoritative content on professional questions such as "facial contouring and anti-wrinkle"',
+                    'Source preferences differ significantly across AI engines, so a single placement strategy cannot cover them all'
+                  ],
+                  solutions: [
+                    'Plan content structures along "five defining characteristics x product base" so a single article gets cited by multiple AI engines, spreading content cost while building real brand authority',
+                    'Build separate placement strategies for the source logic of each of the two engines, rather than pushing one set of content everywhere',
+                    'Publish 78 articles covering 10 core keywords, monitoring citation and hit performance continuously'
+                  ],
+                  result: '78 articles published covering 10 keywords, with 8,642 AI citations and a 58.3% hit rate. The marked difference in source logic between the two engines confirms the need for one playbook per engine.'
+                },
+                {
+                  no: '04',
+                  tag: 'Medical-grade skincare | Device-registered',
+                  title: 'Device-registered medical products',
+                  sub: 'Medical-grade skincare | Device-registered medical device | 3-month engagement | Doubao, DeepSeek and Tencent Yuanbao',
+                  metrics: [
+                    { label: 'AI mention rate', value: '8% to 68%' },
+                    { label: 'Content citations', value: '+412%' },
+                    { label: 'Post-procedure TOP3', value: '0% to 62%' },
+                    { label: 'E-commerce search volume', value: '+63%' }
+                  ],
+                  pains: [
+                    'Perception mismatch: users cannot tell device-registered dressings from ordinary skincare, and AI answers often cover the brand with generic terms',
+                    'Source gap: dermatology content is scattered, and the brand lacks authoritative sources that AI can cite',
+                    'Scenario absence: in high-intent queries such as post-laser procedures and sensitive-skin emergencies, the brand is long absent'
+                  ],
+                  solutions: [
+                    'Systemise the knowledge base: map 3 product lines and 12 care scenarios into a brand-specific knowledge asset',
+                    'Distribute through authoritative media channels to raise citation weight',
+                    'Occupy 200+ high-intent questions so the brand enters the preferred answer pool'
+                  ],
+                  result: 'AI mention rate rose from 8% to 68%, post-procedure TOP3 from 0% to 62%, content citations up 412% and e-commerce search volume up 63%.',
+                  quote: {
+                    text: 'Previously when users asked AI what to use after a laser procedure, they mostly got a list of face masks. Now AI mentions us proactively, and explains it better than our own customer service does.',
+                    by: 'Brand X marketing lead'
+                  }
+                },
+                {
+                  no: '05',
+                  tag: "Men\'s health | Prescription drug",
+                  title: 'Brand X',
+                  sub: "Men\'s health | Prescription drug | 6-month engagement | Doubao, DeepSeek and Tencent Yuanbao",
+                  metrics: [
+                    { label: 'AI mention rate', value: '6% to 72%' },
+                    { label: 'Authoritative citations', value: '+530%' },
+                    { label: 'Originator drug recommendation share', value: '0% to 68%' },
+                    { label: 'Qualified enquiries', value: '+58%' }
+                  ],
+                  pains: [
+                    'Hidden demand: the topic is sensitive, so users avoid asking clinicians and instead ask AI privately, making AI the first point of contact for information',
+                    'Perception gap: the clinical value of domestic originator innovative drugs is not conveyed accurately by AI, and answers stay dominated by imported and generic drugs',
+                    'Information noise: online content varies widely in quality, and medication safety information lacks authoritative sources'
+                  ],
+                  solutions: [
+                    'Build a disease education system covering disease awareness, standardised diagnosis and treatment, and medication safety',
+                    'Make evidence-based content the core source, anchored on clinical research and expert consensus to strengthen professional authority',
+                    'Occupy 180+ professional questions such as "how to choose scientifically" and "differences between drugs"'
+                  ],
+                  result: 'AI mention rate rose from 6% to 72%, originator drug recommendation share from 0% to 68%, authoritative citations up 530% and qualified enquiries up 58%.',
+                  quote: {
+                    text: "Men\'s health is a silent market. Users rarely search proactively and are even less willing to speak to anyone about it. AI happens to be where they get information, so our job is to give professional, accurate answers at that entry point.",
+                    by: 'Brand X lead'
+                  }
+                },
+                {
+                  no: '06',
+                  tag: 'Eye health chain | Myopia control',
+                  title: 'Brand X chain | Myopia control for children and teens',
+                  sub: '3-month engagement | Doubao and Tencent Yuanbao',
+                  metrics: [
+                    { label: 'AI mention rate', value: '0% to 90%' },
+                    { label: 'AI Q&A TOP3', value: '0% to 83%' },
+                    { label: 'Content citations', value: '+460%' },
+                    { label: 'In-store bookings', value: '+47%' }
+                  ],
+                  pains: [
+                    'Decision anxiety: parents are highly anxious about questions like "what to do if my child is nearsighted", making AI the primary consultation entry point',
+                    'Trust deficit: AI answers are taken over by generic advice and institutional advertising, with few verifiable professional sources',
+                    'Local blind spot: in questions about "nearby clinics" and "store selection" in the Brand X region, brand information is almost invisible'
+                  ],
+                  solutions: [
+                    'Build professional content: output educational content around the six-dimension myopia control system to establish medical credibility',
+                    'Place authoritative sources: distribute with ophthalmology experts and authoritative media to raise citation weight',
+                    'Occupy local high-intent questions such as "myopia control for children in the Brand X region" and "how to choose between OK lenses and defocus lenses"'
+                  ],
+                  result: 'AI mention rate rose from 0% to 90%, AI Q&A TOP3 from 0% to 83%, content citations up 460% and in-store bookings up 47%.',
+                  quote: {
+                    text: 'Parents ask AI what to do about their child being nearsighted, and our name appears in the answer. The choice becomes natural. We used to buy traffic; now we are in the answer.',
+                    by: 'Brand X lead'
+                  }
+                },
+                {
+                  no: '07',
+                  tag: 'Innovative drug | Prescription drug',
+                  title: 'Brand X prescription drug',
+                  sub: '3 months (in progress) | Tencent Yuanbao, DeepSeek and Tongyi Qwen',
+                  metrics: [
+                    { label: 'AI combined mention rate, two weeks', value: '0% to 26%' },
+                    { label: 'Brand X product on DeepSeek', value: '45%' },
+                    { label: 'AI platforms covered', value: '3' },
+                    { label: 'Project status', value: 'In progress' }
+                  ],
+                  pains: [
+                    'Uneven disease awareness: public understanding of conditions such as chronic condition A and condition B differs, so AI answers are fragmented and uneven in accuracy',
+                    'Missing authoritative sources: disease education is occupied by non-professional content, with few medical sources AI can rely on',
+                    'Limited distribution path: prescription drugs are constrained by regulation and cannot be promoted to the public, so authoritative information reaches users through limited channels'
+                  ],
+                  solutions: [
+                    'Build a disease education system covering disease awareness and standardised treatment pathways',
+                    'Build evidence-based sources anchored on clinical research, expert consensus and authoritative medical media',
+                    'Occupy high-intent questions on symptoms, treatment choice and standard medication use'
+                  ],
+                  note: 'The project covers two products across two disease areas. In the first week after kickoff, mention rate for Brand X products in disease questions on the three major platforms rose from 0 to 45%. These are two-week figures from project start, not a final project conclusion.'
+                },
+                {
+                  no: '08',
+                  tag: 'Light medical aesthetics chain | Owned clinics',
+                  title: 'Brand X medical aesthetics chain',
+                  sub: 'Full cycle closed | Doubao, DeepSeek and Qwen',
+                  metrics: [
+                    { label: 'AI mention rate, full cycle', value: '0% to 77.03%' },
+                    { label: 'Keywords covered', value: '3' },
+                    { label: 'AI platforms covered', value: '3' },
+                    { label: 'Articles published', value: '500' }
+                  ],
+                  pains: [
+                    'A new brand with no AI assets: when Brand X entered, the AI corpus held almost no record of the brand, and mention rate on light-aesthetics recommendation questions was 0',
+                    'Decisions rely on professional credentials: users ask "which doctor is reliable" and "which clinic is legitimate" first, and AI answers generally point to public hospital plastic surgery departments and leading chains',
+                    'Homogeneous supply, no differentiation: light medical, energy-based anti-aging, water-light injections and injectables are highly homogeneous, so AI has no basis to recommend a new brand'
+                  ],
+                  solutions: [
+                    'Keyword layout: design content around three question types — clinic vetting, energy-based anti-aging and injectables — covering the full path of choosing a clinic, then a treatment, then a doctor',
+                    'Publishing formats: physician-signed education, clinic and treatment reviews, and decision Q&A run in parallel to match different decision stages',
+                    'Structure and compliance: turn clinic credentials, treatment pricing and aftercare into FAQs and structured markup'
+                  ],
+                  result: 'The full cycle closed with 500 articles published across 3 AI platforms and mention rate lifted from 0 to 77.03%. The key was not making AI say which clinic is best, but turning certified physicians, transparent pricing and safe aftercare into citable sources.'
+                }
+              ]
+            }
+          ]
+        },
+
+        /* ===== CTA ===== */
+        {
+          type: 'section', id: 'contact',
+          blocks: [
+            {
+              type: 'cta',
+              title: 'Make Your Healthcare Brand the Trusted Choice in AI Answers',
+              desc: 'Based on your category and target questions, we produce a baseline diagnosis: AI mention rate, citation rate, recommendation rate, accuracy rate, competitor comparison and risk-answer distribution. You can see the data first, then decide how to proceed.',
+              buttons: [
+                { label: 'Get a Tailored Plan', href: '#contact' },
+                { label: 'See the General GEO Solution', href: 'index.html', style: 'ghost' }
               ]
             }
           ]

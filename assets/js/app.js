@@ -411,6 +411,78 @@
     return h + '</div>';
   };
 
+  /* 行业切换栏：医药健康 / 保险 / 汽车 / B2B …… 新增行业时在数据里加一项即可 */
+  R.industryBar = function (b, p) {
+    var h = '<div class="indbar"><div class="container indbar__inner">';
+    (b.items || []).forEach(function (it, i) {
+      if (it.active) {
+        h += '<span class="indbar__item is-active">' + t(p + '.items.' + i + '.label', it.label) + '</span>';
+      } else {
+        h += '<span class="indbar__item is-soon">' + t(p + '.items.' + i + '.label', it.label) +
+             '<em>' + t(p + '.items.' + i + '.note', it.note || '即将上线') + '</em></span>';
+      }
+    });
+    h += '</div></div>';
+    return h;
+  };
+
+  /* 行业案例详解：痛点 / 方案 / 结果 / 洞察 四段结构 */
+  R.caseStudy = function (b, p) {
+    var L = b.labels || {};
+    var h = '<div class="cs-list reveal">';
+    (b.items || []).forEach(function (it, i) {
+      var base = p + '.items.' + i;
+      h += '<article class="cs">';
+      /* 头部 */
+      h += '<div class="cs__head">';
+      if (it.no) h += '<div class="cs__no">' + t(base + '.no', it.no) + '</div>';
+      h += '<div class="cs__headmain">';
+      if (it.tag) h += '<span class="cs__tag">' + t(base + '.tag', it.tag) + '</span>';
+      if (it.title) h += '<h3 class="cs__title">' + t(base + '.title', it.title) + '</h3>';
+      if (it.sub) h += '<p class="cs__sub">' + t(base + '.sub', it.sub) + '</p>';
+      h += '</div></div>';
+      /* 指标 */
+      if (it.metrics && it.metrics.length) {
+        h += '<div class="cs__metrics">';
+        it.metrics.forEach(function (m, j) {
+          h += '<div class="metric"><div class="metric__label">' + t(base + '.metrics.' + j + '.label', m.label) + '</div>' +
+               '<div class="metric__value">' + t(base + '.metrics.' + j + '.value', m.value) + '</div></div>';
+        });
+        h += '</div>';
+      }
+      /* 三栏：痛点 / 方案 / 结果（缺哪栏就少哪栏） */
+      var nCols = (it.pains && it.pains.length ? 1 : 0) + (it.solutions && it.solutions.length ? 1 : 0) + (it.result ? 1 : 0);
+      h += '<div class="cs__cols" style="grid-template-columns:repeat(' + (nCols || 1) + ',1fr)">';
+      if (it.pains && it.pains.length) {
+        h += '<div class="cs__col cs__col--pain"><h4 class="cs__label">' + esc(L.pains || '行业痛点') + '</h4><ul>';
+        it.pains.forEach(function (x, j) { h += '<li>' + t(base + '.pains.' + j, x) + '</li>'; });
+        h += '</ul></div>';
+      }
+      if (it.solutions && it.solutions.length) {
+        h += '<div class="cs__col cs__col--sol"><h4 class="cs__label">' + esc(L.solutions || '解决方案') + '</h4><ul>';
+        it.solutions.forEach(function (x, j) { h += '<li>' + t(base + '.solutions.' + j, x) + '</li>'; });
+        h += '</ul></div>';
+      }
+      if (it.result) {
+        h += '<div class="cs__col cs__col--res"><h4 class="cs__label">' + esc(L.result || '执行结果') + '</h4>' +
+             '<p class="cs__result">' + t(base + '.result', it.result) + '</p></div>';
+      }
+      h += '</div>';
+      /* 洞察 / 客户评价 */
+      if (it.note) {
+        h += '<div class="cs__note"><span class="cs__notelabel">' + esc(L.note || '核心洞察') + '</span>' +
+             '<p>' + t(base + '.note', it.note) + '</p></div>';
+      }
+      if (it.quote && it.quote.text) {
+        h += '<blockquote class="cs__quote"><p>' + t(base + '.quote.text', it.quote.text) + '</p>';
+        if (it.quote.by) h += '<cite>' + t(base + '.quote.by', it.quote.by) + '</cite>';
+        h += '</blockquote>';
+      }
+      h += '</article>';
+    });
+    return h + '</div>';
+  };
+
   R.gallery = function (b, p) {
     var h = '<div class="gallery reveal">';
     (b.items || []).forEach(function (it, i) {

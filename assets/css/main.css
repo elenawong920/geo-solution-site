@@ -659,6 +659,140 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .plat--red { background: var(--jd-red-soft); border-color: var(--jd-red-line); color: var(--jd-red); }
 .plat--dark { background: var(--dark); border-color: var(--dark-3); color: #fff; }
 
+/* ---------- 行业切换栏 ---------- */
+.indbar { border-bottom: 1px solid var(--line); background: #fff; }
+.indbar__inner {
+  display: flex; align-items: stretch; gap: 4px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.indbar__inner::-webkit-scrollbar { display: none; }
+.indbar__item {
+  position: relative;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 13px 16px 12px;
+  font-size: 14px; font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+.indbar__item.is-active { color: var(--jd-red); border-bottom-color: var(--jd-red); }
+.indbar__item em {
+  font-style: normal; font-size: 10.5px; font-weight: 600;
+  color: var(--muted); background: var(--surface-2);
+  padding: 2px 7px; border-radius: 100px;
+}
+.indbar__item.is-soon { color: var(--muted); cursor: default; }
+.indbar__item.is-soon:hover { color: var(--ink-2); }
+@media (max-width: 560px) {
+  .indbar__item { padding: 11px 12px 10px; font-size: 13px; }
+}
+
+/* ---------- 行业案例详解（caseStudy） ---------- */
+.cs-list { display: flex; flex-direction: column; gap: 20px; }
+.cs {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  /* 兜底：卡片在深色区里也是浅底，文字必须显式用深色，不能继承外层白字 */
+  color: var(--ink);
+}
+.cs__head { display: flex; gap: 16px; padding: 24px 26px 18px; }
+.cs__no {
+  flex-shrink: 0;
+  width: 42px; height: 42px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 10px;
+  background: var(--jd-red);
+  color: #fff;
+  font-size: 15px; font-weight: 700;
+  letter-spacing: .02em;
+}
+.cs__headmain { min-width: 0; }
+.cs__tag {
+  display: inline-block;
+  font-size: 11.5px; font-weight: 700;
+  color: var(--jd-red);
+  background: var(--jd-red-soft);
+  padding: 2px 9px;
+  border-radius: 100px;
+  margin-bottom: 9px;
+}
+.cs__title { font-size: 17px; font-weight: 700; margin: 0 0 7px; line-height: 1.5; color: var(--ink); }
+.cs__sub { font-size: 13.5px; color: var(--muted); margin: 0; line-height: 1.68; }
+.cs__metrics {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  padding: 0 26px 20px;
+}
+.cs__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.cs__col { padding: 20px 24px 22px; border-right: 1px solid var(--line); }
+.cs__col:last-child { border-right: 0; }
+.cs__label {
+  font-size: 12px; font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--ink-2);
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+}
+.cs__col--pain .cs__label { color: #C0392B; border-bottom-color: #F3C9C4; }
+.cs__col--sol  .cs__label { color: var(--jd-red); border-bottom-color: var(--jd-red-line); }
+.cs__col--res  .cs__label { color: #0F7B6C; border-bottom-color: #BFE3DC; }
+.cs__col ul { margin: 0; padding-left: 17px; }
+.cs__col li {
+  font-size: 13.5px; color: var(--ink-2);
+  line-height: 1.72; margin-bottom: 9px;
+}
+.cs__col li:last-child { margin-bottom: 0; }
+.cs__result { font-size: 13.5px; color: var(--ink-2); line-height: 1.72; margin: 0; }
+.cs__note {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 16px 26px;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+.cs__notelabel {
+  flex-shrink: 0;
+  font-size: 11.5px; font-weight: 700;
+  color: var(--jd-red);
+  background: #fff;
+  border: 1px solid var(--jd-red-line);
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-top: 1px;
+}
+.cs__note p { font-size: 13.5px; color: var(--ink-2); line-height: 1.72; margin: 0; }
+.cs__quote {
+  margin: 0;
+  padding: 20px 26px 22px;
+  border-top: 1px solid var(--line);
+  background: #FFFBFB;
+}
+.cs__quote p {
+  font-size: 14.5px; color: var(--ink);
+  line-height: 1.78; margin: 0 0 10px;
+  font-style: normal;
+}
+.cs__quote cite { font-size: 12.5px; color: var(--muted); font-style: normal; }
+
+@media (max-width: 900px) {
+  .cs__cols { grid-template-columns: 1fr; }
+  .cs__col { border-right: 0; border-bottom: 1px solid var(--line); }
+  .cs__col:last-child { border-bottom: 0; }
+}
+@media (max-width: 560px) {
+  .cs__head { padding: 20px 20px 16px; }
+  .cs__metrics { padding: 0 20px 18px; }
+  .cs__col { padding: 18px 20px 20px; }
+  .cs__note { padding: 14px 20px; }
+  .cs__quote { padding: 18px 20px 20px; }
+}
+
 /* ---------- 入场动画 ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s cubic-bezier(.22, 1, .36, 1), transform .6s cubic-bezier(.22, 1, .36, 1); }
 .reveal.is-in { opacity: 1; transform: none; }

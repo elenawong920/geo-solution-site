@@ -48,6 +48,7 @@ function prepContent(rel) {
   s = s.replace(/'overseas\.html'/g, "'#/overseas'");
   s = s.replace(/'insight\.html'/g, "'#/insight'");
   s = s.replace(/href: 'index\.html'/g, "href: '#/home'");
+  s = s.replace(/href: 'pharma\.html'/g, "href: '#/pharma'");
   return s;
 }
 
@@ -90,7 +91,7 @@ appJs = appJs.replace(
   });
 
   /* ---------- hash 路由（单文件模式） ---------- */
-  var PAGES = ['home', 'overseas', 'insight'];
+  var PAGES = ['home', 'overseas', 'insight', 'pharma'];
   function parseHash() {
     var raw = (location.hash || '').replace(/^#\\/?/, '');
     var sec = '';
@@ -177,7 +178,10 @@ appJs = appJs.replace(
               return '<a href="' + esc(n.href) + '" data-nav="' + esc(n.href) + '">' + esc(n.label) + '</a>';
             }).join('') +`,
   `            (page.nav || []).map(function (n) {
-              return '<a href="#/' + esc(pageKey) + '#' + esc(n.href.replace(/^#/, '')) + '" data-nav="' + esc(n.href) + '">' + esc(n.label) + '</a>';
+              var href = /\\.html$/i.test(n.href)
+                ? '#/' + n.href.replace(/\\.html$/i, '')
+                : '#/' + pageKey + '#' + n.href.replace(/^#/, '');
+              return '<a href="' + esc(href) + '" data-nav="' + esc(n.href) + '">' + esc(n.label) + '</a>';
             }).join('') +`
 );
 
@@ -215,7 +219,7 @@ appJs = appJs.replace(
 );
 
 /* ---- 组装单文件 ---- */
-const pages = ['home', 'overseas', 'insight'];
+const pages = ['home', 'overseas', 'insight', 'pharma'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">

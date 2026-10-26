@@ -22,6 +22,7 @@
 | 国内 GEO 解决方案 | `index.html` | 通用版对外介绍 + 内部手册（去内部信息）+ OnePage |
 | 海外 GEO 解决方案 | `overseas.html` | 海外 GEO 产品介绍 202608 |
 | AI 用户意图洞察 | `insight.html` | 京东空调豆包意图洞察报告 |
+| 医药健康行业方案 | `pharma.html` | 京东科技 GEO 医药健康行业方案（含案例）1010 |
 
 **中英双语**：导航栏右侧有 `中 / EN` 切换按钮，三个页面都已完整翻译。
 访问 `?lang=en` 可直接进入英文版（分享给海外客户时用这个链接）。
@@ -33,6 +34,7 @@ geo-site/
 ├── index.html                  国内 GEO 主页
 ├── overseas.html               海外 GEO 主页
 ├── insight.html                意图洞察报告页
+├── pharma.html                 医药健康行业方案页
 ├── assets/
 │   ├── data/content.js         ★ 中文文案（改这个就够了）
 │   ├── data/content.en.js      ★ 英文文案（与中文文件结构完全一致）
@@ -197,3 +199,47 @@ https://github.com/elenawong920/geo-solution-site/settings/keys/new
 
 > 注意：一把公钥只能当**一个**仓库的 deploy key，所以这个仓库用的是独立密钥，
 > 和你其他项目的密钥不冲突。
+
+---
+
+## 八、新增一个行业方案页（保险 / 汽车 / B2B …）
+
+已按可扩展的方式做好，新增行业只需三步，不用改渲染引擎：
+
+**1. 建页面文件** —— 复制 `pharma.html`，改 `data-page` 和 `<title>`：
+
+```html
+<body data-page="insurance">
+```
+
+**2. 加内容** —— 在 `assets/data/content.js` 的 `pages` 里复制一份 `pages.pharma` 改成 `pages.insurance`，
+英文同步写到 `assets/data/content.en.js`（结构必须一一对应）。
+
+**3. 加进导航与单文件版**：
+
+- 顶部导航：在 `pages.home.nav` / `pages.insight.nav` 里加一项 `{ label: '行业方案', href: 'insurance.html' }`
+- 行业切换栏：改 `pages.pharma.sections[0].items`（`type: 'industryBar'`），
+  把 `active: true` 移到新行业，其余去掉 `active` 即显示「即将上线」
+- 单文件版：`tools/build-singlefile.js` 里的 `pages` 数组加页面名，
+  并在 `prepContent()` 里加一条 `href: 'insurance.html'` → `href: '#/insurance'`
+
+**可复用的区块类型**：`hero` `secHead` `cards` `eras` `stats` `compare` `table` `flow` `roadmap`
+`checks` `notice` `cases` `cta` `split` `platforms` `bars` `gallery` `tabs` `plats`
+`industryBar`（行业切换栏）`caseStudy`（案例详解：痛点/方案/结果/洞察）
+
+**`caseStudy` 的数据结构**：
+
+```js
+{
+  type: 'caseStudy',
+  labels: { pains: '行业痛点', solutions: '解决方案', result: '执行结果', note: '核心洞察' },
+  items: [{
+    no: '01', tag: '行业标签', title: '案例标题', sub: '一句话背景',
+    metrics: [{ label: '指标名', value: '18.3%' }],
+    pains: ['痛点1'], solutions: ['方案1'], result: '执行结果',
+    note: '核心洞察', quote: { text: '客户原话', by: '客户职位' }
+  }]
+}
+```
+
+改了内容后跑 `node tools/build-i18n.js` 校验中英文结构一致，再 `node tools/push-github.js` 上线。
