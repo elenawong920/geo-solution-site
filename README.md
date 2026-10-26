@@ -174,32 +174,26 @@ metrics: [
 
 ---
 
-## 七、推到 GitHub Pages（可选，微信可直开）
+## 七、推到 GitHub Pages（已打通，微信可直开）
 
 仓库：`https://github.com/elenawong920/geo-solution-site`
-线上：`https://elenawong920.github.io/geo-solution-site/`
+线上：**https://elenawong920.github.io/geo-solution-site/**
 
-**为什么需要这一步**：WorkBuddy 分享链接在微信内置浏览器里会被网关按 UA 拦截，
-GitHub Pages 的 `github.io` 域名微信可以正常打开。
+**为什么需要这一步**：WorkBuddy 分享链接在微信内置浏览器里会被网关按 UA 拦截（403），
+GitHub Pages 的 `github.io` 域名微信可以正常打开 —— 已用 MicroMessenger UA 实测通过。
 
-**首次推送需要一次性授权**：WorkBuddy 自带的 GitHub 连接器只有只读权限，
-所以需要一个有写权限的 Personal Access Token：
-
-1. 打开 https://github.com/settings/personal-access-tokens/new
-2. Token name 填 `geo-site-push`，Expiration 选 30 或 90 天
-3. **Repository access → Only select repositories → 勾选 `geo-solution-site`**
-4. **Repository permissions → Contents: Read and write**（其他权限留空）
-5. Generate token，复制（只显示一次）
-
-拿到 token 后执行：
+**更新命令**（一条就够，脚本走 SSH，不需要 token）：
 
 ```bash
-cd geo-site
-GH_TOKEN=ghp_xxx node tools/push-github.js
+cd geo-site && node tools/push-github.js
 ```
 
-脚本用 GitHub REST API 完成「建 blob → 建 tree → 建 commit → 更新分支指针」，
-一次提交全部文件，Pages 会在 1–2 分钟内自动重建。
+脚本会：克隆仓库 → 同步本地站点文件 → 提交 → 推送 → 提示 Pages 重建（1–2 分钟）。
+链接永远不变。
 
-**Token 用完可以随时撤销**：GitHub → Settings → Developer settings →
-Personal access tokens → 点 token 旁的 Delete。
+**SSH 前提**：本机已为该仓库配置专用 deploy key `~/.ssh/id_ed25519_geo_site`
+（读权限 + 写权限）。换机器的话需要重新加一把：
+https://github.com/elenawong920/geo-solution-site/settings/keys/new
+
+> 注意：一把公钥只能当**一个**仓库的 deploy key，所以这个仓库用的是独立密钥，
+> 和你其他项目的密钥不冲突。
