@@ -33,7 +33,7 @@ window.SITE_DATA_EN = {
             "href": "pharma.html"
           },
           {
-            "text": "Insurance Industry Solution",
+            "text": "Finance and Insurance Solution",
             "href": "insurance.html"
           },
           {
@@ -2992,7 +2992,7 @@ window.SITE_DATA_EN = {
               "active": true
             },
             {
-              "label": "Insurance",
+              "label": "Finance & Insurance",
               "href": "insurance.html"
             },
             {
@@ -3967,8 +3967,12 @@ window.SITE_DATA_EN = {
       ]
     },
     "insurance": {
-      "title": "Insurance Industry GEO Solution",
+      "title": "Finance and Insurance GEO Solution",
       "nav": [
+        {
+          "label": "Who We Serve",
+          "href": "#segments"
+        },
         {
           "label": "Challenges",
           "href": "#why"
@@ -3999,7 +4003,7 @@ window.SITE_DATA_EN = {
               "href": "pharma.html"
             },
             {
-              "label": "Insurance",
+              "label": "Finance & Insurance",
               "href": "insurance.html",
               "active": true
             },
@@ -4019,16 +4023,16 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "hero",
-          "kicker": "JD Technology · GEO for Insurance",
+          "kicker": "JD Technology · GEO for Finance and Insurance",
           "title": [
-            "Make Your Insurance Brand",
+            "Finance and Insurance Brands",
             "the Answer AI Users Trust"
           ],
           "accentLines": [
             1
           ],
-          "desc": "Built for strict regulation, trust-led decisions and long-tail negative AI answers. We combine compliant content assets, a five-layer intent model and continuous monitoring to help AI recommend your brand accurately, positively and prominently.",
-          "sub": "Platforms: Doubao · DeepSeek · Tencent Yuanbao · Qwen · Kimi · ERNIE Bot · ChatGLM",
+          "desc": "Built for the regulatory pressure, trust requirements and long-tail negative answers faced by insurance and consumer finance. We combine compliant content assets, a five-layer intent model and continuous monitoring so AI recommends your brand accurately, positively and prominently.",
+          "sub": "Covering insurance purchase, product comparison, claims, credit applications, rates, repayment and credit reporting · Platforms: Doubao · DeepSeek · Tencent Yuanbao · Qwen · Kimi · ERNIE Bot · ChatGLM",
           "buttons": [
             {
               "label": "Explore the Solution",
@@ -4043,11 +4047,11 @@ window.SITE_DATA_EN = {
           "meta": [
             {
               "value": "5 layers",
-              "label": "Insurance intent model"
+              "label": "Financial-services intent model"
             },
             {
               "value": "4 libraries",
-              "label": "Dedicated knowledge system"
+              "label": "Dedicated financial knowledge system"
             },
             {
               "value": "3 levels",
@@ -4061,14 +4065,58 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "segments",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Who We Serve",
+              "title": "One Method for Insurance and Consumer Finance",
+              "desc": "Both are regulated, trust-led financial decisions, but their user questions, compliance red lines and conversion paths differ. The method is shared; the strategy is configured separately."
+            },
+            {
+              "type": "cards",
+              "cols": 2,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Insurers and Insurance Platforms",
+                  "desc": "Life, health, auto and pet insurance, plus internet insurers and brokers.",
+                  "list": [
+                    "Core questions: Is the company licensed? Which product fits? Are claims difficult? Are there many complaints?",
+                    "Priority intents: brand awareness, product comparison, service lookup and reputation defence",
+                    "Compliance focus: return promises, misleading coverage, claims guarantees and competitor disparagement"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Consumer Finance and Consumer Credit",
+                  "desc": "Licensed consumer finance companies, internet consumer credit, card instalments and consumer finance platforms.",
+                  "list": [
+                    "Core questions: Is the provider licensed? What is the interest rate? Is it reported to credit bureaus? Can I repay early? Is collection compliant?",
+                    "Priority intents: licence verification, rate and fee comparison, eligibility and repayment services",
+                    "Compliance focus: misleading rates, no-threshold or instant-approval promises, credit-report promises and improper collection language"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Shared Ground, Different Priorities",
+              "desc": "Both need authoritative, accurate and positive answers. Insurance depends more on long-term trust and claims reputation; consumer finance depends more on licence verification and transparent rates and fees. The monitoring and content governance framework is shared, while question banks, sources and compliance language are built separately."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "why",
           "tone": "surface",
           "blocks": [
             {
               "type": "secHead",
-              "kicker": "Industry Challenges",
-              "title": "In Insurance GEO, Compliance and Trust Come Before Traffic",
-              "desc": "AI now delivers conclusive answers. Whether a brand is mentioned, whether its information is accurate and whether historic negatives are embedded in answers all directly affect user trust."
+              "kicker": "Industry Challenges · Insurance and Consumer Finance",
+              "title": "In Financial Services GEO, Compliance and Trust Come Before Traffic",
+              "desc": "AI now gives conclusive answers. Whether a brand is mentioned, whether rates and terms are accurate and whether historic negatives are embedded all directly affect insurance or credit decisions."
             },
             {
               "type": "cards",
@@ -4077,7 +4125,7 @@ window.SITE_DATA_EN = {
                 {
                   "no": "01",
                   "title": "Strict Regulation: Compliance Before Reach",
-                  "desc": "Insurance communications are tightly constrained. Absolute claims, return promises and misleading coverage statements are red lines.",
+                  "desc": "Financial communications are tightly constrained. Absolute claims and misleading return or coverage statements in insurance, and misleading rates or approval promises in consumer finance, are red lines.",
                   "list": [
                     "Compliance comes before distribution; KPIs never override the compliance baseline",
                     "Content is logged throughout for audit and client confirmation"
@@ -4085,17 +4133,17 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "no": "02",
-                  "title": "High Trust: Long Decisions, High Ticket Size",
-                  "desc": "Insurance is purchased infrequently and involves significant commitment. Users ask “Is it reliable?” and “Are claims difficult?”, making trust more important than short-term traffic.",
+                  "title": "High Trust: Reliability Comes Before Value",
+                  "desc": "Insurance is infrequent and high-value; consumer finance is frequent and smaller-ticket. Both depend on trust, but insurance focuses on claims and service while consumer finance focuses on rates, fees and credit reporting.",
                   "list": [
-                    "Brand, product, service and reputation messages must stay consistent",
-                    "Trust-related questions require dedicated management and repeated testing"
+                    "Insurance: licence, policy terms, claims and reputation must align",
+                    "Consumer finance: lending licence, annualised rate, fees, credit reporting and collection must be transparent and verifiable"
                   ]
                 },
                 {
                   "no": "03",
                   "title": "Negative Long Tail: Old Information Becomes Embedded",
-                  "desc": "Outdated information and historic negatives can persist in AI answers, presented in a neutral and authoritative tone.",
+                  "desc": "Historic complaints, claim disputes or overdue records can persist in AI answers, presented in a neutral and authoritative tone.",
                   "list": [
                     "Deleting posts cannot change model knowledge",
                     "Sustained correction must start with the knowledge graph and authoritative sources"
@@ -4118,7 +4166,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Tailored Solution",
               "title": "One Goal, Two Growth Engines, Four KPIs, Three Delivery Phases",
-              "desc": "Content asset building and algorithm adaptation work together across the full decision journey, from brand awareness to reputation defence."
+              "desc": "For insurance and consumer finance, content asset building and algorithm adaptation work together across the full journey from licence verification and product comparison to service and reputation."
             },
             {
               "type": "cards",
@@ -4127,12 +4175,12 @@ window.SITE_DATA_EN = {
                 {
                   "no": "01",
                   "title": "One Goal",
-                  "desc": "Secure positive, accurate and prominent brand placement in answers to core insurance intent questions."
+                  "desc": "Secure positive, accurate and prominent placement for insurance or consumer finance brands in answers to core intent questions."
                 },
                 {
                   "no": "02",
                   "title": "Two Growth Engines",
-                  "desc": "A dedicated knowledge base and authoritative source matrix, combined with intent coverage, corpus supply and AI-readiness optimisation."
+                  "desc": "A dedicated knowledge base and authoritative source matrix, combined with intent coverage, corpus supply and AI-readiness optimisation for different insurance and credit product structures."
                 },
                 {
                   "no": "03",
@@ -4156,37 +4204,43 @@ window.SITE_DATA_EN = {
               "type": "table",
               "head": [
                 "Intent layer",
-                "Example user questions",
-                "Optimisation goal"
+                "Insurance example",
+                "Consumer finance example",
+                "Shared optimisation goal"
               ],
               "rows": [
                 [
                   "Brand awareness",
-                  "“How reliable is this insurer?” “Is it a licensed company?”",
-                  "Maintain authoritative visibility and accurate foundational knowledge"
+                  "“Is this insurer licensed?” “What is its solvency position?”",
+                  "“Is this consumer finance company licensed?” “Is it a regulated lender?” “Will it report to credit bureaus?”",
+                  "Maintain authoritative licence and foundational information with accurate perception"
                 ],
                 [
                   "Product decision",
-                  "“Which high-coverage medical insurance plan is better?” “How can I buy car insurance cost-effectively?”",
+                  "“Which critical illness policy is better?” “How can I buy car insurance cost-effectively?”",
+                  "“What is the annualised rate on a ¥10,000 loan?” “Which platform offers a higher limit and lower fees?”",
                   "Enter the AI recommendation set and compete for TOP-3 placement"
                 ],
                 [
                   "Comparative evaluation",
                   "“How does this insurer compare?” “Which offers better value?”",
+                  "“How does this lender compare with banks and other platforms?”",
                   "Build positive, objective and evidence-based comparison answers"
                 ],
                 [
                   "Service scenarios",
                   "“Claims process” “Customer service number” “Policy lookup”",
+                  "“How do I repay early?” “How do I check my statement and credit report?” “Customer service number”",
                   "Keep official service information accurate and support service conversion"
                 ],
                 [
                   "Reputation defence",
-                  "“Are claims difficult with this insurer?” “Are there many complaints?”",
+                  "“Are claims difficult?” “Are there many complaints?”",
+                  "“Is collection aggressive?” “Are there hidden traps?” “What happens if I am overdue?”",
                   "Improve trust-related answers and dilute the impact of negative information"
                 ]
               ],
-              "note": "Examples are illustrative only. The formal question bank is based on the AI perception audit and PromptMind data, confirmed with the client and updated dynamically."
+              "note": "Examples are illustrative only. The formal question bank is based on the AI perception audit and PromptMind data, confirmed with the client and updated dynamically. Rate, fee, credit-reporting and collection wording must pass client compliance review."
             },
             {
               "type": "secHead",
@@ -4198,20 +4252,20 @@ window.SITE_DATA_EN = {
               "cols": 4,
               "items": [
                 {
-                  "title": "Product Knowledge",
-                  "desc": "Policy terms, coverage scope and enrolment rules, structured in compliant language."
+                  "title": "Product and Rate Knowledge",
+                  "desc": "Insurance terms, coverage and enrolment rules, plus consumer finance rates, fees, tenors and eligibility, structured in compliant language."
                 },
                 {
                   "title": "Service Knowledge",
-                  "desc": "Claims processes, customer service access and policy lookup across enrolment, claims and policy services."
+                  "desc": "Claims, policy lookup, repayment, statements, credit-report enquiries and customer service access."
                 },
                 {
                   "title": "Reputation Evidence",
-                  "desc": "Verifiable evidence including industry awards, regulatory ratings and real customer cases."
+                  "desc": "Regulatory ratings, industry awards, real customer cases and verifiable credentials."
                 },
                 {
                   "title": "Compliance Language",
-                  "desc": "Approved wording standards, sensitive-term red lines and prohibited-claim lists that unify every message."
+                  "desc": "Approved wording, sensitive-term red lines and prohibited-claim lists for insurance and consumer finance, unifying every message."
                 }
               ]
             },
@@ -4288,7 +4342,7 @@ window.SITE_DATA_EN = {
             {
               "type": "secHead",
               "kicker": "Core Capabilities",
-              "title": "Six Capabilities Adapted to Insurance Compliance and Trust"
+              "title": "Six Capabilities Built for Financial Compliance and Trust"
             },
             {
               "type": "cards",
@@ -4329,7 +4383,7 @@ window.SITE_DATA_EN = {
             {
               "type": "notice",
               "title": "Financial Services Heritage",
-              "desc": "JD Supply Chain FinTech has more than a decade of experience, works with nearly 1,000 financial institutions and serves over 500 million transacting users."
+              "desc": "JD Supply Chain FinTech has more than a decade of experience, works with nearly 1,000 financial institutions and serves over 500 million transacting users across insurance, consumer finance, banking and other financial scenarios."
             },
             {
               "type": "secHead",
@@ -4342,7 +4396,7 @@ window.SITE_DATA_EN = {
                 {
                   "no": "01",
                   "title": "Initial Diagnosis",
-                  "desc": "Confirm platforms, insurance products and KPIs; establish baselines for AI perception, competitors and negative information."
+                  "desc": "Confirm platforms, insurance or credit products and KPIs; establish baselines for AI perception, competitors and negative information."
                 },
                 {
                   "no": "02",
@@ -4388,9 +4442,14 @@ window.SITE_DATA_EN = {
                   "Multiple checks before publication, with a complete audit trail"
                 ],
                 [
-                  "Sensitive-term blocking",
+                  "Insurance sensitive-term blocking",
                   "Absolute claims, return promises, misleading coverage, claims guarantees, competitor disparagement and sensitive topics",
-                  "Six hard-stop categories; KPIs never override compliance"
+                  "Six hard-stop categories for insurance; KPIs never override compliance"
+                ],
+                [
+                  "Consumer finance sensitive-term blocking",
+                  "Misleading rates, no-threshold or instant-approval promises, credit-report promises, improper collection language, competitor disparagement and sensitive topics",
+                  "Six hard-stop categories for consumer finance; fee and collection wording must be verifiable"
                 ],
                 [
                   "Sentiment response",
@@ -4398,7 +4457,7 @@ window.SITE_DATA_EN = {
                   "7×24 monitoring with response tiers based on impact and urgency"
                 ]
               ],
-              "note": "Commercial terms including KPI targets, performance-based fees, quarterly payment, data traceability and 90-day post-term protection are subject to the specific project contract."
+              "note": "Commercial terms including KPI targets, performance-based fees, quarterly payment, data traceability and 90-day post-term protection are subject to the specific project contract. Consumer finance wording on rates, fees, credit reporting and collection must be confirmed by the client’s legal and compliance teams."
             }
           ]
         },
@@ -4408,9 +4467,9 @@ window.SITE_DATA_EN = {
           "blocks": [
             {
               "type": "secHead",
-              "kicker": "Case Studies",
-              "title": "From Negative Correction to Recommendation Gains, Proven in Financial Scenarios",
-              "desc": "The figures below come from monitoring results in the deep collaborations listed in the source deck. Project periods, question sets and platform scopes differ, so results should not be compared simplistically."
+              "kicker": "Financial Services Case Studies",
+              "title": "From Negative Correction to Recommendation Gains, Proven in Insurance and Consumer Finance",
+              "desc": "The figures below come from monitoring results in the deep collaborations listed in the source deck, covering consumer credit, internet insurance and internet banking. Project periods, question sets and platform scopes differ, so results should not be compared simplistically."
             },
             {
               "type": "table",
@@ -4421,26 +4480,32 @@ window.SITE_DATA_EN = {
               ],
               "rows": [
                 [
-                  "Consumer credit product · negative correction",
+                  "Consumer finance · consumer credit · negative correction",
                   "DeepSeek",
                   "Maliciously indexed content was replaced by accurate, positive information after corpus-level correction"
                 ],
                 [
-                  "Internet insurance · pet insurance",
+                  "Insurance · internet pet insurance",
                   "Pet-insurance semantic terms",
                   "13 terms covered, 12 recommended and 10 at TOP1, with full coverage completed in one week"
                 ],
                 [
-                  "Consumer credit product · three-platform optimisation",
+                  "Consumer finance · consumer credit · three-platform optimisation",
                   "DeepSeek · Yuanbao · Doubao",
                   "19 of 33 semantic terms reached TOP1; mention rates were 84.2% / 76.7% / 84.6% respectively"
                 ],
                 [
-                  "Internet bank",
+                  "Financial services · internet bank",
                   "DeepSeek · Doubao",
                   "Brand exposure +44%; prioritised brand recommendation rate +48%"
                 ]
               ]
+            },
+            {
+              "type": "secHead",
+              "id": "case-detail",
+              "kicker": "Case Detail",
+              "title": "Detailed Breakdowns Across Two Financial Segments"
             },
             {
               "type": "caseStudy",
@@ -4448,12 +4513,12 @@ window.SITE_DATA_EN = {
                 "pains": "Client Challenges",
                 "solutions": "Solution",
                 "result": "Outcome",
-                "note": "Insurance Implication"
+                "note": "Business Implication"
               },
               "items": [
                 {
                   "no": "01",
-                  "tag": "Consumer Credit · Reputation Repair",
+                  "tag": "Consumer Finance · Reputation Repair",
                   "title": "Malicious Text Detection and Corpus-Level Correction",
                   "sub": "When DeepSeek was asked whether the product was reliable, its answer included maliciously indexed content.",
                   "pains": [
@@ -4470,7 +4535,7 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "no": "02",
-                  "tag": "Internet Insurance · Pet Insurance",
+                  "tag": "Insurance · Pet Insurance",
                   "title": "From No Mention to TOP1 Placement",
                   "sub": "Full semantic-term coverage and recommendation optimisation for pet insurance.",
                   "metrics": [
@@ -4505,7 +4570,7 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "no": "03",
-                  "tag": "Consumer Credit · Three Platforms",
+                  "tag": "Consumer Finance · Three Platforms",
                   "title": "Mention Rate and Average Rank Improved Together",
                   "sub": "A project lasting just over one week (17–29 December), covering DeepSeek, Tencent Yuanbao and Doubao.",
                   "metrics": [
@@ -4573,7 +4638,7 @@ window.SITE_DATA_EN = {
               "href": "pharma.html"
             },
             {
-              "label": "Insurance",
+              "label": "Finance & Insurance",
               "href": "insurance.html"
             },
             {
