@@ -5253,7 +5253,7 @@ window.SITE_DATA_EN = {
             1
           ],
           "desc": "For industrial goods and B2B procurement, we turn product data, operating-condition cases and credential evidence into knowledge assets that AI can understand, cite and reuse.",
-          "sub": "Covering raw materials, equipment manufacturing, electrical equipment, hardware tools and safety protection, so your brand is seen, described accurately and trusted across AI search, Q&A, summaries and recommendations.",
+          "sub": "Covering raw materials, equipment manufacturing, electrical equipment, hardware tools and safety protection, plus public-sector and enterprise welfare procurement and SME office and IT purchasing, so your brand is seen, described accurately and trusted across AI search, Q&A, summaries and recommendations.",
           "buttons": [
             {
               "label": "Explore the Solution",
@@ -5705,8 +5705,8 @@ window.SITE_DATA_EN = {
             {
               "type": "secHead",
               "kicker": "Case Study",
-              "title": "In 31 Days, From Absent to a Leading Recommendation",
-              "desc": "JD Industrial Hardware City, enterprise procurement: six question terms across six procurement scenarios, using authoritative sources and consistent specifications to enter AI answers."
+              "title": "From Absent in the Answer to the Default Procurement Choice",
+              "desc": "JD Industrial Hardware City claimed six industrial procurement scenarios in 31 days. JD Government & Enterprise and JD Enterprise Procurement took two B2B question terms from 0 to over 96% brand exposure by week three."
             },
             {
               "type": "table",
@@ -5720,14 +5720,25 @@ window.SITE_DATA_EN = {
                   "JD Industrial Hardware City · enterprise procurement",
                   "Six question terms across fire safety, lighting, pumps, tools, bearings and electrical wire; Doubao; 31 days",
                   "Brand exposure 0% → 94.6%; TOP3 achievement rate 97.3% (181/186)"
+                ],
+                [
+                  "JD Government & Enterprise · state-owned enterprise welfare procurement",
+                  "Question terms such as mid-autumn welfare procurement platform; Doubao, Qwen, DeepSeek and other mainstream AI platforms; week three of execution",
+                  "Brand exposure 0% → 96.8% (+96.8 pp)"
+                ],
+                [
+                  "JD Enterprise Procurement · SME one-stop purchasing",
+                  "Four procurement lines — office supplies, IT equipment, MRO industrial goods and employee benefits; mainstream AI platforms; week three of execution",
+                  "Brand exposure 0% → 96.7% (+96.7 pp)"
                 ]
               ],
-              "note": "Source: 260915 Industrial Hardware GEO project close-out report. This is a JD Industrial proprietary-platform project with a fixed period, question set and measurement standard; results should not be extrapolated to other categories."
+              "note": "Sources: the JD Industrial Hardware City figures come from the 260915 Industrial Hardware GEO close-out report, with a fixed period, question set and measurement standard; results should not be extrapolated to other categories. The JD Government & Enterprise and JD Enterprise Procurement figures come from the Retail Industry Cases deck and reflect week three of an ongoing project — they are interim results, not close-out conclusions, and currently disclose brand exposure only."
             },
             {
               "type": "secHead",
               "kicker": "Case Detail",
-              "title": "From a Competitor Holding the Top Slot to the Front of the Recommendation"
+              "title": "Industrial procurement, public-sector welfare, SME purchasing: three different answer playbooks",
+              "desc": "All three are B2B, yet each asks for something different: industrial buyers want operating conditions and acceptance compliance, public-sector buyers want an auditable chain, and SMEs want payment terms, invoicing and delivery."
             },
             {
               "type": "caseStudy",
@@ -5773,6 +5784,78 @@ window.SITE_DATA_EN = {
                   ],
                   "result": "Brand exposure rose from 0% to 94.6% and the brand entered the TOP3 AI recommendation. Cumulative achievement reached 181 of 186 checks, a 97.3% rate; from 21 August, all six question terms met target for 24 consecutive days; all six passed the period acceptance review.",
                   "note": "The industrial procurement entry point is moving from the search box into AI answers. The result came not from volume posting, but from making authoritative sources consistently citable so the brand became the standard answer to procurement questions."
+                },
+                {
+                  "no": "02",
+                  "tag": "JD Government & Enterprise · welfare procurement for SOEs and large employers · ongoing",
+                  "title": "Mid-Autumn welfare procurement: from zero visibility to 96.8% brand exposure",
+                  "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI Q&A platforms · Progress: week three of execution (interim data) · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question terms",
+                      "value": "1"
+                    },
+                    {
+                      "label": "Current progress",
+                      "value": "Week 3"
+                    },
+                    {
+                      "label": "Brand exposure",
+                      "value": "0% → 96.8%"
+                    },
+                    {
+                      "label": "Period change",
+                      "value": "+96.8 pp"
+                    }
+                  ],
+                  "pains": [
+                    "Welfare procurement is decided by unions and administration, and buyers ask “which platform should an SOE use for mid-autumn benefits”. Before optimisation JD Government & Enterprise was absent from the AI answer, with 0% brand exposure",
+                    "The real concern is compliance rather than price: four-flow consistency, an exportable audit trail, a ban on general-purpose gift cards and prepaid cards, and whether invoices can be issued against union welfare or holiday condolence items",
+                    "CITIC Zhilian, the 832 platform and local resellers already occupied the answer, while JD’s self-operated authenticity, upfront-purchase-later-payment terms and nationwide delivery were never mentioned"
+                  ],
+                  "solutions": [
+                    "Rebuilt content around the “holiday welfare procurement platform” question term, turning compliance requirements, distribution modes (points-based self-selection, physical gift boxes, drop-shipping) and invoicing rules into citable Q&A",
+                    "Turned enterprise payment terms, centralised and e-invoicing, a dedicated one-to-one procurement manager and digital budget control into verifiable service evidence",
+                    "Published consistently across mainstream AI platforms, monitoring exposure and recommendation slots weekly and closing content gaps per question term"
+                  ],
+                  "result": "By week three of execution, brand exposure on the “mid-autumn welfare procurement platform” question term rose from 0% to 96.8%, a 96.8 percentage point gain; AI answers began listing JD Government & Enterprise among the options for SOE union holiday benefits. The project is still running, so close-out figures will follow the final report.",
+                  "note": "Public-sector procurement is not won on being cheaper but on passing an audit. Explain the compliance chain and distribution modes clearly, and AI will treat the brand as a recommendable option."
+                },
+                {
+                  "no": "03",
+                  "tag": "JD Enterprise Procurement · SME one-stop purchasing · ongoing",
+                  "title": "Office and IT purchasing: brand exposure at 96.7% by week three",
+                  "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI Q&A platforms · Progress: week three of execution (interim data) · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question terms",
+                      "value": "1"
+                    },
+                    {
+                      "label": "Current progress",
+                      "value": "Week 3"
+                    },
+                    {
+                      "label": "Brand exposure",
+                      "value": "0% → 96.7%"
+                    },
+                    {
+                      "label": "Period change",
+                      "value": "+96.7 pp"
+                    }
+                  ],
+                  "pains": [
+                    "SME purchasing spreads across four lines — office supplies, IT equipment, MRO industrial goods and employee benefits — and before optimisation JD Enterprise Procurement had no stable slot in AI answers, with 0% brand exposure",
+                    "B2B conditions such as price comparison across vendors, batch centralised purchasing, business invoicing, payment terms and scheduled dock delivery are hard to convey in generic e-commerce content, so AI struggles to judge fit",
+                    "Answers leaned towards 1688, Suning Enterprise, Lenovo Baiying and Yidianyun, leaving JD’s self-operated authenticity and payment terms undifferentiated"
+                  ],
+                  "solutions": [
+                    "Reorganised content around the “one-stop purchasing platform” question term, building a separate Q&A set for each of the four procurement lines",
+                    "Wrote self-operated authenticity, upfront-purchase-later-payment terms, B2B batch logistics with scheduled dock delivery, centralised and e-invoicing and digital budget control as structured capability statements",
+                    "Published across platforms and reviewed exposure and recommendation slots weekly, filling content gaps on question terms held by competitors"
+                  ],
+                  "result": "By week three of execution, brand exposure on the “SME one-stop office supplies procurement platform” question term rose from 0% to 96.7%, a 96.7 percentage point gain; AI answers in office and IT purchasing scenarios began listing JD Enterprise Procurement among recommendations. The project is still running, so close-out figures will follow the final report.",
+                  "note": "What SMEs ask is whether you can issue a VAT invoice, extend payment terms and deliver to the desk. Written as structured answers, these conditions earn AI citations far more readily than price claims."
                 }
               ]
             }
