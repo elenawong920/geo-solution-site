@@ -104,7 +104,20 @@ for (const item of ITEMS) {
 step('已同步站点文件');
 
 /* ---- 3. 清理杂项 & 提交 ---- */
-run('find', [tmp, '-name', '.DS_Store', '-delete']);
+/* 删除系统缓存与 Python 字节码，避免把本地缓存推上仓库 */
+(function clean(dir) {
+  for (const name of fs.readdirSync(dir)) {
+    const p = path.join(dir, name);
+    const st = fs.statSync(p);
+    if (st.isDirectory()) {
+      if (name === '.git') continue;
+      if (name === '__pycache__') { fs.rmSync(p, { recursive: true, force: true }); continue; }
+      clean(p);
+    } else if (name === '.DS_Store' || name.endsWith('.pyc')) {
+      fs.unlinkSync(p);
+    }
+  }
+})(tmp);
 
 /* 提交身份：只设在这个临时克隆里，不动用户的全局 git 配置 */
 const authorName = process.env.GH_AUTHOR_NAME || 'elenawong920';
