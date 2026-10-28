@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -446,7 +446,7 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Latest data: September 2026 · AI Product Ranking, week 40 · Named-list (base set) · Unit: monthly active users. Basis: the GEO client watchlist dashboard, sorted by MAU within each group.",
+                      "note": "Latest data: 2026-09 · AI Product Rankings No. 40 · curated foundation-model list · monthly active users. Sorted by MAU within the group and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "Doubao (ByteDance)",
@@ -459,7 +459,7 @@ window.SITE_DATA_EN = {
                           "note": "MoM +1.71%"
                         },
                         {
-                          "label": "DeepSeek (DeepSeek)",
+                          "label": "DeepSeek",
                           "value": "139M",
                           "note": "MoM +3.98%"
                         },
@@ -474,7 +474,7 @@ window.SITE_DATA_EN = {
                           "note": "MoM -12.38%"
                         },
                         {
-                          "label": "Nami AI Search (360)",
+                          "label": "Nano AI Search (360)",
                           "value": "6.62M",
                           "note": "MoM -7.64%"
                         },
@@ -484,12 +484,12 @@ window.SITE_DATA_EN = {
                           "note": "MoM -3.47%"
                         },
                         {
-                          "label": "ChatGLM (Zhipu AI)",
+                          "label": "ChatGLM (Zhipu)",
                           "value": "4.12M",
                           "note": "MoM -4.32%"
                         },
                         {
-                          "label": "MiniMax (MiniMax)",
+                          "label": "MiniMax",
                           "value": "3.62M",
                           "note": "MoM +3.18%"
                         }
@@ -503,7 +503,7 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Latest data: September 2026 · AI Product Ranking, week 40 · Overseas figures taken from the global ranking · Sorted by MAU",
+                      "note": "Latest data: 2026-09 · AI Product Rankings No. 40 · global ranking for overseas models · sorted by MAU and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "ChatGPT (OpenAI)",
@@ -561,56 +561,56 @@ window.SITE_DATA_EN = {
                       "rows": [
                         [
                           "DeepSeek",
-                          "448M",
-                          "-1.4%"
+                          "458M",
+                          "+2.2%"
                         ],
                         [
                           "Doubao | ByteDance",
-                          "162M",
-                          "+4.6%"
+                          "154M",
+                          "-4.9%"
                         ],
                         [
-                          "Nami AI | 360",
-                          "119M",
-                          "-10.0%"
+                          "Nano AI | 360",
+                          "123M",
+                          "+3.2%"
                         ],
                         [
-                          "ERNIE | Baidu",
-                          "56.79M",
-                          "+92.8%"
+                          "ERNIE Bot | Baidu",
+                          "59.84M",
+                          "+5.4%"
                         ],
                         [
                           "Kimi | Moonshot AI",
-                          "52.11M",
-                          "-14.8%"
-                        ],
-                        [
-                          "DeepSeek API",
-                          "36.59M",
-                          "+45.3%"
+                          "38.62M",
+                          "-25.9%"
                         ],
                         [
                           "Qwen | Alibaba",
-                          "35.10M",
-                          "-2.9%"
+                          "31.05M",
+                          "-11.5%"
+                        ],
+                        [
+                          "DeepSeek API",
+                          "30.89M",
+                          "-15.6%"
                         ],
                         [
                           "Baidu Wenku",
-                          "24.15M",
-                          "-5.6%"
+                          "20.5M",
+                          "-15.1%"
                         ],
                         [
                           "WorkBuddy | Tencent",
-                          "14.61M",
-                          "+135.0%"
+                          "17.74M",
+                          "+21.4%"
                         ],
                         [
-                          "Tencent Yuanbao",
-                          "13.44M",
-                          "+8.4%"
+                          "Baidu Dazi | Baidu",
+                          "12.75M",
+                          "+2.5%"
                         ]
                       ],
-                      "note": "Latest data: August 2026 · Website ranking, domestic TOP10 (week 40 not yet published)"
+                      "note": "Latest data: 2026-09 · Website Rankings No. 40 · China TOP 10 · monthly visits, synced with the three-ranking chart; includes repeat visits."
                     }
                   ]
                 },
@@ -630,57 +630,57 @@ window.SITE_DATA_EN = {
                       ],
                       "rows": [
                         [
+                          "DS V4.1 Flash 1017 · DeepSeek",
+                          "37.3T",
+                          "+11.0%"
+                        ],
+                        [
                           "DS V4.1 Flash · DeepSeek",
-                          "27.3T",
-                          "-7.8%"
+                          "17T",
+                          "-5.6%"
                         ],
                         [
                           "GLM 5.3 Flash · Zhipu",
-                          "11.6T",
-                          "-2.5%"
-                        ],
-                        [
-                          "DS V4.1 Flash 1017 · DeepSeek",
-                          "11.5T",
-                          "+56.7%"
-                        ],
-                        [
-                          "MiMo-V2.6-Flash · Xiaomi",
-                          "9.05T",
-                          "-5.4%"
-                        ],
-                        [
-                          "Hy4 preview · Tencent",
-                          "8.16T",
-                          "+4.3%"
-                        ],
-                        [
-                          "Claude Opus 5.5 · Anthropic",
-                          "6.80T",
-                          "+5.1%"
+                          "14.1T",
+                          "+6.8%"
                         ],
                         [
                           "GPT-6 Luna · OpenAI",
-                          "6.21T",
-                          "-0.3%"
+                          "9.08T",
+                          "+8.7%"
                         ],
                         [
-                          "Step 5 Preview",
-                          "5.82T",
-                          "-29.2%"
+                          "Hy4 preview · Tencent",
+                          "8.97T",
+                          "0.0%"
+                        ],
+                        [
+                          "MiniMax M3.1 Flash · MiniMax",
+                          "8.71T",
+                          "-36.4%"
+                        ],
+                        [
+                          "Claude Opus 5.5 · Anthropic",
+                          "8.07T",
+                          "-2.4%"
                         ],
                         [
                           "GLM 5.3 · Zhipu",
-                          "5.32T",
-                          "+0.6%"
+                          "5.15T",
+                          "+2.0%"
                         ],
                         [
-                          "MiniMax M3.1 Flash",
-                          "4.97T",
-                          "New entrant"
+                          "Nemotron 3 Ultra · NVIDIA",
+                          "4.99T",
+                          "-14.7%"
+                        ],
+                        [
+                          "MiMo-V2.6-Flash · Xiaomi",
+                          "4.71T",
+                          "-22.4%"
                         ]
                       ],
-                      "note": "As of 2026-10-20 · Official OpenRouter weekly ranking. Window moved 10/19 → 10/20: the new DeepSeek V4.1 Flash 1017 rose to #3"
+                      "note": "As of 2026-10-27 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
                     }
                   ]
                 }

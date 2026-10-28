@@ -123,8 +123,7 @@ if (!status) {
 console.log('\n变更清单：');
 status.split('\n').forEach(l => console.log('  ' + l));
 
-const msg = process.argv[2] ||
-  'feat: 中英双语切换（新增 content.en.js、语言切换按钮、编辑模式按语言回写、双语结构校验脚本）';
+const msg = process.argv[2] || 'content: update GEO site content';
 run('git', ['commit', '-q', '-m', msg], { cwd: tmp, env: gitEnv });
 const sha = run('git', ['rev-parse', '--short', 'HEAD'], { cwd: tmp }).trim();
 ok(`已提交 ${sha}`);

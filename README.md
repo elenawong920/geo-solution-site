@@ -51,7 +51,9 @@ geo-site/
 └── tools/
     ├── build-i18n.js           中英文结构一致性校验（改完务必跑一次）
     ├── build-singlefile.js     生成单文件版
-    └── apply-update.js         把编辑模式导出的 JSON 回写到内容文件
+    ├── apply-update.js         把编辑模式导出的 JSON 回写到内容文件
+    ├── sync-ai-rankings.py     从「AI 三榜对比」HTML 同步首页三榜数据
+    └── push-github.js          推送 GitHub Pages
 ```
 
 ---
@@ -202,6 +204,18 @@ cd geo-site && node tools/push-github.js
 
 脚本会：克隆仓库 → 同步本地站点文件 → 提交 → 推送 → 提示 Pages 重建（1–2 分钟）。
 链接永远不变。
+
+**AI 三榜每日同步**：每天 9:00 的三榜自动更新任务生成新图后，会调用
+
+```bash
+python3 tools/sync-ai-rankings.py "/Users/huangjia1/WorkBuddy/2026-08-18-16-07-00/AI大模型三榜对比_YYYYMMDD.html"
+node tools/build-i18n.js
+node tools/build-singlefile.js
+node tools/push-github.js "chore: sync AI rankings YYYYMMDD"
+```
+
+把 A 榜（国内基模 / 海外模型）、B 榜、C 榜的数值、环比、数据日期与口径同步到官网首页，
+并发布到 GitHub Pages。无新榜时不推送。
 
 **SSH 前提**：本机已为该仓库配置专用 deploy key `~/.ssh/id_ed25519_geo_site`
 （读权限 + 写权限）。换机器的话需要重新加一把：
