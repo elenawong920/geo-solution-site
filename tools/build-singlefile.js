@@ -52,7 +52,8 @@ function prepContent(rel) {
     'insight.html': '#/insight',
     'pharma.html': '#/pharma',
     'insurance.html': '#/insurance',
-    'tourism.html': '#/tourism'
+    'tourism.html': '#/tourism',
+    'industrial.html': '#/industrial'
   };
   Object.keys(routes).forEach(href => {
     s = s.split(`'${href}'`).join(`'${routes[href]}'`);
@@ -82,7 +83,7 @@ appJs = appJs.replace(
     __initialHash = __initialHash.slice(0, __initialSectionPos);
   }
   var pageKey = __initialHash || 'home';
-  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'].includes(pageKey)) pageKey = 'home';
+  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial'].includes(pageKey)) pageKey = 'home';
   document.body.setAttribute('data-page', pageKey);`
 );
 
@@ -113,7 +114,7 @@ appJs = appJs.replace(
   });
 
   /* ---------- hash 路由（单文件模式） ---------- */
-  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'];
+  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial'];
   function parseHash() {
     var raw = (location.hash || '').replace(/^#\\/?/, '');
     var sec = '';
@@ -241,7 +242,7 @@ appJs = appJs.replace(
 );
 
 /* ---- 组装单文件 ---- */
-const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism'];
+const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">

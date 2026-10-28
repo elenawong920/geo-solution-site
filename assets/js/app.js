@@ -455,7 +455,7 @@
       }
       /* 三栏：痛点 / 方案 / 结果（缺哪栏就少哪栏） */
       var nCols = (it.pains && it.pains.length ? 1 : 0) + (it.solutions && it.solutions.length ? 1 : 0) + (it.result ? 1 : 0);
-      h += '<div class="cs__cols" style="grid-template-columns:repeat(' + (nCols || 1) + ',1fr)">';
+      h += '<div class="cs__cols cs__cols--' + (nCols || 1) + '">';
       if (it.pains && it.pains.length) {
         h += '<div class="cs__col cs__col--pain"><h4 class="cs__label">' + esc(L.pains || '行业痛点') + '</h4><ul>';
         it.pains.forEach(function (x, j) { h += '<li>' + t(base + '.pains.' + j, x) + '</li>'; });

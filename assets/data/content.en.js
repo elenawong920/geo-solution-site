@@ -39,6 +39,10 @@ window.SITE_DATA_EN = {
           {
             "text": "Culture and Tourism Solution",
             "href": "tourism.html"
+          },
+          {
+            "text": "Industrial Goods and B2B Procurement",
+            "href": "industrial.html"
           }
         ]
       },
@@ -3000,11 +3004,11 @@ window.SITE_DATA_EN = {
               "href": "tourism.html"
             },
             {
-              "label": "Automotive",
-              "note": "Coming soon"
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
             },
             {
-              "label": "B2B",
+              "label": "Automotive",
               "note": "Coming soon"
             }
           ]
@@ -4012,11 +4016,11 @@ window.SITE_DATA_EN = {
               "href": "tourism.html"
             },
             {
-              "label": "Automotive",
-              "note": "Coming soon"
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
             },
             {
-              "label": "B2B",
+              "label": "Automotive",
               "note": "Coming soon"
             }
           ]
@@ -4647,11 +4651,11 @@ window.SITE_DATA_EN = {
               "active": true
             },
             {
-              "label": "Automotive",
-              "note": "Coming soon"
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
             },
             {
-              "label": "B2B",
+              "label": "Automotive",
               "note": "Coming soon"
             }
           ]
@@ -5180,6 +5184,595 @@ window.SITE_DATA_EN = {
                   ],
                   "result": "Within three months the project moved from a contested phase to a defensible position, with positive/neutral sentiment reaching 68%–75% across four platforms.",
                   "note": "For cultural IPs, the first task is not broader exposure but verifiable knowledge boundaries, preventing inaccurate content from spreading further."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "industrial": {
+      "title": "Industrial Goods and B2B Procurement GEO Solution",
+      "nav": [
+        {
+          "label": "Procurement Shift",
+          "href": "#why"
+        },
+        {
+          "label": "Solution",
+          "href": "#solution"
+        },
+        {
+          "label": "Delivery & Metrics",
+          "href": "#delivery"
+        },
+        {
+          "label": "Capabilities",
+          "href": "#capability"
+        },
+        {
+          "label": "Case Study",
+          "href": "#cases"
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html",
+              "active": true
+            },
+            {
+              "label": "Automotive",
+              "note": "Coming soon"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for Industrial Goods",
+          "title": [
+            "Make Industrial Brands",
+            "the Trusted Choice in AI Answers"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "For industrial goods and B2B procurement, we turn product data, operating-condition cases and credential evidence into knowledge assets that AI can understand, cite and reuse.",
+          "sub": "Covering raw materials, equipment manufacturing, electrical equipment, hardware tools and safety protection, so your brand is seen, described accurately and trusted across AI search, Q&A, summaries and recommendations.",
+          "buttons": [
+            {
+              "label": "Explore the Solution",
+              "href": "#solution"
+            },
+            {
+              "label": "View the Case Study",
+              "href": "#cases",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "6",
+              "label": "High-value procurement scenarios"
+            },
+            {
+              "value": "6 layers",
+              "label": "Industrial GEO capability stack"
+            },
+            {
+              "value": "3 months",
+              "label": "Standard delivery cycle"
+            },
+            {
+              "value": "0→94.6%",
+              "label": "Brand exposure in the Hardware City project"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "The Procurement Shift",
+              "title": "Buyers Now Describe Conditions, Specifications and Selection Problems Directly to AI",
+              "desc": "Industrial procurement no longer starts only with keyword search. AI screens suppliers first, then influences enquiries, sampling and purchasing. The battle is for a trusted position inside the answer."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Selection Method",
+                  "desc": "Keyword search is becoming natural-language questioning, such as “Who has 8-metre-wide composite geomembrane in stock?” or “How do I choose a conveyor belt resistant to heat and salt spray?”"
+                },
+                {
+                  "no": "02",
+                  "title": "Information Format",
+                  "desc": "Web-page lists are becoming integrated AI answers. Brands are no longer only competing for ranking, but for a trusted place in the answer."
+                },
+                {
+                  "no": "03",
+                  "title": "Decision Path",
+                  "desc": "Multi-page browsing is becoming AI-assisted judgement. AI screens suppliers before influencing enquiries, sampling and purchasing."
+                },
+                {
+                  "no": "04",
+                  "title": "Competition",
+                  "desc": "Search-ranking competition is becoming answer-position competition. Who is cited, recommended and described accurately becomes the new variable."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In One Sentence",
+              "desc": "AI has moved the procurement entry point from the search results page into the answer itself. Brands must make technical evidence and delivery capability verifiable inside that answer."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "solution",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Solution",
+              "title": "Turn Industrial Material Into Knowledge Assets AI Can Understand, Cite and Reuse",
+              "desc": "This is not one-off content distribution. It is long-term asset building around specification standards, operating-condition fit, authoritative sources and monitoring."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Diagnosis",
+                  "desc": "AI brand health check, competitor visibility scan and core question discovery"
+                },
+                {
+                  "no": "02",
+                  "title": "Knowledge",
+                  "desc": "Brand, product and category knowledge bases, plus specification standards"
+                },
+                {
+                  "no": "03",
+                  "title": "Content",
+                  "desc": "Selection guides, comparisons, Q&A, operating-condition scenarios and case content"
+                },
+                {
+                  "no": "04",
+                  "title": "Distribution",
+                  "desc": "Official site, media, encyclopaedias, vertical platforms and JD Industrial touchpoints"
+                },
+                {
+                  "no": "05",
+                  "title": "Monitoring",
+                  "desc": "Mention, answer position, accuracy, competitors and risk answers"
+                },
+                {
+                  "no": "06",
+                  "title": "Review",
+                  "desc": "Weekly and monthly review of questions, content, competitors and risk, with continuous iteration"
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "High-Value Scenarios",
+              "title": "Prioritise Six Question Types Closest to Real Procurement"
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "title": "Selection Education",
+                  "desc": "Sub-categories, materials, processes and specifications. Example: HDPE versus EVA geomembrane."
+                },
+                {
+                  "title": "Operating-Condition Fit",
+                  "desc": "Product choice under heat, salt spray, abrasion or load. Example: which waterstop suits a coastal salt-spray environment."
+                },
+                {
+                  "title": "Category Choice",
+                  "desc": "How to choose and combine products across processes, specifications and grades. Example: filament versus staple geotextile."
+                },
+                {
+                  "title": "Brand Comparison",
+                  "desc": "Brand differences, supply capability and delivered cases. Example: which geomembrane manufacturer can consistently produce 8-metre widths."
+                },
+                {
+                  "title": "Purchase Decision",
+                  "desc": "Minimum order, lead time, quotation and after-sales. Example: MOQ and delivery cycle for non-standard customisation."
+                },
+                {
+                  "title": "Acceptance and Compliance",
+                  "desc": "National and industry standards, testing, certification and warranty terms. Example: how to read GB/T 17643 test results."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "From Problem to Action",
+              "title": "Five AI-Side Problems, Five Sets of Build Actions"
+            },
+            {
+              "type": "table",
+              "head": [
+                "AI-side problem",
+                "Underlying gap",
+                "JD Technology actions",
+                "Deliverable"
+              ],
+              "rows": [
+                [
+                  "Brand cannot be found in AI",
+                  "No recognisable, citable brand and product material",
+                  "Build brand, product and procurement-question knowledge bases",
+                  "Brand enters the AI candidate pool"
+                ],
+                [
+                  "Brand is described inaccurately",
+                  "Inconsistent specifications, product boundaries, operating conditions and delivery claims",
+                  "Unify specification standards, operating boundaries, delivery capability and compliance language",
+                  "Accurate answers with clear boundaries"
+                ],
+                [
+                  "Brand is not prioritised",
+                  "Weak content structure, insufficient authoritative sources and incomplete category semantics",
+                  "Improve content structure and strengthen authoritative sources and differentiated content",
+                  "Higher recommendation position and citation rate"
+                ],
+                [
+                  "Competitors appear more often",
+                  "High-value procurement questions and content gaps are not identified",
+                  "Run competitor AI visibility diagnostics and locate high-value question gaps",
+                  "An actionable remediation list"
+                ],
+                [
+                  "Results cannot be measured",
+                  "No consistent measurement standards or risk indicators",
+                  "Build mention, citation, recommendation, accuracy, competitor and risk-answer metrics",
+                  "Weekly and monthly review and correction"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "tone": "dark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery and Metrics",
+              "title": "A Three-Month Loop With Verifiable Results Every Month",
+              "desc": "Diagnosis, standards, assets, content, monitoring and review run as one chain rather than ending with a one-off publication."
+            },
+            {
+              "type": "roadmap",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Month 1 · Diagnosis + Standards",
+                  "desc": "Align categories, platforms and KPIs; complete brand and competitor audits; identify risk and opportunity questions and build the question bank."
+                },
+                {
+                  "no": "02",
+                  "title": "Month 2 · Assets + Content",
+                  "desc": "Define specification boundaries; build the knowledge base, FAQs and standards library; coordinate publication across the official site, media and vertical platforms."
+                },
+                {
+                  "no": "03",
+                  "title": "Month 3 · Monitoring + Review",
+                  "desc": "Sample across models and frequencies; correct through weekly and monthly reports; establish stable data and a repeatable playbook."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Deliverables",
+              "title": "Five Outputs, Grouped Into Four Delivery Categories"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Insight and Plan",
+                  "desc": "AI market landscape report and a tailored GEO service plan covering diagnosis, strategy, cadence and compliance."
+                },
+                {
+                  "no": "02",
+                  "title": "Asset Foundation",
+                  "desc": "A brand-specific knowledge base covering the brand, products, operating conditions and specification standards, reusable over time."
+                },
+                {
+                  "no": "03",
+                  "title": "Distribution and Monitoring",
+                  "desc": "Content distribution and indexing report covering platform rollout, search indexation and discovery of negative answers."
+                },
+                {
+                  "no": "04",
+                  "title": "Performance Reporting",
+                  "desc": "Regular GEO performance reports tracking mention rate, recommendation rate and other key metric changes."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "The five deliverables are: AI market landscape report, tailored GEO service plan, brand-specific knowledge base, content distribution and indexing report, and regular GEO performance report. Final scope and measurement standards are confirmed in the agreed delivery list."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Measurement",
+              "title": "Measure Visibility, Accuracy and Risk Control Together"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Metric",
+                "What it measures",
+                "Calculation"
+              ],
+              "rows": [
+                [
+                  "AI Mention Rate",
+                  "Visibility",
+                  "Answers mentioning the brand ÷ total valid answers"
+                ],
+                [
+                  "Citation Rate",
+                  "Credibility",
+                  "Share of answers that cite or point to brand sources"
+                ],
+                [
+                  "TOP3 Recommendation Rate",
+                  "Priority",
+                  "Share of answers where the brand enters the recommendation list in the top three"
+                ],
+                [
+                  "Accuracy Rate",
+                  "Precision",
+                  "Share of answers with no exaggeration or misattribution"
+                ],
+                [
+                  "Share of Voice (SOV)",
+                  "Competition",
+                  "Brand-to-competitor position ratio across the same question set"
+                ],
+                [
+                  "Risk Answer Correction Rate",
+                  "Risk control",
+                  "Share of incorrect, exaggerated, confusing or negative answers corrected or eliminated"
+                ]
+              ],
+              "note": "The source deck labels the sixth metric “positive rate”, but its definition and calculation describe the share of risk answers corrected. It is renamed here as “Risk Answer Correction Rate” so the metric name matches its calculation."
+            },
+            {
+              "type": "notice",
+              "title": "Industrial Communication Baseline",
+              "desc": "No absolute claims or exaggerated specifications; standards and certifications must be verifiable; all content must match company credentials before publication; no unverified engineering-case commitments."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "capability",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Core Capabilities",
+              "title": "Four Differentiated Capabilities From Insight to Conversion"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "JD Ecosystem Data",
+                  "desc": "Demand and search signals from Doubao, JD, Xiaohongshu, Douyin, WeChat and Weibo make question selection closer to real procurement language."
+                },
+                {
+                  "no": "02",
+                  "title": "Proprietary Optimisation",
+                  "desc": "A high-authority media matrix, citation optimisation and structured Schema build a preferred AI citation chain, monitored weekly and monthly."
+                },
+                {
+                  "no": "03",
+                  "title": "Cross-Industry Validation",
+                  "desc": "Projects validated across 3C, home appliances, industrial goods and tourism, delivered by the JD in-house GEO technology team."
+                },
+                {
+                  "no": "04",
+                  "title": "B2B Vertical Ecosystem",
+                  "desc": "Connects with B2B knowledge bases such as JD Industrial so brand content reaches both general AI and procurement-specific AI answers."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "desc": "Applicable directions: raw materials, equipment manufacturing, electrical equipment, hardware tools, safety protection, new-product launches and category defence. Industrial goods are the core B2B procurement scenario; the method can extend to other enterprise procurement verticals."
+            },
+            {
+              "type": "secHead",
+              "kicker": "How We Differ",
+              "title": "More Than Content Coverage: A Reviewable Industrial Knowledge Asset"
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Typical GEO approach",
+                "JD Technology industrial GEO"
+              ],
+              "rows": [
+                [
+                  "Service positioning",
+                  "Content optimisation and keyword coverage",
+                  "Brand growth and knowledge-asset building, balancing enquiries, trust and long-term reuse"
+                ],
+                [
+                  "Industry understanding",
+                  "Mostly generic methods",
+                  "Covers industrial selection scenarios, procurement decision chains and technical specification language"
+                ],
+                [
+                  "Technical capability",
+                  "Tool checks and content operations",
+                  "AI, big data, cloud and marketing technology supporting a diagnosis-to-review loop"
+                ],
+                [
+                  "Delivery model",
+                  "Mostly content publication and coverage",
+                  "Integrated diagnosis, knowledge base, content matrix, source building and monitoring"
+                ],
+                [
+                  "Business value",
+                  "Higher probability of AI mentions",
+                  "Measurable gains in awareness, trust, enquiry quality and risk control"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Platform Profiles",
+              "title": "Industrial Users on Different AI Platforms Follow Different Decision Paths"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Platform",
+                "Industrial user profile and decision preference",
+                "GEO focus"
+              ],
+              "rows": [
+                [
+                  "Doubao",
+                  "SME procurement executives asking frequently about hardware, PPE and general equipment, often describing conditions in everyday language",
+                  "Conversational Q&A, common operating-condition scenarios and short-video education"
+                ],
+                [
+                  "Qwen",
+                  "Enterprise buyers and e-commerce users comparing specifications, MOQ and lead times during selection",
+                  "E-commerce selection Q&A, specification and condition FAQs, procurement-journey content"
+                ],
+                [
+                  "DeepSeek",
+                  "Technical engineers and equipment departments seeking specifications, standards and verifiable evidence",
+                  "Structured specification knowledge, standard comparisons, test reports and literature citations"
+                ],
+                [
+                  "Yuanbao",
+                  "Manufacturing managers and owners asking on behalf of teams, trusting official-account content and peer recommendations",
+                  "Industry education through official accounts, search Q&A and management-level messaging"
+                ],
+                [
+                  "ChatGPT / Claude",
+                  "Cross-border buyers researching English specifications, overseas enquiries and supply compliance",
+                  "English product knowledge, cross-border compliance language and authoritative overseas sources"
+                ]
+              ],
+              "note": "Profiles: QuestMobile, September 2026. Platform MAU definitions differ across reports, so MAU figures are not shown here and should not be compared with the AI Product Rankings on the home page."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Case Study",
+              "title": "In 31 Days, From Absent to a Leading Recommendation",
+              "desc": "JD Industrial Hardware City, enterprise procurement: six question terms across six procurement scenarios, using authoritative sources and consistent specifications to enter AI answers."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Case",
+                "Scope and platform",
+                "Core outcome"
+              ],
+              "rows": [
+                [
+                  "JD Industrial Hardware City · enterprise procurement",
+                  "Six question terms across fire safety, lighting, pumps, tools, bearings and electrical wire; Doubao; 31 days",
+                  "Brand exposure 0% → 94.6%; TOP3 achievement rate 97.3% (181/186)"
+                ]
+              ],
+              "note": "Source: 260915 Industrial Hardware GEO project close-out report. This is a JD Industrial proprietary-platform project with a fixed period, question set and measurement standard; results should not be extrapolated to other categories."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Case Detail",
+              "title": "From a Competitor Holding the Top Slot to the Front of the Recommendation"
+            },
+            {
+              "type": "caseStudy",
+              "labels": {
+                "pains": "Industry Challenges",
+                "solutions": "Solution",
+                "result": "Key Results",
+                "note": "Key Insight"
+              },
+              "items": [
+                {
+                  "no": "01",
+                  "tag": "JD Industrial · Enterprise Procurement",
+                  "title": "Six Procurement Question Terms Enter the Leading Recommendation in 31 Days",
+                  "sub": "Platform: Doubao · 14 August to 13 September 2026 (31 days) · Source: 260915 Industrial Hardware GEO project close-out report.",
+                  "metrics": [
+                    {
+                      "label": "Question terms covered",
+                      "value": "6"
+                    },
+                    {
+                      "label": "Monitoring period",
+                      "value": "31 days / 186 checks"
+                    },
+                    {
+                      "label": "Brand exposure",
+                      "value": "0% → 94.6%"
+                    },
+                    {
+                      "label": "TOP3 achievement rate",
+                      "value": "97.3%"
+                    }
+                  ],
+                  "pains": [
+                    "Before optimisation, the brand appeared weakly or ranked poorly in Doubao answers to six enterprise procurement questions, with 0% exposure",
+                    "Competitors such as ZKH and Xiyu held the “preferred self-operated MRO” recommendation, while JD Industrial was absent from the answer",
+                    "The six procurement scenarios — fire safety, lighting, pumps, tools, bearings and electrical wire — lacked citable authoritative sources, while messages on genuine products, invoicing and local delivery were inconsistent"
+                  ],
+                  "solutions": [
+                    "Optimised content around six enterprise procurement question terms using a four-layer logic and three tool stacks",
+                    "Optimised 60 whitelisted sources, dynamically removed five and retained 55 weighted sources, covering People’s Daily Online, Sina Finance, Douyin and CSDN",
+                    "Monitored daily and reviewed weekly to adjust brand exposure and TOP3 ranking"
+                  ],
+                  "result": "Brand exposure rose from 0% to 94.6% and the brand entered the TOP3 AI recommendation. Cumulative achievement reached 181 of 186 checks, a 97.3% rate; from 21 August, all six question terms met target for 24 consecutive days; all six passed the period acceptance review.",
+                  "note": "The industrial procurement entry point is moving from the search box into AI answers. The result came not from volume posting, but from making authoritative sources consistently citable so the brand became the standard answer to procurement questions."
                 }
               ]
             }

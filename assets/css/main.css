@@ -733,6 +733,8 @@ a.indbar__item:hover { color: var(--jd-red); background: var(--jd-red-soft); }
   gap: 0;
   border-top: 1px solid var(--line);
 }
+.cs__cols--2 { grid-template-columns: repeat(2, 1fr); }
+.cs__cols--1 { grid-template-columns: 1fr; }
 .cs__col { padding: 20px 24px 22px; border-right: 1px solid var(--line); }
 .cs__col:last-child { border-right: 0; }
 .cs__label {
@@ -784,7 +786,9 @@ a.indbar__item:hover { color: var(--jd-red); background: var(--jd-red-soft); }
 .cs__quote cite { font-size: 12.5px; color: var(--muted); font-style: normal; }
 
 @media (max-width: 900px) {
-  .cs__cols { grid-template-columns: 1fr; }
+  .cs__cols,
+  .cs__cols--2,
+  .cs__cols--3 { grid-template-columns: 1fr; }
   .cs__col { border-right: 0; border-bottom: 1px solid var(--line); }
   .cs__col:last-child { border-bottom: 0; }
 }
