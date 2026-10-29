@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -635,56 +635,56 @@ window.SITE_DATA = {
                       "rows": [
                         [
                           "DS V4.1 Flash 1017 | DeepSeek",
-                          "37.3T",
-                          "+11.0%"
+                          "39.6T",
+                          "+6.2%"
                         ],
                         [
                           "DS V4.1 Flash | DeepSeek",
-                          "17.0T",
-                          "-5.6%"
+                          "16.6T",
+                          "-2.4%"
                         ],
                         [
                           "GLM 5.3 Flash | 智谱",
-                          "14.1T",
-                          "+6.8%"
+                          "15.0T",
+                          "+6.4%"
                         ],
                         [
                           "GPT-6 Luna | OpenAI",
-                          "9.08T",
-                          "+8.7%"
+                          "9.59T",
+                          "+5.6%"
                         ],
                         [
                           "Hy4 preview | 腾讯",
-                          "8.97T",
-                          "0.0%"
-                        ],
-                        [
-                          "MiniMax M3.1 Flash | MiniMax",
-                          "8.71T",
-                          "-36.4%"
+                          "8.96T",
+                          "-0.1%"
                         ],
                         [
                           "Claude Opus 5.5 | Anthropic",
-                          "8.07T",
-                          "-2.4%"
+                          "7.86T",
+                          "-2.6%"
+                        ],
+                        [
+                          "Step 5 Preview | 阶跃星辰",
+                          "5.39T",
+                          "重回"
                         ],
                         [
                           "GLM 5.3 | 智谱",
                           "5.15T",
-                          "+2.0%"
+                          "0.0%"
                         ],
                         [
                           "Nemotron 3 Ultra | NVIDIA",
-                          "4.99T",
-                          "-14.7%"
+                          "4.44T",
+                          "-11.0%"
                         ],
                         [
                           "MiMo-V2.6-Flash | 小米",
-                          "4.71T",
-                          "-22.4%"
+                          "4.10T",
+                          "-12.9%"
                         ]
                       ],
-                      "note": "截至 2026-10-27 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
+                      "note": "截至 2026-10-28 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
                     }
                   ]
                 }
