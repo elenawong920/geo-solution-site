@@ -47,6 +47,10 @@ window.SITE_DATA_EN = {
           {
             "text": "3C and Home Appliance Solution",
             "href": "appliance.html"
+          },
+          {
+            "text": "Skincare and Colour Cosmetics",
+            "href": "beauty.html"
           }
         ]
       },
@@ -3016,6 +3020,10 @@ window.SITE_DATA_EN = {
               "href": "appliance.html"
             },
             {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -4032,6 +4040,10 @@ window.SITE_DATA_EN = {
               "href": "appliance.html"
             },
             {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -4671,6 +4683,10 @@ window.SITE_DATA_EN = {
               "href": "appliance.html"
             },
             {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -5255,6 +5271,10 @@ window.SITE_DATA_EN = {
             {
               "label": "3C & Appliances",
               "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html"
             },
             {
               "label": "Automotive",
@@ -5931,6 +5951,10 @@ window.SITE_DATA_EN = {
               "label": "3C & Appliances",
               "href": "appliance.html",
               "active": true
+            },
+            {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html"
             },
             {
               "label": "Automotive",
@@ -6659,6 +6683,844 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "Measurement Note",
               "desc": "This page centres on brand exposure and TOP1 / TOP3 recommendation rates. Question sets, platforms and periods differ by case, so figures cannot be summed across cases. The smart-lock project is still running and only interim data is disclosed."
+            }
+          ]
+        }
+      ]
+    },
+    "beauty": {
+      "title": "GEO for Skincare and Colour Cosmetics",
+      "nav": [
+        {
+          "label": "The Shift",
+          "href": "#why"
+        },
+        {
+          "label": "Diagnosis",
+          "href": "#diagnosis"
+        },
+        {
+          "label": "Method",
+          "href": "#method"
+        },
+        {
+          "label": "Cases",
+          "href": "#cases"
+        },
+        {
+          "label": "Delivery & KPIs",
+          "href": "#delivery"
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Makeup",
+              "href": "beauty.html",
+              "active": true
+            },
+            {
+              "label": "Automotive",
+              "note": "Coming soon"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for Skincare and Colour Cosmetics",
+          "title": [
+            "Make AI Say Your Name",
+            "at the Moment of Choice"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "For skincare, colour cosmetics, fragrance and gift sets, we translate ingredient concentrations, shade naming, skin-type fit and gifting occasions into fact statements that AI can read and cite.",
+          "sub": "The beauty decision journey has been compressed into one sentence: AI returns three answers, and a brand left out of the answer has lost even the right to be compared.",
+          "buttons": [
+            {
+              "label": "See the Method",
+              "href": "#method"
+            },
+            {
+              "label": "See Diagnosis & Cases",
+              "href": "#cases",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "200",
+              "label": "Baseline questions across 5 platforms"
+            },
+            {
+              "value": "4",
+              "label": "Beauty facts AI cannot read"
+            },
+            {
+              "value": "3",
+              "label": "Platform playbooks"
+            },
+            {
+              "value": "5",
+              "label": "Weekly KPIs"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "The Shift",
+              "title": "From Three Pages to Three Sentences",
+              "desc": "For the same purchase intent, path length decides how much chance a brand has to be seen."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Stage",
+                "Then · search-led",
+                "Now · conversation-led"
+              ],
+              "rows": [
+                [
+                  "Start",
+                  "Type the keyword “whitening serum”",
+                  "Ask “what serum helps dull skin from late nights”"
+                ],
+                [
+                  "Process",
+                  "Scroll 20+ products, compare prices, reviews and ingredient lists",
+                  "AI returns three answers; tap a card into the product page or mini program"
+                ],
+                [
+                  "Brand chance",
+                  "Rank in the first few pages and you are in the comparison",
+                  "Absent from the answer means absent from the comparison"
+                ],
+                [
+                  "So the goal",
+                  "Fight for ranking",
+                  "Fight for presence and accuracy inside the answer"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Four Blind Spots",
+              "title": "Four Beauty Facts AI Reads Worst",
+              "desc": "They are the most important facts in the category — professional, colloquial and code-based, none of it machine language."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Ingredient Strength",
+                  "desc": "“High-concentration niacinamide” cannot be verified. AI only trusts statements such as “5% niacinamide with panthenol”; adjectives are treated as marketing."
+                },
+                {
+                  "no": "02",
+                  "title": "Shade Naming",
+                  "desc": "“999” is an internal code. A number cannot be mapped to “true red / cool-toned / brightening”, so AI simply avoids colour questions."
+                },
+                {
+                  "no": "03",
+                  "title": "Skin-Type Fit",
+                  "desc": "No explicit “who it suits” statement. Without a “safe for sensitive skin / caution for oily skin” judgement, AI will not recommend it."
+                },
+                {
+                  "no": "04",
+                  "title": "Gift Sets",
+                  "desc": "A bundle has no semantics of its own. Fragrance plus lipstick in the catalogue are two SKUs, and AI cannot recognise “this is a gift set”."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Conclusion",
+              "desc": "GEO for beauty is not “write more content”. It is translating the most professional, most colloquial and most code-driven part of the category into fact statements a machine can cite."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "diagnosis",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Diagnosis",
+              "title": "Measure Where the Brand Actually Stands in AI Answers",
+              "desc": "200 real questions × 5 platforms × 4 metrics; same accounts, same time window, unguided original wording, with every source link AI cites recorded."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Brand visibility",
+                  "desc": "Share of answers that mention the brand."
+                },
+                {
+                  "no": "02",
+                  "title": "Top3 share",
+                  "desc": "Share of answers ranking the brand in the top three."
+                },
+                {
+                  "no": "03",
+                  "title": "Content adoption",
+                  "desc": "Share of answers citing the brand’s own sources."
+                },
+                {
+                  "no": "04",
+                  "title": "Competitor hold",
+                  "desc": "Who occupies the scene, and how many slots they hold."
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Intent type",
+                "40 questions each · sample"
+              ],
+              "rows": [
+                [
+                  "Category selection",
+                  "Which foundation survives summer on oily skin"
+                ],
+                [
+                  "Skin-type fit",
+                  "Anti-ageing serum a sensitive-skin user can use"
+                ],
+                [
+                  "Ingredient efficacy",
+                  "Can niacinamide and retinol be used together"
+                ],
+                [
+                  "Gifting occasion",
+                  "Fragrance gift set for a girlfriend under 800"
+                ],
+                [
+                  "Competitor comparison",
+                  "Which is more everyday, Blooming or No.5"
+                ]
+              ],
+              "note": "Platforms: DeepSeek, Doubao, Yuanbao, Qwen and Kimi; each question repeated three times and averaged. Diagnosis is not a formality — every gap must point to a specific sentence that can be rewritten."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Question Map",
+              "title": "Users Ask About “My Situation”, Not About Category Keywords",
+              "desc": "Crossing skin type × benefit × occasion × budget yields 40 question clusters."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "title": "Skin type",
+                  "desc": "Dry / oily / combination / sensitive"
+                },
+                {
+                  "title": "Benefit",
+                  "desc": "Brightening / anti-ageing / repair / oil control"
+                },
+                {
+                  "title": "Occasion",
+                  "desc": "Daily commute / date / gifting / travel"
+                },
+                {
+                  "title": "Budget",
+                  "desc": "Under 300 / 300–800 / 800–2000 / above 2000"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "Typical clusters after crossing the four dimensions: “anti-ageing serum for sensitive skin”, “fragrance gift set for a girlfriend under 800”, “foundation that stays on oily skin in summer”. All three carry purchase intent — exactly where shopping cards can land."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Four Gap Types",
+              "title": "Different Gaps Need Completely Different Actions",
+              "desc": "One playbook cannot cover all four: fill presence, fill product semantics, fill the scene, or take the ground back."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "title": "Total absence",
+                  "desc": "A whole class of questions never mentions the brand on any of the five platforms — the intent is simply not in AI’s brand pool. Action: build presence."
+                },
+                {
+                  "title": "Brand without product",
+                  "desc": "The brand is named but no specific SKU is — awareness exists, a transaction entry does not. Action: build product semantics."
+                },
+                {
+                  "title": "Product without scene",
+                  "desc": "The SKU appears, the gifting scene does not — missing the highest-ticket question type. Action: build the scene."
+                },
+                {
+                  "title": "Competitor hold",
+                  "desc": "One scene is filled by three or four competitors — users are routed elsewhere. Action: take the ground back."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "Cross-Category Reference",
+              "desc": "The same diagnostic standard has already run 200 questions in the automotive category: brand visibility 37.5%, 13 questions with zero presence, and those questions accumulated over 4 million in search heat. Beauty relies even more on colloquial and code-based wording, so the difficulty is higher."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "method",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Methodology",
+              "title": "MARS.GEO: Monitor, Attribute, Rewrite, Scale",
+              "desc": "Every layer ships a deliverable that can be signed off; only a fixed method can be reused SKU by SKU."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "M",
+                  "title": "Monitor",
+                  "desc": "200 questions × 5 platforms, bi-weekly retests, baseline set"
+                },
+                {
+                  "no": "A",
+                  "title": "Attribute",
+                  "desc": "Trace each gap to a specific field and source"
+                },
+                {
+                  "no": "R",
+                  "title": "Rewrite",
+                  "desc": "Rewrite content to a “citable” standard"
+                },
+                {
+                  "no": "S",
+                  "title": "Scale",
+                  "desc": "Distribute by platform, differentiated per ecosystem"
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Content Rewrite",
+              "title": "From Brand Language to Citable Facts",
+              "desc": "The same product, two sentences, completely different information density."
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "Before · brand language",
+              "desc": "“An all-new blooming eau de toilette, blossoming like a flower, gentle and captivating.” — Citable objective facts: 0."
+            },
+            {
+              "type": "notice",
+              "title": "After · citable facts",
+              "desc": "“A floral eau de parfum built on peony and rose, lasting about 6–8 hours; available in 30ml, 50ml and 100ml; suited to daily commuting and date occasions.” — Citable objective facts: 6 (category, accord, longevity, sizes, occasion, audience)."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "①",
+                  "title": "Name + category",
+                  "desc": "State what it is before describing how it feels."
+                },
+                {
+                  "no": "②",
+                  "title": "Objective parameters",
+                  "desc": "Concentration, sizes, longevity, ingredient ratios — numbers wherever possible."
+                },
+                {
+                  "no": "③",
+                  "title": "Fit and non-fit",
+                  "desc": "Say who it suits and who it does not, so AI dares to recommend it."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "desc": "AI cites facts, not adjectives. Facts written into fields are facts AI can cite."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Three Chains",
+              "title": "Same Shopping Card, Completely Different Data Sources",
+              "desc": "One set of content cannot serve all three: each platform reads a different set of fields."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Chain",
+                "What it reads",
+                "What it renders",
+                "What we do"
+              ],
+              "rows": [
+                [
+                  "Qwen × Taobao",
+                  "Product detail semantics, transactions, buyer Q&A, review tags",
+                  "Category card → multiple-product list",
+                  "Quantify attributes and build review tags"
+                ],
+                [
+                  "Doubao × Douyin",
+                  "Content heat, livestream data, platform coupons",
+                  "Single-product purchase card",
+                  "Creator content, livestream, coupon landing"
+                ],
+                [
+                  "Yuanbao × JD",
+                  "Five catalogue fields: specs, copy, reviews, sales, Q&A",
+                  "Single-product cards (side by side)",
+                  "Complete backend fields plus Q&A layout"
+                ]
+              ],
+              "note": "All three read structured in-platform product data, not off-platform articles. Content without fields gets the brand mentioned but never produces a shopping card. One fact statement, written into the fields each platform recognises."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Demo and Reference",
+              "title": "One Demonstrates the Rewrite Standard, One Shows the Real Mechanism",
+              "desc": "Gift sets carry the highest ticket value in beauty and are the easiest for AI to miss — the clearest way to show what “completing the semantics” means."
+            },
+            {
+              "type": "caseStudy",
+              "labels": {
+                "pains": "Diagnosis",
+                "solutions": "Three-Step Rewrite",
+                "result": "Expected Range",
+                "note": "Key Insight"
+              },
+              "items": [
+                {
+                  "no": "01",
+                  "tag": "Illustrative · fragrance and makeup gift set (methodology demo)",
+                  "title": "Product Without Scene: Three Root Causes and a Three-Step Rewrite",
+                  "sub": "Subject: fragrance plus makeup bundle · 5 platforms covered · Basis: methodology demonstration, not a client close-out dataset.",
+                  "metrics": [
+                    {
+                      "label": "Brand visibility",
+                      "value": "20% → 55% (expected)"
+                    },
+                    {
+                      "label": "Top3 slots",
+                      "value": "0 → 3 (expected)"
+                    },
+                    {
+                      "label": "Competitor hold",
+                      "value": "4/5 → 2/5 (expected)"
+                    },
+                    {
+                      "label": "Q&A coverage",
+                      "value": "8 groups"
+                    }
+                  ],
+                  "pains": [
+                    "No standalone semantics: in the catalogue the gift set is just “fragrance + lipstick”, two SKUs, so AI cannot recognise it as one gift product",
+                    "Mood imagery dominates the page: hero images and detail pages are largely visuals and English brand lines, with no extractable Chinese fact statements",
+                    "The three gifting elements are missing: who it is for, on what occasion and at what budget — precisely the highest-ticket question type"
+                  ],
+                  "solutions": [
+                    "SKU layer: title states “fragrance + makeup gift set” as a standalone SPU, with attributes for occasion, recipient and price band",
+                    "Copy layer: the first 200 characters answer what is inside (30ml fragrance, lipstick, powder), who it suits, the occasion and the price",
+                    "Q&A layer: eight high-frequency questions — is it right for a girlfriend, how it compares with No.5, longevity, lipstick shade, gift packaging, authenticity, suitable age, engraving"
+                  ],
+                  "result": "After the three steps the gift set turns from “two SKUs” into a scene-based product AI can recommend. Expected range under the demonstration basis: brand visibility on gift-set questions from 20% to 55%, Top3 slots in the gifting scene from 0 to 3, competitors in the same scene from 4/5 to 2/5. These are expected ranges for the methodology demonstration; a live project is measured against its own baseline and bi-weekly retests.",
+                  "note": "AI does not refuse to recommend the gift set; it does not know a gift set exists. Every fact must be written into fields as plain text — images and video alone give AI nothing to read."
+                },
+                {
+                  "no": "02",
+                  "tag": "Reference · Yuanbao shopping cards (comparable playbook)",
+                  "title": "Two Gates: Sources Decide the Pool, Store Data Decides the Rank",
+                  "sub": "Chain: Yuanbao × JD · supply depends on the JD catalogue · reference data is a week-two measurement of a comparable playbook.",
+                  "metrics": [
+                    {
+                      "label": "Brand mention",
+                      "value": "0% → 25%"
+                    },
+                    {
+                      "label": "Cited product ranking",
+                      "value": "5 SKUs"
+                    },
+                    {
+                      "label": "Gate check",
+                      "value": "5 gates (1 passed)"
+                    },
+                    {
+                      "label": "Attribution",
+                      "value": "Channel orders tracked separately"
+                    }
+                  ],
+                  "pains": [
+                    "Content without store operations never enters the recommendation list",
+                    "Store operations without source coverage never enter the candidate pool — the two gates are independent and both must pass",
+                    "Yuanbao holds no catalogue of its own; it acts as a cross-platform agent, sending card taps to the JD mini program where the same item is pinned"
+                  ],
+                  "solutions": [
+                    "Pool admission: the gift set exists as a standalone SPU in the JD catalogue, clearing the first gate",
+                    "Semantic matching: titles and details add decision and scene phrases such as “fragrance + makeup gift set”, “for girlfriend” and “birthday gift”",
+                    "Product credibility and third-party proof: store experience score, positive review rate, cumulative sales and creator test evidence, plus removing price contradictions between the brand site and the detail page"
+                  ],
+                  "result": "A comparable playbook measured in week two: brand mention rose from 0% to 25%, and five JD-channel SKUs entered the cited product ranking at the same time. These figures reference a comparable playbook rather than a close-out result for a beauty client; the gift set itself passes one of five gates, with four still to complete.",
+                  "note": "Shopping cards are not magic: sources and store operations must both pass. Miss either gate and no card appears."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Card Mechanics",
+              "title": "Five Steps from Intent Recognition to Revenue Attribution",
+              "desc": "Strong intent triggers a card directly, weak intent gets content then a card, and non-shopping intent gets no card."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "①",
+                  "title": "Intent grading",
+                  "desc": "Strong signals render a card; weak signals get content first"
+                },
+                {
+                  "no": "②",
+                  "title": "Pool admission",
+                  "desc": "Filtered from the platform catalogue; off-ecosystem items are excluded"
+                },
+                {
+                  "no": "③",
+                  "title": "Semantic recall and ranking",
+                  "desc": "Vector matching plus experience score, review rate, sales, creator tests and fulfilment"
+                },
+                {
+                  "no": "④",
+                  "title": "Rendering and handoff",
+                  "desc": "Yuanbao does not close the loop: taps open the JD mini program, same item pinned"
+                },
+                {
+                  "no": "⑤",
+                  "title": "Revenue attribution",
+                  "desc": "Channel orders counted separately for real ROI"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Gate",
+                "What it asks",
+                "How to close it"
+              ],
+              "rows": [
+                [
+                  "Pool admission",
+                  "Is the gift set a standalone SPU, and is it in the JD catalogue",
+                  "Passed: standalone SPU, listed in the catalogue"
+                ],
+                [
+                  "Semantic matching",
+                  "Do title and details carry decision and scene phrases",
+                  "Pending: recipient, occasion and price-band phrases"
+                ],
+                [
+                  "Product credibility",
+                  "Store experience score, review rate, cumulative sales",
+                  "Driven by store data, aligned with on-site campaigns"
+                ],
+                [
+                  "Offer competitiveness",
+                  "Price gap, gifts, instalments, shipping insurance",
+                  "Align with on-site campaigns and compare inside the conversation"
+                ],
+                [
+                  "Third-party proof",
+                  "Official details, creator tests, user word of mouth",
+                  "The core GEO battleground: triangulate and remove price contradictions"
+                ]
+              ],
+              "note": "Yuanbao specifics: no catalogue of its own, supply comes from JD and WeChat mini shops, and it acts as a cross-platform agent. Content must therefore cover both the fields needed to enter the pool and the evidence needed to be selected."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "tone": "dark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery & KPIs",
+              "title": "Five KPIs on One Weekly Dashboard",
+              "desc": "Results are not a feeling — they are five numbers that move every week."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Metric",
+                "Definition",
+                "Target"
+              ],
+              "rows": [
+                [
+                  "Brand mention rate",
+                  "Share of category questions that mention the brand",
+                  "Baseline +15 pt"
+                ],
+                [
+                  "Top3 occupancy",
+                  "Share of answers placing the brand in the top three",
+                  "≥ 30%"
+                ],
+                [
+                  "Content adoption",
+                  "Share of AI answers citing the brand’s own sources",
+                  "≥ 25%"
+                ],
+                [
+                  "Negative suppression",
+                  "Share of negative or incorrect information replaced or pushed down",
+                  "≥ 80%"
+                ],
+                [
+                  "Traffic and conversion",
+                  "UV and conversion from AI channels",
+                  "Tracked monthly"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Cadence",
+              "title": "Eight Standard Steps, Bi-Weekly Monitoring, Monthly Review",
+              "desc": "Fix the cadence and GEO becomes a standing capability rather than a one-off project."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Baseline diagnosis",
+                  "desc": "200 questions across 5 platforms"
+                },
+                {
+                  "no": "02",
+                  "title": "Gap attribution",
+                  "desc": "Pin down fields and sources"
+                },
+                {
+                  "no": "03",
+                  "title": "Strategy",
+                  "desc": "Actions matched to gap types"
+                },
+                {
+                  "no": "04",
+                  "title": "Content production",
+                  "desc": "Fact statements and Q&A sets"
+                }
+              ]
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "05",
+                  "title": "Structured retrofit",
+                  "desc": "Titles, attributes, Q&A sections"
+                },
+                {
+                  "no": "06",
+                  "title": "Multi-platform distribution",
+                  "desc": "Fields each ecosystem reads"
+                },
+                {
+                  "no": "07",
+                  "title": "Bi-weekly monitoring",
+                  "desc": "Retest on the same standard"
+                },
+                {
+                  "no": "08",
+                  "title": "Review and iterate",
+                  "desc": "Monthly review, quarterly re-plan"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "title": "Monthly review",
+                  "desc": "Each month: KPI achievement, gap movement and next month’s action list."
+                },
+                {
+                  "title": "Quarterly iteration",
+                  "desc": "Re-plan content strategy as platform algorithms and models change."
+                },
+                {
+                  "title": "Alerting",
+                  "desc": "A 20% week-on-week drop in mention, or negative indexation, triggers a 48-hour response."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Team",
+              "desc": "One strategist, two content specialists, one analyst and one platform operator, plus a dedicated contact. An escalation channel opens during major campaigns and new launches."
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "Traceability",
+              "desc": "Every conclusion carries the question, platform, timestamp, original answer and cited sources, drillable by category, brand, platform and question, updated weekly to avoid disputes over definitions."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "capability",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Capabilities",
+              "title": "Find the Right Ecosystem: Three Platforms, Three Kinds of Content",
+              "desc": "Shopping cards read structured in-platform catalogue data, so each ecosystem dictates where content must live."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Platform",
+                "Ecosystem and data sources",
+                "Focus"
+              ],
+              "rows": [
+                [
+                  "Doubao",
+                  "Douyin shop products plus Douyin short video and Toutiao articles",
+                  "Own the conversion entry: optimise high-intent questions so cards appear more often"
+                ],
+                [
+                  "Qwen",
+                  "Taobao and Tmall catalogue plus Guanguang notes and external endorsement",
+                  "Conversation as transaction: users check out from the card without leaving the chat"
+                ],
+                [
+                  "Yuanbao",
+                  "JD catalogue plus WeChat official accounts and Channels content",
+                  "Intercept at the moment of hesitation and put the product in front of the user"
+                ]
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Brand mention rate",
+                  "desc": "Does the AI answer mention our brand at all."
+                },
+                {
+                  "no": "02",
+                  "title": "Card trigger rate",
+                  "desc": "How often a shopping card appears for purchase questions."
+                },
+                {
+                  "no": "03",
+                  "title": "Competitor slot tracking",
+                  "desc": "Whether rivals appear, and how high they rank."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Entry Requirements",
+              "desc": "Hard requirements: a passing store base score and complete product information; content must be professional, truthful, authoritative and credible. Fixed scenarios are screenshotted and archived weekly so results stay traceable."
+            },
+            {
+              "type": "secHead",
+              "kicker": "How We Differ",
+              "title": "Beyond Content: Winning the Answer Slot and the Card Entry Together",
+              "desc": "Content without fields gets the brand mentioned but never produces a shopping card."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Typical GEO approach",
+                "JD Technology GEO for beauty"
+              ],
+              "rows": [
+                [
+                  "Positioning",
+                  "Content optimisation and keyword coverage",
+                  "Answer presence plus shopping-card capture, covering both content assets and transaction entry"
+                ],
+                [
+                  "Industry understanding",
+                  "Mostly generic methods",
+                  "Converts ingredient strength, shade naming, skin-type fit and gift bundles into citable facts"
+                ],
+                [
+                  "Technology",
+                  "Tooling checks and content outsourcing",
+                  "200-question, 5-platform diagnostic standard, the MARS.GEO method and field-level retrofit"
+                ],
+                [
+                  "Delivery",
+                  "Publishing and coverage",
+                  "Diagnosis, attribution, rewrite, distribution and bi-weekly monitoring as one loop"
+                ],
+                [
+                  "Business value",
+                  "Higher chance of being mentioned",
+                  "Five sign-off metrics: mention, Top3 occupancy, adoption, negative suppression, traffic and conversion"
+                ]
+              ]
             }
           ]
         }
