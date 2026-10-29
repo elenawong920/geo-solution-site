@@ -7012,29 +7012,29 @@ window.SITE_DATA_EN = {
             {
               "type": "secHead",
               "kicker": "Methodology",
-              "title": "MARS.GEO: Monitor, Attribute, Rewrite, Scale",
-              "desc": "Every layer ships a deliverable that can be signed off; only a fixed method can be reused SKU by SKU."
+              "title": "A Four-Step Loop: Monitor, Attribute, Rewrite, Scale",
+              "desc": "Every step ships a deliverable that can be signed off; only a fixed method can be reused SKU by SKU."
             },
             {
               "type": "flow",
               "items": [
                 {
-                  "no": "M",
+                  "no": "01",
                   "title": "Monitor",
                   "desc": "200 questions × 5 platforms, bi-weekly retests, baseline set"
                 },
                 {
-                  "no": "A",
+                  "no": "02",
                   "title": "Attribute",
                   "desc": "Trace each gap to a specific field and source"
                 },
                 {
-                  "no": "R",
+                  "no": "03",
                   "title": "Rewrite",
                   "desc": "Rewrite content to a “citable” standard"
                 },
                 {
-                  "no": "S",
+                  "no": "04",
                   "title": "Scale",
                   "desc": "Distribute by platform, differentiated per ecosystem"
                 }
@@ -7508,7 +7508,7 @@ window.SITE_DATA_EN = {
                 [
                   "Technology",
                   "Tooling checks and content outsourcing",
-                  "200-question, 5-platform diagnostic standard, the MARS.GEO method and field-level retrofit"
+                  "200-question, 5-platform diagnostic standard, a four-step loop and field-level retrofit"
                 ],
                 [
                   "Delivery",
