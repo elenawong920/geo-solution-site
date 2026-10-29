@@ -43,6 +43,10 @@ window.SITE_DATA_EN = {
           {
             "text": "Industrial Goods and B2B Procurement",
             "href": "industrial.html"
+          },
+          {
+            "text": "3C and Home Appliance Solution",
+            "href": "appliance.html"
           }
         ]
       },
@@ -3008,6 +3012,10 @@ window.SITE_DATA_EN = {
               "href": "industrial.html"
             },
             {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -4020,6 +4028,10 @@ window.SITE_DATA_EN = {
               "href": "industrial.html"
             },
             {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -4655,6 +4667,10 @@ window.SITE_DATA_EN = {
               "href": "industrial.html"
             },
             {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
               "label": "Automotive",
               "note": "Coming soon"
             }
@@ -5235,6 +5251,10 @@ window.SITE_DATA_EN = {
               "label": "Industrial / B2B",
               "href": "industrial.html",
               "active": true
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
             },
             {
               "label": "Automotive",
@@ -5858,6 +5878,787 @@ window.SITE_DATA_EN = {
                   "note": "What SMEs ask is whether you can issue a VAT invoice, extend payment terms and deliver to the desk. Written as structured answers, these conditions earn AI citations far more readily than price claims."
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "appliance": {
+      "title": "GEO for 3C and Home Appliances",
+      "nav": [
+        {
+          "label": "Decision Shift",
+          "href": "#why"
+        },
+        {
+          "label": "Solution",
+          "href": "#solution"
+        },
+        {
+          "label": "Delivery & Metrics",
+          "href": "#delivery"
+        },
+        {
+          "label": "Capabilities",
+          "href": "#capability"
+        },
+        {
+          "label": "Case Studies",
+          "href": "#cases"
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html",
+              "active": true
+            },
+            {
+              "label": "Automotive",
+              "note": "Coming soon"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for 3C and Home Appliances",
+          "title": [
+            "Make Your Appliance Brand",
+            "the Default Recommendation"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "For air conditioners, kitchenware, home services and smart locks, we turn channel trust, promotion rules, scenario fit, material safety and service commitments into knowledge assets that AI can understand, cite and verify.",
+          "sub": "Before buying a big-ticket item, users have already asked AI where to buy, which model fits, how much the subsidy covers and who handles after-sales. The prize is not just ranking, but the recommendation slot and accuracy inside the answer.",
+          "buttons": [
+            {
+              "label": "Explore the Solution",
+              "href": "#solution"
+            },
+            {
+              "label": "View the Cases",
+              "href": "#cases",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "4",
+              "label": "Validated categories and scenarios"
+            },
+            {
+              "value": "86.6%",
+              "label": "Brand exposure on air-conditioner channel terms"
+            },
+            {
+              "value": "90.68%",
+              "label": "Brand exposure on kitchenware material terms"
+            },
+            {
+              "value": "≥60%",
+              "label": "TOP3 recommendation KPI for JD Services"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "The Decision Shift",
+              "title": "Before Buying Big, Users Have Already Asked AI About Channel, Layout, Subsidy and Service",
+              "desc": "3C and home appliances carry high ticket values, long decision chains and heavy fulfilment. AI answers where to buy, which model, who installs and who repairs first — only then does the brand get into the comparison list."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Channel First",
+                  "desc": "Questions such as “where is the most reliable place to buy an air conditioner” or “which platform is reliable for trade-in smart locks” put channel trust ahead of specifications."
+                },
+                {
+                  "no": "02",
+                  "title": "Scenario Questions",
+                  "desc": "A one-bedroom rental, an 80 sqm two-bedroom flat, a nursery, a pet-owning household — users want a matched set, not a single product."
+                },
+                {
+                  "no": "03",
+                  "title": "Benefits Must Add Up",
+                  "desc": "Whether the national subsidy, trade-in, platform coupons and discounts stack — users ask AI to calculate the final price."
+                },
+                {
+                  "no": "04",
+                  "title": "Service Is Part of It",
+                  "desc": "Synchronised delivery and installation, free lock removal, appliance cleaning, laundry and repair warranty are decision factors in their own right."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In One Sentence",
+              "desc": "In 3C and appliances the answer battle is not about whose specifications win, but whether the channel is trustworthy, the scenario fits and the service is guaranteed. Those three decide whether AI dares to recommend you."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "solution",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Solution",
+              "title": "Turn Channel Trust, Scenario Fit and Service Commitments into Verifiable Answers",
+              "desc": "Not a one-off campaign, but long-term reusable knowledge assets built around channel specifications, scenario question sets, material evidence and service terms."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Diagnose",
+                  "desc": "AI brand health check, competitor visibility scan and an inventory of channel and scenario questions"
+                },
+                {
+                  "no": "02",
+                  "title": "Knowledge",
+                  "desc": "Brand, product and service knowledge base plus channel and service specification library"
+                },
+                {
+                  "no": "03",
+                  "title": "Content",
+                  "desc": "Channel comparisons, scenario bundles, promotion rules, material safety and service Q&A"
+                },
+                {
+                  "no": "04",
+                  "title": "Distribute",
+                  "desc": "Official site, media, encyclopaedias, vertical platforms and JD touchpoints"
+                },
+                {
+                  "no": "05",
+                  "title": "Monitor",
+                  "desc": "Mention rate, answer position, accuracy, competitor and risk answers"
+                },
+                {
+                  "no": "06",
+                  "title": "Review",
+                  "desc": "Weekly and monthly reviews of questions, content, competitors and risks, then iterate"
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "High-Value Scenarios",
+              "title": "Prioritise Six Question Types That Mirror Real Purchases"
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "title": "Channel Choice",
+                  "desc": "Where is the most reliable place to buy, which platform handles trade-in best. Example: where to buy an air conditioner with proper guarantees."
+                },
+                {
+                  "title": "Promotion Rules",
+                  "desc": "Whether national subsidies, trade-in and coupons stack, and what the final price is. Example: how to buy an air conditioner during 618."
+                },
+                {
+                  "title": "Home Fit",
+                  "desc": "Bundles matched to floor plan, size and household. Example: choosing air conditioners for an 80 sqm two-bedroom flat."
+                },
+                {
+                  "title": "Audience Segments",
+                  "desc": "Needs of nurseries, elderly rooms and pet-owning households. Example: air conditioners for a room shared with a baby or an elderly parent."
+                },
+                {
+                  "title": "Material Safety",
+                  "desc": "Food-grade materials, national standards, false-labelling compensation and test reports. Example: where to buy cookware with safe materials."
+                },
+                {
+                  "title": "Service Fulfilment",
+                  "desc": "Synchronised delivery and installation, lock removal, cleaning, repair and laundry compensation. Example: booking an appliance deep clean."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "From Question to Action",
+              "title": "Five AI-Side Gaps, Five Sets of Build Actions"
+            },
+            {
+              "type": "table",
+              "head": [
+                "AI-side problem",
+                "Underlying gap",
+                "What JD Technology does",
+                "Delivered outcome"
+              ],
+              "rows": [
+                [
+                  "AI never mentions this channel",
+                  "Channel strengths are not written as citable facts",
+                  "Codify self-operated authenticity, synchronised delivery and installation, and after-sales guarantees into a channel knowledge base",
+                  "The brand enters the candidate pool for channel questions"
+                ],
+                [
+                  "AI states wrong specs or benefits",
+                  "Subsidy, trade-in and coupon-stacking rules are inconsistent",
+                  "Unify promotion and final-price definitions, with conditions and campaign windows",
+                  "Accurate answers with clear conditions"
+                ],
+                [
+                  "AI recommends only competitors",
+                  "Scenario question coverage is thin and bundle content is missing",
+                  "Build a scenario content matrix by floor plan, audience and budget",
+                  "Entry into scenario recommendation slots"
+                ],
+                [
+                  "AI cannot describe service limits",
+                  "Installation, cleaning, repair and laundry scope and compensation are unclear",
+                  "Structure the service flow, covered cities and compensation standards",
+                  "Priority recommendation on service questions"
+                ],
+                [
+                  "Results cannot be measured",
+                  "No unified measurement standard or risk metrics",
+                  "Establish mention, citation, recommendation, accuracy, competitor and risk-answer metrics",
+                  "Weekly and monthly review with corrections"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "tone": "dark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery & Metrics",
+              "title": "A Three-Month Loop with Sign-Off Every Month",
+              "desc": "Diagnosis, specifications, assets, content, monitoring and review run on one chain rather than ending with a single publishing push."
+            },
+            {
+              "type": "roadmap",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Month 1 · Diagnose + Define",
+                  "desc": "Align categories, platforms and KPIs, complete brand and competitor checks, identify channel, scenario and risk questions, and build the question library."
+                },
+                {
+                  "no": "02",
+                  "title": "Month 2 · Assets + Content",
+                  "desc": "Clarify channel and service messaging boundaries, build the knowledge base, FAQ and asset library, and publish with the official site, media and vertical platforms."
+                },
+                {
+                  "no": "03",
+                  "title": "Month 3 · Monitor + Review",
+                  "desc": "Multi-model, high-frequency sampling with weekly and monthly corrections to produce stable data and a repeatable playbook."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Deliverables",
+              "title": "Five Outputs, Grouped into Four Delivery Categories"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Insight & Plan",
+                  "desc": "An AI market analysis report and a customised GEO service plan covering diagnosis, strategy, cadence and compliance."
+                },
+                {
+                  "no": "02",
+                  "title": "Knowledge Assets",
+                  "desc": "A dedicated brand knowledge base covering brand, product, scenario and service definitions, reusable long term."
+                },
+                {
+                  "no": "03",
+                  "title": "Distribution & Monitoring",
+                  "desc": "A distribution and indexation report covering cross-platform publishing, indexing and negative-answer discovery."
+                },
+                {
+                  "no": "04",
+                  "title": "Performance Report",
+                  "desc": "Regular GEO performance reports tracking brand exposure and TOP1 / TOP3 recommendation rates."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "The five deliverables are an AI market analysis report, a customised GEO service plan, a dedicated brand knowledge base, a distribution and indexation report and a regular GEO performance report. Scope and definitions follow the delivery list confirmed by both sides."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Metrics",
+              "title": "Visibility, Recommendation Position and Risk Control"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Metric",
+                "What it measures",
+                "Definition"
+              ],
+              "rows": [
+                [
+                  "Brand exposure (visibility)",
+                  "Seen",
+                  "Answers mentioning or recommending the brand ÷ total valid answers"
+                ],
+                [
+                  "Citation rate",
+                  "Trusted",
+                  "Share of answers citing or linking to brand sources"
+                ],
+                [
+                  "TOP1 recommendation rate",
+                  "First choice",
+                  "Share of answers ranking the brand first"
+                ],
+                [
+                  "TOP3 recommendation rate",
+                  "Priority",
+                  "Share of answers placing the brand in the top three"
+                ],
+                [
+                  "Accuracy",
+                  "Correct",
+                  "Share of answers with no exaggeration or misattribution"
+                ],
+                [
+                  "Risk-answer correction rate",
+                  "Control",
+                  "Share of wrong, exaggerated, confused or negative answers corrected or removed"
+                ]
+              ],
+              "note": "This page focuses on brand exposure and TOP1 / TOP3 recommendation rates. Each case uses different question terms, platforms and periods, so figures cannot be summed across cases and are not category averages."
+            },
+            {
+              "type": "notice",
+              "title": "Retail Messaging Guardrails",
+              "desc": "No absolute lowest-price claims. Subsidies, trade-in and coupon stacking must state applicable conditions and campaign windows. No invented test reports or compensation promises. Service coverage and timing follow official pages."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "capability",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Capabilities",
+              "title": "Four Differentiated Capabilities, from Channel to Service"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "JD Ecosystem Data",
+                  "desc": "Search and demand data from Doubao, JD, Xiaohongshu, Douyin, WeChat and Weibo, so question selection mirrors real purchase language."
+                },
+                {
+                  "no": "02",
+                  "title": "Proprietary Technology",
+                  "desc": "A high-authority media matrix, citation optimisation and structured Schema build the preferred citation chain, monitored weekly and monthly."
+                },
+                {
+                  "no": "03",
+                  "title": "Cross-Industry Proof",
+                  "desc": "Projects validated in 3C, appliances, industrial goods, tourism and pharma, delivered by the JD in-house GEO technology team."
+                },
+                {
+                  "no": "04",
+                  "title": "Retail & Service Ecosystem",
+                  "desc": "Standard answers for channel, promotion, material and service questions, reusable across 3C, appliance and service categories."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "desc": "Applicable to major appliances, kitchenware and tableware, home improvement categories such as smart locks, home cleaning and laundry services, and 3C digital launches or category defence. The method also fits other high-ticket, service-heavy retail categories."
+            },
+            {
+              "type": "secHead",
+              "kicker": "How We Differ",
+              "title": "Beyond Content Coverage: Reproducible Retail Knowledge Assets"
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Typical GEO approach",
+                "JD Technology GEO for 3C & Appliances"
+              ],
+              "rows": [
+                [
+                  "Positioning",
+                  "Content optimisation and keyword coverage",
+                  "Brand growth and knowledge assets covering channel trust, service fulfilment and long-term reuse"
+                ],
+                [
+                  "Industry understanding",
+                  "Mostly generic methods",
+                  "Covers channel choice, promotion rules, home-fit scenarios and service fulfilment"
+                ],
+                [
+                  "Technology",
+                  "Tooling checks and content outsourcing",
+                  "AI, big data, cloud and marketing technology across the full diagnosis-to-review loop"
+                ],
+                [
+                  "Delivery",
+                  "Publishing and coverage",
+                  "Diagnosis, knowledge base, content matrix, source building and monitoring as one package"
+                ],
+                [
+                  "Business value",
+                  "Higher chance of being mentioned",
+                  "Better recommendation position, accuracy and conversion, with controllable risk and measurable results"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Platform Profiles",
+              "title": "3C and Appliance Buyers Differ by AI Platform"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Platform",
+                "User profile and decision preference",
+                "GEO focus"
+              ],
+              "rows": [
+                [
+                  "Doubao",
+                  "Mainstream households asking about channel and value first, describing floor plans and budgets in everyday language",
+                  "Channel comparison Q&A, final-price calculation, floor-plan matching content"
+                ],
+                [
+                  "Qwen",
+                  "Price-comparing users who ask AI for specification tables and subsidy maths",
+                  "Specification tables, national subsidy and trade-in rules, shopping checklists"
+                ],
+                [
+                  "DeepSeek",
+                  "Research-heavy users probing specifications, energy efficiency, material standards and real-world tests",
+                  "Structured specs, standards and test evidence, comparison review citations"
+                ],
+                [
+                  "Yuanbao",
+                  "Household decision-makers who trust official accounts and peer experience",
+                  "Official-account buying guides, search Q&A, reputation and case content"
+                ],
+                [
+                  "Xiaohongshu Diandian",
+                  "Younger female and renovation audiences starting from real usage scenarios and design",
+                  "Scenario-led notes, material and safety topics, renovation matching content"
+                ],
+                [
+                  "ChatGPT / Claude",
+                  "Cross-border and overseas users checking English specs, energy ratings and compliance",
+                  "English product knowledge, efficiency and compliance language, overseas sources"
+                ]
+              ],
+              "note": "Profiles: QuestMobile, September 2026 plus public platform information. MAU definitions differ across reports, so MAU figures are not shown here and should not be compared with the AI Product Rankings on the home page."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Case Studies",
+              "title": "Four Categories, Four Answer Playbooks",
+              "desc": "Air conditioners compete on channel trust and promotion benefits, kitchenware on verifiable materials, JD Services on fulfilment and compensation, and smart locks on trade-in plus one-stop installation."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Case",
+                "Scope and platforms",
+                "Core outcome"
+              ],
+              "rows": [
+                [
+                  "JD Air Conditioners · channel and promotions",
+                  "Four question groups across channel, offers and central air-conditioning selection; mainstream AI platforms; about 30 days",
+                  "Brand exposure 86.6% / 75.15%; TOP1 recommendation 78.9% / 66.26%"
+                ],
+                [
+                  "JD Kitchenware · materials and selection",
+                  "Four question groups across tableware, cookware, tea ware and material traceability; mainstream AI platforms",
+                  "Brand exposure 90.68% / 89.17% / 78.49%; best TOP3 90.36%"
+                ],
+                [
+                  "JD Services · home care and laundry",
+                  "Four question groups across cleaning, laundry, appliance deep cleaning and appliance repair; Doubao, DeepSeek, Qwen",
+                  "Exposure 9.8%→72.51%, 33.17%→77.58%, 24.37%→83.18%, 60.62%→81.06%"
+                ],
+                [
+                  "JD Home · smart locks (ongoing)",
+                  "Two question groups across trade-in brand and platform choice; mainstream AI platforms; week three of execution",
+                  "Exposure 32%→87% and 37.14%→86.50%"
+                ]
+              ],
+              "note": "Source: Retail Industry Cases deck. Air conditioners, kitchenware and JD Services are stage conclusions after a full optimisation cycle. Smart locks are still running (week three) and the figures are interim. Question sets and periods differ by case, so metrics cannot be summed across cases."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Case Detail",
+              "title": "Channel, Material, Fulfilment, Trade-in: Four Different Answer Structures",
+              "desc": "The same brand needs completely different evidence in each question type: channel proves you avoid pitfalls, material proves verifiability, service proves you stand behind outcomes, and trade-in proves the rules add up."
+            },
+            {
+              "type": "caseStudy",
+              "labels": {
+                "pains": "Industry Challenges",
+                "solutions": "Solution",
+                "result": "Results",
+                "note": "Key Insight"
+              },
+              "items": [
+                {
+                  "no": "01",
+                  "tag": "JD Air Conditioners · channel and promotions",
+                  "title": "Channel Terms Move from Invisible to 86.6% Exposure and 78.9% TOP1",
+                  "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI platforms · Period: about 30 days · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question groups",
+                      "value": "4"
+                    },
+                    {
+                      "label": "Peak exposure",
+                      "value": "86.6%"
+                    },
+                    {
+                      "label": "Peak TOP1",
+                      "value": "78.9%"
+                    },
+                    {
+                      "label": "Largest single gain",
+                      "value": "+69.59 pp"
+                    }
+                  ],
+                  "pains": [
+                    "When users asked where to buy an air conditioner with proper guarantees, AI answers favoured brand official stores, Tmall flagship stores and offline chains, leaving JD self-operated out of the top slot",
+                    "Buyers cared about reliable channels, value for money and worry-free service, yet JD’s synchronised delivery and installation and full-lifecycle after-sales were never written as citable evidence",
+                    "Promotion information was scattered across 618, the national subsidy and platform discounts, so AI could not confirm what stacked or state a final price"
+                  ],
+                  "solutions": [
+                    "Built channel-term content around self-operated authentic supply, synchronised delivery and installation, and full-lifecycle after-sales, turning “where to buy reliably” into a verifiable comparison",
+                    "Synced promotion benefits such as 618 and opening-day events, clarifying how the national subsidy, trade-in and platform coupons stack",
+                    "Added home-fit service content including free measurement, dedicated design, waived installation fees and one-stop packages"
+                  ],
+                  "result": "“Where to buy an air conditioner with proper guarantees”: brand exposure 86.6% (+51.9 pp) and TOP1 recommendation 78.9% (+51.5 pp). “Recommended air-conditioner purchase channels”: exposure 75.15% (+45.38 pp) and TOP1 66.26% (+39.57 pp). “Current air-conditioner offers”: recommendation frequency and exposure 73.6% (+64 pp) with TOP1 up 46.46 pp. “How to buy central air-conditioning online”: exposure 70.72% (+69.59 pp) with TOP1 up from 0 to 67.6%.",
+                  "note": "Channel answers are not about who is cheapest, but about who helps users avoid pitfalls. Documented delivery, installation and after-sales commitments win recommendation slots more reliably than price claims."
+                },
+                {
+                  "no": "02",
+                  "tag": "JD Kitchenware · materials and selection",
+                  "title": "Material Safety Questions Lift TOP3 from Single Digits to 90%",
+                  "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI platforms · Question terms: tableware, cookware, tea ware, material traceability · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question groups",
+                      "value": "4"
+                    },
+                    {
+                      "label": "Peak exposure",
+                      "value": "90.68%"
+                    },
+                    {
+                      "label": "Peak TOP3",
+                      "value": "90.36%"
+                    },
+                    {
+                      "label": "False-labelling cover",
+                      "value": "10x"
+                    }
+                  ],
+                  "pains": [
+                    "Kitchenware has weak brand and channel recall and fragmented decisions, so AI answers listed brands and products while JD was not treated as a selection channel",
+                    "Buyers worried most about false material labelling, coating safety and heavy metals in glazes, yet vague “food-grade” claims cannot be verified",
+                    "Tableware, cookware and tea ware follow different material standards (GB 4806.4 / 4806.5, 304 / 316, original ore clay), so answers easily mix them up"
+                  ],
+                  "solutions": [
+                    "Wrote searchable CMA test reports, the quality mark and 304 / 316 or food-grade standards into structured Q&A",
+                    "Highlighted self-operated authenticity, 10x compensation for false material labelling and 180-day non-stick warranty cover",
+                    "Built separate question sets and material comparisons for tableware, cookware and tea ware to prevent standard mixing"
+                  ],
+                  "result": "Tableware and lunch boxes: brand exposure 90.68% (+82.19 pp) with TOP3 up from 8.49% to 90.36%. Cookware: exposure 89.17% (+84.54 pp) with TOP3 up from 4.63% to 89.17%. Tea ware: exposure 78.49% (+65.4 pp) with TOP3 up from 11.44% to 76.81%. Material traceability terms: TOP3 up from 8.06% to 68.14%.",
+                  "note": "Material questions test verifiability. Once standard numbers, test reports and compensation terms are clear, AI files the brand under “safe to buy”."
+                },
+                {
+                  "no": "03",
+                  "tag": "JD Services · home care and laundry",
+                  "title": "Four Service Terms Take Home Cleaning from 9.8% to 72.51%",
+                  "sub": "Platforms: Doubao, DeepSeek, Qwen · KPI: at least 60% of question terms in the TOP3 recommendation slot · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question groups",
+                      "value": "4"
+                    },
+                    {
+                      "label": "Cleaning exposure",
+                      "value": "9.8%→72.51%"
+                    },
+                    {
+                      "label": "Laundry exposure",
+                      "value": "33.17%→77.58%"
+                    },
+                    {
+                      "label": "TOP3 target met",
+                      "value": "All 4 ≥60%"
+                    }
+                  ],
+                  "pains": [
+                    "Home cleaning, laundry, appliance cleaning and repair needs were split across platforms, and JD Services held no stable first choice in any of them",
+                    "Users cared about platform legitimacy, transparent pricing, response time and after-sales compensation, while answers leaned towards competitor platforms",
+                    "Service questions need city coverage, process steps and compensation terms spelled out, so generic “professional and reliable” claims could not be cited"
+                  ],
+                  "solutions": [
+                    "Built content for each of the four service terms: self-operated cleaners, standardised home visits, 16-step laundry processes, certified engineers and genuine parts",
+                    "Wrote triple compensation for damaged, lost or poorly cleaned items, 90-day warranty and free redo terms as verifiable commitments",
+                    "Added keyword-specific placement, tailoring AI Q&A to official messaging, hero SKUs and platform campaigns"
+                  ],
+                  "result": "Home cleaning exposure 9.8%→72.51% (+62.71 pp) with TOP3 12.06%→65.36%. Door-to-door laundry 33.17%→77.58% (+44.41 pp) with TOP3 31%→63.31%. Appliance deep cleaning 24.37%→83.18% (+58.81 pp) with TOP3 23.36%→79.84%. Appliance repair 60.62%→81.06% (+20.98 pp) with TOP3 58.05%→81.01%. All four question groups exceeded 60% in the TOP3 recommendation slot.",
+                  "note": "Service answers are about whether you stand behind the outcome. The more specific the process, coverage and compensation terms, the more confidently AI ranks you first."
+                },
+                {
+                  "no": "04",
+                  "tag": "JD Home · smart locks · ongoing",
+                  "title": "Trade-in Smart Locks: 87% Exposure by Week Three",
+                  "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI platforms · Progress: week three of execution (interim data) · Source: Retail Industry Cases deck.",
+                  "metrics": [
+                    {
+                      "label": "Question groups",
+                      "value": "2"
+                    },
+                    {
+                      "label": "Current progress",
+                      "value": "Week 3"
+                    },
+                    {
+                      "label": "Peak exposure",
+                      "value": "87%"
+                    },
+                    {
+                      "label": "Peak TOP3",
+                      "value": "77.50%"
+                    }
+                  ],
+                  "pains": [
+                    "Users asking which trade-in smart-lock brands are good and which platform is reliable did not see JD self-operated as the default channel",
+                    "Subsidy levels, old-lock trade-in credit and whether national subsidies and coupons stack differ by platform, so AI often gave outdated or wrong conclusions",
+                    "Smart locks involve lock removal plus installation, a fulfilment-heavy category where unclear installation timing and warranty directly lose orders"
+                  ],
+                  "solutions": [
+                    "Covered brand and platform question terms, clarifying the trade-in participation of brands such as Desman, Kaadas, Xiaomi and Huawei",
+                    "Defined old-lock credit, instant discounts on order placement and how national subsidies and platform coupons stack, with campaign windows noted",
+                    "Structured one-stop removal and installation, express delivery, seven-day returns and 24-hour after-sales response into service commitments"
+                  ],
+                  "result": "“Which trade-in smart-lock brands on JD are good”: brand exposure 32%→87% (+55 pp) with TOP3 28%→76.5%. “Which platform is reliable for trade-in smart locks”: exposure 37.14%→86.50% (+49.36 pp) with TOP3 30.29%→77.50%. The project is still running, so close-out figures will follow the final report.",
+                  "note": "Trade-in questions are highly time-sensitive: when subsidy rules change, answers expire. Storing the rules in an updatable knowledge base resists decay far better than one-off publishing."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Appendix · Weekly Terms",
+              "title": "Air Conditioners: Some Terms Move Within a Single Week",
+              "desc": "These are week-on-week figures within the same period, illustrating how elasticity differs by audience segment. They are not overall project conclusions."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Question term",
+                "Brand exposure WoW",
+                "TOP1 WoW",
+                "TOP3 WoW"
+              ],
+              "rows": [
+                [
+                  "Best-value air conditioner for a one-bedroom rental",
+                  "+11.43%",
+                  "+18.15%",
+                  "+18.23%"
+                ],
+                [
+                  "Best-value whole-home air conditioning for a small flat",
+                  "+25.43%",
+                  "+21.70%",
+                  "+22.15%"
+                ],
+                [
+                  "Which air conditioners to choose for a two-bedroom flat at 618",
+                  "+21.20%",
+                  "+11.53%",
+                  "+22.31%"
+                ],
+                [
+                  "How to choose air conditioning for an 80 sqm two-bedroom family of three",
+                  "+29.56%",
+                  "+14.33%",
+                  "+14.64%"
+                ],
+                [
+                  "Practical choices for a nursery or elderly room",
+                  "+16.95%",
+                  "+5.13%",
+                  "+5.46%"
+                ],
+                [
+                  "How to buy a full set for a pet-owning household",
+                  "+9.20%",
+                  "+7.68%",
+                  "+7.68%"
+                ]
+              ],
+              "note": "Nursery and elderly-room queries are high-consideration purchases: users compare specifications repeatedly and check reviews, so algorithms judge commercial decision value as low and gains come slower. Pet-owning households are a narrow niche with small search volume and a naturally limited upside. Both need longer cycles and more granular content."
+            },
+            {
+              "type": "notice",
+              "title": "Measurement Note",
+              "desc": "This page centres on brand exposure and TOP1 / TOP3 recommendation rates. Question sets, platforms and periods differ by case, so figures cannot be summed across cases. The smart-lock project is still running and only interim data is disclosed."
             }
           ]
         }
