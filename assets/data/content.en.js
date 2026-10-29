@@ -6433,7 +6433,7 @@ window.SITE_DATA_EN = {
                   "Exposure 9.8%→72.51%, 33.17%→77.58%, 24.37%→83.18%, 60.62%→81.06%"
                 ],
                 [
-                  "JD Home · smart locks (ongoing)",
+                  "Building materials · smart locks (ongoing)",
                   "Two question groups across trade-in brand and platform choice; mainstream AI platforms; week three of execution",
                   "Exposure 32%→87% and 37.14%→86.50%"
                 ]
@@ -6565,7 +6565,7 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "no": "04",
-                  "tag": "JD Home · smart locks · ongoing",
+                  "tag": "Building materials · smart locks · ongoing",
                   "title": "Trade-in Smart Locks: 87% Exposure by Week Three",
                   "sub": "Platforms: Doubao, Qwen, DeepSeek and other mainstream AI platforms · Progress: week three of execution (interim data) · Source: Retail Industry Cases deck.",
                   "metrics": [
