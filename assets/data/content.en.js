@@ -25,11 +25,7 @@ window.SITE_DATA_EN = {
             "href": "overseas.html"
           },
           {
-            "text": "AI User Intent Insights",
-            "href": "insight.html"
-          },
-          {
-            "text": "Pharma and Healthcare",
+            "text": "Pharma and Healthcare Solution",
             "href": "pharma.html"
           },
           {
@@ -41,7 +37,7 @@ window.SITE_DATA_EN = {
             "href": "tourism.html"
           },
           {
-            "text": "Industrial Goods and B2B Procurement",
+            "text": "Industrial Goods and B2B Solution",
             "href": "industrial.html"
           },
           {
@@ -49,7 +45,7 @@ window.SITE_DATA_EN = {
             "href": "appliance.html"
           },
           {
-            "text": "Skincare and Colour Cosmetics",
+            "text": "Skincare and Colour Cosmetics Solution",
             "href": "beauty.html"
           }
         ]
@@ -62,6 +58,10 @@ window.SITE_DATA_EN = {
           },
           {
             "text": "Intent Question Bank"
+          },
+          {
+            "text": "AI User Intent Insights",
+            "href": "insight.html"
           },
           {
             "text": "AIGC Content & Source Strategy"
@@ -3022,10 +3022,6 @@ window.SITE_DATA_EN = {
             {
               "label": "Skincare & Makeup",
               "href": "beauty.html"
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },
@@ -4042,10 +4038,6 @@ window.SITE_DATA_EN = {
             {
               "label": "Skincare & Makeup",
               "href": "beauty.html"
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },
@@ -4685,10 +4677,6 @@ window.SITE_DATA_EN = {
             {
               "label": "Skincare & Makeup",
               "href": "beauty.html"
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },
@@ -5275,10 +5263,6 @@ window.SITE_DATA_EN = {
             {
               "label": "Skincare & Makeup",
               "href": "beauty.html"
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },
@@ -5955,10 +5939,6 @@ window.SITE_DATA_EN = {
             {
               "label": "Skincare & Makeup",
               "href": "beauty.html"
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },
@@ -6740,10 +6720,6 @@ window.SITE_DATA_EN = {
               "label": "Skincare & Makeup",
               "href": "beauty.html",
               "active": true
-            },
-            {
-              "label": "Automotive",
-              "note": "Coming soon"
             }
           ]
         },

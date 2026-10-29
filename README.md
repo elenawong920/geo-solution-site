@@ -23,7 +23,7 @@
 | AI 用户意图洞察 | `insight.html` | 京东空调豆包意图洞察报告 |
 | 医药健康行业方案 | `pharma.html` | 京东科技 GEO 医药健康行业方案（含案例）1010 |
 | 金融保险行业方案 | `insurance.html` | 保险行业 GEO 通用方案 202608 + 消费金融适用方案与实证案例 |
-| 文旅行业方案 | `tourism.html` | 京东科技 GEO 对外介绍版【文旅】含案例 20261009 |
+| 文化旅游行业方案 | `tourism.html` | 京东科技 GEO 对外介绍版【文旅】含案例 20261009 |
 | 工业品与 B2B 采购方案 | `industrial.html` | 京东科技 GEO 工业品行业方案 1028（京东工业） |
 | 3C 家电行业方案 | `appliance.html` | 【零售】行业案例（京东空调 / 京东厨具 / 京东服务 / 京东居家智能门锁） |
 | 护肤彩妆行业方案 | `beauty.html` | 京东科技面向护肤彩妆行业 GEO 方案介绍（200 问诊断 / 四步闭环 / 商卡打法） |
@@ -54,7 +54,7 @@ geo-site/
 ├── insight.html                意图洞察报告页
 ├── pharma.html                 医药健康行业方案页
 ├── insurance.html              金融保险行业方案页（保险 + 消费金融）
-├── tourism.html                文旅行业方案页
+├── tourism.html                文化旅游行业方案页
 ├── industrial.html             工业品与 B2B 采购方案页
 ├── appliance.html              3C 家电行业方案页
 ├── beauty.html                 护肤彩妆行业方案页

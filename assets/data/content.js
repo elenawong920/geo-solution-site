@@ -25,31 +25,27 @@ window.SITE_DATA = {
             "href": "overseas.html"
           },
           {
-            "text": "AI 用户意图洞察",
-            "href": "insight.html"
-          },
-          {
-            "text": "医药健康行业方案",
+            "text": "医药健康行业解决方案",
             "href": "pharma.html"
           },
           {
-            "text": "金融保险行业方案",
+            "text": "金融保险行业解决方案",
             "href": "insurance.html"
           },
           {
-            "text": "文旅行业方案",
+            "text": "文化旅游行业解决方案",
             "href": "tourism.html"
           },
           {
-            "text": "工业品与 B2B 采购方案",
+            "text": "工业品与 B2B 行业解决方案",
             "href": "industrial.html"
           },
           {
-            "text": "3C 家电行业方案",
+            "text": "3C 家电行业解决方案",
             "href": "appliance.html"
           },
           {
-            "text": "护肤彩妆行业方案",
+            "text": "护肤彩妆行业解决方案",
             "href": "beauty.html"
           }
         ]
@@ -62,6 +58,10 @@ window.SITE_DATA = {
           },
           {
             "text": "意图问题库"
+          },
+          {
+            "text": "AI 用户意图洞察",
+            "href": "insight.html"
           },
           {
             "text": "AIGC 内容与信源策略"
@@ -3008,7 +3008,7 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html"
             },
             {
@@ -3022,10 +3022,6 @@ window.SITE_DATA = {
             {
               "label": "护肤彩妆",
               "href": "beauty.html"
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
@@ -4028,7 +4024,7 @@ window.SITE_DATA = {
               "active": true
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html"
             },
             {
@@ -4042,10 +4038,6 @@ window.SITE_DATA = {
             {
               "label": "护肤彩妆",
               "href": "beauty.html"
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
@@ -4638,7 +4630,7 @@ window.SITE_DATA = {
       ]
     },
     "tourism": {
-      "title": "文旅行业 GEO 解决方案",
+      "title": "文化旅游行业 GEO 解决方案",
       "nav": [
         {
           "label": "行业机会",
@@ -4670,7 +4662,7 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html",
               "active": true
             },
@@ -4685,16 +4677,12 @@ window.SITE_DATA = {
             {
               "label": "护肤彩妆",
               "href": "beauty.html"
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
         {
           "type": "hero",
-          "kicker": "京东科技 · GEO 文旅行业方案",
+          "kicker": "京东科技 · GEO 文化旅游行业方案",
           "title": [
             "让每一次“去哪玩、怎么玩”",
             "都通向你的官方答案"
@@ -5260,7 +5248,7 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html"
             },
             {
@@ -5275,10 +5263,6 @@ window.SITE_DATA = {
             {
               "label": "护肤彩妆",
               "href": "beauty.html"
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
@@ -5940,7 +5924,7 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html"
             },
             {
@@ -5955,10 +5939,6 @@ window.SITE_DATA = {
             {
               "label": "护肤彩妆",
               "href": "beauty.html"
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
@@ -6725,7 +6705,7 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
-              "label": "文旅",
+              "label": "文化旅游",
               "href": "tourism.html"
             },
             {
@@ -6740,10 +6720,6 @@ window.SITE_DATA = {
               "label": "护肤彩妆",
               "href": "beauty.html",
               "active": true
-            },
-            {
-              "label": "汽车",
-              "note": "即将上线"
             }
           ]
         },
