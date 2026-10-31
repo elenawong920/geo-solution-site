@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-10-30",
+    "updated": "2026-10-31",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -643,56 +643,56 @@ window.SITE_DATA_EN = {
                       "rows": [
                         [
                           "DS V4.1 Flash 1017 · DeepSeek",
-                          "42.4T",
-                          "+7.1%"
-                        ],
-                        [
-                          "DS V4.1 Flash · DeepSeek",
-                          "15.9T",
-                          "-4.2%"
+                          "45.5T",
+                          "+14.9%"
                         ],
                         [
                           "GLM 5.3 Flash · Zhipu",
-                          "15.6T",
-                          "+4.0%"
+                          "16.1T",
+                          "+7.3%"
+                        ],
+                        [
+                          "DS V4.1 Flash · DeepSeek",
+                          "15.2T",
+                          "-8.4%"
                         ],
                         [
                           "GPT-6 Luna · OpenAI",
-                          "11.4T",
-                          "+18.9%"
+                          "10.9T",
+                          "+13.7%"
                         ],
                         [
                           "Hy4 preview · Tencent",
-                          "9.18T",
-                          "+2.5%"
+                          "9.33T",
+                          "+4.1%"
                         ],
                         [
                           "Claude Opus 5.5 · Anthropic",
-                          "7.84T",
-                          "-0.3%"
+                          "7.31T",
+                          "-7.0%"
                         ],
                         [
                           "Step 5 Preview · StepFun",
-                          "5.93T",
-                          "+10.0%"
-                        ],
-                        [
-                          "GLM 5.3 · Zhipu",
-                          "4.9T",
-                          "-4.9%"
+                          "6.3T",
+                          "+16.9%"
                         ],
                         [
                           "MiniMax M3.1 Flash · MiniMax",
-                          "4.12T",
-                          "Return"
+                          "5.04T",
+                          "+22.3%"
+                        ],
+                        [
+                          "GLM 5.3 · Zhipu",
+                          "4.62T",
+                          "-10.3%"
                         ],
                         [
                           "DS V4 Flash 0731 · DeepSeek",
-                          "3.99T",
-                          "Return"
+                          "3.93T",
+                          "-1.5%"
                         ]
                       ],
-                      "note": "As of 2026-10-29 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
+                      "note": "As of 2026-10-30 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
                     }
                   ]
                 }
