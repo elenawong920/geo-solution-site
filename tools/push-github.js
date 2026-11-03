@@ -37,7 +37,7 @@ const SRC = path.resolve(__dirname, '..');
 const ITEMS = [
   'index.html', 'overseas.html', 'insight.html', 'pharma.html',
   'insurance.html', 'tourism.html', 'industrial.html', 'appliance.html',
-  'beauty.html', '.nojekyll',
+  'beauty.html', 'platform.html', '.nojekyll',
   'README.md', '微信打开方案.md',
   'assets', 'tools'
 ];

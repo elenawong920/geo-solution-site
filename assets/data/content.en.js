@@ -25,6 +25,10 @@ window.SITE_DATA_EN = {
             "href": "overseas.html"
           },
           {
+            "text": "Enterprise GEO Platform",
+            "href": "platform.html"
+          },
+          {
             "text": "Pharma and Healthcare Solution",
             "href": "pharma.html"
           },
@@ -147,6 +151,11 @@ window.SITE_DATA_EN = {
             {
               "label": "Explore Industry Solutions",
               "href": "pharma.html",
+              "style": "ghost"
+            },
+            {
+              "label": "Enterprise GEO Platform",
+              "href": "platform.html",
               "style": "ghost"
             }
           ],
@@ -7502,6 +7511,668 @@ window.SITE_DATA_EN = {
                   "Five sign-off metrics: mention, Top3 occupancy, adoption, negative suppression, traffic and conversion"
                 ]
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "platform": {
+      "title": "Enterprise GEO Platform",
+      "nav": [
+        {
+          "label": "Why a Platform",
+          "href": "#why"
+        },
+        {
+          "label": "The Platform",
+          "href": "#platform"
+        },
+        {
+          "label": "Capabilities",
+          "href": "#capability"
+        },
+        {
+          "label": "Two Departments",
+          "href": "#audience"
+        },
+        {
+          "label": "Rollout & Sign-off",
+          "href": "#delivery"
+        }
+      ],
+      "sections": [
+        {
+          "type": "hero",
+          "kicker": "JD Technology · Enterprise GEO Platform",
+          "title": [
+            "Turn GEO From a Black Box",
+            "Into Your Own System"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "An enterprise GEO platform for digital / IT teams and marketing teams: real-time monitoring, measurable results and intelligent diagnosis. Clients integrate four interfaces; collection, diagnosis, optimisation and reporting all sit on the platform.",
+          "sub": "Marketing needs results that can be signed off; IT needs a system that can actually land. The platform fuses both: definitions become live metrics, and metrics become a deliverable system.",
+          "buttons": [
+            {
+              "label": "See the Platform",
+              "href": "#platform"
+            },
+            {
+              "label": "How the Two Teams Work",
+              "href": "#audience",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "3",
+              "label": "“Anytime” capabilities: observe, verify, diagnose"
+            },
+            {
+              "value": "4",
+              "label": "Interfaces on the client side"
+            },
+            {
+              "value": "2,636",
+              "label": "Monthly active sources monitored"
+            },
+            {
+              "value": "0",
+              "label": "Additional headcount"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Traffic Is Moving",
+              "title": "The Entry Point Is Moving from the Search Box to the Chat Box",
+              "desc": "AI search has moved from novelty to a mainstream information entry, with far higher engagement than traditional search."
+            },
+            {
+              "type": "stats",
+              "cols": 3,
+              "items": [
+                {
+                  "value": "685M",
+                  "label": "AI search monthly active users (August 2025)"
+                },
+                {
+                  "value": "+765.8%",
+                  "label": "Year-on-year growth — novelty to mainstream in one year"
+                },
+                {
+                  "value": "4.3x",
+                  "label": "45.6 sessions a month versus 10.7 for traditional search"
+                }
+              ]
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Traditional search",
+                "AI conversation"
+              ],
+              "rows": [
+                [
+                  "User",
+                  "Types keywords, scrolls ten blue links to compare, read reviews",
+                  "States the full need in one sentence and asks for an answer"
+                ],
+                [
+                  "Brand",
+                  "Fights for exposure through ranking and bidding; must be clicked",
+                  "Appears in the recommendation list and reasoning; the answer is the decision"
+                ],
+                [
+                  "Outcome",
+                  "Long path, fragmented attention, conversion leaks at every step",
+                  "Mentioned brands enter the mind; unmentioned brands disappear"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "One Brand, Six Engines",
+              "title": "Exposure Differs Not by Degree but by Presence",
+              "desc": "Measured exposure for the same brand across six AI engines — on most platforms it is effectively invisible."
+            },
+            {
+              "type": "bars",
+              "items": [
+                {
+                  "label": "Jingyan",
+                  "value": "83.3%"
+                },
+                {
+                  "label": "Doubao",
+                  "value": "60%"
+                },
+                {
+                  "label": "Yuanbao",
+                  "value": "58%"
+                },
+                {
+                  "label": "ERNIE",
+                  "value": "0%"
+                },
+                {
+                  "label": "Kimi",
+                  "value": "0%"
+                },
+                {
+                  "label": "Quark",
+                  "value": "0%"
+                }
+              ],
+              "note": "Source: live system monitoring. 0% does not mean ranking low; it means the brand never appears across an entire class of questions — every question hands an opportunity to a competitor."
+            },
+            {
+              "type": "secHead",
+              "kicker": "The Reality",
+              "title": "Today’s GEO Services Have Four Blind Spots",
+              "desc": "Feedback from real service cycles — what clients buy is not a capability but a black box."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Cannot see · black box",
+                  "desc": "During the campaign there is no visibility into AI-side performance, only the agency’s weekly or monthly report, and problems surface after they happen."
+                },
+                {
+                  "no": "02",
+                  "title": "Cannot measure · no standard",
+                  "desc": "No unified metrics: how much exposure, which rank — all described verbally, so results cannot be signed off."
+                },
+                {
+                  "no": "03",
+                  "title": "Cannot control · no intervention",
+                  "desc": "Negative sentiment or a competitor overtaking is discovered too late; teams can neither monitor nor adjust in time."
+                },
+                {
+                  "no": "04",
+                  "title": "Cannot let go · extra headcount",
+                  "desc": "Someone must chase the agency, the reports and the definitions — outsourced in name, more work in practice."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In One Sentence",
+              "desc": "GEO should not be a service you buy; it should be an asset you can see inside your own company."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "platform",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "The Platform",
+              "title": "One Platform, Three “Anytime” Capabilities",
+              "desc": "Turn GEO from a black-box service into a real-time system the client owns."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Observe anytime",
+                  "desc": "Brand exposure, sentiment visibility and competitor comparison on screen in real time."
+                },
+                {
+                  "no": "02",
+                  "title": "Verify anytime",
+                  "desc": "Exposure, top-three rate and days-on-target fully quantified against the pre-launch baseline."
+                },
+                {
+                  "no": "03",
+                  "title": "Diagnose anytime",
+                  "desc": "The system detects negative sentiment and source anomalies and issues prescriptions — no waiting for reports."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Zero Extra Headcount",
+              "desc": "Clients read conclusions and make decisions; monitoring, diagnosis and optimisation all sit on the platform."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Integration",
+              "title": "Four Interfaces, Everything Else on Our Side",
+              "desc": "Fewer interfaces means lighter integration for IT — a design principle for digital teams."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Interface",
+                "What the client does",
+                "What sits behind it"
+              ],
+              "rows": [
+                [
+                  "Task creation",
+                  "Submit brand or product, question volume, AI platforms and assessment period",
+                  "Plans generated, reviewed and executed end to end without client involvement"
+                ],
+                [
+                  "Data query",
+                  "Pull the monitoring dashboard and performance data",
+                  "Real-time collection across platforms; exposure, top-three rate and days-on-target computed live"
+                ],
+                [
+                  "Diagnosis",
+                  "Retrieve sentiment, source and keyword-expansion diagnostics",
+                  "Daily inspection produces diagnostics and proactive alerts on negative sentiment and anomalies"
+                ],
+                [
+                  "Reports",
+                  "Retrieve the close-out report and sign-off conclusion",
+                  "Target versus actual versus conclusion generated automatically, exported as PDF"
+                ]
+              ],
+              "note": "Four interfaces map to four actions: create, query, diagnose, report — monitoring, optimisation, diagnosis and reporting are delivered on our side."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Model Comparison",
+              "title": "Buy a Service, or Build a Platform"
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Traditional agency model",
+                "Enterprise GEO platform"
+              ],
+              "rows": [
+                [
+                  "Visibility",
+                  "Weekly or monthly reports; a black box in between",
+                  "Real-time dashboard, always available"
+                ],
+                [
+                  "Definitions",
+                  "Verbal description, hard to sign off",
+                  "Exposure, top-three rate and days-on-target, evidenced per question"
+                ],
+                [
+                  "Intervention",
+                  "Discovered late, cannot be changed",
+                  "System alerts plus an optimisation loop"
+                ],
+                [
+                  "Headcount",
+                  "Staff chase the agency and the reports",
+                  "No extra headcount; clients read conclusions"
+                ],
+                [
+                  "Assets",
+                  "Reset to zero when the project ends",
+                  "Accumulates as enterprise systems and data"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "capability",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Observe Anytime",
+              "title": "Monitoring Cockpit: the Dashboard Is the Landing Page",
+              "desc": "No agency retelling — the brand’s daily AI-side performance is visible in real time."
+            },
+            {
+              "type": "stats",
+              "cols": 3,
+              "items": [
+                {
+                  "value": "105",
+                  "label": "Questions under monitoring"
+                },
+                {
+                  "value": "2,636",
+                  "label": "Monthly active sources"
+                },
+                {
+                  "value": "202",
+                  "label": "Daily active sources"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Four core metrics",
+                "Definition"
+              ],
+              "rows": [
+                [
+                  "Brand exposure",
+                  "Share of answers mentioning the brand, averaged over the period"
+                ],
+                [
+                  "Sentiment visibility",
+                  "Share of answers presenting brand sentiment, positive or negative"
+                ],
+                [
+                  "Top3 ranking rate",
+                  "Share of answers placing the brand in the top three"
+                ],
+                [
+                  "Competitor exposure",
+                  "Exposure comparison against competitors on the same question set"
+                ]
+              ],
+              "note": "Switch freely by AI model or by question, compare the last 7 or 30 days in one click, and benchmark competitors on the same trend chart."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Verify Anytime",
+              "title": "Every Percentage Point Comes With Evidence",
+              "desc": "Four metrics plus three layers of evidence — no verbal sign-off."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "title": "Brand exposure",
+                  "desc": "Period average, compared with the pre-launch baseline."
+                },
+                {
+                  "title": "Top-three rate",
+                  "desc": "Share of AI answers placing the brand in the top three."
+                },
+                {
+                  "title": "Days on target (exposure)",
+                  "desc": "Days where exposure met or exceeded target."
+                },
+                {
+                  "title": "Days on target (top three)",
+                  "desc": "Cumulative days in the top three."
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "title": "Two-dimensional drill-down",
+                  "desc": "Statistics by question term × AI platform; every row drills into daily trends and per-day detail."
+                },
+                {
+                  "title": "Answer snapshots",
+                  "desc": "Actual AI answers captured and archived, so before-and-after can be replayed."
+                },
+                {
+                  "title": "Close-out sign-off",
+                  "desc": "A standard target-versus-actual-versus-conclusion table, exported as PDF for reporting and settlement."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Diagnose Anytime",
+              "title": "The System Patroles Daily and Writes Prescriptions",
+              "desc": "Anomalies are found before the client notices — no reports to wait for, no one to chase."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "title": "Sentiment analysis",
+                  "desc": "Positive and negative sentiment in AI answers identified and traced one by one."
+                },
+                {
+                  "title": "Source diagnostics",
+                  "desc": "Source rankings plus new-source tracking: where AI draws from, what is weighted or dropped."
+                },
+                {
+                  "title": "Keyword expansion",
+                  "desc": "The system recommends question terms, starting from 15, to cover more real user questions."
+                },
+                {
+                  "title": "Proactive alerts",
+                  "desc": "Negative sentiment, competitor overtaking and exposure anomalies trigger alerts with prescriptions."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Intervention Loop",
+              "desc": "Page-level weighting to raise citation, source weighting or removal, sentiment placement optimisation and continuous keyword expansion — issues can be fixed as soon as they are found."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "audience",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Two Departments",
+              "title": "Two Teams, One Ledger",
+              "desc": "A platform is not an IT solo act: marketing must define a result that can be signed off before anyone funds a system — and that definition only lands when the digital team integrates it."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Department",
+                "What they really care about",
+                "What the platform provides",
+                "Basis for funding or sign-off"
+              ],
+              "rows": [
+                [
+                  "Marketing",
+                  "Whether the spend works and can be reported upward",
+                  "Live dashboard, days-on-target, one-click close-out report",
+                  "Exposure and days-on-target, verifiable per question"
+                ],
+                [
+                  "Digital / IT",
+                  "Whether the system can land and needs permanent staff",
+                  "Four interfaces; collection, diagnosis and reporting stay on the platform",
+                  "Interface list, permissions and audit trail, no in-house build"
+                ],
+                [
+                  "Procurement / Finance",
+                  "How the money is calculated and whether there are hidden costs",
+                  "Question volume × platforms × period, locked before launch",
+                  "Cost formula written into the contract, no top-ups during execution"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Path Forward",
+              "title": "From One Sign-Off Definition to One Enterprise System",
+              "desc": "Four steps, each with a clear deliverable."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Marketing defines",
+                  "desc": "Sets exposure, top-three rate and days-on-target as sign-off criteria"
+                },
+                {
+                  "no": "02",
+                  "title": "Platform evidences",
+                  "desc": "Live data and answer snapshots for the same question set across platforms"
+                },
+                {
+                  "no": "03",
+                  "title": "IT approves",
+                  "desc": "Sizes integration against four interfaces and writes the business case with real data"
+                },
+                {
+                  "no": "04",
+                  "title": "Enterprise owns",
+                  "desc": "The platform stays inside the company and does not reset with an agency change"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "title": "Marketing gets",
+                  "desc": "A dashboard ready for the board: exposure, days-on-target, competitor comparison and a close-out PDF."
+                },
+                {
+                  "title": "IT gets",
+                  "desc": "An assessable integration list: four interfaces, unified definitions and data trails, with no in-house collection or model adaptation."
+                },
+                {
+                  "title": "The enterprise gets",
+                  "desc": "Its own GEO capability: consistent definitions, evidence along the way, reusable across brands and categories."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Why Demand Comes First",
+              "desc": "The platform’s value is not the system itself but the results it can prove. Without signable results marketing has no case, and IT has no reason to build. Once the definition is written into the contract, the system becomes necessary."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "tone": "dark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Rollout",
+              "title": "Seven Steps, with Sign-Off Built In",
+              "desc": "Client actions and our actions are labelled separately; every step ships an output."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "AI diagnosis (first)",
+                  "desc": "Pre-project health check: sentiment, source and keyword diagnostics with prescriptions"
+                },
+                {
+                  "no": "02",
+                  "title": "Budget and approval",
+                  "desc": "Approval and budget based on diagnosis; the system checks budget sufficiency"
+                },
+                {
+                  "no": "03",
+                  "title": "Create the GEO task",
+                  "desc": "Set question volume, AI platforms and assessment period"
+                },
+                {
+                  "no": "04",
+                  "title": "Review and execute",
+                  "desc": "Plans reviewed then executed, with task status visible throughout"
+                }
+              ]
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "05",
+                  "title": "Real-time monitoring",
+                  "desc": "Exposure, sentiment visibility and competitor comparison live on screen"
+                },
+                {
+                  "no": "06",
+                  "title": "Optimise and intervene",
+                  "desc": "Source weighting or removal, sentiment placement, continuous keyword expansion"
+                },
+                {
+                  "no": "07",
+                  "title": "Close-out",
+                  "desc": "The close-out report is generated automatically and signed off against target"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Assessment and Billing",
+              "desc": "A 15-day ramp-up is excluded from assessment, so the effective period equals the contracted period minus 15 days. Billing is locked before launch at question volume × platforms × period, with no hidden fees during execution."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Task Setup",
+              "title": "As Simple as Placing a Media Order"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Setting",
+                "Options"
+              ],
+              "rows": [
+                [
+                  "Objective",
+                  "Brand or product mode; targets for exposure, top-three rate or sentiment placement, set by the client"
+                ],
+                [
+                  "Placement",
+                  "Select AI platforms such as DeepSeek and Yuanbao; add question terms manually or use system recommendations"
+                ],
+                [
+                  "Duration",
+                  "30, 60 or 90 days, or custom; the minimum billing unit is 30 days"
+                ]
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Transparent Sign-Off",
+              "title": "A Transparent Process with Per-Question Verification"
+            },
+            {
+              "type": "table",
+              "head": [
+                "Mechanism",
+                "Detail"
+              ],
+              "rows": [
+                [
+                  "Per-question assessment",
+                  "Each question term shows its target, average exposure and days on target, so achievement is clear"
+                ],
+                [
+                  "Snapshot evidence",
+                  "Original answers from each platform are time-stamped, giving sign-off a factual basis"
+                ],
+                [
+                  "Clear definitions",
+                  "Exposure is the assessed metric; top-three rate is a service-quality reference and not assessed, so settlement is unambiguous"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In One Sentence",
+              "desc": "With an enterprise GEO platform, build long-term brand competitiveness in the AI era: real-time monitoring, measurable results and intelligent diagnosis, with no additional headcount."
             }
           ]
         }
