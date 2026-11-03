@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-02",
+    "updated": "2026-11-03",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -458,52 +458,52 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Latest data: 2026-09 · AI Product Rankings No. 40 · curated foundation-model list · monthly active users. Sorted by MAU within the group and synced with the three-ranking chart.",
+                      "note": "Latest data: 2026-10 · AI Product Rankings No.  · curated foundation-model list · monthly active users. Sorted by MAU within the group and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "Doubao (ByteDance)",
-                          "value": "313M",
-                          "note": "MoM -0.39%"
+                          "value": "312M",
+                          "note": "MoM -0.20%"
                         },
                         {
                           "label": "Qwen (Alibaba)",
-                          "value": "276M",
-                          "note": "MoM +1.71%"
+                          "value": "279M",
+                          "note": "MoM +0.89%"
                         },
                         {
                           "label": "DeepSeek",
-                          "value": "139M",
-                          "note": "MoM +3.98%"
+                          "value": "141M",
+                          "note": "MoM +1.28%"
                         },
                         {
                           "label": "Tencent Yuanbao (Tencent)",
-                          "value": "92.27M",
-                          "note": "MoM -4.81%"
+                          "value": "89.71M",
+                          "note": "MoM -2.78%"
                         },
                         {
                           "label": "Kimi (Moonshot AI)",
-                          "value": "23.15M",
-                          "note": "MoM -12.38%"
+                          "value": "24.35M",
+                          "note": "MoM +5.19%"
                         },
                         {
                           "label": "Nano AI Search (360)",
-                          "value": "6.62M",
-                          "note": "MoM -7.64%"
+                          "value": "6.18M",
+                          "note": "MoM -6.60%"
                         },
                         {
                           "label": "ERNIE Bot (Baidu)",
-                          "value": "5.46M",
-                          "note": "MoM -3.47%"
+                          "value": "5.26M",
+                          "note": "MoM -3.67%"
                         },
                         {
                           "label": "ChatGLM (Zhipu)",
-                          "value": "4.12M",
-                          "note": "MoM -4.32%"
+                          "value": "3.92M",
+                          "note": "MoM -4.82%"
                         },
                         {
                           "label": "MiniMax",
-                          "value": "3.62M",
-                          "note": "MoM +3.18%"
+                          "value": "3.5M",
+                          "note": "MoM -3.26%"
                         }
                       ]
                     }
@@ -515,42 +515,47 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Latest data: 2026-09 · AI Product Rankings No. 40 · global ranking for overseas models · sorted by MAU and synced with the three-ranking chart.",
+                      "note": "Latest data: 2026-10 · AI Product Rankings No.  · global ranking for overseas models · sorted by MAU and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "ChatGPT (OpenAI)",
-                          "value": "1.09B",
-                          "note": "MoM +6.13%"
+                          "value": "1.16B",
+                          "note": "MoM +6.01%"
                         },
                         {
                           "label": "Gemini (Google)",
-                          "value": "240M",
-                          "note": "MoM +27.17%"
+                          "value": "270M",
+                          "note": "MoM +12.55%"
                         },
                         {
-                          "label": "Grok (xAI)",
-                          "value": "66.97M",
-                          "note": "MoM -0.82%"
+                          "label": "Copilot (Microsoft)",
+                          "value": "152M",
+                          "note": "MoM +3.08%"
                         },
                         {
                           "label": "Claude (Anthropic)",
-                          "value": "58.96M",
-                          "note": "MoM +36.63%"
+                          "value": "75.52M",
+                          "note": "MoM +28.10%"
+                        },
+                        {
+                          "label": "Grok (xAI)",
+                          "value": "70.28M",
+                          "note": "MoM +4.94%"
                         },
                         {
                           "label": "Perplexity",
-                          "value": "22.66M",
-                          "note": "MoM -4.62%"
+                          "value": "20.98M",
+                          "note": "MoM -7.40%"
                         },
                         {
                           "label": "Character.AI",
-                          "value": "18.25M",
-                          "note": "MoM -10.28%"
+                          "value": "18.37M",
+                          "note": "MoM +0.68%"
                         },
                         {
                           "label": "Nova (Amazon)",
-                          "value": "17.48M",
-                          "note": "MoM -67.96%"
+                          "value": "17.77M",
+                          "note": "MoM +1.67%"
                         }
                       ]
                     }
@@ -643,56 +648,56 @@ window.SITE_DATA_EN = {
                       "rows": [
                         [
                           "DS V4.1 Flash 1017 · DeepSeek",
-                          "48.1T",
-                          "+0.6%"
+                          "50.4T",
+                          "+4.8%"
                         ],
                         [
                           "GLM 5.3 Flash · Zhipu",
-                          "15T",
-                          "-4.5%"
+                          "15.3T",
+                          "+2.0%"
                         ],
                         [
                           "DS V4.1 Flash · DeepSeek",
-                          "14.9T",
-                          "+2.1%"
-                        ],
-                        [
-                          "GPT-6 Luna · OpenAI",
-                          "9.62T",
-                          "-6.6%"
+                          "15.1T",
+                          "+1.3%"
                         ],
                         [
                           "Hy4 preview · Tencent",
-                          "9.07T",
-                          "-2.6%"
+                          "9.25T",
+                          "+2.0%"
+                        ],
+                        [
+                          "GPT-6 Luna · OpenAI",
+                          "9.22T",
+                          "-4.2%"
                         ],
                         [
                           "Claude Opus 5.5 · Anthropic",
-                          "6.73T",
-                          "-2.6%"
-                        ],
-                        [
-                          "Step 5 Preview · StepFun",
-                          "6.25T",
-                          "-0.8%"
+                          "6.67T",
+                          "-0.9%"
                         ],
                         [
                           "MiniMax M3.1 Flash · MiniMax",
-                          "6.23T",
-                          "+9.9%"
+                          "6.46T",
+                          "+3.7%"
+                        ],
+                        [
+                          "Step 5 Preview · StepFun",
+                          "6.46T",
+                          "+3.4%"
                         ],
                         [
                           "GPT-5.6 Luna · OpenAI",
-                          "4.33T",
-                          "+8.3%"
+                          "5.32T",
+                          "+22.9%"
                         ],
                         [
-                          "GLM 5.3 · Zhipu",
-                          "4.23T",
-                          "-4.3%"
+                          "GPT-6.1 Sol · OpenAI",
+                          "3.93T",
+                          "New"
                         ]
                       ],
-                      "note": "As of 2026-11-01 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
+                      "note": "As of 2026-11-02 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
                     }
                   ]
                 }
