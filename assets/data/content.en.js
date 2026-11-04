@@ -7638,17 +7638,13 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "secHead",
-              "kicker": "One Brand, Six Engines",
+              "kicker": "One Brand, Five External Engines",
               "title": "Exposure Differs Not by Degree but by Presence",
-              "desc": "Measured exposure for the same brand across six AI engines — on most platforms it is effectively invisible."
+              "desc": "Measured exposure for the same brand across five external AI engines — only two show the brand at all, while the other three stay completely dark."
             },
             {
               "type": "bars",
               "items": [
-                {
-                  "label": "Jingyan",
-                  "value": "83.3%"
-                },
                 {
                   "label": "Doubao",
                   "value": "60%"
@@ -7670,7 +7666,7 @@ window.SITE_DATA_EN = {
                   "value": "0%"
                 }
               ],
-              "note": "Source: live system monitoring. 0% does not mean ranking low; it means the brand never appears across an entire class of questions — every question hands an opportunity to a competitor."
+              "note": "Source: live system monitoring. This chart compares external AI engines only; in-house entry points are excluded. 0% does not mean ranking low; it means the brand never appears across an entire class of questions — every question hands an opportunity to a competitor."
             },
             {
               "type": "secHead",

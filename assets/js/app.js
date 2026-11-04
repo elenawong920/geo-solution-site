@@ -346,9 +346,11 @@
       var v = vals[i].n;
       var pct = isNaN(v) ? 0 : (v / denom) * 100;
       pct = Math.max(0, Math.min(100, pct));
+      /* 值为 0 时不保留最小宽度：否则轨道上会留一个小红点，看起来像「有一点点」 */
+      var zero = !(v > 0) ? ' style="min-width:0"' : '';
       h += '<div class="bar"><div class="bar__top"><span class="bar__label">' + t(p + '.items.' + i + '.label', it.label) + '</span>' +
            '<span class="bar__val">' + t(p + '.items.' + i + '.value', it.value) + '</span></div>' +
-           '<div class="bar__track"><div class="bar__fill" data-pct="' + pct.toFixed(2) + '"></div></div>';
+           '<div class="bar__track"><div class="bar__fill"' + zero + ' data-pct="' + pct.toFixed(2) + '"></div></div>';
       if (it.note) h += '<div class="bar__note">' + t(p + '.items.' + i + '.note', it.note) + '</div>';
       h += '</div>';
     });
