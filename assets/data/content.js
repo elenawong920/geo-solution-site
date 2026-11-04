@@ -7532,6 +7532,10 @@ window.SITE_DATA = {
           "href": "#capability"
         },
         {
+          "label": "系统实录",
+          "href": "#screens"
+        },
+        {
           "label": "两个部门",
           "href": "#audience"
         },
@@ -7959,7 +7963,52 @@ window.SITE_DATA = {
         },
         {
           "type": "section",
+          "id": "screens",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "系统实录",
+              "title": "不是示意图，是京准通后台的真实界面",
+              "desc": "以下四屏取自京准通 · GEO 营销任务后台，未做视觉美化；品牌与客户信息已做模糊处理。"
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/platform-task.jpg",
+                  "alt": "京准通 GEO 营销任务创建界面",
+                  "cap": "<b>① 创建 GEO 任务</b>　营销目标、营销场景、投放时间三段式配置：品牌 / 商品双模式，投放平台按 DeepSeek、元宝勾选，问题词可手动添加或由系统推荐（建议 10 个起投）。"
+                },
+                {
+                  "src": "assets/img/platform-dashboard.jpg",
+                  "alt": "AI 引擎优化监控驾驶舱",
+                  "cap": "<b>② 监控驾驶舱</b>　问题总数 105、月活信源 2,636、日活信源 202；右侧品牌曝光对比按引擎逐条列出，哪些有曝光、哪些为 0% 一眼可见。"
+                },
+                {
+                  "src": "assets/img/platform-insight.jpg",
+                  "alt": "观点分析与信源排行榜界面",
+                  "cap": "<b>③ 观点分析与信源排行</b>　正 / 负 / 其他三类观点分开统计并按天看趋势；右侧排行榜可切近一天 / 近七天 / 近三十天，底部追踪新增信源。"
+                },
+                {
+                  "src": "assets/img/platform-report.jpg",
+                  "alt": "优化效果明细与回答快照",
+                  "cap": "<b>④ 优化效果明细</b>　按问题词逐条列示任务目标、曝光率服务周期均值与达标天数；每个问题词附原始回答快照与时间戳，验收可回放。"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "关于这些截图",
+              "desc": "均为系统实际界面，未做视觉美化；截图中的品牌与客户信息已打码。页面曝光数值来自具体项目样本，用于说明读数方式，不代表行业平均水平。"
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "audience",
+          "tone": "surface",
           "blocks": [
             {
               "type": "secHead",

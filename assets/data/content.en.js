@@ -7532,6 +7532,10 @@ window.SITE_DATA_EN = {
           "href": "#capability"
         },
         {
+          "label": "Product Screens",
+          "href": "#screens"
+        },
+        {
           "label": "Two Departments",
           "href": "#audience"
         },
@@ -7959,7 +7963,52 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "screens",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Product Screens",
+              "title": "Not Mockups: Real Screens from the Jingzhuntong Backend",
+              "desc": "These four screens come from the Jingzhuntong GEO task console, unretouched; brand and client details are blurred."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/platform-task.jpg",
+                  "alt": "Jingzhuntong GEO task setup screen",
+                  "cap": "<b>① Create a GEO task</b>　A three-part setup covering objective, placement and duration: brand or product mode, platform selection (DeepSeek, Yuanbao) and question terms added manually or recommended by the system (10 advised to start)."
+                },
+                {
+                  "src": "assets/img/platform-dashboard.jpg",
+                  "alt": "AI engine optimisation monitoring cockpit",
+                  "cap": "<b>② Monitoring cockpit</b>　105 questions under monitoring, 2,636 monthly active sources and 202 daily active sources. The brand exposure panel lists engines one by one, so it is obvious which have exposure and which sit at 0%."
+                },
+                {
+                  "src": "assets/img/platform-insight.jpg",
+                  "alt": "Sentiment analysis and source ranking screen",
+                  "cap": "<b>③ Sentiment analysis and source ranking</b>　Positive, negative and other sentiment tracked separately over time; the leaderboard switches across 1, 7 or 30 days, with newly added sources listed below."
+                },
+                {
+                  "src": "assets/img/platform-report.jpg",
+                  "alt": "Performance detail and answer snapshots",
+                  "cap": "<b>④ Performance detail</b>　Each question term shows its target, average exposure over the service period and days on target, with the original answer snapshots and timestamps attached."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "About These Screens",
+              "desc": "All are actual product screens, unretouched; brand and client details are blurred. Exposure figures come from one project sample and show how to read the dashboard rather than an industry average."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "audience",
+          "tone": "surface",
           "blocks": [
             {
               "type": "secHead",
