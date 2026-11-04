@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-11-03",
+    "updated": "2026-11-04",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -657,56 +657,56 @@ window.SITE_DATA = {
                       "rows": [
                         [
                           "DS V4.1 Flash 1017 | DeepSeek",
-                          "50.4T",
-                          "+4.8%"
+                          "54.8T",
+                          "+8.7%"
                         ],
                         [
                           "GLM 5.3 Flash | 智谱",
-                          "15.3T",
-                          "+2.0%"
+                          "16.4T",
+                          "+7.2%"
                         ],
                         [
                           "DS V4.1 Flash | DeepSeek",
-                          "15.1T",
-                          "+1.3%"
+                          "15.6T",
+                          "+3.3%"
                         ],
                         [
                           "Hy4 preview | 腾讯",
-                          "9.25T",
-                          "+2.0%"
+                          "9.48T",
+                          "+2.5%"
                         ],
                         [
                           "GPT-6 Luna | OpenAI",
-                          "9.22T",
-                          "-4.2%"
+                          "9.26T",
+                          "+0.4%"
+                        ],
+                        [
+                          "Step 5 Preview | 阶跃星辰",
+                          "6.68T",
+                          "+3.4%"
                         ],
                         [
                           "Claude Opus 5.5 | Anthropic",
                           "6.67T",
-                          "-0.9%"
+                          "0.0%"
                         ],
                         [
                           "MiniMax M3.1 Flash | MiniMax",
-                          "6.46T",
-                          "+3.7%"
-                        ],
-                        [
-                          "Step 5 Preview | 阶跃星辰",
-                          "6.46T",
-                          "+3.4%"
+                          "6.5T",
+                          "+0.6%"
                         ],
                         [
                           "GPT-5.6 Luna | OpenAI",
-                          "5.32T",
-                          "+22.9%"
+                          "5.33T",
+                          "+0.2%"
                         ],
                         [
                           "GPT-6.1 Sol | OpenAI",
-                          "3.93T",
-                          "新入榜"
+                          "4.05T",
+                          "+3.1%"
                         ]
                       ],
-                      "note": "截至 2026-11-02 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
+                      "note": "截至 2026-11-03 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
                     }
                   ]
                 }
