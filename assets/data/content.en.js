@@ -10,7 +10,7 @@ window.SITE_DATA_EN = {
     "updatedLabel": "Updated"
   },
   "footer": {
-    "brand": "JD Technology · AI Applications Division | Generative Engine Optimization (GEO) solutions that make your brand a trusted recommendation inside AI answers.",
+    "brand": "JD Technology · AI Application Products Division | Generative Engine Optimization (GEO) solutions that make your brand a trusted recommendation inside AI answers.",
     "copy": "© 2026 JD Technology · GEO Solutions",
     "cols": [
       {
@@ -133,7 +133,7 @@ window.SITE_DATA_EN = {
       "sections": [
         {
           "type": "hero",
-          "kicker": "JD Technology · AI Applications Division",
+          "kicker": "JD Technology · AI Application Products Division",
           "title": [
             "Harness the AI Era",
             "Win the Traffic of Tomorrow"

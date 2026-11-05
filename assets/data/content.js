@@ -10,7 +10,7 @@ window.SITE_DATA = {
     "updatedLabel": "更新于"
   },
   "footer": {
-    "brand": "京东科技 · AI 应用业务部｜生成式引擎优化（GEO）解决方案。让品牌在 AI 时代成为用户答案中的可信推荐。",
+    "brand": "京东科技 · AI 应用产品部｜生成式引擎优化（GEO）解决方案。让品牌在 AI 时代成为用户答案中的可信推荐。",
     "copy": "© 2026 京东科技 · GEO 解决方案",
     "cols": [
       {
@@ -133,7 +133,7 @@ window.SITE_DATA = {
       "sections": [
         {
           "type": "hero",
-          "kicker": "京东科技 · AI 应用业务部",
+          "kicker": "京东科技 · AI 应用产品部",
           "title": [
             "驾驭 AI 时代",
             "赢得未来流量"
