@@ -574,69 +574,60 @@ window.SITE_DATA_EN = {
                   "label": "B2B Web Monthly Visits",
                   "panels": [
                     {
-                      "type": "table",
-                      "head": [
-                        "Platform",
-                        "Monthly Visits",
-                        "MoM"
-                      ],
-                      "numCols": [
-                        1,
-                        2
-                      ],
-                      "rows": [
-                        [
-                          "DeepSeek",
-                          "458M",
-                          "+2.2%"
-                        ],
-                        [
-                          "Doubao | ByteDance",
-                          "154M",
-                          "-4.9%"
-                        ],
-                        [
-                          "Nano AI | 360",
-                          "123M",
-                          "+3.2%"
-                        ],
-                        [
-                          "ERNIE Bot | Baidu",
-                          "59.84M",
-                          "+5.4%"
-                        ],
-                        [
-                          "Kimi | Moonshot AI",
-                          "38.62M",
-                          "-25.9%"
-                        ],
-                        [
-                          "Qwen | Alibaba",
-                          "31.05M",
-                          "-11.5%"
-                        ],
-                        [
-                          "DeepSeek API",
-                          "30.89M",
-                          "-15.6%"
-                        ],
-                        [
-                          "Baidu Wenku",
-                          "20.5M",
-                          "-15.1%"
-                        ],
-                        [
-                          "WorkBuddy | Tencent",
-                          "17.74M",
-                          "+21.4%"
-                        ],
-                        [
-                          "Baidu Dazi | Baidu",
-                          "12.75M",
-                          "+2.5%"
-                        ]
-                      ],
-                      "note": "Latest data: 2026-09 · Website Rankings No. 40 · China TOP 10 · monthly visits, synced with the three-ranking chart; includes repeat visits."
+                      "type": "bars",
+                      "note": "Latest data: 2026-09 · Website Rankings No. 40 · China TOP 10 · monthly visits, synced with the three-ranking chart; includes repeat visits.",
+                      "items": [
+                        {
+                          "label": "DeepSeek",
+                          "value": "458M",
+                          "note": "MoM +2.2%"
+                        },
+                        {
+                          "label": "Doubao (ByteDance)",
+                          "value": "154M",
+                          "note": "MoM -4.9%"
+                        },
+                        {
+                          "label": "Nano AI (360)",
+                          "value": "123M",
+                          "note": "MoM +3.2%"
+                        },
+                        {
+                          "label": "ERNIE Bot (Baidu)",
+                          "value": "59.84M",
+                          "note": "MoM +5.4%"
+                        },
+                        {
+                          "label": "Kimi (Moonshot AI)",
+                          "value": "38.62M",
+                          "note": "MoM -25.9%"
+                        },
+                        {
+                          "label": "Qwen (Alibaba)",
+                          "value": "31.05M",
+                          "note": "MoM -11.5%"
+                        },
+                        {
+                          "label": "DeepSeek API",
+                          "value": "30.89M",
+                          "note": "MoM -15.6%"
+                        },
+                        {
+                          "label": "Baidu Wenku",
+                          "value": "20.5M",
+                          "note": "MoM -15.1%"
+                        },
+                        {
+                          "label": "WorkBuddy (Tencent)",
+                          "value": "17.74M",
+                          "note": "MoM +21.4%"
+                        },
+                        {
+                          "label": "Baidu Dazi (Baidu)",
+                          "value": "12.75M",
+                          "note": "MoM +2.5%"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -644,69 +635,60 @@ window.SITE_DATA_EN = {
                   "label": "API Call Volume (Weekly Tokens)",
                   "panels": [
                     {
-                      "type": "table",
-                      "head": [
-                        "Model / Provider",
-                        "Call Volume",
-                        "MoM"
-                      ],
-                      "numCols": [
-                        1,
-                        2
-                      ],
-                      "rows": [
-                        [
-                          "DS V4.1 Flash 1017 · DeepSeek",
-                          "57.6T",
-                          "+5.1%"
-                        ],
-                        [
-                          "DS V4.1 Flash · DeepSeek",
-                          "16.2T",
-                          "+3.8%"
-                        ],
-                        [
-                          "GLM 5.3 Flash · Zhipu",
-                          "15.9T",
-                          "-3.0%"
-                        ],
-                        [
-                          "GPT-6 Luna · OpenAI",
-                          "8.95T",
-                          "-3.3%"
-                        ],
-                        [
-                          "Hy4 preview · Tencent",
-                          "8.1T",
-                          "-14.6%"
-                        ],
-                        [
-                          "Claude Opus 5.5 · Anthropic",
-                          "6.81T",
-                          "+2.1%"
-                        ],
-                        [
-                          "Step 5 Preview · StepFun",
-                          "6.73T",
-                          "+0.7%"
-                        ],
-                        [
-                          "MiniMax M3.1 Flash · MiniMax",
-                          "6.35T",
-                          "-2.3%"
-                        ],
-                        [
-                          "GPT-5.6 Luna · OpenAI",
-                          "5.25T",
-                          "-1.5%"
-                        ],
-                        [
-                          "GPT-6.1 Sol · OpenAI",
-                          "4.11T",
-                          "+1.5%"
-                        ]
-                      ],
-                      "note": "As of 2026-11-04 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
+                      "type": "bars",
+                      "note": "As of 2026-11-04 · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart.",
+                      "items": [
+                        {
+                          "label": "DS V4.1 Flash 1017 (DeepSeek)",
+                          "value": "57.6T",
+                          "note": "MoM +5.1%"
+                        },
+                        {
+                          "label": "DS V4.1 Flash (DeepSeek)",
+                          "value": "16.2T",
+                          "note": "MoM +3.8%"
+                        },
+                        {
+                          "label": "GLM 5.3 Flash (Zhipu)",
+                          "value": "15.9T",
+                          "note": "MoM -3.0%"
+                        },
+                        {
+                          "label": "GPT-6 Luna (OpenAI)",
+                          "value": "8.95T",
+                          "note": "MoM -3.3%"
+                        },
+                        {
+                          "label": "Hy4 preview (Tencent)",
+                          "value": "8.1T",
+                          "note": "MoM -14.6%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5 (Anthropic)",
+                          "value": "6.81T",
+                          "note": "MoM +2.1%"
+                        },
+                        {
+                          "label": "Step 5 Preview (StepFun)",
+                          "value": "6.73T",
+                          "note": "MoM +0.7%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash (MiniMax)",
+                          "value": "6.35T",
+                          "note": "MoM -2.3%"
+                        },
+                        {
+                          "label": "GPT-5.6 Luna (OpenAI)",
+                          "value": "5.25T",
+                          "note": "MoM -1.5%"
+                        },
+                        {
+                          "label": "GPT-6.1 Sol (OpenAI)",
+                          "value": "4.11T",
+                          "note": "MoM +1.5%"
+                        }
+                      ]
                     }
                   ]
                 }

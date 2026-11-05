@@ -237,6 +237,22 @@ def table_rows(rows: list[dict], lang: str, kind: str) -> list[list[str]]:
     return out
 
 
+def bars_items(rows: list[list[str]], lang: str) -> list[dict]:
+    """把三列行（名称 / 数值 / 环比）转成条形图 items，名称里的分隔符统一成括号。"""
+    out = []
+    for name, value, mom in rows:
+        if lang == "zh":
+            m = re.match(r"^(.+?)\s*\|\s*(.+)$", name)
+            label = f"{m.group(1)}（{m.group(2)}）" if m else name
+            prefix = "环比 "
+        else:
+            m = re.match(r"^(.+?)\s*\|\s*(.+)$", name) or re.match(r"^(.+?)\s*·\s*(.+)$", name)
+            label = f"{m.group(1)} ({m.group(2)})" if m else name
+            prefix = "MoM "
+        out.append({"label": label, "value": value, "note": prefix + mom})
+    return out
+
+
 def load_content(path: Path, global_name: str) -> dict:
     raw = path.read_text(encoding="utf-8")
     start = raw.find("{")
@@ -290,8 +306,12 @@ def sync_language(data: dict, parsed: dict, lang: str, chart_date: str) -> None:
 
     tabs[0]["panels"][0]["items"] = a_items(domestic, lang)
     tabs[1]["panels"][0]["items"] = a_items(overseas, lang)
-    tabs[2]["panels"][0]["rows"] = table_rows(parsed["b"], lang, "b")
-    tabs[3]["panels"][0]["rows"] = table_rows(parsed["c"], lang, "c")
+    for idx, kind in ((2, "b"), (3, "c")):
+        panel = tabs[idx]["panels"][0]
+        panel["type"] = "bars"
+        panel.pop("head", None)
+        panel.pop("numCols", None)
+        panel["items"] = bars_items(table_rows(parsed[kind], lang, kind), lang)
 
     a = period_info(parsed["dates"]["a"])
     b = period_info(parsed["dates"]["b"])

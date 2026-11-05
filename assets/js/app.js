@@ -697,6 +697,14 @@
           Array.prototype.forEach.call(panels, function (p) {
             p.classList.toggle('is-active', p.id === target);
           });
+          /* 切到新面板时立即给条形图赋值：隐藏面板里的条在 IntersectionObserver
+             第一次回调时不可见，不补这一步会出现「切换后条形是空的」 */
+          var cur = document.getElementById(target);
+          if (cur) {
+            Array.prototype.forEach.call(cur.querySelectorAll('.bar__fill'), function (f) {
+              f.style.width = f.getAttribute('data-pct') + '%';
+            });
+          }
           observeReveal(scope);
         });
       });

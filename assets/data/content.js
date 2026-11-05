@@ -574,69 +574,60 @@ window.SITE_DATA = {
                   "label": "B 端 Web 月访问量",
                   "panels": [
                     {
-                      "type": "table",
-                      "head": [
-                        "平台",
-                        "月访问量",
-                        "环比"
-                      ],
-                      "numCols": [
-                        1,
-                        2
-                      ],
-                      "rows": [
-                        [
-                          "DeepSeek",
-                          "4.58 亿",
-                          "+2.2%"
-                        ],
-                        [
-                          "豆包 | 字节",
-                          "1.54 亿",
-                          "-4.9%"
-                        ],
-                        [
-                          "纳米AI | 360",
-                          "1.23 亿",
-                          "+3.2%"
-                        ],
-                        [
-                          "文心 | 百度",
-                          "5984 万",
-                          "+5.4%"
-                        ],
-                        [
-                          "Kimi | 月之暗面",
-                          "3862 万",
-                          "-25.9%"
-                        ],
-                        [
-                          "千问 | 阿里",
-                          "3105 万",
-                          "-11.5%"
-                        ],
-                        [
-                          "DeepSeek API",
-                          "3089 万",
-                          "-15.6%"
-                        ],
-                        [
-                          "百度文库",
-                          "2050 万",
-                          "-15.1%"
-                        ],
-                        [
-                          "WorkBuddy | 腾讯",
-                          "1774 万",
-                          "+21.4%"
-                        ],
-                        [
-                          "百度搭子 | 百度",
-                          "1275 万",
-                          "+2.5%"
-                        ]
-                      ],
-                      "note": "最新数据日期：2026 年 9 月 · 网站榜第 40 期 · 国内 TOP10 · 单位：月访问量，与三榜图同步更新；含重复访问。"
+                      "type": "bars",
+                      "note": "最新数据日期：2026 年 9 月 · 网站榜第 40 期 · 国内 TOP10 · 单位：月访问量，与三榜图同步更新；含重复访问。",
+                      "items": [
+                        {
+                          "label": "DeepSeek",
+                          "value": "4.58 亿",
+                          "note": "环比 +2.2%"
+                        },
+                        {
+                          "label": "豆包（字节）",
+                          "value": "1.54 亿",
+                          "note": "环比 -4.9%"
+                        },
+                        {
+                          "label": "纳米AI（360）",
+                          "value": "1.23 亿",
+                          "note": "环比 +3.2%"
+                        },
+                        {
+                          "label": "文心（百度）",
+                          "value": "5984 万",
+                          "note": "环比 +5.4%"
+                        },
+                        {
+                          "label": "Kimi（月之暗面）",
+                          "value": "3862 万",
+                          "note": "环比 -25.9%"
+                        },
+                        {
+                          "label": "千问（阿里）",
+                          "value": "3105 万",
+                          "note": "环比 -11.5%"
+                        },
+                        {
+                          "label": "DeepSeek API",
+                          "value": "3089 万",
+                          "note": "环比 -15.6%"
+                        },
+                        {
+                          "label": "百度文库",
+                          "value": "2050 万",
+                          "note": "环比 -15.1%"
+                        },
+                        {
+                          "label": "WorkBuddy（腾讯）",
+                          "value": "1774 万",
+                          "note": "环比 +21.4%"
+                        },
+                        {
+                          "label": "百度搭子（百度）",
+                          "value": "1275 万",
+                          "note": "环比 +2.5%"
+                        }
+                      ]
                     }
                   ]
                 },
@@ -644,69 +635,60 @@ window.SITE_DATA = {
                   "label": "API 调用量（周度 Token）",
                   "panels": [
                     {
-                      "type": "table",
-                      "head": [
-                        "模型 / 供应商",
-                        "调用量",
-                        "环比"
-                      ],
-                      "numCols": [
-                        1,
-                        2
-                      ],
-                      "rows": [
-                        [
-                          "DS V4.1 Flash 1017 | DeepSeek",
-                          "57.6T",
-                          "+5.1%"
-                        ],
-                        [
-                          "DS V4.1 Flash | DeepSeek",
-                          "16.2T",
-                          "+3.8%"
-                        ],
-                        [
-                          "GLM 5.3 Flash | 智谱",
-                          "15.9T",
-                          "-3.0%"
-                        ],
-                        [
-                          "GPT-6 Luna | OpenAI",
-                          "8.95T",
-                          "-3.3%"
-                        ],
-                        [
-                          "Hy4 preview | 腾讯",
-                          "8.1T",
-                          "-14.6%"
-                        ],
-                        [
-                          "Claude Opus 5.5 | Anthropic",
-                          "6.81T",
-                          "+2.1%"
-                        ],
-                        [
-                          "Step 5 Preview | 阶跃星辰",
-                          "6.73T",
-                          "+0.7%"
-                        ],
-                        [
-                          "MiniMax M3.1 Flash | MiniMax",
-                          "6.35T",
-                          "-2.3%"
-                        ],
-                        [
-                          "GPT-5.6 Luna | OpenAI",
-                          "5.25T",
-                          "-1.5%"
-                        ],
-                        [
-                          "GPT-6.1 Sol | OpenAI",
-                          "4.11T",
-                          "+1.5%"
-                        ]
-                      ],
-                      "note": "截至 2026-11-04 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
+                      "type": "bars",
+                      "note": "截至 2026-11-04 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。",
+                      "items": [
+                        {
+                          "label": "DS V4.1 Flash 1017（DeepSeek）",
+                          "value": "57.6T",
+                          "note": "环比 +5.1%"
+                        },
+                        {
+                          "label": "DS V4.1 Flash（DeepSeek）",
+                          "value": "16.2T",
+                          "note": "环比 +3.8%"
+                        },
+                        {
+                          "label": "GLM 5.3 Flash（智谱）",
+                          "value": "15.9T",
+                          "note": "环比 -3.0%"
+                        },
+                        {
+                          "label": "GPT-6 Luna（OpenAI）",
+                          "value": "8.95T",
+                          "note": "环比 -3.3%"
+                        },
+                        {
+                          "label": "Hy4 preview（腾讯）",
+                          "value": "8.1T",
+                          "note": "环比 -14.6%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5（Anthropic）",
+                          "value": "6.81T",
+                          "note": "环比 +2.1%"
+                        },
+                        {
+                          "label": "Step 5 Preview（阶跃星辰）",
+                          "value": "6.73T",
+                          "note": "环比 +0.7%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash（MiniMax）",
+                          "value": "6.35T",
+                          "note": "环比 -2.3%"
+                        },
+                        {
+                          "label": "GPT-5.6 Luna（OpenAI）",
+                          "value": "5.25T",
+                          "note": "环比 -1.5%"
+                        },
+                        {
+                          "label": "GPT-6.1 Sol（OpenAI）",
+                          "value": "4.11T",
+                          "note": "环比 +1.5%"
+                        }
+                      ]
                     }
                   ]
                 }
