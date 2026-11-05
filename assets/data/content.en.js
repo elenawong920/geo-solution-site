@@ -8004,9 +8004,9 @@ window.SITE_DATA_EN = {
                   "cap": "<b>① Create a GEO task</b>　A three-part setup covering objective, placement and duration: brand or product mode, platform selection (DeepSeek, Yuanbao) and question terms added manually or recommended by the system (10 advised to start)."
                 },
                 {
-                  "src": "assets/img/platform-report.jpg",
-                  "alt": "Performance detail and answer snapshots",
-                  "cap": "<b>② Performance detail</b>　Each question term shows its target, average exposure over the service period and days on target, with the original answer snapshots and timestamps attached."
+                  "src": "assets/img/platform-report-desens.jpg",
+                  "alt": "Jingzhuntong performance detail, desensitised",
+                  "cap": "<b>② Performance detail</b>　Each question term shows its target plus initial data, period average and days on target for both exposure and top-three rate, with the original answer snapshots and timestamps attached."
                 }
               ]
             },
