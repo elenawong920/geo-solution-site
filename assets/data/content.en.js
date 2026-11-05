@@ -5896,6 +5896,28 @@ window.SITE_DATA_EN = {
                   "note": "What SMEs ask is whether you can issue a VAT invoice, extend payment terms and deliver to the desk. Written as structured answers, these conditions earn AI citations far more readily than price claims."
                 }
               ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Real AI Answers",
+              "title": "Before and After: One Question, Two Doubao Answers",
+              "desc": "Same question — which platform to buy certified electrical wire from — same account, same platform, unguided wording."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/ind-answer-ba.jpg",
+                  "alt": "Doubao: wire procurement platforms before and after",
+                  "cap": "<b>Doubao · the same question, answered before and after</b>　Left, before: Doubao ranks ZKH and Xiyu MRO first and JD does not appear. Right, after: JD Hardware City (JD Caijing / JD Industrial) leads the answer, with national-standard authenticity, business invoicing, 3C certification and framework agreements spelled out."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "Screenshots were taken at 11:00 and 14:51 (see status bars); red markings are added by the project team."
             }
           ]
         }
@@ -6621,6 +6643,38 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "secHead",
+              "kicker": "Real AI Answers",
+              "title": "Actual Answers on Doubao, Qwen, DeepSeek and ERNIE",
+              "desc": "These are real answer screenshots captured after optimisation; red boxes are added by the project team to show where the brand is cited."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/ap-answer-ac.jpg",
+                  "alt": "ERNIE assistant: air conditioning for a nursery or elderly room",
+                  "cap": "<b>ERNIE assistant · nursery and elderly-room air conditioning</b>　Asked how to choose air conditioning for a nursery or an elderly room, the answer lists three recommended models with JD Logistics and national-subsidy tags visible in the response."
+                },
+                {
+                  "src": "assets/img/ap-answer-cookware.jpg",
+                  "alt": "Doubao: where to buy cookware with safe materials (before and after)",
+                  "cap": "<b>Doubao · safe cookware (before and after)</b>　Left, before optimisation (crossed out): the answer only compares channels without a conclusion. Right, after: Doubao names JD self-operated as the preferred channel and cites the quality mark, CMA test reports and 10x compensation for false material labelling."
+                },
+                {
+                  "src": "assets/img/ap-answer-housekeeping.jpg",
+                  "alt": "Qwen, DeepSeek and Doubao compared: home cleaning",
+                  "cap": "<b>Qwen · DeepSeek · Doubao on the same question · home cleaning</b>　For the same question — where to book reliable home cleaning — all three platforms rank JD Services first, citing the self-operated model, transparent pricing and a redo-on-site guarantee."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "Screenshots are real platform answers; interface versions appear in the status bar. Red boxes and arrows are added by the project team, not part of the original UI."
+            },
+            {
+              "type": "secHead",
               "kicker": "Related Case",
               "title": "COLMO Black Pearl: 30 Days for a Premium Fabric-Care Product",
               "desc": "A high-ticket, high-consideration category — the same playbook transfers to premium 3C and appliance launches."
@@ -7297,6 +7351,28 @@ window.SITE_DATA_EN = {
                 ]
               ],
               "note": "Yuanbao specifics: no catalogue of its own, supply comes from JD and WeChat mini shops, and it acts as a cross-platform agent. Content must therefore cover both the fields needed to enter the pool and the evidence needed to be selected."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Real Shopping Cards",
+              "title": "When the Answer Grows a Product Card",
+              "desc": "Beauty is one of the few categories that can transact inside the AI answer: the more specific the question, the more likely a card appears."
+            },
+            {
+              "type": "gallery",
+              "layout": "narrow",
+              "items": [
+                {
+                  "src": "assets/img/beauty-answer-card.jpg",
+                  "alt": "Doubao shopping card captured live",
+                  "cap": "<b>Doubao shopping card, captured live</b>　After comparing accords, shades and occasions, the answer surfaces JD self-operated product cards with review rates, prices and store details, so the user can buy without leaving the conversation."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "Screenshots show real AI answers and card formats; product and brand details come from public platform pages and illustrate the card format only."
             }
           ]
         },

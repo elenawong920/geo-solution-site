@@ -489,7 +489,7 @@
   };
 
   R.gallery = function (b, p) {
-    var cls = b.layout === 'stack' ? ' gallery--stack' : '';
+    var cls = b.layout === 'stack' ? ' gallery--stack' : (b.layout === 'narrow' ? ' gallery--narrow' : '');
     var h = '<div class="gallery' + cls + ' reveal">';
     (b.items || []).forEach(function (it, i) {
       h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" loading="lazy">' +

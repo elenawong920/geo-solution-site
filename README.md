@@ -45,6 +45,8 @@
 页面底部另有「系统实录」一节，放入 4 张京准通后台真实截图（创建任务 / 监控驾驶舱 / 观点与信源 / 效果明细），
 图片存于 `assets/img/platform-*.jpg`，已压到 1600px 宽、单张 100–170KB。
 另在「系统实录」末尾与 3C 家电页「延伸案例」处，插入 COLMO 黑珍珠 × 京准通标杆案例图（`assets/img/case-colmo.jpg`，1600×900，约 300KB）。
+3C 家电页、工业品页、护肤彩妆页各有一节「AI 答案实录」，放平台真实回答截图：
+`ap-answer-ac.jpg`（文心·空调）、`ap-answer-cookware.jpg`（豆包·锅具 前后对照）、`ap-answer-housekeeping.jpg`（千问/DeepSeek/豆包 同题）、`ind-answer-ba.jpg`（豆包·电线 前后对照，两张手机截图合成）、`beauty-answer-card.jpg`（豆包·商卡实拍）。竖版图用 `gallery` 的 `layout: "narrow"` 限宽居中。
 
 **2026-10-27 信息架构优化**：首页“什么是 GEO”与“核心价值”合并；交付统一为五阶段；
 指标合并为“定义 + 口径 + 管理用途”一张表；全站移除重复的“获取方案”按钮，
