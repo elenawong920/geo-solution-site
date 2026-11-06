@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-11-05",
+    "updated": "2026-11-06",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -575,7 +575,7 @@ window.SITE_DATA = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "最新数据日期：2026 年 9 月 · 网站榜第 40 期 · 国内 TOP10 · 单位：月访问量，与三榜图同步更新；含重复访问。",
+                      "note": "最新数据日期：2026 年 9 月 · 网站榜第  期 · 国内 TOP10 · 单位：月访问量，与三榜图同步更新；含重复访问。",
                       "items": [
                         {
                           "label": "DeepSeek",
@@ -636,57 +636,57 @@ window.SITE_DATA = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "截至 2026-11-04 · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。",
+                      "note": "截至  · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。",
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",
-                          "value": "57.6T",
-                          "note": "环比 +5.1%"
+                          "value": "56.5T",
+                          "note": "环比 -1.9%"
                         },
                         {
                           "label": "DS V4.1 Flash（DeepSeek）",
-                          "value": "16.2T",
-                          "note": "环比 +3.8%"
+                          "value": "16.5T",
+                          "note": "环比 +1.9%"
                         },
                         {
                           "label": "GLM 5.3 Flash（智谱）",
-                          "value": "15.9T",
-                          "note": "环比 -3.0%"
+                          "value": "15.0T",
+                          "note": "环比 -5.7%"
                         },
                         {
                           "label": "GPT-6 Luna（OpenAI）",
-                          "value": "8.95T",
-                          "note": "环比 -3.3%"
-                        },
-                        {
-                          "label": "Hy4 preview（腾讯）",
-                          "value": "8.1T",
-                          "note": "环比 -14.6%"
-                        },
-                        {
-                          "label": "Claude Opus 5.5（Anthropic）",
-                          "value": "6.81T",
-                          "note": "环比 +2.1%"
+                          "value": "7.26T",
+                          "note": "环比 -18.9%"
                         },
                         {
                           "label": "Step 5 Preview（阶跃星辰）",
-                          "value": "6.73T",
-                          "note": "环比 +0.7%"
+                          "value": "6.67T",
+                          "note": "环比 -0.9%"
+                        },
+                        {
+                          "label": "Hy4 preview（腾讯）",
+                          "value": "6.58T",
+                          "note": "环比 -18.8%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5（Anthropic）",
+                          "value": "6.53T",
+                          "note": "环比 -4.1%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash（MiniMax）",
-                          "value": "6.35T",
-                          "note": "环比 -2.3%"
+                          "value": "6.04T",
+                          "note": "环比 -4.9%"
                         },
                         {
                           "label": "GPT-5.6 Luna（OpenAI）",
-                          "value": "5.25T",
-                          "note": "环比 -1.5%"
+                          "value": "4.99T",
+                          "note": "环比 -5.0%"
                         },
                         {
-                          "label": "GPT-6.1 Sol（OpenAI）",
-                          "value": "4.11T",
-                          "note": "环比 +1.5%"
+                          "label": "Hy4（腾讯）",
+                          "value": "4.01T",
+                          "note": "环比 新入榜"
                         }
                       ]
                     }
