@@ -68,6 +68,7 @@ VENDOR_EN = {
     "小米": "Xiaomi",
     "MiniMax": "MiniMax",
     "NVIDIA": "NVIDIA",
+    "阶跃星辰": "StepFun",
 }
 EXTRA_VENDOR = {
     "DeepSeek": "深度求索",

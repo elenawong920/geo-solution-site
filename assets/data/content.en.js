@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-06",
+    "updated": "2026-11-07",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -640,53 +640,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "56.5T",
-                          "note": "MoM -1.9%"
+                          "value": "56.2T",
+                          "note": "MoM -0.5%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "16.5T",
-                          "note": "MoM +1.9%"
+                          "value": "17.2T",
+                          "note": "MoM +4.2%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "15T",
-                          "note": "MoM -5.7%"
+                          "value": "14.1T",
+                          "note": "MoM -6.0%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "7.26T",
-                          "note": "MoM -18.9%"
-                        },
-                        {
-                          "label": "Step 5 Preview (StepFun)",
-                          "value": "6.67T",
-                          "note": "MoM -0.9%"
-                        },
-                        {
-                          "label": "Hy4 preview (Tencent)",
-                          "value": "6.58T",
-                          "note": "MoM -18.8%"
-                        },
-                        {
-                          "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.53T",
-                          "note": "MoM -4.1%"
-                        },
-                        {
-                          "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "6.04T",
-                          "note": "MoM -4.9%"
-                        },
-                        {
-                          "label": "GPT-5.6 Luna (OpenAI)",
-                          "value": "4.99T",
-                          "note": "MoM -5.0%"
+                          "value": "7.22T",
+                          "note": "MoM -0.6%"
                         },
                         {
                           "label": "Hy4 (Tencent)",
-                          "value": "4.01T",
-                          "note": "MoM New entry"
+                          "value": "7.05T",
+                          "note": "MoM +75.8%"
+                        },
+                        {
+                          "label": "Step 5 Preview (StepFun)",
+                          "value": "6.83T",
+                          "note": "MoM +2.4%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5 (Anthropic)",
+                          "value": "6.59T",
+                          "note": "MoM +0.9%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash (MiniMax)",
+                          "value": "5.67T",
+                          "note": "MoM -6.1%"
+                        },
+                        {
+                          "label": "Hy4 preview (Tencent)",
+                          "value": "5.11T",
+                          "note": "MoM -22.3%"
+                        },
+                        {
+                          "label": "GPT-5.6 Luna (OpenAI)",
+                          "value": "4.07T",
+                          "note": "MoM -18.4%"
                         }
                       ]
                     }
