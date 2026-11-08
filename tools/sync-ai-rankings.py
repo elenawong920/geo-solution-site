@@ -189,6 +189,16 @@ def en_vendor(tag: str) -> str:
     return VENDOR_EN.get(tag, tag)
 
 
+MOM_EN = {
+    "新入榜": "New entry",
+    "重回": "Return",
+}
+
+
+def en_mom(mom: str) -> str:
+    return MOM_EN.get(mom.strip(), mom)
+
+
 def a_items(rows: list[dict], lang: str) -> list[dict]:
     out = []
     for row in rows:
@@ -233,7 +243,7 @@ def table_rows(rows: list[dict], lang: str, kind: str) -> list[list[str]]:
             else:
                 name = f"{base} · {en_vendor(vendor)}" if vendor else base
             value = en_value(row["value"])
-            mom = row["mom"]
+            mom = en_mom(row["mom"])
         out.append([name, value, mom])
     return out
 
