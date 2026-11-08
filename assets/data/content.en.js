@@ -1286,6 +1286,60 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "campaign",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Joint Campaign",
+              "title": "3C Digital × JD Cloud GEO: Writing Real Questions into AI Answers",
+              "desc": "JD 3C Digital and JD Cloud jointly launched a GEO brand-growth service; the first campaign covers imaging, battery life, laptops and home networking."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/campaign-3c-kv.jpg",
+                  "alt": "3C digital × JD Cloud GEO campaign key visual",
+                  "cap": "<b>Key visual</b>　The claim in the centre — turning real questions into citable answers — surrounded by the four questions this campaign pushes."
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "duo",
+              "items": [
+                {
+                  "src": "assets/img/campaign-3c-1.jpg",
+                  "alt": "Which phone under 3K shoots and lasts best?",
+                  "cap": "<b>Which phone under 3K shoots and lasts best?</b>　A price-band and specification question: easy to compare, easy to get wrong."
+                },
+                {
+                  "src": "assets/img/campaign-3c-2.jpg",
+                  "alt": "How should a programmer choose a dual-screen laptop?",
+                  "cap": "<b>How should a programmer choose a dual-screen laptop?</b>　An audience and category question that follows professional selection logic."
+                },
+                {
+                  "src": "assets/img/campaign-3c-3.jpg",
+                  "alt": "Lightweight camera recommendations for travel vlogging",
+                  "cap": "<b>Lightweight camera recommendations for travel vlogging</b>　A scenario and list question: AI returns a shortlist, and being on it is the whole game."
+                },
+                {
+                  "src": "assets/img/campaign-3c-4.jpg",
+                  "alt": "How to choose a Mesh router for a large flat?",
+                  "cap": "<b>How to choose a Mesh router for a large flat?</b>　A floor-plan and technology question that needs coverage and topology detail."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "These assets are joint JD 3C Digital × JD Cloud GEO campaign materials, for project introduction only; platforms and question terms follow each live project."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "faq",
           "tone": "surface",
           "blocks": [
@@ -5927,6 +5981,10 @@ window.SITE_DATA_EN = {
         {
           "label": "Case Studies",
           "href": "#cases"
+        },
+        {
+          "label": "Campaign",
+          "href": "#campaign"
         }
       ],
       "sections": [
@@ -6736,6 +6794,84 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "Measurement Note",
               "desc": "This page centres on brand exposure and TOP1 / TOP3 recommendation rates. Question sets, platforms and periods differ by case, so figures cannot be summed across cases. The smart-lock project is still running and only interim data is disclosed."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "campaign",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Joint Campaign",
+              "title": "Home Appliances × JD Cloud GEO: Turning Real Questions into Citable Answers",
+              "desc": "Since August 2026, JD Air Conditioners and JD Cloud have run elevator and community campaigns that put five real questions in front of buyers — and into AI’s candidate pool."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/campaign-jd-kv.jpg",
+                  "alt": "Home appliances × JD Cloud GEO campaign key visual",
+                  "cap": "<b>Key visual</b>　One claim on the left, five real questions on the right — the same lines serve as poster headlines and as the question terms optimised for AI."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Campaign Assets",
+              "title": "Five Real Questions, Five Purchase Scenarios",
+              "desc": "Every headline on these posters can be typed straight into an AI assistant; the campaign and the optimisation use the same set of terms."
+            },
+            {
+              "type": "gallery",
+              "items": [
+                {
+                  "src": "assets/img/campaign-ac-1.jpg",
+                  "alt": "Which brand leads in fresh-air air conditioners?",
+                  "cap": "<b>Which brand leads in fresh-air air conditioners?</b>　A brand-comparison question that doubles as the offline poster headline."
+                },
+                {
+                  "src": "assets/img/campaign-ac-2.jpg",
+                  "alt": "Where to buy an energy-saving air conditioner?",
+                  "cap": "<b>Where to buy an energy-saving air conditioner?</b>　A channel and efficiency question that points straight at JD self-operated."
+                },
+                {
+                  "src": "assets/img/campaign-ac-3.jpg",
+                  "alt": "Which Gree air conditioner should I buy?",
+                  "cap": "<b>Which Gree air conditioner should I buy?</b>　A brand and model question that tests specification accuracy."
+                },
+                {
+                  "src": "assets/img/campaign-ac-4.jpg",
+                  "alt": "How to choose an air conditioner for sensitive skin?",
+                  "cap": "<b>How to choose an air conditioner for sensitive skin?</b>　An audience and feature question built around gentle airflow."
+                },
+                {
+                  "src": "assets/img/campaign-ac-5.jpg",
+                  "alt": "Which unit suits a pet-owning household?",
+                  "cap": "<b>Which unit suits a pet-owning household?</b>　A narrow segment with small search volume but precise intent."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Partner Voice",
+              "title": "What the Air-Conditioner Sales Team Says",
+              "desc": "Excerpted from the joint campaign video."
+            },
+            {
+              "type": "video",
+              "src": "https://elenawong920.github.io/geo-solution-site/assets/video/family-promo.mp4",
+              "poster": "assets/img/campaign-video-poster.jpg",
+              "title": "Joint campaign film",
+              "note": "A 1080p transcode of the 4K original (about 51 seconds) for faster web playback; the full 4K master is available from the project team."
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "These assets are joint Home Appliances × JD Cloud GEO campaign materials, for project introduction only and not a performance commitment."
             }
           ]
         }

@@ -1286,6 +1286,60 @@ window.SITE_DATA = {
         },
         {
           "type": "section",
+          "id": "campaign",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "品牌联合宣传",
+              "title": "3C 数码 × 京东云 GEO：把真实提问写进 AI 答案",
+              "desc": "京东 3C 数码与京东云联合推出 GEO 品牌增长服务，首批物料覆盖拍照续航、笔电、影像与路由四条产品线。"
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/campaign-3c-kv.jpg",
+                  "alt": "3C 数码 × 京东云 GEO 联合宣传主视觉",
+                  "cap": "<b>主视觉</b>　手机屏幕中间那句主张：「把真实提问，变成 AI 可引用的答案点」，四周是这轮投放的四组真实提问。"
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "duo",
+              "items": [
+                {
+                  "src": "assets/img/campaign-3c-1.jpg",
+                  "alt": "3K 内拍照续航机哪家强？",
+                  "cap": "<b>3K 内拍照续航机哪家强？</b>　「价格带 + 参数」类问题词：最容易比参数，也最容易被说错。"
+                },
+                {
+                  "src": "assets/img/campaign-3c-2.jpg",
+                  "alt": "程序员双屏本怎么选？",
+                  "cap": "<b>程序员双屏本怎么选？</b>　「人群 + 品类」类问题词：对应专业用户的选型逻辑。"
+                },
+                {
+                  "src": "assets/img/campaign-3c-3.jpg",
+                  "alt": "旅拍 Vlog 轻便相机推荐",
+                  "cap": "<b>旅拍 Vlog 轻便相机推荐</b>　「场景 + 推荐清单」类问题词：AI 直接给清单，谁被列进去谁就有机会。"
+                },
+                {
+                  "src": "assets/img/campaign-3c-4.jpg",
+                  "alt": "大平层 Mesh 路由怎么挑？",
+                  "cap": "<b>大平层 Mesh 路由怎么挑？</b>　「户型 + 技术方案」类问题词：需要覆盖面积与组网口径。"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "以上物料为京东 3C 数码 × 京东云 GEO 联合宣传素材，仅用于项目介绍；投放平台与词根以各项目实际为准。"
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "faq",
           "tone": "surface",
           "blocks": [
@@ -5927,6 +5981,10 @@ window.SITE_DATA = {
         {
           "label": "实战案例",
           "href": "#cases"
+        },
+        {
+          "label": "联合宣传",
+          "href": "#campaign"
         }
       ],
       "sections": [
@@ -6736,6 +6794,84 @@ window.SITE_DATA = {
               "type": "notice",
               "title": "口径说明",
               "desc": "本页以“品牌展示度”与“TOP1 / TOP3 推荐度”为核心指标；不同案例的监测词根、平台与周期不同，数字不可跨案例相加。智能门锁项目仍在执行期，仅披露阶段数据。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "campaign",
+          "tone": "surface",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "品牌联合宣传",
+              "title": "家电家居 × 京东云 GEO：把真实提问，变成 AI 可引用的答案点",
+              "desc": "2026 年 8 月起，京东空调与京东云联合投放电梯轿厢与社群物料，把五组真实提问搬到线下，也搬进 AI 的候选池。"
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/campaign-jd-kv.jpg",
+                  "alt": "家电家居 × 京东云 GEO 联合宣传主视觉",
+                  "cap": "<b>主视觉</b>　左侧一句主张，右侧五组真实提问——它们既是线下海报的标题，也是 AI 端要占住的问题词。"
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "投放物料",
+              "title": "五组真实提问，对应五类选购场景",
+              "desc": "每一张海报上的问句，都能直接拿到 AI 里搜；投放与优化用的是同一批词。"
+            },
+            {
+              "type": "gallery",
+              "items": [
+                {
+                  "src": "assets/img/campaign-ac-1.jpg",
+                  "alt": "新风空调哪家强？",
+                  "cap": "<b>新风空调哪家强？</b>　「新风 + 品牌对比」类问题词，线下海报与 AI 候选池同一句话。"
+                },
+                {
+                  "src": "assets/img/campaign-ac-2.jpg",
+                  "alt": "省电空调去哪儿买？",
+                  "cap": "<b>省电空调去哪儿买？</b>　「渠道 + 能效」类问题词，直接指向京东自营。"
+                },
+                {
+                  "src": "assets/img/campaign-ac-3.jpg",
+                  "alt": "格力空调买哪款？",
+                  "cap": "<b>格力空调买哪款？</b>　「品牌 + 型号选择」类问题词，考验参数与机型口径。"
+                },
+                {
+                  "src": "assets/img/campaign-ac-4.jpg",
+                  "alt": "敏感皮肤怎么选空调？",
+                  "cap": "<b>敏感皮肤怎么选空调？</b>　「人群 + 功能」类问题词，对应肤质敏感与柔风需求。"
+                },
+                {
+                  "src": "assets/img/campaign-ac-5.jpg",
+                  "alt": "养宠家庭选哪款空调？",
+                  "cap": "<b>养宠家庭选哪款空调？</b>　「小圈层场景」类问题词，搜索体量小但转化精准。"
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "伙伴证言",
+              "title": "空调采销怎么评价这套 GEO",
+              "desc": "摘自家群联合宣传片的访谈片段。"
+            },
+            {
+              "type": "video",
+              "src": "https://elenawong920.github.io/geo-solution-site/assets/video/family-promo.mp4",
+              "poster": "assets/img/campaign-video-poster.jpg",
+              "title": "家群 × 京东云 GEO 宣传片",
+              "note": "视频为 4K 原片的 1080p 转码版（约 51 秒），便于网页加载；完整 4K 版本可向项目组索取。"
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "desc": "以上物料为京东家电家居 × 京东云 GEO 联合宣传素材，仅用于项目介绍，不作为对外效果承诺。"
             }
           ]
         }

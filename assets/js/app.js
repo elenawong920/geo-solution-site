@@ -488,8 +488,23 @@
     return h + '</div>';
   };
 
+  /* 视频：src 用绝对地址（单文件版不内联 10MB 视频），poster 走图片池 */
+  R.video = function (b, p) {
+    var h = '<div class="video-wrap reveal">';
+    if (b.title) h += '<h3 class="video__title">' + t(p + '.title', b.title) + '</h3>';
+    h += '<video class="video" controls playsinline preload="' + esc(b.preload || 'metadata') + '"' +
+         (b.poster ? ' poster="' + esc(b.poster) + '"' : '') + '>' +
+         '<source src="' + esc(b.src) + '" type="video/mp4">' +
+         '您的浏览器不支持内嵌视频，可<a href="' + esc(b.src) + '">下载后观看</a>。</video>';
+    if (b.note) h += '<p class="video__note">' + t(p + '.note', b.note) + '</p>';
+    return h + '</div>';
+  };
+
   R.gallery = function (b, p) {
-    var cls = b.layout === 'stack' ? ' gallery--stack' : (b.layout === 'narrow' ? ' gallery--narrow' : '');
+    var cls = '';
+    if (b.layout === 'stack') cls = ' gallery--stack';
+    else if (b.layout === 'narrow') cls = ' gallery--narrow';
+    else if (b.layout === 'duo') cls = ' gallery--duo';
     var h = '<div class="gallery' + cls + ' reveal">';
     (b.items || []).forEach(function (it, i) {
       h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" loading="lazy">' +
