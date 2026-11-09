@@ -104,6 +104,23 @@ for (const item of ITEMS) {
 }
 step('已同步站点文件');
 
+/* 已下线文件：本地删掉后，仓库里也要一并移除（后面 git add -A 会记录删除） */
+const STALE = [
+  'assets/img/case-colmo.jpg',          /* 客户未授权外宣，2026-11-09 撤下（文件名保留在此仅用于清理） */
+  'assets/img/platform-dashboard.jpg',  /* 深色驾驶舱截图，已下线 */
+  'assets/img/platform-insight.jpg',    /* 深色观点/信源截图，已下线 */
+  'assets/img/platform-report.jpg',     /* 已被 platform-report-desens.jpg 取代 */
+  'assets/img/ind-answer-before.jpg',   /* 已合并成 ind-answer-ba.jpg */
+  'assets/img/ind-answer-after.jpg',
+  'assets/img/ap-answer-laundry.jpg'    /* 未采用 */
+];
+let staleRemoved = 0;
+for (const rel of STALE) {
+  const p2 = path.join(tmp, rel);
+  if (fs.existsSync(p2)) { fs.rmSync(p2, { force: true }); staleRemoved++; }
+}
+if (staleRemoved) step(`已从仓库移除 ${staleRemoved} 个下线文件`);
+
 /* ---- 3. 清理杂项 & 提交 ---- */
 /* 删除系统缓存与 Python 字节码，避免把本地缓存推上仓库 */
 (function clean(dir) {

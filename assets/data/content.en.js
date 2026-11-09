@@ -6715,29 +6715,6 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "secHead",
-              "kicker": "Related Case",
-              "title": "COLMO Black Pearl: 30 Days for a Premium Fabric-Care Product",
-              "desc": "A high-ticket, high-consideration category — the same playbook transfers to premium 3C and appliance launches."
-            },
-            {
-              "type": "gallery",
-              "layout": "stack",
-              "items": [
-                {
-                  "src": "assets/img/case-colmo.jpg",
-                  "alt": "COLMO Black Pearl × Jingzhuntong GEO flagship case",
-                  "cap": "<b>Premium fabric care · Black Pearl C3 Pro washer-dryer</b>　All 10 question terms met target, with a 78.4% composite average: TOP3 ranking 79.4%, brand exposure 78.7% and sentiment placement 71.3%. Before optimisation the product never appeared; it is now recommended unprompted by AI, and the effect spilled over to Doubao, where the optimised product accounts for roughly 70–80% of category mentions."
-                }
-              ]
-            },
-            {
-              "type": "notice",
-              "tone": "neutral",
-              "title": "Measurement Basis",
-              "desc": "Project period 23 September to 22 October 2026 (formal assessment 8–22 October); platform monitored: DeepSeek. The 78.4% figure is the composite average of TOP3 ranking, brand exposure and sentiment placement; spillover figures are given as ranges."
-            },
-            {
-              "type": "secHead",
               "kicker": "Appendix · Weekly Terms",
               "title": "Air Conditioners: Some Terms Move Within a Single Week",
               "desc": "These are week-on-week figures within the same period, illustrating how elasticity differs by audience segment. They are not overall project conclusions."
@@ -8209,29 +8186,6 @@ window.SITE_DATA_EN = {
               "tone": "neutral",
               "title": "About These Screens",
               "desc": "All are actual product screens, unretouched; brand and client details are blurred. Exposure figures come from one project sample and show how to read the dashboard rather than an industry average."
-            },
-            {
-              "type": "secHead",
-              "kicker": "Flagship Case",
-              "title": "COLMO Black Pearl × Jingzhuntong: 30 Days from Invisible to Actively Recommended",
-              "desc": "A complete project delivered on the same platform — a direct answer to whether 30 days can be signed off."
-            },
-            {
-              "type": "gallery",
-              "layout": "stack",
-              "items": [
-                {
-                  "src": "assets/img/case-colmo.jpg",
-                  "alt": "COLMO Black Pearl × Jingzhuntong GEO flagship case",
-                  "cap": "<b>DeepSeek-led · 30-day full-funnel optimisation</b>　From AI trend selection to guided optimisation, monitored sign-off and cross-platform spillover. All 10 of 10 question terms met target, with a 78.4% period average composite score — 18.4 points above the 60% KPI. Brand exposure in high-frequency Q&A scenarios moved from zero to full coverage; TOP3 ranking 79.4%, brand exposure 78.7% and sentiment placement 71.3%."
-                }
-              ]
-            },
-            {
-              "type": "notice",
-              "tone": "neutral",
-              "title": "Measurement Basis",
-              "desc": "Project period 23 September to 22 October 2026 (formal assessment 8–22 October); platform monitored: DeepSeek. The 78.4% figure is the composite average of TOP3 ranking, brand exposure and sentiment placement; spillover figures are given as ranges."
             }
           ]
         },
