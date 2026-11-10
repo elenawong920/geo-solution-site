@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -579,53 +579,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DeepSeek",
-                          "value": "458M",
-                          "note": "MoM +2.2%"
+                          "value": "479M",
+                          "note": "MoM +4.50%"
                         },
                         {
                           "label": "Doubao (ByteDance)",
-                          "value": "154M",
-                          "note": "MoM -4.9%"
+                          "value": "136M",
+                          "note": "MoM -11.87%"
                         },
                         {
                           "label": "Nano AI (360)",
-                          "value": "123M",
-                          "note": "MoM +3.2%"
+                          "value": "105M",
+                          "note": "MoM -14.71%"
                         },
                         {
                           "label": "ERNIE Bot (Baidu)",
-                          "value": "59.84M",
-                          "note": "MoM +5.4%"
-                        },
-                        {
-                          "label": "Kimi (Moonshot AI)",
-                          "value": "38.62M",
-                          "note": "MoM -25.9%"
-                        },
-                        {
-                          "label": "Qwen (Alibaba)",
-                          "value": "31.05M",
-                          "note": "MoM -11.5%"
+                          "value": "67.22M",
+                          "note": "MoM +12.34%"
                         },
                         {
                           "label": "DeepSeek API",
-                          "value": "30.89M",
-                          "note": "MoM -15.6%"
+                          "value": "34.22M",
+                          "note": "MoM +10.79%"
                         },
                         {
-                          "label": "Baidu Wenku",
-                          "value": "20.5M",
-                          "note": "MoM -15.1%"
+                          "label": "Qwen (Alibaba)",
+                          "value": "30.99M",
+                          "note": "MoM -0.20%"
+                        },
+                        {
+                          "label": "Kimi (Moonshot AI)",
+                          "value": "29.62M",
+                          "note": "MoM -23.30%"
                         },
                         {
                           "label": "WorkBuddy (Tencent)",
-                          "value": "17.74M",
-                          "note": "MoM +21.4%"
+                          "value": "24.39M",
+                          "note": "MoM +37.51%"
                         },
                         {
-                          "label": "Baidu Dazi (Baidu)",
-                          "value": "12.75M",
-                          "note": "MoM +2.5%"
+                          "label": "Baidu Wenku",
+                          "value": "22.62M",
+                          "note": "MoM +10.33%"
+                        },
+                        {
+                          "label": "DeepSeek Harness (DeepSeek)",
+                          "value": "19.61M",
+                          "note": "MoM +1467%"
                         }
                       ]
                     }
@@ -640,53 +640,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "56T",
-                          "note": "MoM 0.0%"
+                          "value": "55.4T",
+                          "note": "MoM -1.1%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "17.6T",
+                          "value": "17.5T",
                           "note": "MoM -0.6%"
                         },
                         {
-                          "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "13.2T",
-                          "note": "MoM -2.2%"
-                        },
-                        {
                           "label": "Hy4 (Tencent)",
-                          "value": "12.8T",
-                          "note": "MoM +26.7%"
+                          "value": "16T",
+                          "note": "MoM +25.0%"
                         },
                         {
-                          "label": "GPT-6 Luna (OpenAI)",
-                          "value": "7.21T",
-                          "note": "MoM -0.7%"
+                          "label": "GLM 5.3 Flash (Zhipu)",
+                          "value": "12.1T",
+                          "note": "MoM -8.3%"
                         },
                         {
                           "label": "Step 5 Preview (StepFun)",
-                          "value": "7.2T",
-                          "note": "MoM +3.0%"
+                          "value": "7.15T",
+                          "note": "MoM -0.7%"
+                        },
+                        {
+                          "label": "GPT-6 Luna (OpenAI)",
+                          "value": "7.1T",
+                          "note": "MoM -1.5%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.77T",
-                          "note": "MoM +0.4%"
-                        },
-                        {
-                          "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "5.01T",
-                          "note": "MoM -6.7%"
-                        },
-                        {
-                          "label": "Kimi K3.1 Pro (Moonshot AI)",
-                          "value": "4.37T",
-                          "note": "MoM +6.1%"
+                          "value": "6.75T",
+                          "note": "MoM -0.3%"
                         },
                         {
                           "label": "Crouton Alpha (stealth)",
-                          "value": "4.27T",
-                          "note": "MoM New entry"
+                          "value": "5.1T",
+                          "note": "MoM +19.4%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash (MiniMax)",
+                          "value": "4.66T",
+                          "note": "MoM -7.0%"
+                        },
+                        {
+                          "label": "Kimi K3.1 Pro (Moonshot AI)",
+                          "value": "4.39T",
+                          "note": "MoM +0.5%"
                         }
                       ]
                     }

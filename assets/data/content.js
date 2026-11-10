@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -579,53 +579,53 @@ window.SITE_DATA = {
                       "items": [
                         {
                           "label": "DeepSeek",
-                          "value": "4.58 亿",
-                          "note": "环比 +2.2%"
+                          "value": "4.79 亿",
+                          "note": "环比 +4.50%"
                         },
                         {
                           "label": "豆包（字节）",
-                          "value": "1.54 亿",
-                          "note": "环比 -4.9%"
+                          "value": "1.36 亿",
+                          "note": "环比 -11.87%"
                         },
                         {
                           "label": "纳米AI（360）",
-                          "value": "1.23 亿",
-                          "note": "环比 +3.2%"
+                          "value": "1.05 亿",
+                          "note": "环比 -14.71%"
                         },
                         {
                           "label": "文心（百度）",
-                          "value": "5984 万",
-                          "note": "环比 +5.4%"
-                        },
-                        {
-                          "label": "Kimi（月之暗面）",
-                          "value": "3862 万",
-                          "note": "环比 -25.9%"
-                        },
-                        {
-                          "label": "千问（阿里）",
-                          "value": "3105 万",
-                          "note": "环比 -11.5%"
+                          "value": "6722 万",
+                          "note": "环比 +12.34%"
                         },
                         {
                           "label": "DeepSeek API",
-                          "value": "3089 万",
-                          "note": "环比 -15.6%"
+                          "value": "3422 万",
+                          "note": "环比 +10.79%"
                         },
                         {
-                          "label": "百度文库",
-                          "value": "2050 万",
-                          "note": "环比 -15.1%"
+                          "label": "千问（阿里）",
+                          "value": "3099 万",
+                          "note": "环比 -0.20%"
+                        },
+                        {
+                          "label": "Kimi（月之暗面）",
+                          "value": "2962 万",
+                          "note": "环比 -23.30%"
                         },
                         {
                           "label": "WorkBuddy（腾讯）",
-                          "value": "1774 万",
-                          "note": "环比 +21.4%"
+                          "value": "2439 万",
+                          "note": "环比 +37.51%"
                         },
                         {
-                          "label": "百度搭子（百度）",
-                          "value": "1275 万",
-                          "note": "环比 +2.5%"
+                          "label": "百度文库",
+                          "value": "2262 万",
+                          "note": "环比 +10.33%"
+                        },
+                        {
+                          "label": "DeepSeek Harness（DeepSeek）",
+                          "value": "1961 万",
+                          "note": "环比 +1467%"
                         }
                       ]
                     }
@@ -640,53 +640,53 @@ window.SITE_DATA = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",
-                          "value": "56T",
-                          "note": "环比 0.0%"
+                          "value": "55.4T",
+                          "note": "环比 -1.1%"
                         },
                         {
                           "label": "DS V4.1 Flash（DeepSeek）",
-                          "value": "17.6T",
+                          "value": "17.5T",
                           "note": "环比 -0.6%"
                         },
                         {
-                          "label": "GLM 5.3 Flash（智谱）",
-                          "value": "13.2T",
-                          "note": "环比 -2.2%"
-                        },
-                        {
                           "label": "Hy4（腾讯）",
-                          "value": "12.8T",
-                          "note": "环比 +26.7%"
+                          "value": "16T",
+                          "note": "环比 +25.0%"
                         },
                         {
-                          "label": "GPT-6 Luna（OpenAI）",
-                          "value": "7.21T",
-                          "note": "环比 -0.7%"
+                          "label": "GLM 5.3 Flash（智谱）",
+                          "value": "12.1T",
+                          "note": "环比 -8.3%"
                         },
                         {
                           "label": "Step 5 Preview（阶跃星辰）",
-                          "value": "7.2T",
-                          "note": "环比 +3.0%"
+                          "value": "7.15T",
+                          "note": "环比 -0.7%"
+                        },
+                        {
+                          "label": "GPT-6 Luna（OpenAI）",
+                          "value": "7.1T",
+                          "note": "环比 -1.5%"
                         },
                         {
                           "label": "Claude Opus 5.5（Anthropic）",
-                          "value": "6.77T",
-                          "note": "环比 +0.4%"
-                        },
-                        {
-                          "label": "MiniMax M3.1 Flash（MiniMax）",
-                          "value": "5.01T",
-                          "note": "环比 -6.7%"
-                        },
-                        {
-                          "label": "Kimi K3.1 Pro（月之暗面）",
-                          "value": "4.37T",
-                          "note": "环比 +6.1%"
+                          "value": "6.75T",
+                          "note": "环比 -0.3%"
                         },
                         {
                           "label": "Crouton Alpha（stealth）",
-                          "value": "4.27T",
-                          "note": "环比 新入榜"
+                          "value": "5.1T",
+                          "note": "环比 +19.4%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash（MiniMax）",
+                          "value": "4.66T",
+                          "note": "环比 -7.0%"
+                        },
+                        {
+                          "label": "Kimi K3.1 Pro（月之暗面）",
+                          "value": "4.39T",
+                          "note": "环比 +0.5%"
                         }
                       ]
                     }
