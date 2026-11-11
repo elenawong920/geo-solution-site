@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -640,53 +640,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "55.4T",
-                          "note": "MoM -1.1%"
-                        },
-                        {
-                          "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "17.5T",
-                          "note": "MoM -0.6%"
+                          "value": "53.8T",
+                          "note": "MoM -2.9%"
                         },
                         {
                           "label": "Hy4 (Tencent)",
-                          "value": "16T",
-                          "note": "MoM +25.0%"
+                          "value": "18.8T",
+                          "note": "MoM +17.5%"
+                        },
+                        {
+                          "label": "DS V4.1 Flash (DeepSeek)",
+                          "value": "16.9T",
+                          "note": "MoM -3.4%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "12.1T",
-                          "note": "MoM -8.3%"
-                        },
-                        {
-                          "label": "Step 5 Preview (StepFun)",
-                          "value": "7.15T",
-                          "note": "MoM -0.7%"
+                          "value": "11.3T",
+                          "note": "MoM -6.6%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "7.1T",
-                          "note": "MoM -1.5%"
+                          "value": "7.04T",
+                          "note": "MoM -0.8%"
+                        },
+                        {
+                          "label": "Step 5 Preview (StepFun)",
+                          "value": "6.94T",
+                          "note": "MoM -2.9%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.75T",
-                          "note": "MoM -0.3%"
+                          "value": "6.76T",
+                          "note": "MoM +0.1%"
                         },
                         {
                           "label": "Crouton Alpha (stealth)",
-                          "value": "5.1T",
-                          "note": "MoM +19.4%"
-                        },
-                        {
-                          "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "4.66T",
-                          "note": "MoM -7.0%"
+                          "value": "5.07T",
+                          "note": "MoM -0.6%"
                         },
                         {
                           "label": "Kimi K3.1 Pro (Moonshot AI)",
-                          "value": "4.39T",
-                          "note": "MoM +0.5%"
+                          "value": "4.42T",
+                          "note": "MoM +0.7%"
+                        },
+                        {
+                          "label": "MiniMax M3.1 Flash (MiniMax)",
+                          "value": "4.33T",
+                          "note": "MoM -7.1%"
                         }
                       ]
                     }
