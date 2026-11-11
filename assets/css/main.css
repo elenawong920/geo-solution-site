@@ -652,6 +652,9 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
   line-height: 1.7;
 }
 .notice b { color: var(--jd-red); }
+/* 表格后紧跟提示条时留出呼吸；两条提示条相邻时同样留白 */
+.table-wrap + .notice { margin-top: 18px; }
+.notice + .notice { margin-top: 12px; }
 .notice--neutral { background: var(--surface); border-color: var(--line); }
 .notice__icon { flex-shrink: 0; font-size: 17px; line-height: 1.5; }
 

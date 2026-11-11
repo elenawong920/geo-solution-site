@@ -126,6 +126,10 @@ window.SITE_DATA_EN = {
           "href": "#cases"
         },
         {
+          "label": "Attribution",
+          "href": "#attribution"
+        },
+        {
           "label": "Industries",
           "href": "pharma.html"
         }
@@ -1213,6 +1217,189 @@ window.SITE_DATA_EN = {
                   "cap": "<b>Appliance Repair</b> | \"Where can I book appliance repair online with good service and low prices?\" — JD Services takes the top slot with self-operated certified engineers, original parts and a 90-day warranty, with brand visibility rising from 60.62% to 81.06%."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "attribution",
+          "tone": "white",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Attribution",
+              "title": "From AI Answer to Order: What We Can Prove, and What We Cannot",
+              "desc": "Being seen, cited, clicked and bought are four different things. This section sets out the hand-off routes, each platform’s tracking limits and our capability boundaries — and commits only to what can be attributed."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Hand-off route",
+                "Data traceability",
+                "Current status"
+              ],
+              "rows": [
+                [
+                  "Passphrase play",
+                  "Not viable",
+                  "Platform rules have tightened; authenticity needs official campaign backing, and semantic-compliance plays produce no conversion signal"
+                ],
+                [
+                  "Brand search term",
+                  "Broken link",
+                  "The AI answer names the brand and the user searches; search behaviour is not passed back, so a rise in volume cannot be tied to AI"
+                ],
+                [
+                  "Specific product card",
+                  "Traceable (recommended)",
+                  "Exposure can be optimised per SKU, mainly in Yuanbao’s deep-thinking mode; the card links out, converts and exports data"
+                ],
+                [
+                  "Dedicated landing page",
+                  "Not possible",
+                  "AI platforms do not allow direct outbound links to brand landing pages; it remains a redirect"
+                ]
+              ],
+              "numCols": [
+                1
+              ],
+              "highlight": [
+                2
+              ],
+              "note": "Bottom line: the specific product card is the only route that works today — in the scenarios we have measured, it is the only one with complete data tracking."
+            },
+            {
+              "type": "secHead",
+              "kicker": "Platform Tracking",
+              "title": "Same Card, Different Tracking — Which Caps Attribution",
+              "desc": "All three platforms can show a product card. Whether they can prove an order came from AI is another matter."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "Yuanbao",
+                  "title": "Traceable",
+                  "desc": "The Yuanbao card links straight into the JD WeChat mini-program. Yuanbao × JD is an exclusive partnership, so post-click data from recommendation to order is available.",
+                  "list": [
+                    "Exposure, click-through, order and export are all measurable",
+                    "The core scenario for performance commitments and reviews"
+                  ]
+                },
+                {
+                  "no": "Doubao",
+                  "title": "Testable",
+                  "desc": "Douyin Shop exposes a dedicated Doubao operations dashboard covering exposure, store visits and sales; the Douyin order page carries a native “from Doubao” label.",
+                  "list": [
+                    "Requires the client to grant Douyin Shop back-office access",
+                    "Two independent proofs: dashboard plus order label"
+                  ]
+                },
+                {
+                  "no": "Qwen",
+                  "title": "Not traceable",
+                  "desc": "The card can appear and convert, but there is no way to tell whether an order came from AI — Taobao’s order page carries no AI source label.",
+                  "list": [
+                    "Exposure work still runs, but is not counted toward commitments"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Capability Boundaries",
+              "title": "Available Now, Needs Joint Build, Not Committed",
+              "desc": "This is where expectations usually drift, so all three tiers are written down before signing."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "A",
+                  "title": "Available now",
+                  "list": [
+                    "Brand exposure monitoring (mention rate in AI answers)",
+                    "Ranking monitoring (top position in the recommendation order)",
+                    "Citation monitoring (sources and citation counts)",
+                    "Product-card exposure optimisation (Yuanbao, Doubao)"
+                  ]
+                },
+                {
+                  "no": "B",
+                  "title": "Needs joint build",
+                  "list": [
+                    "Doubao question-term card monitoring: verifying the card chain recognises the terms we optimise",
+                    "Yuanbao data return: redirect and export need the JD WeChat domain team",
+                    "Qwen card optimisation: a structured product knowledge base aligned to Alibaba’s source standards"
+                  ]
+                },
+                {
+                  "no": "C",
+                  "title": "Not committed",
+                  "list": [
+                    "Passphrase plays: rules tightened, official campaign backing required",
+                    "Qwen order tracing: no native AI source label",
+                    "Dedicated landing page redirect: not supported by the platform"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Attributable Chains",
+              "title": "Doubao × Douyin Shop, Yuanbao × JD: One Idea, Two Kinds of Proof",
+              "desc": "One relies on a native order label, the other on platform data export — neither depends on estimation."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Step",
+                "Doubao × Douyin Shop",
+                "Yuanbao × JD"
+              ],
+              "rows": [
+                [
+                  "① Question",
+                  "The user asks a buying question in Doubao",
+                  "The user asks in Yuanbao; a buying question triggers the card"
+                ],
+                [
+                  "② Card",
+                  "The card surfaces the brand product (semantic recall plus ranking score)",
+                  "The card surfaces the product; specific SKUs can be optimised"
+                ],
+                [
+                  "③ Click",
+                  "The user clicks through and orders",
+                  "The click opens the product page in the JD WeChat mini-program"
+                ],
+                [
+                  "④ Order",
+                  "The order card is labelled “from Doubao” by the platform itself",
+                  "Payment completes; the order lives in the JD WeChat domain"
+                ],
+                [
+                  "⑤ Attribute",
+                  "The Doubao operations dashboard in Douyin Shop traces exposure, visits and sales",
+                  "Order data can be exported; card source and revenue reviewed weekly or monthly"
+                ]
+              ],
+              "numCols": [
+                0
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Attribution prerequisites",
+              "desc": "Doubao: the client grants Douyin Shop back-office access; store experience score ≥ 60 and five per-item criteria (sales, listing status, information quality ≥ 60, no duplicate listings, positive rate ≥ 70% and negative rate ≤ 8%). The Doubao traffic pool covers 14 first-level categories; eight — including medicines, medical aesthetics, finance and real estate — are not open to cards. Yuanbao: redirect and data return require the JD WeChat domain team."
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "Commitment boundary",
+              "desc": "Performance commitments cover only what can be monitored and attributed, evidenced by platform dashboards and order data. Scenarios we cannot attribute are stated plainly and kept out of the KPI."
             }
           ]
         },
