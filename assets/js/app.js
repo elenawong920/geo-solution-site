@@ -909,6 +909,20 @@
   });
   window.addEventListener('hashchange', function () { setTimeout(healShotImages, 800); });
 
+  /* 站外链接兜底：预览 iframe、沙箱或拦截弹窗的环境里，target="_blank" 会被静默丢弃，
+     点了没反应。这里先尝试开新标签，开不出来就退回当前窗口跳转，保证"点了有反应"。 */
+  document.addEventListener('click', function (e) {
+    var el = e.target;
+    var a = el && el.closest ? el.closest('a[href^="http"]') : null;
+    if (!a) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    var win = null;
+    try { win = window.open(a.href, '_blank'); } catch (err) { win = null; }
+    if (win) { e.preventDefault(); return; }
+    /* 新窗口被拦：去掉 target，让浏览器按默认方式在当前上下文打开 */
+    a.removeAttribute('target');
+  });
+
   /* ---------- 启动 ---------- */
   var pageKey = document.body.getAttribute('data-page') || 'home';
   function currentPageKey() { return pageKey; }
