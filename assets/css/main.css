@@ -590,6 +590,11 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 /* 两张竖版手机截图并排：限宽居中，避免整幅拉得过高 */
 .gallery--phones { grid-template-columns: repeat(2, minmax(0, 440px)); justify-content: center; }
 @media (max-width: 640px) { .gallery--phones { grid-template-columns: 1fr; } }
+/* 四张竖版截图一行：压缩高度，单张约 270px 宽 */
+/* 用双类名提高优先级，避免被底部「单列化所有多列栅格」的通用规则压掉 */
+.gallery.gallery--quad { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.gallery--quad .shot__cap { padding: 10px 12px; font-size: 12px; line-height: 1.6; }
+@media (max-width: 900px) { .gallery.gallery--quad { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .shot { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
 .shot img { width: 100%; height: auto; }
 .shot__cap { padding: 12px 16px; font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); background: var(--surface); }

@@ -516,6 +516,7 @@
     else if (b.layout === 'narrow') cls = ' gallery--narrow';
     else if (b.layout === 'duo') cls = ' gallery--duo';
     else if (b.layout === 'phones') cls = ' gallery--phones';
+    else if (b.layout === 'quad') cls = ' gallery--quad';
     var h = '<div class="gallery' + cls + ' reveal">';
     (b.items || []).forEach(function (it, i) {
       h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" decoding="async">' +

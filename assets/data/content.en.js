@@ -1474,33 +1474,27 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "gallery",
-              "layout": "phones",
+              "layout": "quad",
               "items": [
                 {
                   "src": "assets/img/attr-yuanbao-card.jpg",
                   "alt": "Yuanbao chat surfacing a JD self-operated product card",
-                  "cap": "<b>Yuanbao · card inside the chat</b>　Asked how to choose engine oil, the answer compares grades and then surfaces a JD self-operated card (¥265, 1M+ sold)."
+                  "cap": "<b>① Yuanbao · card in chat</b>　Asked about engine oil, the answer ends with a JD self-operated card (¥265)."
                 },
                 {
                   "src": "assets/img/attr-yuanbao-jd.jpg",
                   "alt": "The card opens the JD mini-program product page",
-                  "cap": "<b>Yuanbao · after the click</b>　The card opens the JD WeChat mini-program straight to the product page; checkout lands inside JD, and the data can be exported."
-                }
-              ]
-            },
-            {
-              "type": "gallery",
-              "layout": "phones",
-              "items": [
+                  "cap": "<b>② Yuanbao · after the click</b>　Opens the JD mini-program product page; checkout lands inside JD and the data can be exported."
+                },
                 {
                   "src": "assets/img/attr-qwen-card.jpg",
                   "alt": "Qwen appending a product card to its answer",
-                  "cap": "<b>Qwen · card inside the chat (exposure works)</b>　On a comparable question, Qwen also appends a card (¥27.55, 30k+ buyers)."
+                  "cap": "<b>③ Qwen · card in chat (exposure works)</b>　A comparable question also returns a card (¥27.55, 30k+ buyers)."
                 },
                 {
                   "src": "assets/img/attr-taobao-order.jpg",
                   "alt": "Taobao order page with no AI source label",
-                  "cap": "<b>Counter-example · Taobao order (not traceable)</b>　The order page shows store, amount and logistics only, with no AI source label. This is what “exposure without attribution” looks like."
+                  "cap": "<b>④ Counter-example · Taobao order</b>　Store, amount and logistics only — no AI source label."
                 }
               ]
             },
