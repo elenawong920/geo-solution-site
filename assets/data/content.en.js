@@ -14,7 +14,7 @@ window.SITE_DATA_EN = {
     "copy": "© 2026 JD Technology · GEO Solutions",
     "cols": [
       {
-        "title": "Product",
+        "title": "Solutions",
         "items": [
           {
             "text": "Domestic GEO Solution",
@@ -135,8 +135,46 @@ window.SITE_DATA_EN = {
           "href": "#attribution"
         },
         {
-          "label": "Industries",
-          "href": "pharma.html"
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -158,9 +196,10 @@ window.SITE_DATA_EN = {
               "href": "#engine"
             },
             {
-              "label": "Explore Industry Solutions",
-              "href": "pharma.html",
-              "style": "ghost"
+              "label": "View All Solutions",
+              "href": "#",
+              "style": "ghost",
+              "action": "menu"
             },
             {
               "label": "Enterprise GEO Platform",
@@ -1672,6 +1711,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Delivery & Cases",
           "href": "#delivery"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -2784,8 +2865,46 @@ window.SITE_DATA_EN = {
           "href": "#conclusion"
         },
         {
-          "label": "Industries",
-          "href": "pharma.html"
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -3299,6 +3418,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Contact",
           "href": "#contact"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -4315,6 +4476,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Case Studies",
           "href": "#cases"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -4954,6 +5157,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Case Studies",
           "href": "#cases"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -5540,6 +5785,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Case Study",
           "href": "#cases"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -6242,6 +6529,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Campaign",
           "href": "#campaign"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -7133,6 +7462,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Delivery & KPIs",
           "href": "#delivery"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -7993,6 +8364,48 @@ window.SITE_DATA_EN = {
         {
           "label": "Rollout & Sign-off",
           "href": "#delivery"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [

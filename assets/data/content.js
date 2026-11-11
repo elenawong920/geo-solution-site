@@ -14,7 +14,7 @@ window.SITE_DATA = {
     "copy": "© 2026 京东科技 · GEO 解决方案",
     "cols": [
       {
-        "title": "产品",
+        "title": "解决方案",
         "items": [
           {
             "text": "国内 GEO 解决方案",
@@ -135,8 +135,46 @@ window.SITE_DATA = {
           "href": "#attribution"
         },
         {
-          "label": "行业方案",
-          "href": "pharma.html"
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -158,9 +196,10 @@ window.SITE_DATA = {
               "href": "#engine"
             },
             {
-              "label": "查看行业方案",
-              "href": "pharma.html",
-              "style": "ghost"
+              "label": "查看全部解决方案",
+              "href": "#",
+              "style": "ghost",
+              "action": "menu"
             },
             {
               "label": "企业级 GEO 中台",
@@ -1672,6 +1711,48 @@ window.SITE_DATA = {
         {
           "label": "交付与案例",
           "href": "#delivery"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -2784,8 +2865,46 @@ window.SITE_DATA = {
           "href": "#conclusion"
         },
         {
-          "label": "行业方案",
-          "href": "pharma.html"
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -3299,6 +3418,48 @@ window.SITE_DATA = {
         {
           "label": "联系我们",
           "href": "#contact"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -4315,6 +4476,48 @@ window.SITE_DATA = {
         {
           "label": "实证案例",
           "href": "#cases"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -4954,6 +5157,48 @@ window.SITE_DATA = {
         {
           "label": "实战案例",
           "href": "#cases"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -5540,6 +5785,48 @@ window.SITE_DATA = {
         {
           "label": "实战案例",
           "href": "#cases"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -6242,6 +6529,48 @@ window.SITE_DATA = {
         {
           "label": "联合宣传",
           "href": "#campaign"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -7133,6 +7462,48 @@ window.SITE_DATA = {
         {
           "label": "交付与指标",
           "href": "#delivery"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
@@ -7993,6 +8364,48 @@ window.SITE_DATA = {
         {
           "label": "落地与考核",
           "href": "#delivery"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
         }
       ],
       "sections": [
