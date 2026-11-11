@@ -89,7 +89,8 @@ window.SITE_DATA_EN = {
             "text": "Project enquiries: contact your JD Technology sales representative or project contact"
           },
           {
-            "text": "Website: geo.jdcloud.com"
+            "text": "Website: geo.jdcloud.com",
+            "href": "https://geo.jdcloud.com/"
           },
           {
             "text": "Platforms: Doubao / Qwen / DeepSeek / Yuanbao"

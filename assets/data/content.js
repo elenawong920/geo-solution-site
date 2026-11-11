@@ -89,7 +89,8 @@ window.SITE_DATA = {
             "text": "项目咨询：请联系您的京东科技销售或项目对接人"
           },
           {
-            "text": "官网：geo.jdcloud.com"
+            "text": "官网：geo.jdcloud.com",
+            "href": "https://geo.jdcloud.com/"
           },
           {
             "text": "覆盖平台：豆包 / 千问 / DeepSeek / 元宝"

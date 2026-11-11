@@ -620,7 +620,15 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .footer__col a:hover { color: #fff; }
 /* 站外条目的外链箭头 */
 .footer__col .footer__ext { display: inline; font-size: 10px; opacity: .5; }
-.footer__col a[target="_blank"] { white-space: nowrap; }
+.footer__col a[target="_blank"] {
+  white-space: nowrap;
+  color: rgba(255, 255, 255, .74);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, .28);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.footer__col a[target="_blank"]:hover { text-decoration-color: rgba(255, 255, 255, .6); }
 .footer__bottom { border-top: 1px solid var(--dark-3); padding-top: 22px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-size: 12px; }
 .footer__ver { font-family: var(--font-num); }
 
