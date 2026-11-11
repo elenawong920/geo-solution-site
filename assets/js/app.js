@@ -280,15 +280,18 @@
   };
 
   R.table = function (b, p) {
-    var h = '<div class="table-wrap reveal"><table class="table"><thead><tr>';
+    var wrapCls = 'table-wrap reveal' + (b.stack ? ' table-wrap--stack' : '');
+    var tblCls = 'table' + (b.stack ? ' table--stack' : '');
+    var h = '<div class="' + wrapCls + '"><table class="' + tblCls + '"><thead><tr>';
     (b.head || []).forEach(function (c, i) { h += '<th>' + t(p + '.head.' + i, c) + '</th>'; });
     h += '</tr></thead><tbody>';
     (b.rows || []).forEach(function (r, i) {
       var hl = (b.highlight || []).indexOf(i) >= 0 ? ' class="hl"' : '';
       h += '<tr' + hl + '>';
       r.forEach(function (c, j) {
-        var cls = b.numCols && b.numCols.indexOf(j) >= 0 ? ' class="num"' : '';
-        h += '<td' + cls + '>' + t(p + '.rows.' + i + '.' + j, c) + '</td>';
+        /* 窄屏堆叠时用表头做小标签 */
+        var lb = b.stack ? ' data-label="' + esc(t(p + '.head.' + j, (b.head || [])[j] || '')) + '"' : '';
+        h += '<td' + (b.numCols && b.numCols.indexOf(j) >= 0 ? ' class="num"' : '') + lb + '>' + t(p + '.rows.' + i + '.' + j, c) + '</td>';
       });
       h += '</tr>';
     });

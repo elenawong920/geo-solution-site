@@ -463,6 +463,26 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .table .num { font-family: var(--font-num); font-weight: 700; color: var(--ink); white-space: nowrap; }
 .table .up { color: var(--jd-red); font-weight: 700; }
 .table .hl td { background: #FFFBFB; }
+/* 窄屏堆叠表：每行变成「小标签 + 内容」，避免结论列被挤到屏幕外 */
+@media (max-width: 640px) {
+  .table--stack { min-width: 0; }
+  .table--stack thead { display: none; }
+  .table--stack, .table--stack tbody, .table--stack tr, .table--stack td { display: block; width: 100%; }
+  .table--stack tr { padding: 8px 0 10px; border-bottom: 1px solid var(--line); }
+  .table--stack tr:last-child { border-bottom: 0; }
+  .table--stack td { border: 0; padding: 5px 16px; }
+  .table--stack td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 10.5px;
+    letter-spacing: .04em;
+    color: var(--muted);
+    margin-bottom: 3px;
+    font-weight: 500;
+  }
+  .table--stack td.num { font-size: 15px; }
+  .table--stack td.num::before { display: none; }
+}
 
 /* ---------- 时间线 / 流程 ---------- */
 .flow { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }

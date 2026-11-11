@@ -8538,40 +8538,43 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "secHead",
-              "kicker": "The Reality",
-              "title": "Today’s GEO Services Have Four Blind Spots",
-              "desc": "Feedback from real service cycles — what clients buy is not a capability but a black box."
+              "kicker": "Management Reality",
+              "title": "The Hard Part Is Not Execution — It Is Budget, Process and Reporting",
+              "desc": "Clients do not pay for execution detail. What stalls a programme sits at group level: where the budget comes from, how procurement runs, and how results are reported upward."
             },
             {
-              "type": "cards",
-              "cols": 4,
-              "items": [
-                {
-                  "no": "01",
-                  "title": "Cannot see · black box",
-                  "desc": "During the campaign there is no visibility into AI-side performance, only the agency’s weekly or monthly report, and problems surface after they happen."
-                },
-                {
-                  "no": "02",
-                  "title": "Cannot measure · no standard",
-                  "desc": "No unified metrics: how much exposure, which rank — all described verbally, so results cannot be signed off."
-                },
-                {
-                  "no": "03",
-                  "title": "Cannot control · no intervention",
-                  "desc": "Negative sentiment or a competitor overtaking is discovered too late; teams can neither monitor nor adjust in time."
-                },
-                {
-                  "no": "04",
-                  "title": "Cannot let go · extra headcount",
-                  "desc": "Someone must chase the agency, the reports and the definitions — outsourced in name, more work in practice."
-                }
-              ]
+              "type": "table",
+              "head": [
+                "Three things",
+                "What the group faces today",
+                "How the platform absorbs it"
+              ],
+              "rows": [
+                [
+                  "01　Budget",
+                  "The same capability is bought again by each department — spend is fragmented and the group loses its bargaining power",
+                  "One approval with group-wide authorisation: budget sits in a single pool, with balance checks and cross-brand comparison"
+                ],
+                [
+                  "02　Process",
+                  "Each new brand re-runs approval, tender and acceptance — procurement takes longer than the campaign window",
+                  "Reusable contract, acceptance and settlement templates; increments go through a supplement instead of a new tender"
+                ],
+                [
+                  "03　Reporting",
+                  "Every brand files its own weekly report on its own standard, so the group cannot assemble the full picture",
+                  "One standard aggregates automatically — evidence per question, one-click export, ready for upward reporting"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
             },
             {
               "type": "notice",
-              "title": "In One Sentence",
-              "desc": "GEO should not be a service you buy; it should be an asset you can see inside your own company."
+              "title": "In one line",
+              "desc": "The client approves the budget, walks the process and reads the results; collection, diagnosis and optimisation all sit with the platform."
             }
           ]
         },
