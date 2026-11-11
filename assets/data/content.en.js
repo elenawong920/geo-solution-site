@@ -8538,6 +8538,38 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "secHead",
+              "kicker": "Two Blockers",
+              "title": "Two Blockers: The Service Is Opaque, the Machinery Will Not Move",
+              "desc": "On one side, the service you buy is hard to see into, hard to measure, hard to steer and hard to let go of. On the other, group-level budget, procurement and reporting simply will not move — the first makes results unexplainable, the second keeps the project from being approved."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Cannot see · black box",
+                  "desc": "During the campaign there is no visibility into AI-side performance, only the agency’s weekly or monthly report, and problems surface after they happen."
+                },
+                {
+                  "no": "02",
+                  "title": "Cannot measure · no standard",
+                  "desc": "No unified metrics: how much exposure, which rank — all described verbally, so results cannot be signed off."
+                },
+                {
+                  "no": "03",
+                  "title": "Cannot control · no intervention",
+                  "desc": "Negative sentiment or a competitor overtaking is discovered too late; teams can neither monitor nor adjust in time."
+                },
+                {
+                  "no": "04",
+                  "title": "Cannot let go · extra headcount",
+                  "desc": "Someone must chase the agency, the reports and the definitions — outsourced in name, more work in practice."
+                }
+              ]
+            },
+            {
+              "type": "secHead",
               "kicker": "Management Reality",
               "title": "The Hard Part Is Not Execution — It Is Budget, Process and Reporting",
               "desc": "Clients do not pay for execution detail. What stalls a programme sits at group level: where the budget comes from, how procurement runs, and how results are reported upward."
@@ -8573,8 +8605,8 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "notice",
-              "title": "In one line",
-              "desc": "The client approves the budget, walks the process and reads the results; collection, diagnosis and optimisation all sit with the platform."
+              "title": "In One Line",
+              "desc": "GEO should not be a black-box service you buy, but an asset the group can see into, reconcile and compare across brands."
             }
           ]
         },

@@ -366,6 +366,8 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 
 /* ---------- 卡片 ---------- */
 .cards { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); }
+/* 卡片组后面紧跟小标题时补一段呼吸，否则贴在一起 */
+.cards + .sec-head { margin-top: 48px; }
 .cards--2 { grid-template-columns: repeat(2, 1fr); }
 .cards--3 { grid-template-columns: repeat(3, 1fr); }
 .cards--4 { grid-template-columns: repeat(4, 1fr); }
