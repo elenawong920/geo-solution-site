@@ -71,6 +71,10 @@ window.SITE_DATA_EN = {
             "text": "AIGC Content & Source Strategy"
           },
           {
+            "text": "JD Lingjing AIGC · One-Stop Content Studio",
+            "href": "https://lingjing.jdcloud.com/"
+          },
+          {
             "text": "Citation & Trust Boosting"
           },
           {

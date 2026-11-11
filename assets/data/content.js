@@ -71,6 +71,10 @@ window.SITE_DATA = {
             "text": "AIGC 内容与信源策略"
           },
           {
+            "text": "京东灵境 AIGC 一站式内容创作大师",
+            "href": "https://lingjing.jdcloud.com/"
+          },
+          {
             "text": "采信提权"
           },
           {
