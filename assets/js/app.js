@@ -508,7 +508,7 @@
     else if (b.layout === 'phones') cls = ' gallery--phones';
     var h = '<div class="gallery' + cls + ' reveal">';
     (b.items || []).forEach(function (it, i) {
-      h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" loading="lazy">' +
+      h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" decoding="async">' +
            '<figcaption class="shot__cap">' + rich(p + '.items.' + i + '.cap', it.cap) + '</figcaption></figure>';
     });
     return h + '</div>';
@@ -887,6 +887,22 @@
       a.setAttribute('href', href + sep + extra.join('&') + hash);
     });
   }
+
+  /* 图片兜底：锚点直达或弱网时个别图可能没解码，补一次带参数的重新请求 */
+  function healShotImages() {
+    var imgs = document.querySelectorAll('.shot img');
+    Array.prototype.forEach.call(imgs, function (im) {
+      if (!im.complete || im.naturalWidth > 0) return;
+      var src = im.getAttribute('src') || '';
+      if (!src || src.indexOf('data:') === 0 || src.indexOf('retry=') > 0) return;
+      im.setAttribute('src', src + (src.indexOf('?') > 0 ? '&' : '?') + 'retry=1');
+    });
+  }
+  window.addEventListener('load', function () {
+    setTimeout(healShotImages, 1500);
+    setTimeout(healShotImages, 4000);
+  });
+  window.addEventListener('hashchange', function () { setTimeout(healShotImages, 800); });
 
   /* ---------- 启动 ---------- */
   var pageKey = document.body.getAttribute('data-page') || 'home';
