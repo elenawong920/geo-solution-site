@@ -1396,6 +1396,71 @@ window.SITE_DATA_EN = {
               "desc": "Doubao: the client grants Douyin Shop back-office access; store experience score ≥ 60 and five per-item criteria (sales, listing status, information quality ≥ 60, no duplicate listings, positive rate ≥ 70% and negative rate ≤ 8%). The Doubao traffic pool covers 14 first-level categories; eight — including medicines, medical aesthetics, finance and real estate — are not open to cards. Yuanbao: redirect and data return require the JD WeChat domain team."
             },
             {
+              "type": "secHead",
+              "kicker": "Product Proof",
+              "title": "Four Screens: Dashboard, Label, Card, Dead End",
+              "desc": "Captured from real merchant back-ends and consumer apps with no retouching. Product and store details come from public platform pages; back-end figures come from a single project sample and illustrate how to read the dashboard."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/attr-douyin-dashboard.jpg",
+                  "alt": "Douyin Shop “Doubao operations” dashboard",
+                  "cap": "<b>Douyin Shop · Doubao operations</b>　A 30-day window: GMV ¥94,072.80 (+47.56% on the previous period), 234 orders, settled amount ¥64,698.08, 709k product impressions. Exposure, clicks and sales reconcile on one dashboard."
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "duo",
+              "items": [
+                {
+                  "src": "assets/img/attr-order-pack.jpg",
+                  "alt": "Douyin order page labelled “from Doubao” (packing)",
+                  "cap": "<b>Order ①, packing</b>　The order card is labelled “from Doubao” by the platform; paid ¥27.90."
+                },
+                {
+                  "src": "assets/img/attr-order-done.jpg",
+                  "alt": "Douyin order page labelled “from Doubao” (completed)",
+                  "cap": "<b>Order ②, completed</b>　The same label, paid ¥60.88. The merchant adds no tracking code at all."
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "phones",
+              "items": [
+                {
+                  "src": "assets/img/attr-yuanbao-card.jpg",
+                  "alt": "Yuanbao chat surfacing a JD self-operated product card",
+                  "cap": "<b>Yuanbao · card inside the chat</b>　Asked how to choose engine oil, the answer compares grades and then surfaces a JD self-operated card (¥265, 1M+ sold)."
+                },
+                {
+                  "src": "assets/img/attr-yuanbao-jd.jpg",
+                  "alt": "The card opens the JD mini-program product page",
+                  "cap": "<b>Yuanbao · after the click</b>　The card opens the JD WeChat mini-program straight to the product page; checkout lands inside JD, and the data can be exported."
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "phones",
+              "items": [
+                {
+                  "src": "assets/img/attr-qwen-card.jpg",
+                  "alt": "Qwen appending a product card to its answer",
+                  "cap": "<b>Qwen · card inside the chat (exposure works)</b>　On a comparable question, Qwen also appends a card (¥27.55, 30k+ buyers)."
+                },
+                {
+                  "src": "assets/img/attr-taobao-order.jpg",
+                  "alt": "Taobao order page with no AI source label",
+                  "cap": "<b>Counter-example · Taobao order (not traceable)</b>　The order page shows store, amount and logistics only, with no AI source label. This is what “exposure without attribution” looks like."
+                }
+              ]
+            },
+            {
               "type": "notice",
               "tone": "neutral",
               "title": "Commitment boundary",
