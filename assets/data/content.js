@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -688,53 +688,53 @@ window.SITE_DATA = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",
-                          "value": "53.8T",
-                          "note": "环比 -2.9%"
+                          "value": "53.2T",
+                          "note": "环比 -1.1%"
                         },
                         {
                           "label": "Hy4（腾讯）",
-                          "value": "18.8T",
-                          "note": "环比 +17.5%"
+                          "value": "20.2T",
+                          "note": "环比 +7.4%"
                         },
                         {
                           "label": "DS V4.1 Flash（DeepSeek）",
-                          "value": "16.9T",
-                          "note": "环比 -3.4%"
+                          "value": "16.3T",
+                          "note": "环比 -3.6%"
                         },
                         {
                           "label": "GLM 5.3 Flash（智谱）",
-                          "value": "11.3T",
-                          "note": "环比 -6.6%"
+                          "value": "12.0T",
+                          "note": "环比 +6.2%"
                         },
                         {
                           "label": "GPT-6 Luna（OpenAI）",
-                          "value": "7.04T",
-                          "note": "环比 -0.8%"
+                          "value": "7.16T",
+                          "note": "环比 +1.7%"
                         },
                         {
                           "label": "Step 5 Preview（阶跃星辰）",
-                          "value": "6.94T",
-                          "note": "环比 -2.9%"
+                          "value": "6.88T",
+                          "note": "环比 -0.9%"
                         },
                         {
                           "label": "Claude Opus 5.5（Anthropic）",
-                          "value": "6.76T",
-                          "note": "环比 +0.1%"
+                          "value": "6.65T",
+                          "note": "环比 -1.6%"
                         },
                         {
                           "label": "Crouton Alpha（stealth）",
-                          "value": "5.07T",
-                          "note": "环比 -0.6%"
+                          "value": "4.50T",
+                          "note": "环比 -11.2%"
                         },
                         {
                           "label": "Kimi K3.1 Pro（月之暗面）",
                           "value": "4.42T",
-                          "note": "环比 +0.7%"
+                          "note": "环比 0.0%"
                         },
                         {
-                          "label": "MiniMax M3.1 Flash（MiniMax）",
-                          "value": "4.33T",
-                          "note": "环比 -7.1%"
+                          "label": "GPT-6.1 Sol（OpenAI）",
+                          "value": "4.14T",
+                          "note": "环比 重回"
                         }
                       ]
                     }
