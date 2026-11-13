@@ -510,6 +510,14 @@
     return h + '</div>';
   };
 
+  /* 代码块：深底等宽，窄屏内部横向滚动 */
+  R.code = function (b, p) {
+    var h = '<div class="codeblock reveal">';
+    if (b.title) h += '<div class="codeblock__title">' + t(p + '.title', b.title) + '</div>';
+    h += '<pre><code>' + t(p + '.code', b.code || '') + '</code></pre></div>';
+    return h;
+  };
+
   R.gallery = function (b, p) {
     var cls = '';
     if (b.layout === 'stack') cls = ' gallery--stack';

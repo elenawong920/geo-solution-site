@@ -692,6 +692,35 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 }
 .navmenu__panel a:hover { background: var(--jd-red-soft); color: var(--jd-red); }
 
+/* ---------- 代码块 ---------- */
+.codeblock {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #142133;
+  border: 1px solid #1d2b3d;
+}
+.codeblock__title {
+  font-size: 12px;
+  letter-spacing: .02em;
+  color: rgba(255, 255, 255, .52);
+  padding: 10px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+.codeblock pre {
+  margin: 0;
+  padding: 16px 18px 18px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.codeblock code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: #d9e2ec;
+  white-space: pre;
+  display: block;
+}
+
 /* ---------- 章节浮标 ---------- */
 .toc { position: fixed; right: 16px; bottom: 22px; z-index: 55; }
 .toc__rail { display: none; }

@@ -79,6 +79,10 @@ window.SITE_DATA = {
           },
           {
             "text": "监测与复盘迭代"
+          },
+          {
+            "text": "GEO API 接口与文档",
+            "href": "api.html"
           }
         ]
       },
@@ -8360,6 +8364,10 @@ window.SITE_DATA = {
           "href": "#delivery"
         },
         {
+          "label": "API 接口",
+          "href": "api.html"
+        },
+        {
           "label": "解决方案",
           "href": "#",
           "menu": [
@@ -9101,6 +9109,701 @@ window.SITE_DATA = {
               "type": "notice",
               "title": "一句话",
               "desc": "以企业级 GEO 中台，构建品牌在 AI 时代的长期竞争力：监控实时化、效果可量化、诊断智能化，全程无需额外人力投入。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "blocks": [
+            {
+              "type": "cta",
+              "title": "要把中台接进自己的系统？",
+              "desc": "21 个开放端点，覆盖鉴权与点数、拓词、诊断、立项与监测；含最小调用链、模型与指标约定、错误码与幂等说明。",
+              "buttons": [
+                {
+                  "label": "查看 API 接口文档",
+                  "href": "api.html"
+                },
+                {
+                  "label": "下载完整手册",
+                  "href": "assets/docs/geo-api-manual.html",
+                  "style": "ghost"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "api": {
+      "title": "GEO API",
+      "nav": [
+        {
+          "label": "业务流程",
+          "href": "#flow"
+        },
+        {
+          "label": "接入准备",
+          "href": "#prepare"
+        },
+        {
+          "label": "接口总览",
+          "href": "#endpoints"
+        },
+        {
+          "label": "快速开始",
+          "href": "#quickstart"
+        },
+        {
+          "label": "通用约定",
+          "href": "#conventions"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "hero",
+          "kicker": "京东云 GEO · API",
+          "title": [
+            "把 GEO 的四步",
+            "接进你自己的系统"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "拓词、诊断、立项、监测全部开放为接口。21 个现有端点，按账户授权范围调用；数据、证据和报告留在你的业务系统里。",
+          "sub": "面向品牌商与 KA 客户的产品与技术团队 · 接口文档 V4 · 2026-11-13",
+          "buttons": [
+            {
+              "label": "查看接口总览",
+              "href": "#endpoints"
+            },
+            {
+              "label": "下载完整接口手册",
+              "href": "assets/docs/geo-api-manual.html",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "21 个",
+              "label": "现有开放接口"
+            },
+            {
+              "value": "4 步",
+              "label": "拓词到监测"
+            },
+            {
+              "value": "8 个",
+              "label": "企业增强（规划）"
+            },
+            {
+              "value": "30 天",
+              "label": "令牌有效期"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "flow",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "业务流程",
+              "title": "四步走完：拓词 → 诊断 → 立项 → 监测",
+              "desc": "客户页面负责输入与展示，京东云负责采集、诊断与执行；每一步的产出都是下一步的输入。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "步骤",
+                "客户页面完成什么",
+                "京东云完成什么",
+                "输出与下一步"
+              ],
+              "rows": [
+                [
+                  "Step 1 拓词",
+                  "填写品牌、品类、卖点和种子问题；筛选候选问题",
+                  "异步生成认知、场景、对比、决策四类意图词",
+                  "`job_id`、候选词；客户选词后提交诊断"
+                ],
+                [
+                  "Step 2 诊断",
+                  "选择问题、平台、指标与次数；确认资源消耗",
+                  "预估、锁点、实际采集、指标分析与选词建议",
+                  "诊断 `task_id`、摘要及分问题 / 模型结果"
+                ],
+                [
+                  "Step 3 立项",
+                  "提交服务范围；经 M01 查到审核通过后调用 P03",
+                  "创建与审核项目；优化项目在 P03 成功后启动",
+                  "同一 `project_id`；审核通过为 pending + approved，立项成功为 running"
+                ],
+                [
+                  "Step 4 监测",
+                  "用立项返回的 `project_id` 查询进度、指标、答案原文与信源",
+                  "持续采集、优化交付、生成数据",
+                  "效果与证据；支持下一轮拓词 / 诊断形成迭代"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/geo-api-flow.svg",
+                  "alt": "京东云 GEO 四步业务流程图",
+                  "cap": "<b>四步业务流程</b>　拓词生成候选词，诊断后选择监测或优化项目，完成审核与启动条件，查询效果及新增报告。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "sequence",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "系统交互",
+              "title": "一次调用，两边各做什么",
+              "desc": "提交只代表受理，不代表完成；状态查询与结果查询分开。可以随时查询，不等于 AI 回答秒级生成或指标秒级更新。"
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/geo-api-sequence.svg",
+                  "alt": "京东云 GEO 系统交互时序图",
+                  "cap": "<b>系统交互时序</b>　客户后端持有凭证、缓存令牌、记录业务 ID；京东云承担任务编排、诊断、运营审核、优化执行与数据生产。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "prepare",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "接入准备",
+              "title": "六样东西先拿到，再写第一行代码",
+              "desc": "联系京东云项目对接人获取下列信息，并确认账号、模型、服务范围与资源额度。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "准备项",
+                "需要获得或确认的内容",
+                "使用说明"
+              ],
+              "rows": [
+                [
+                  "接入地址",
+                  "现有地址为 https://l.geo.jdcloud.com/openapi/v1；测试环境、网络策略另行交付",
+                  "地址已包含 v1 前缀，调用时不要再重复拼接"
+                ],
+                [
+                  "客户凭证",
+                  "client_id、client_secret",
+                  "京东云分配，仅在客户后端保存"
+                ],
+                [
+                  "系统用户",
+                  "专用 username、password 及可见数据范围",
+                  "凭证与系统用户共同换取令牌"
+                ],
+                [
+                  "功能授权",
+                  "所需 scope、模块权限、模型权限",
+                  "scope 存在不等于模块与模型权限已开通"
+                ],
+                [
+                  "可用平台",
+                  "当前账户获授权的平台与服务类型",
+                  "以实际开通范围为准"
+                ],
+                [
+                  "点数账户",
+                  "可用点数、预估与锁定规则、充值责任方",
+                  "点数属于资源额度，不等同于人民币付款或合同签署"
+                ]
+              ],
+              "stack": true
+            },
+            {
+              "type": "secHead",
+              "kicker": "权限最小集",
+              "title": "按场景只开需要的 scope",
+              "desc": "新接入使用服务项目接口管理项目；scope 与模块、模型权限需分别开通。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "场景",
+                "所需 scope",
+                "额外权限"
+              ],
+              "rows": [
+                [
+                  "拓词创建与查询",
+                  "terms.generate",
+                  "批量拓词模块"
+                ],
+                [
+                  "诊断预估与创建",
+                  "diagnoses.run",
+                  "诊断模块、相应模型"
+                ],
+                [
+                  "诊断状态、列表与结果",
+                  "diagnoses.read",
+                  "诊断模块、资源可见"
+                ],
+                [
+                  "预估、送审、立项、项目列表与详情",
+                  "service_projects.manage",
+                  "资源范围与服务授权"
+                ],
+                [
+                  "平台、问题指标、答案快照",
+                  "questions.read",
+                  "模型和字段可见"
+                ],
+                [
+                  "信源分布",
+                  "sites.read",
+                  "信源分布模块"
+                ],
+                [
+                  "引用信源",
+                  "sources.read",
+                  "项目可见"
+                ],
+                [
+                  "点数查询",
+                  "points.read",
+                  "当前用户点数账户"
+                ]
+              ],
+              "numCols": [
+                1
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "endpoints",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "接口总览",
+              "title": "21 个现有端点，方法统一 POST",
+              "desc": "路径统一以 /openapi/v1 为前缀；按账户开通的功能、scope 和资源范围调用。下表路径省略该前缀。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "编号",
+                "接口名称",
+                "路径",
+                "scope"
+              ],
+              "rows": [
+                [
+                  "A01",
+                  "获取访问令牌",
+                  "/auth/token",
+                  "Basic 鉴权"
+                ],
+                [
+                  "A02",
+                  "撤销访问令牌",
+                  "/auth/revoke",
+                  "当前 Bearer"
+                ],
+                [
+                  "A03",
+                  "查询点数",
+                  "/points/balance",
+                  "points.read"
+                ],
+                [
+                  "A04",
+                  "充值点数（可选）",
+                  "/points/recharge",
+                  "points.recharge"
+                ],
+                [
+                  "T01",
+                  "提交拓词任务",
+                  "/term-generation-jobs",
+                  "terms.generate"
+                ],
+                [
+                  "T02",
+                  "查询拓词任务与结果",
+                  "/term-generation-jobs/{job_id}",
+                  "terms.generate"
+                ],
+                [
+                  "D01",
+                  "预估诊断点数",
+                  "/diagnosis-jobs/estimate-points",
+                  "diagnoses.run"
+                ],
+                [
+                  "D02",
+                  "创建诊断任务",
+                  "/diagnosis-jobs",
+                  "diagnoses.run"
+                ],
+                [
+                  "D03",
+                  "查询诊断状态",
+                  "/diagnosis-jobs/{task_id}/status",
+                  "diagnoses.read"
+                ],
+                [
+                  "D04",
+                  "查询诊断任务列表",
+                  "/diagnosis-jobs/list",
+                  "diagnoses.read"
+                ],
+                [
+                  "D05",
+                  "获取诊断结果",
+                  "/diagnosis-jobs/{task_id}/results",
+                  "diagnoses.read"
+                ],
+                [
+                  "P01",
+                  "预估服务点数",
+                  "/service-orders/estimate-points",
+                  "service_projects.manage"
+                ],
+                [
+                  "P02",
+                  "提交服务项目 / 优化审核",
+                  "/service-orders",
+                  "service_projects.manage"
+                ],
+                [
+                  "P03",
+                  "正式立项优化",
+                  "/service-projects/{project_id}/initiate",
+                  "service_projects.manage"
+                ],
+                [
+                  "M01",
+                  "服务项目列表",
+                  "/service-projects/list",
+                  "service_projects.manage"
+                ],
+                [
+                  "M02",
+                  "服务项目详情",
+                  "/service-projects/{project_id}",
+                  "service_projects.manage"
+                ],
+                [
+                  "M03",
+                  "可监测平台清单",
+                  "/platforms",
+                  "questions.read"
+                ],
+                [
+                  "M04",
+                  "单日问题与指标",
+                  "/questions",
+                  "questions.read"
+                ],
+                [
+                  "M05",
+                  "答案排名快照",
+                  "/answer-ranking-snapshots",
+                  "questions.read"
+                ],
+                [
+                  "M06",
+                  "信源分布",
+                  "/sites",
+                  "sites.read"
+                ],
+                [
+                  "M07",
+                  "引用信源清单",
+                  "/sources",
+                  "sources.read"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "note": "另有 8 个企业增强接口（N01—N08）以 /openapi/v2 为前缀，属规划能力、尚未发布，须在功能开通且对应版本发布后使用：能力查询、托管任务、数据查询、诊断查询、报告获取、重新送审、延期、达标结项。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "quickstart",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "快速开始",
+              "title": "最小闭环：取一次令牌，跑一次诊断，查一次结果",
+              "desc": "示例均为模拟值，不能直接用于调用。GEO_BASE_URL 只配置一次，已包含 /openapi/v1，不要重复拼接。"
+            },
+            {
+              "type": "code",
+              "title": "cURL · 换取令牌 → 创建诊断 → 查询状态",
+              "code": "# 1) 换取令牌：Basic 头携带 client_id/client_secret，Body 携带系统用户\ncurl --request POST \"$GEO_BASE_URL/auth/token\" \\\n  --user \"$CLIENT_ID:$CLIENT_SECRET\" \\\n  --header 'Content-Type: application/json' \\\n  --data-binary @credentials.json\n\n# 2) 创建诊断（会锁点；D01 预估不锁点）\ncurl --request POST \"$GEO_BASE_URL/diagnosis-jobs\" \\\n  --header \"Authorization: Bearer $ACCESS_TOKEN\" \\\n  --header 'Content-Type: application/json' \\\n  --data-binary @diagnosis-request.json\n\n# 3) 查询状态：DIAGNOSIS_TASK_ID 必须取自创建响应\ncurl --request POST \"$GEO_BASE_URL/diagnosis-jobs/$DIAGNOSIS_TASK_ID/status\" \\\n  --header \"Authorization: Bearer $ACCESS_TOKEN\" \\\n  --header 'Content-Type: application/json' \\\n  --data '{}'"
+            },
+            {
+              "type": "table",
+              "head": [
+                "顺序",
+                "调用",
+                "本次提交",
+                "必须保存 / 下一步"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "A01 获取令牌",
+                  "授权方凭证、专用系统账号",
+                  "access_token、有效期、scope"
+                ],
+                [
+                  "2",
+                  "T01 创建拓词",
+                  "品牌、品类、种子问题",
+                  "job_id"
+                ],
+                [
+                  "3",
+                  "T02 查询拓词",
+                  "job_id",
+                  "success 后选词；部分失败可人工选择成功词"
+                ],
+                [
+                  "4",
+                  "D01 预估诊断",
+                  "选定问题、模型、指标、次数",
+                  "sufficient=true；预估不锁点"
+                ],
+                [
+                  "5",
+                  "D02 创建诊断",
+                  "相同配置加 task_name",
+                  "诊断 task_id；创建会锁点"
+                ],
+                [
+                  "6",
+                  "D03 查询诊断状态",
+                  "task_id",
+                  "completed 或 partial；失败不查结果"
+                ],
+                [
+                  "7",
+                  "D05 获取诊断",
+                  "task_id、分页",
+                  "选中待优化问题与模型，保留诊断依据"
+                ],
+                [
+                  "8",
+                  "P01 预估优化",
+                  "精确 optimization_targets、source_task_id、周期",
+                  "预估与目标范围"
+                ],
+                [
+                  "9",
+                  "P02 提交送审",
+                  "相同配置加 request_id、project_name",
+                  "服务 project_id、原始请求及幂等号"
+                ],
+                [
+                  "10",
+                  "M01 查询项目列表",
+                  "service_type=optimization 及分页参数",
+                  "确认 status=pending 且 review_status=approved"
+                ],
+                [
+                  "11",
+                  "P03 正式立项",
+                  "P02 返回的 project_id、独立 initiation_request_id",
+                  "成功 status=running，保存实际日期"
+                ],
+                [
+                  "12",
+                  "M04 获取单日指标",
+                  "同一 project_id、日期、模型",
+                  "没有数据不显示为 0"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "note": "P02、M01 对应条目、P03 与 M04—M07 使用同一个 project_id。M01 是列表查询，按分页遍历匹配 items[].project_id，单页未找到时继续翻页。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "conventions",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "通用约定",
+              "title": "模型、指标、单位与错误码",
+              "desc": "无特别说明时成功响应为 code / message / data；业务任务失败可能仍返回 HTTP 200，须继续判断 data.status。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "类别",
+                "现有值",
+                "使用要求"
+              ],
+              "rows": [
+                [
+                  "模型",
+                  "deepseek、doubao、kimi、yuanbao",
+                  "调用前开通对应模型权限"
+                ],
+                [
+                  "分析字段",
+                  "brand_visibility、opinion_visibility、top_rank、competitor_visibility",
+                  "观点 / 竞品字段有条件必填要求"
+                ],
+                [
+                  "跑词次数",
+                  "1、3、10",
+                  "优化服务固定每天 10 次，不由客户端覆写"
+                ],
+                [
+                  "服务周期",
+                  "duration_months=1 / 3 / 12",
+                  "按一个月 30 天计算"
+                ],
+                [
+                  "百分比",
+                  "D05 的 *_rate、M06 的 percentage 为百分数",
+                  "例如 60 表示 60%，不是 0.6，不能重复乘 100"
+                ],
+                [
+                  "排名",
+                  "top_rank / top_display_rank 从 1 开始，0 表示无排名",
+                  "单次排名或诊断最佳排名都不等于前三率"
+                ]
+              ],
+              "stack": true
+            },
+            {
+              "type": "table",
+              "head": [
+                "HTTP 状态",
+                "含义",
+                "客户处理"
+              ],
+              "rows": [
+                [
+                  "401",
+                  "凭证、用户或 Token 无效 / 失效",
+                  "检查共享令牌，再受控刷新；写操作沿用原幂等键"
+                ],
+                [
+                  "403",
+                  "scope、模块、模型或资源范围不足",
+                  "修正授权，不能通过换 ID 试探其他客户数据"
+                ],
+                [
+                  "404",
+                  "资源不存在或不可见",
+                  "检查 ID 来源及归属；不根据 404 断言资源从未创建"
+                ],
+                [
+                  "409",
+                  "状态不允许，或幂等键对应不同内容",
+                  "未出诊断结果先查 D03；幂等冲突修正业务，不盲目重试"
+                ],
+                [
+                  "422",
+                  "参数、配置、余额等不满足要求",
+                  "展示可修正原因；预估成功也可能因余额变化而创建失败"
+                ],
+                [
+                  "429",
+                  "登录超限",
+                  "按服务端反馈等待，减少并发登录"
+                ],
+                [
+                  "500 / 503",
+                  "内部异常 / 鉴权依赖不可用",
+                  "查询可退避重试；无幂等写请求先核实受理情况"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "登录限流：5 分钟窗口内，同一授权方、用户和 IP 组合最多 10 次，同一 IP 最多 1000 次。T02、D03 建议每 10 秒轮询。"
+            },
+            {
+              "type": "notice",
+              "title": "版本与范围",
+              "desc": "本页信息来自《京东云 GEO API 接口调用文档 V4》（2026-11-13）。第 1—8 章为现有 /openapi/v1 接口，第 9—10 章为企业增强规划能力；接口与模型按账户实际开通范围调用，所有业务数据与 ID 示例均为模拟值。完整参数、响应字段与示例见完整手册。"
             }
           ]
         }

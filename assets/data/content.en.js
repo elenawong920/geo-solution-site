@@ -79,6 +79,10 @@ window.SITE_DATA_EN = {
           },
           {
             "text": "Monitoring & Review Iteration"
+          },
+          {
+            "text": "GEO API & Documentation",
+            "href": "api.html"
           }
         ]
       },
@@ -8360,6 +8364,10 @@ window.SITE_DATA_EN = {
           "href": "#delivery"
         },
         {
+          "label": "API Reference",
+          "href": "api.html"
+        },
+        {
           "label": "Solutions",
           "href": "#",
           "menu": [
@@ -9101,6 +9109,701 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "In One Sentence",
               "desc": "With an enterprise GEO platform, build long-term brand competitiveness in the AI era: real-time monitoring, measurable results and intelligent diagnosis, with no additional headcount."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "blocks": [
+            {
+              "type": "cta",
+              "title": "Wiring the platform into your own systems?",
+              "desc": "21 live endpoints across auth and points, terms, diagnosis, set-up and monitoring — plus the minimal call chain, model and metric conventions, error codes and idempotency.",
+              "buttons": [
+                {
+                  "label": "Read the API docs",
+                  "href": "api.html"
+                },
+                {
+                  "label": "Download the manual",
+                  "href": "assets/docs/geo-api-manual.html",
+                  "style": "ghost"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "api": {
+      "title": "GEO API",
+      "nav": [
+        {
+          "label": "Flow",
+          "href": "#flow"
+        },
+        {
+          "label": "Getting Ready",
+          "href": "#prepare"
+        },
+        {
+          "label": "Endpoints",
+          "href": "#endpoints"
+        },
+        {
+          "label": "Quick Start",
+          "href": "#quickstart"
+        },
+        {
+          "label": "Conventions",
+          "href": "#conventions"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "hero",
+          "kicker": "JD Cloud GEO · API",
+          "title": [
+            "Wire the four GEO steps",
+            "into your own system"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "Term generation, diagnosis, project set-up and monitoring are all exposed as APIs — 21 live endpoints, called within your account’s authorised scope, with the data, evidence and reports staying in your own systems.",
+          "sub": "For product and engineering teams at brands and KA clients · API documentation V4 · 2026-11-13",
+          "buttons": [
+            {
+              "label": "See the endpoints",
+              "href": "#endpoints"
+            },
+            {
+              "label": "Download the full manual",
+              "href": "assets/docs/geo-api-manual.html",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "21",
+              "label": "Live endpoints"
+            },
+            {
+              "value": "4",
+              "label": "Steps, terms to monitoring"
+            },
+            {
+              "value": "8",
+              "label": "Enterprise APIs (planned)"
+            },
+            {
+              "value": "30d",
+              "label": "Token lifetime"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "flow",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Business Flow",
+              "title": "Four Steps: Terms → Diagnosis → Set-up → Monitoring",
+              "desc": "Your front end handles input and display; JD Cloud handles collection, diagnosis and execution. Each step’s output is the next step’s input."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Step",
+                "What your page does",
+                "What JD Cloud does",
+                "Output and next step"
+              ],
+              "rows": [
+                [
+                  "Step 1 Terms",
+                  "Fill in brand, category, selling points and seed questions; pick candidates",
+                  "Asynchronously generates four intent types: awareness, scenario, comparison, decision",
+                  "job_id and candidates; submit the selected terms to diagnosis"
+                ],
+                [
+                  "Step 2 Diagnosis",
+                  "Choose questions, models, metrics and run count; confirm resource consumption",
+                  "Estimation, point locking, collection, metric analysis and term suggestions",
+                  "Diagnosis task_id, summary and per-question / per-model results"
+                ],
+                [
+                  "Step 3 Set-up",
+                  "Submit the service scope; after M01 shows approval, call P03",
+                  "Creates and reviews the project; optimisation starts once P03 succeeds",
+                  "One project_id; approved = pending + approved, initiated = running"
+                ],
+                [
+                  "Step 4 Monitoring",
+                  "Query progress, metrics, original answers and sources with that project_id",
+                  "Continuous collection, optimisation delivery and data production",
+                  "Results and evidence; feeds the next round of terms and diagnosis"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/geo-api-flow.svg",
+                  "alt": "JD Cloud GEO four-step business flow",
+                  "cap": "<b>Four-step flow</b>　Terms generate candidates; after diagnosis you choose monitoring or optimisation, clear review and start conditions, then query results and reports."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "sequence",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Interaction",
+              "title": "One Call, Two Sides of the Story",
+              "desc": "Submitting only means accepted, not finished; status queries and result queries are separate. Being queryable does not mean AI answers or metrics update in seconds."
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/geo-api-sequence.svg",
+                  "alt": "JD Cloud GEO system sequence diagram",
+                  "cap": "<b>Sequence</b>　Your backend holds credentials, caches the token and stores business IDs; JD Cloud runs orchestration, diagnosis, review, optimisation and data production."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "prepare",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Getting Ready",
+              "title": "Six Things Before the First Line of Code",
+              "desc": "Ask your JD Cloud contact for the following, and confirm the account, models, service scope and resource quota."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Item",
+                "What you need",
+                "Notes"
+              ],
+              "rows": [
+                [
+                  "Base URL",
+                  "https://l.geo.jdcloud.com/openapi/v1; test environment and network policy delivered separately",
+                  "The v1 prefix is already included — do not append it again"
+                ],
+                [
+                  "Client credentials",
+                  "client_id, client_secret",
+                  "Issued by JD Cloud; store only in your backend"
+                ],
+                [
+                  "System user",
+                  "Dedicated username, password and visible data scope",
+                  "Credentials and system user are both required to obtain a token"
+                ],
+                [
+                  "Authorisation",
+                  "Required scopes, module permissions, model permissions",
+                  "A scope existing does not mean module or model access is enabled"
+                ],
+                [
+                  "Available models",
+                  "Platforms and service types authorised for this account",
+                  "Subject to what is actually enabled"
+                ],
+                [
+                  "Points account",
+                  "Available points, estimation and locking rules, recharge owner",
+                  "Points are a resource quota, not a payment or a signed contract"
+                ]
+              ],
+              "stack": true
+            },
+            {
+              "type": "secHead",
+              "kicker": "Least Privilege",
+              "title": "Open Only the Scopes You Need",
+              "desc": "New integrations manage projects through the service-project endpoints; scopes, modules and model permissions are enabled separately."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Scenario",
+                "Required scope",
+                "Additional permission"
+              ],
+              "rows": [
+                [
+                  "Create and query terms",
+                  "terms.generate",
+                  "Batch term module"
+                ],
+                [
+                  "Estimate and create diagnosis",
+                  "diagnoses.run",
+                  "Diagnosis module, relevant models"
+                ],
+                [
+                  "Diagnosis status, list and results",
+                  "diagnoses.read",
+                  "Diagnosis module, resource visibility"
+                ],
+                [
+                  "Estimation, submission, initiation, project list and detail",
+                  "service_projects.manage",
+                  "Resource scope and service authorisation"
+                ],
+                [
+                  "Platforms, question metrics, answer snapshots",
+                  "questions.read",
+                  "Model and field visibility"
+                ],
+                [
+                  "Source distribution",
+                  "sites.read",
+                  "Source distribution module"
+                ],
+                [
+                  "Cited sources",
+                  "sources.read",
+                  "Project visibility"
+                ],
+                [
+                  "Points balance",
+                  "points.read",
+                  "Current user’s points account"
+                ]
+              ],
+              "numCols": [
+                1
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "endpoints",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Endpoints",
+              "title": "21 Live Endpoints, All POST",
+              "desc": "All paths share the /openapi/v1 prefix; call them within the features, scopes and resource range enabled for your account. The prefix is omitted below."
+            },
+            {
+              "type": "table",
+              "head": [
+                "ID",
+                "Endpoint",
+                "Path",
+                "Scope"
+              ],
+              "rows": [
+                [
+                  "A01",
+                  "Get access token",
+                  "/auth/token",
+                  "Basic auth"
+                ],
+                [
+                  "A02",
+                  "Revoke access token",
+                  "/auth/revoke",
+                  "Current Bearer"
+                ],
+                [
+                  "A03",
+                  "Points balance",
+                  "/points/balance",
+                  "points.read"
+                ],
+                [
+                  "A04",
+                  "Recharge points (optional)",
+                  "/points/recharge",
+                  "points.recharge"
+                ],
+                [
+                  "T01",
+                  "Submit term job",
+                  "/term-generation-jobs",
+                  "terms.generate"
+                ],
+                [
+                  "T02",
+                  "Query term job and results",
+                  "/term-generation-jobs/{job_id}",
+                  "terms.generate"
+                ],
+                [
+                  "D01",
+                  "Estimate diagnosis points",
+                  "/diagnosis-jobs/estimate-points",
+                  "diagnoses.run"
+                ],
+                [
+                  "D02",
+                  "Create diagnosis job",
+                  "/diagnosis-jobs",
+                  "diagnoses.run"
+                ],
+                [
+                  "D03",
+                  "Query diagnosis status",
+                  "/diagnosis-jobs/{task_id}/status",
+                  "diagnoses.read"
+                ],
+                [
+                  "D04",
+                  "List diagnosis jobs",
+                  "/diagnosis-jobs/list",
+                  "diagnoses.read"
+                ],
+                [
+                  "D05",
+                  "Get diagnosis results",
+                  "/diagnosis-jobs/{task_id}/results",
+                  "diagnoses.read"
+                ],
+                [
+                  "P01",
+                  "Estimate service points",
+                  "/service-orders/estimate-points",
+                  "service_projects.manage"
+                ],
+                [
+                  "P02",
+                  "Submit service project / review",
+                  "/service-orders",
+                  "service_projects.manage"
+                ],
+                [
+                  "P03",
+                  "Initiate optimisation",
+                  "/service-projects/{project_id}/initiate",
+                  "service_projects.manage"
+                ],
+                [
+                  "M01",
+                  "Service project list",
+                  "/service-projects/list",
+                  "service_projects.manage"
+                ],
+                [
+                  "M02",
+                  "Service project detail",
+                  "/service-projects/{project_id}",
+                  "service_projects.manage"
+                ],
+                [
+                  "M03",
+                  "Monitored platforms",
+                  "/platforms",
+                  "questions.read"
+                ],
+                [
+                  "M04",
+                  "Daily questions and metrics",
+                  "/questions",
+                  "questions.read"
+                ],
+                [
+                  "M05",
+                  "Answer ranking snapshots",
+                  "/answer-ranking-snapshots",
+                  "questions.read"
+                ],
+                [
+                  "M06",
+                  "Source distribution",
+                  "/sites",
+                  "sites.read"
+                ],
+                [
+                  "M07",
+                  "Cited source list",
+                  "/sources",
+                  "sources.read"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "note": "Eight enterprise endpoints (N01—N08) live under /openapi/v2 and are planned, not yet released — available only when the capability is enabled and that version ships: capabilities, managed tasks, data query, diagnosis query, reports, resubmit, extend and achievement close-out."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "quickstart",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Quick Start",
+              "title": "Smallest Loop: One Token, One Diagnosis, One Query",
+              "desc": "All examples use mock values and cannot be called directly. Set GEO_BASE_URL once — it already contains /openapi/v1."
+            },
+            {
+              "type": "code",
+              "title": "cURL · token → create diagnosis → query status",
+              "code": "# 1) Get a token: Basic header carries client_id/client_secret, body carries the system user\ncurl --request POST \"$GEO_BASE_URL/auth/token\" \\\n  --user \"$CLIENT_ID:$CLIENT_SECRET\" \\\n  --header 'Content-Type: application/json' \\\n  --data-binary @credentials.json\n\n# 2) Create a diagnosis (locks points; D01 estimation does not)\ncurl --request POST \"$GEO_BASE_URL/diagnosis-jobs\" \\\n  --header \"Authorization: Bearer $ACCESS_TOKEN\" \\\n  --header 'Content-Type: application/json' \\\n  --data-binary @diagnosis-request.json\n\n# 3) Query status: DIAGNOSIS_TASK_ID must come from the create response\ncurl --request POST \"$GEO_BASE_URL/diagnosis-jobs/$DIAGNOSIS_TASK_ID/status\" \\\n  --header \"Authorization: Bearer $ACCESS_TOKEN\" \\\n  --header 'Content-Type: application/json' \\\n  --data '{}'"
+            },
+            {
+              "type": "table",
+              "head": [
+                "#",
+                "Call",
+                "What you submit",
+                "What you keep / next"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "A01 Token",
+                  "Client credentials, dedicated system user",
+                  "access_token, expiry, scope"
+                ],
+                [
+                  "2",
+                  "T01 Create terms",
+                  "Brand, category, seed questions",
+                  "job_id"
+                ],
+                [
+                  "3",
+                  "T02 Query terms",
+                  "job_id",
+                  "Pick terms after success; failed items can be picked manually"
+                ],
+                [
+                  "4",
+                  "D01 Estimate",
+                  "Selected questions, models, metrics, run count",
+                  "sufficient=true; estimation does not lock points"
+                ],
+                [
+                  "5",
+                  "D02 Create diagnosis",
+                  "Same config plus task_name",
+                  "Diagnosis task_id; creating locks points"
+                ],
+                [
+                  "6",
+                  "D03 Status",
+                  "task_id",
+                  "completed or partial; do not fetch results on failure"
+                ],
+                [
+                  "7",
+                  "D05 Results",
+                  "task_id, pagination",
+                  "Pick questions and models to optimise, keep the evidence"
+                ],
+                [
+                  "8",
+                  "P01 Estimate",
+                  "Exact optimization_targets, source_task_id, duration",
+                  "Estimate and target scope"
+                ],
+                [
+                  "9",
+                  "P02 Submit for review",
+                  "Same config plus request_id, project_name",
+                  "project_id, original request, idempotency key"
+                ],
+                [
+                  "10",
+                  "M01 Project list",
+                  "service_type=optimization plus pagination",
+                  "Confirm status=pending and review_status=approved"
+                ],
+                [
+                  "11",
+                  "P03 Initiate",
+                  "project_id from P02 plus initiation_request_id",
+                  "status=running on success; store actual dates"
+                ],
+                [
+                  "12",
+                  "M04 Daily metrics",
+                  "Same project_id, date, model",
+                  "Do not render missing data as 0"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "note": "P02, the matching M01 entry, P03 and M04—M07 all use the same project_id. M01 is a list query — page through and match items[].project_id; continue paging if the first page does not contain it."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "conventions",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Conventions",
+              "title": "Models, Metrics, Units and Errors",
+              "desc": "Unless stated otherwise a success response is code / message / data; business failures may still return HTTP 200, so check data.status."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Category",
+                "Values",
+                "Rules"
+              ],
+              "rows": [
+                [
+                  "Models",
+                  "deepseek, doubao, kimi, yuanbao",
+                  "Enable model permission before calling"
+                ],
+                [
+                  "Analysis fields",
+                  "brand_visibility, opinion_visibility, top_rank, competitor_visibility",
+                  "Opinion and competitor fields are conditionally required"
+                ],
+                [
+                  "Run count",
+                  "1, 3, 10",
+                  "Optimisation services are fixed at 10 per day; clients cannot override"
+                ],
+                [
+                  "Duration",
+                  "duration_months=1 / 3 / 12",
+                  "A month is counted as 30 days"
+                ],
+                [
+                  "Percentages",
+                  "*_rate in D05 and percentage in M06 are percentages",
+                  "60 means 60%, not 0.6 — do not multiply by 100 again"
+                ],
+                [
+                  "Ranking",
+                  "top_rank / top_display_rank start at 1; 0 means unranked",
+                  "A single rank or a best diagnosis rank is not the top-three rate"
+                ]
+              ],
+              "stack": true
+            },
+            {
+              "type": "table",
+              "head": [
+                "HTTP",
+                "Meaning",
+                "Handling"
+              ],
+              "rows": [
+                [
+                  "401",
+                  "Credentials, user or token invalid / expired",
+                  "Check the shared token, refresh in a controlled way; reuse the idempotency key for writes"
+                ],
+                [
+                  "403",
+                  "Scope, module, model or resource range insufficient",
+                  "Fix authorisation; never probe other clients’ data by changing IDs"
+                ],
+                [
+                  "404",
+                  "Resource missing or not visible",
+                  "Check the ID source and ownership; do not conclude it was never created"
+                ],
+                [
+                  "409",
+                  "State not allowed, or idempotency key reused with different content",
+                  "Check D03 before assuming no result; fix the operation rather than retrying blindly"
+                ],
+                [
+                  "422",
+                  "Parameters, configuration or balance not satisfied",
+                  "Show the fixable reason; an estimate can succeed and creation still fail on balance"
+                ],
+                [
+                  "429",
+                  "Login rate limit",
+                  "Wait as the server indicates and reduce concurrent logins"
+                ],
+                [
+                  "500 / 503",
+                  "Internal error / auth dependency unavailable",
+                  "Back off and retry reads; verify acceptance before retrying writes without idempotency"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "Login limits: within a 5-minute window, 10 attempts per client + user + IP combination and 1000 per IP. Poll T02 and D03 about every 10 seconds."
+            },
+            {
+              "type": "notice",
+              "title": "Version and scope",
+              "desc": "This page reflects the JD Cloud GEO API documentation V4 (2026-11-13). Chapters 1—8 cover the live /openapi/v1 endpoints; chapters 9—10 cover planned enterprise capabilities. Endpoints and models are called within what your account has enabled, and all business data and IDs shown are mock values. Full parameters, response fields and examples are in the complete manual."
             }
           ]
         }

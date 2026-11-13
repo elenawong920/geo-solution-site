@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1540 1700" role="img" aria-labelledby="title desc"><title id="title">京东云 GEO 系统交互时序</title><desc id="desc">客户页面经客户后端调用GEO API，后端执行任务，客户轮询结果，服务经审核启动后持续监测，增强层生成报告。</desc><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width=".6"/></pattern><marker id="arr-blue" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#60a5fa"/></marker><marker id="arr-cyan" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#22d3ee"/></marker><marker id="arr-green" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#34d399"/></marker><marker id="arr-violet" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#a78bfa"/></marker><marker id="arr-amber" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#fbbf24"/></marker><marker id="arr-rose" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#fb7185"/></marker><marker id="arr-text" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#e2e8f0"/></marker><marker id="arr-muted" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#a5b4c9"/></marker></defs><style>text{font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif} .mono{font-family:Menlo,monospace}</style><rect width="1540" height="1700" rx="16" fill="#0f172a"/><rect width="1540" height="1700" fill="url(#grid)"/>
+<text x="40" y="44" text-anchor="start" fill="#e2e8f0" font-size="27" font-weight="700">京东云 GEO · 系统交互时序</text>
+<text x="40" y="77" text-anchor="start" fill="#a5b4c9" font-size="16" font-weight="400">V4｜M01 确认审核 → P03 正式启动｜立项与监测使用同一 project_id</text>
+<line x1="150" y1="166" x2="150" y2="1570" stroke="#435168" stroke-dasharray="6 6"/>
+<rect x="45" y="112" width="210" height="54" rx="10" fill="#0f172a"/><rect x="45" y="112" width="210" height="54" rx="10" fill="#22d3ee" fill-opacity=".085" stroke="#22d3ee" stroke-width="1.4"/>
+<text x="150.0" y="143" text-anchor="middle" fill="#22d3ee" font-size="18" font-weight="600">客户页面</text>
+<line x1="455" y1="166" x2="455" y2="1570" stroke="#435168" stroke-dasharray="6 6"/>
+<rect x="350" y="112" width="210" height="54" rx="10" fill="#0f172a"/><rect x="350" y="112" width="210" height="54" rx="10" fill="#60a5fa" fill-opacity=".085" stroke="#60a5fa" stroke-width="1.4"/>
+<text x="455.0" y="143" text-anchor="middle" fill="#60a5fa" font-size="18" font-weight="600">客户后端</text>
+<line x1="790" y1="166" x2="790" y2="1570" stroke="#435168" stroke-dasharray="6 6"/>
+<rect x="685" y="112" width="210" height="54" rx="10" fill="#0f172a"/><rect x="685" y="112" width="210" height="54" rx="10" fill="#34d399" fill-opacity=".085" stroke="#34d399" stroke-width="1.4"/>
+<text x="790.0" y="143" text-anchor="middle" fill="#34d399" font-size="18" font-weight="600">京东云 GEO API</text>
+<line x1="1140" y1="166" x2="1140" y2="1570" stroke="#435168" stroke-dasharray="6 6"/>
+<rect x="1035" y="112" width="210" height="54" rx="10" fill="#0f172a"/><rect x="1035" y="112" width="210" height="54" rx="10" fill="#fbbf24" fill-opacity=".085" stroke="#fbbf24" stroke-width="1.4"/>
+<text x="1140.0" y="143" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="600">GEO 任务 / 运营</text>
+<line x1="1410" y1="166" x2="1410" y2="1570" stroke="#435168" stroke-dasharray="6 6"/>
+<rect x="1305" y="112" width="210" height="54" rx="10" fill="#0f172a"/><rect x="1305" y="112" width="210" height="54" rx="10" fill="#a78bfa" fill-opacity=".085" stroke="#a78bfa" stroke-width="1.4"/>
+<text x="1410.0" y="143" text-anchor="middle" fill="#a78bfa" font-size="18" font-weight="600">数据 / 报告服务</text>
+<rect x="35" y="188" width="1470" height="252" rx="8" fill="#22d3ee" fill-opacity=".035" stroke="#22d3ee" stroke-opacity=".35" stroke-dasharray="5 5"/>
+<text x="53" y="212" text-anchor="start" fill="#22d3ee" font-size="15" font-weight="600">Step 1  拓词与选词</text>
+<path d="M150 243H455" stroke="#22d3ee" stroke-width="1.6" fill="none" marker-end="url(#arr-cyan)"/>
+<text x="302.5" y="233" text-anchor="middle" fill="#22d3ee" font-size="15" font-weight="400">提交品牌、品类、种子词</text>
+<path d="M455 282H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="272" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">T01 创建拓词</text>
+<path d="M790 316H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="306" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">返回 job_id</text>
+<path d="M455 356H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="346" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">T02 轮询（每10秒）</text>
+<path d="M790 390H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="380" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">任务状态、候选问题</text>
+<path d="M455 422H150" stroke="#60a5fa" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-blue)"/>
+<text x="302.5" y="412" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">展示候选词与生成状态</text>
+<rect x="35" y="460" width="1470" height="318" rx="8" fill="#34d399" fill-opacity=".035" stroke="#34d399" stroke-opacity=".35" stroke-dasharray="5 5"/>
+<text x="53" y="484" text-anchor="start" fill="#34d399" font-size="15" font-weight="600">Step 2  诊断受理、执行与结果</text>
+<path d="M150 515H455" stroke="#22d3ee" stroke-width="1.6" fill="none" marker-end="url(#arr-cyan)"/>
+<text x="302.5" y="505" text-anchor="middle" fill="#22d3ee" font-size="15" font-weight="400">确认问题、模型、指标</text>
+<path d="M455 552H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="542" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">D01预估 → D02创建</text>
+<path d="M790 590H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="580" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">返回诊断 task_id</text>
+<path d="M790 628H1140" stroke="#34d399" stroke-width="1.6" fill="none" marker-end="url(#arr-green)"/>
+<text x="965.0" y="618" text-anchor="middle" fill="#34d399" font-size="15" font-weight="400">锁点并执行真实采集</text>
+<path d="M455 666H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="656" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">D03轮询 → 完成后D05</text>
+<path d="M790 704H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="694" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">诊断摘要与问题级结果</text>
+<path d="M455 742H150" stroke="#60a5fa" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-blue)"/>
+<text x="302.5" y="732" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">展示诊断及优化建议</text>
+<rect x="35" y="800" width="1470" height="380" rx="8" fill="#fbbf24" fill-opacity=".035" stroke="#fbbf24" stroke-opacity=".35" stroke-dasharray="5 5"/>
+<text x="53" y="824" text-anchor="start" fill="#fbbf24" font-size="15" font-weight="600">Step 3  优化送审 → M01查询 → P03正式启动</text>
+<path d="M455 855H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="845" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">P01预估 → P02送审</text>
+<path d="M790 895H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="885" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">project_id；pending_review</text>
+<path d="M790 935H1140" stroke="#34d399" stroke-width="1.6" fill="none" marker-end="url(#arr-green)"/>
+<text x="965.0" y="925" text-anchor="middle" fill="#34d399" font-size="15" font-weight="400">逐项审核（异步）</text>
+<path d="M455 975H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="965" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">M01查询并匹配project_id</text>
+<path d="M790 1020H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="1010" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">status=pending；review_status=approved</text>
+<path d="M455 1065H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="1055" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">P03正式立项（同一project_id）</text>
+<path d="M790 1110H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="1100" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">status=running；原project_id</text>
+<rect x="35" y="1200" width="1470" height="370" rx="8" fill="#a78bfa" fill-opacity=".035" stroke="#a78bfa" stroke-opacity=".35" stroke-dasharray="5 5"/>
+<text x="53" y="1224" text-anchor="start" fill="#a78bfa" font-size="15" font-weight="600">Step 4  持续监测、数据就绪与报告</text>
+<path d="M1140 1255H1410" stroke="#fbbf24" stroke-width="1.6" fill="none" marker-end="url(#arr-amber)"/>
+<text x="1275.0" y="1245" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="400">监测数据与证据</text>
+<path d="M455 1296H790" stroke="#60a5fa" stroke-width="1.6" fill="none" marker-end="url(#arr-blue)"/>
+<text x="622.5" y="1286" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="400">M04—M07（同一project_id）</text>
+<path d="M790 1337H455" stroke="#34d399" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-green)"/>
+<text x="622.5" y="1327" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">单日指标、文本与信源</text>
+<path d="M455 1378H790" stroke="#a78bfa" stroke-width="1.6" fill="none" marker-end="url(#arr-violet)"/>
+<text x="622.5" y="1368" text-anchor="middle" fill="#a78bfa" font-size="15" font-weight="400">规划N03：趋势 / 审核 / 效果</text>
+<path d="M1410 1419H790" stroke="#a78bfa" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-violet)"/>
+<text x="1100.0" y="1409" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">末批数据、报告状态</text>
+<path d="M455 1460H790" stroke="#a78bfa" stroke-width="1.6" fill="none" marker-end="url(#arr-violet)"/>
+<text x="622.5" y="1450" text-anchor="middle" fill="#a78bfa" font-size="15" font-weight="400">规划N05：查询报告状态</text>
+<path d="M790 1501H455" stroke="#a78bfa" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-violet)"/>
+<text x="622.5" y="1491" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">报告结果或等待原因</text>
+<path d="M455 1542H150" stroke="#60a5fa" stroke-width="1.6" fill="none" stroke-dasharray="6 5" marker-end="url(#arr-blue)"/>
+<text x="302.5" y="1532" text-anchor="middle" fill="#a5b4c9" font-size="15" font-weight="400">展示状态、数据与报告</text>
+<text x="45" y="1607" text-anchor="start" fill="#a5b4c9" font-size="17" font-weight="400">优化审核通过后仍需客户调用 P03；持续监测提交后通过 M01 / M02 查看执行状态。</text>
+<text x="45" y="1640" text-anchor="start" fill="#a5b4c9" font-size="17" font-weight="400">可选通知提示状态变化；客户可随时查询已发布数据，采集与发布时效分别约定。</text>
+</svg>
