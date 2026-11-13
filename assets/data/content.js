@@ -9136,7 +9136,7 @@ window.SITE_DATA = {
       ]
     },
     "api": {
-      "title": "GEO API",
+      "title": "GEO API 接口与接入文档",
       "nav": [
         {
           "label": "业务流程",

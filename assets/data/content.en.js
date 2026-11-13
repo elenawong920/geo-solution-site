@@ -9136,7 +9136,7 @@ window.SITE_DATA_EN = {
       ]
     },
     "api": {
-      "title": "GEO API",
+      "title": "GEO API Reference",
       "nav": [
         {
           "label": "Flow",
