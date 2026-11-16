@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-14",
+    "updated": "2026-11-16",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -692,53 +692,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "56.9T",
-                          "note": "MoM +2.0%"
+                          "value": "59.2T",
+                          "note": "MoM +4.0%"
                         },
                         {
                           "label": "Hy4 (Tencent)",
-                          "value": "19.8T",
-                          "note": "MoM -2.5%"
+                          "value": "18.1T",
+                          "note": "MoM -8.6%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "15.8T",
-                          "note": "MoM -1.3%"
+                          "value": "15.5T",
+                          "note": "MoM -1.9%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "11.8T",
-                          "note": "MoM -1.7%"
+                          "value": "11.9T",
+                          "note": "MoM +0.8%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "7.53T",
-                          "note": "MoM +1.3%"
+                          "value": "7.85T",
+                          "note": "MoM +4.2%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.99T",
-                          "note": "MoM +2.9%"
+                          "value": "6.98T",
+                          "note": "MoM -0.1%"
                         },
                         {
                           "label": "Step 5 Preview (StepFun)",
-                          "value": "6.57T",
+                          "value": "6.41T",
                           "note": "MoM -2.4%"
                         },
                         {
-                          "label": "Kimi K3.1 Pro (Moonshot AI)",
-                          "value": "4.32T",
-                          "note": "MoM -1.4%"
+                          "label": "MiMo-V2.6-Flash (Xiaomi)",
+                          "value": "4.23T",
+                          "note": "MoM +9.9%"
+                        },
+                        {
+                          "label": "GLM 5.3 (Zhipu)",
+                          "value": "3.76T",
+                          "note": "MoM Return"
                         },
                         {
                           "label": "GPT-6.1 Sol (OpenAI)",
-                          "value": "4.11T",
-                          "note": "MoM -2.8%"
-                        },
-                        {
-                          "label": "MiMo-V2.6-Flash (Xiaomi)",
-                          "value": "3.85T",
-                          "note": "MoM Return"
+                          "value": "3.71T",
+                          "note": "MoM -9.7%"
                         }
                       ]
                     }
