@@ -822,6 +822,56 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "delivery-form",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery Form",
+              "title": "First, What Are You Buying: A Service, a Tool, or a Combination",
+              "desc": "The three GEO offerings deliver different things — optimisation delivers outcomes, monitoring delivers data capability, the platform delivers a combination. They stack, but they do not replace one another."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "GEO Optimisation Service · outcomes",
+                  "desc": "Strategy, content optimisation, source building and monitoring analysis against the metrics and timeline agreed in the contract.",
+                  "list": [
+                    "You receive results and evidence, not a login",
+                    "Results come from ongoing operation, not from activation"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "GEO Monitoring SaaS · a tool",
+                  "desc": "Question monitoring, brand visibility, ranking and citation data, enabled per account and data scope, queryable and exportable at any time.",
+                  "list": [
+                    "Solves “see it and measure it”",
+                    "Produces no optimisation by itself"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "Enterprise Platform · a combination",
+                  "desc": "Monitoring, analysis and optimisation management combined into your own systems to the scope agreed in the proposal and contract.",
+                  "list": [
+                    "You connect four interfaces; execution stays with JD Cloud",
+                    "It is not software that delivers results on its own"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "The one-line distinction",
+              "desc": "Monitoring makes results visible; optimisation makes them move. A tool alone will not create results, and optimisation without a tool cannot be verified — they work together, they do not substitute for each other."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "delivery",
           "tone": "surface",
           "blocks": [
@@ -8899,6 +8949,12 @@ window.SITE_DATA_EN = {
                   "Accumulates as enterprise systems and data"
                 ]
               ]
+            },
+            {
+              "type": "notice",
+              "tone": "neutral",
+              "title": "One caution",
+              "desc": "The platform delivers capability, data and process — not results upon installation. Strategy, content and source building remain with the JD Cloud service team; the system makes results visible, measurable and manageable, but it does not replace the work itself."
             }
           ]
         },
