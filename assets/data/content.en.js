@@ -414,6 +414,78 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "certainty",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Determinism",
+              "title": "The Same Question, Seen by You and Missed by Your Customer",
+              "desc": "Every AI answer is reassembled from retrieval and generation, so a single hit proves nothing. We replace “can it be found” with “what share of the time is it found”, then push that share up with mechanism rather than luck."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "One-off screenshot check",
+                "Rate-based verification (our method)"
+              ],
+              "rows": [
+                [
+                  "How it is tested",
+                  "Search once by hand, screenshot it",
+                  "A fixed question set × 4 platforms × 3 repeated runs"
+                ],
+                [
+                  "What the result looks like",
+                  "Hit or miss, decided in one shot",
+                  "Mention rate, top-three rate, consistency rate — with a range"
+                ],
+                [
+                  "Does it hold next week",
+                  "Rephrase it or wait two days and it may vanish",
+                  "The same set re-run lands in a stable range"
+                ],
+                [
+                  "How the client verifies",
+                  "Take the agency’s word for it",
+                  "Exportable data the client can sample and re-test"
+                ]
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Question coverage",
+                  "desc": "One intent expands into 10–30 real phrasings across spoken style, long tail, price comparison and decision stages. What gets covered is a class of questions, not a single sentence."
+                },
+                {
+                  "no": "02",
+                  "title": "Platform coverage",
+                  "desc": "Doubao, Qwen, DeepSeek and Yuanbao optimised in the same cycle, so there is no platform-level gap where one engine shows you and another does not."
+                },
+                {
+                  "no": "03",
+                  "title": "One set of facts",
+                  "desc": "Specifications, prices and service commitments converge into a single version, so AI does not waver because it read two contradictory sources."
+                },
+                {
+                  "no": "04",
+                  "title": "Round-by-round convergence",
+                  "desc": "Each monitoring round locates the questions still missing, adds sources, fixes structure and re-tests — the variance narrows every round."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What we measure",
+              "desc": "We report ratios — mention rate, top-three rate, number of questions hit — not “we found it once on a given day”. The same question set re-run is reproducible, auditable and can be written into acceptance."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "engine",
           "tone": "dark",
           "blocks": [
