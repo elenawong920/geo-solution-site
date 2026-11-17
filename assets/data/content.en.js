@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -692,53 +692,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "59.2T",
-                          "note": "MoM +4.0%"
+                          "value": "61.2T",
+                          "note": "MoM +3.4%"
                         },
                         {
                           "label": "Hy4 (Tencent)",
-                          "value": "18.1T",
-                          "note": "MoM -8.6%"
+                          "value": "16T",
+                          "note": "MoM -11.6%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
                           "value": "15.5T",
-                          "note": "MoM -1.9%"
+                          "note": "MoM 0.0%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "11.9T",
-                          "note": "MoM +0.8%"
+                          "value": "11.8T",
+                          "note": "MoM -0.8%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "7.85T",
-                          "note": "MoM +4.2%"
+                          "value": "8.08T",
+                          "note": "MoM +2.9%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.98T",
-                          "note": "MoM -0.1%"
+                          "value": "7.37T",
+                          "note": "MoM +5.6%"
                         },
                         {
                           "label": "Step 5 Preview (StepFun)",
-                          "value": "6.41T",
-                          "note": "MoM -2.4%"
+                          "value": "6.36T",
+                          "note": "MoM -0.8%"
                         },
                         {
                           "label": "MiMo-V2.6-Flash (Xiaomi)",
-                          "value": "4.23T",
-                          "note": "MoM +9.9%"
+                          "value": "4.16T",
+                          "note": "MoM -1.7%"
                         },
                         {
                           "label": "GLM 5.3 (Zhipu)",
-                          "value": "3.76T",
-                          "note": "MoM Return"
+                          "value": "3.74T",
+                          "note": "MoM -0.5%"
                         },
                         {
                           "label": "GPT-6.1 Sol (OpenAI)",
                           "value": "3.71T",
-                          "note": "MoM -9.7%"
+                          "note": "MoM 0.0%"
                         }
                       ]
                     }
@@ -1347,12 +1347,71 @@ window.SITE_DATA_EN = {
                 {
                   "no": "Qwen",
                   "title": "Not traceable",
-                  "desc": "The card can appear and convert, but there is no way to tell whether an order came from AI — Taobao’s order page carries no AI source label.",
+                  "desc": "The card opens a Taobao / Tmall product page and can convert, but the platform exposes no card impression or click data and the order page carries no AI source label — exposure is visible, the sale is not.",
                   "list": [
                     "Exposure work still runs, but is not counted toward commitments"
                   ]
                 }
               ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Data checkpoint",
+                "Yuanbao × JD",
+                "Doubao × Douyin Shop",
+                "Qwen × Taobao / Tmall"
+              ],
+              "rows": [
+                [
+                  "Card shown",
+                  "Yes, SKU-level optimisation",
+                  "Yes, gated by category and store score",
+                  "Yes, driven by GEO work"
+                ],
+                [
+                  "Click destination",
+                  "JD mini-program product page",
+                  "Douyin in-app product page",
+                  "Taobao / Tmall product page"
+                ],
+                [
+                  "Card impressions and clicks",
+                  "Available on request (export)",
+                  "Douyin Shop dashboard",
+                  "None — the platform exposes no card data"
+                ],
+                [
+                  "Order labelled with AI source",
+                  "Yes, exportable for reconciliation",
+                  "Native “from Doubao” label",
+                  "None — Taobao orders carry no AI label"
+                ],
+                [
+                  "Sales data returned",
+                  "Yes, reviewed weekly / monthly",
+                  "Dashboard plus order label",
+                  "None — only the store’s own totals"
+                ],
+                [
+                  "Verdict",
+                  "Traceable · can be committed",
+                  "Testable · two proofs",
+                  "Not traceable · kept out of the KPI"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "highlight": [
+                5
+              ],
+              "stack": true
+            },
+            {
+              "type": "notice",
+              "title": "The question we get asked",
+              "desc": "Can Qwen open a Taobao / Tmall product card? Yes — and it can convert. Can it close the Tmall data loop? No: how many saw the card, clicked it and bought are not returned, and an order cannot be attributed to AI."
             },
             {
               "type": "secHead",
@@ -1447,7 +1506,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Product Proof",
               "title": "Four Screens: Dashboard, Label, Card, Dead End",
-              "desc": "Captured from real merchant back-ends and consumer apps with no retouching. Product and store details come from public platform pages; back-end figures come from a single project sample and illustrate how to read the dashboard."
+              "desc": "Grouped by platform: Doubao × Douyin Shop (dashboard and orders) → Yuanbao × JD → Qwen × Taobao. All captured from real interfaces, unretouched; back-end figures come from a single project sample."
             },
             {
               "type": "gallery",
@@ -9071,7 +9130,7 @@ window.SITE_DATA_EN = {
                 ],
                 [
                   "Placement",
-                  "Select AI platforms such as DeepSeek and Yuanbao; add question terms manually or use system recommendations"
+                  "Select AI platforms such as Doubao, DeepSeek and Yuanbao (multi-select); add question terms manually or use system recommendations"
                 ],
                 [
                   "Duration",
