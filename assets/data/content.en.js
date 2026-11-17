@@ -1277,7 +1277,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Attribution",
               "title": "From AI Answer to Order: What We Can Prove, and What We Cannot",
-              "desc": "Being seen, cited, clicked and bought are four different things. This section sets out the hand-off routes, each platform’s tracking limits and our capability boundaries — and commits only to what can be attributed."
+              "desc": "Being seen, cited, clicked and bought are four different things. This section sets out the hand-off routes, each platform’s tracking limits and our capability boundaries: cards and sales provide evidence, never a committed outcome."
             },
             {
               "type": "table",
@@ -1332,7 +1332,7 @@ window.SITE_DATA_EN = {
                   "desc": "The Yuanbao card links straight into the JD WeChat mini-program. Yuanbao × JD is an exclusive partnership, so post-click data from recommendation to order is available.",
                   "list": [
                     "Exposure, click-through, order and export are all measurable",
-                    "The core scenario for performance commitments and reviews"
+                    "The core scenario for reviews and reconciliation"
                   ]
                 },
                 {
@@ -1395,7 +1395,7 @@ window.SITE_DATA_EN = {
                 ],
                 [
                   "Verdict",
-                  "Traceable · can be committed",
+                  "Traceable · reconcilable",
                   "Testable · two proofs",
                   "Not traceable · kept out of the KPI"
                 ]
@@ -1565,7 +1565,7 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "tone": "neutral",
               "title": "Commitment boundary",
-              "desc": "Performance commitments cover only what can be monitored and attributed, evidenced by platform dashboards and order data. Scenarios we cannot attribute are stated plainly and kept out of the KPI."
+              "desc": "Performance commitments cover only monitorable metrics such as exposure rate and top-three rate, evidenced by platform dashboards. Cards and sales provide evidence for reviews but are never committed outcomes — scenarios we cannot attribute are stated plainly and kept out of the KPI."
             }
           ]
         },
