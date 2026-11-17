@@ -441,6 +441,8 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .compare__cell--head.is-seo { background: var(--surface-2); color: var(--ink-2); }
 .compare__cell--key { background: var(--surface); font-weight: 700; color: var(--ink); font-size: 13.5px; }
 .compare__cell--geo { background: #FFFBFB; }
+/* 深色区块里的对比表：单元格是白底，文字必须显式改成深色，否则白底白字 */
+.section--dark .compare__cell { color: var(--ink-2); }
 @media (max-width: 720px) {
   .compare { grid-template-columns: 92px 1fr 1fr; }
   .compare__cell { padding: 12px 12px; font-size: 12.5px; }
@@ -1062,12 +1064,12 @@ body.editing .edit-bar { display: flex; }
   /* 流程步骤横向紧凑 */
   .flow__step { padding: 16px 16px 16px 18px; }
 
-  /* 对比表改双列堆叠 */
-  .compare { grid-template-columns: 88px 1fr; }
-  .compare__cell--head.is-geo { grid-column: 2; }
-  .compare__cell--key { grid-column: 1; }
-  .compare__cell:not(.compare__cell--head):not(.compare__cell--key) { grid-column: 2; }
-  .compare__cell--head { grid-column: 1 / -1; }
+  /* 对比表：两个方案各占一半并排，指标名独占一行，避免三列挤爆 */
+  .compare { grid-template-columns: 1fr 1fr; }
+  .compare > .compare__cell--head:first-child { display: none; }
+  .compare__cell--head { grid-column: auto; }
+  .compare__cell--key { grid-column: 1 / -1; }
+  .compare__cell:not(.compare__cell--head):not(.compare__cell--key) { grid-column: auto; }
 
   /* CTA 竖排 */
   .cta { padding: 34px 24px; border-radius: var(--radius); }

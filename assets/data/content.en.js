@@ -1591,8 +1591,8 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "no": "02",
-                  "title": "Exclusive JD Cloud Optimisation Technology",
-                  "desc": "A high-authority media matrix plus citation optimisation and structured Schema build the AI preferred-citation chain — faster to take effect (as quick as 2 weeks) and stable in outcome."
+                  "title": "No-publishing optimisation — no media buy required",
+                  "desc": "No articles and no client-side content review: citation optimisation and structured schema put the brand into the answer chain AI cites first. Live in as little as two weeks, with mention rates typically above 60%."
                 },
                 {
                   "no": "03",
@@ -1600,6 +1600,51 @@ window.SITE_DATA_EN = {
                   "desc": "Proven in 3C, home appliances, travel and culture and other industries. The GEO team that builds it for JD.com now brings that capability to clients, so optimisation quality is better guaranteed."
                 }
               ]
+            },
+            {
+              "type": "secHead",
+              "kicker": "Optimisation Routes",
+              "title": "You Do Not Need to Publish Articles to Change the Answers",
+              "desc": "Articles are one carrier among many, not a prerequisite. We default to no-publishing optimisation: it skips your content review and media buying cycle and goes live in two weeks. Where publishing is required, we support that too."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Publishing route (common practice)",
+                "No-publishing route (JD Cloud default)"
+              ],
+              "rows": [
+                [
+                  "Lead time",
+                  "About a month: topics, writing, review, scheduling",
+                  "None — start with your brand materials"
+                ],
+                [
+                  "Time to effect",
+                  "Four weeks or so after publication",
+                  "As little as two weeks"
+                ],
+                [
+                  "Content review",
+                  "Article by article, long legal and compliance chain",
+                  "No client-side content review"
+                ],
+                [
+                  "Client effort",
+                  "Coordinate media, approve drafts, chase publication",
+                  "15 minutes a week to review results"
+                ],
+                [
+                  "Performance",
+                  "Depends on volume and publishing cadence",
+                  "Mention rate typically above 60%, target set from the baseline"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Publishing is still supported",
+              "desc": "Public endorsement, authoritative sources and industry rankings may still call for articles. We run both: switch the answers first with no-publishing optimisation, then add publishing where it strengthens source weight. It is not either-or."
             },
             {
               "type": "secHead",
