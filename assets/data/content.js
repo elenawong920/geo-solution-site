@@ -10259,12 +10259,17 @@ window.SITE_DATA = {
             },
             {
               "type": "gallery",
-              "layout": "stack",
+              "layout": "duo",
               "items": [
                 {
-                  "src": "assets/img/cgpt-ad-placement.svg",
-                  "alt": "ChatGPT 广告位示意：提问、回答正文与下方独立广告卡片的关系",
-                  "cap": "<b>广告站位示意</b>　回答正文在上，广告是下方独立的一块，带「广告」标识；点击进入品牌自己的落地页，之后的注册、试用、付费由品牌侧回传。"
+                  "src": "assets/img/cgpt-ad-chat.jpg",
+                  "alt": "ChatGPT 对话中出现的品牌广告卡片",
+                  "cap": "<b>对话里的广告</b>　回答正文与操作栏之后，广告才以独立卡片出现，右上角标注「Ad」；点击进入品牌页面。"
+                },
+                {
+                  "src": "assets/img/cgpt-ad-fields.jpg",
+                  "alt": "广告组件字段示意：标题、描述与主图",
+                  "cap": "<b>一条广告的组成</b>　标题建议 16 字符内、描述 32 字符内；主图不要拿 logo 当主视觉。"
                 }
               ]
             },
@@ -10272,6 +10277,44 @@ window.SITE_DATA = {
               "type": "notice",
               "title": "后台能看到什么",
               "desc": "Ads Manager 提供曝光、点击与转化三类数据，支持批量上传；早期广告主包括 Newegg、Best Buy、Lowe's、VistaPrint。点击之后的行为，仍要靠自己的回传把链路接上。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "console",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "后台与素材",
+              "title": "Ads Manager 长什么样",
+              "desc": "三级结构创建、实时预览、按趋势看数据——投放的日常都在这一个后台里完成。"
+            },
+            {
+              "type": "gallery",
+              "layout": "trio",
+              "items": [
+                {
+                  "src": "assets/img/cgpt-ad-create.jpg",
+                  "alt": "Create 菜单：新建 Campaign / Ad Group / Ad 或批量上传",
+                  "cap": "<b>创建结构</b>　Campaign → Ad Group → Ad 三级；批量投放可上传 CSV。"
+                },
+                {
+                  "src": "assets/img/cgpt-ad-manager.jpg",
+                  "alt": "Ads Manager 列表与广告预览",
+                  "cap": "<b>Ads Manager</b>　三层级切换管理，右侧直接预览广告在对话里的样子。"
+                },
+                {
+                  "src": "assets/img/cgpt-ad-metrics.jpg",
+                  "alt": "Metric Trends：曝光、转化、点击趋势",
+                  "cap": "<b>数据面板</b>　曝光、点击、转化的趋势与环比，一眼看到拐点。"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "说明",
+              "desc": "以上为官方产品演示界面，其中数值（610 / 20% / 320 等）为示例数据，不是真实客户结果。"
             }
           ]
         },

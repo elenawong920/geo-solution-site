@@ -10259,12 +10259,17 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "gallery",
-              "layout": "stack",
+              "layout": "duo",
               "items": [
                 {
-                  "src": "assets/img/cgpt-ad-placement.svg",
-                  "alt": "Diagram of the ChatGPT ad slot relative to the question, the answer and the landing page",
-                  "cap": "<b>Placement diagram</b>　The answer body sits above; the ad is a separate block below, clearly labelled, and the click lands on the brand’s own page — everything after that is captured on the brand side."
+                  "src": "assets/img/cgpt-ad-chat.jpg",
+                  "alt": "A brand ad card inside a ChatGPT conversation",
+                  "cap": "<b>An ad inside the conversation</b>　It appears only after the answer body and its action row, as a separate card labelled “Ad”; the click goes to the brand page."
+                },
+                {
+                  "src": "assets/img/cgpt-ad-fields.jpg",
+                  "alt": "Ad component fields: headline, description and creative",
+                  "cap": "<b>What one ad is made of</b>　Headline around 16 characters, description around 32; do not use the logo as the primary visual."
                 }
               ]
             },
@@ -10272,6 +10277,44 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "What the dashboard reports",
               "desc": "Ads Manager reports impressions, clicks and conversions, with bulk upload support; early advertisers include Newegg, Best Buy, Lowe's and VistaPrint. Everything after the click still depends on your own event pipeline."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "console",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Console and Creative",
+              "title": "What Ads Manager Looks Like",
+              "desc": "Three-level creation, live preview and trend-based reporting — the daily work happens in one console."
+            },
+            {
+              "type": "gallery",
+              "layout": "trio",
+              "items": [
+                {
+                  "src": "assets/img/cgpt-ad-create.jpg",
+                  "alt": "Create menu: campaign, ad group, ad, or bulk CSV upload",
+                  "cap": "<b>Structure</b>　Campaign → Ad Group → Ad; bulk upload via CSV."
+                },
+                {
+                  "src": "assets/img/cgpt-ad-manager.jpg",
+                  "alt": "Ads Manager list with an ad preview",
+                  "cap": "<b>Ads Manager</b>　Manage across three levels and preview how the ad appears in conversation."
+                },
+                {
+                  "src": "assets/img/cgpt-ad-metrics.jpg",
+                  "alt": "Metric trends for impressions, conversions and clicks",
+                  "cap": "<b>Reporting</b>　Impressions, clicks and conversions over time with period-on-period change."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Note",
+              "desc": "Official product demo screens; the figures shown (610 / 20% / 320) are sample data, not real client results."
             }
           ]
         },
