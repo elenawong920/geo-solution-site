@@ -45,7 +45,7 @@
     if (lang === 'zh') { cb(DATA_ZH); return; }
     if (window.SITE_DATA_EN) { cb(window.SITE_DATA_EN); return; }
     var s = document.createElement('script');
-    s.src = LANGS.en.file;
+    s.src = LANGS.en.file + '?v=20261118';
     s.onload = function () { cb(window.SITE_DATA_EN); };
     s.onerror = function () { cb(DATA_ZH); };
     document.head.appendChild(s);
@@ -187,7 +187,9 @@
 
   R.hero = function (b, p) {
     var h = '';
-    h += '<section class="hero"><div class="hero__grid"></div><div class="container hero__inner">';
+    var demo = b.demo && b.demo.q ? b.demo : null;
+    h += '<section class="hero"><canvas class="hero__fx" aria-hidden="true"></canvas><div class="hero__grid"></div>' +
+         '<div class="container hero__inner' + (demo ? ' hero__inner--demo' : '') + '"><div class="hero__copy">';
     if (b.kicker) h += '<div class="eyebrow">' + t(p + '.kicker', b.kicker) + '</div>';
     h += '<h1 class="hero__title">' + (b.title || []).map(function (line, i) {
       var isAccent = (b.accentLines || []).indexOf(i) >= 0;
@@ -209,6 +211,8 @@
       });
       h += '</div>';
     }
+    h += '</div>';
+    if (demo) h += heroDemo(demo, p + '.demo');
     if (b.meta && b.meta.length) {
       h += '<div class="hero__meta">';
       b.meta.forEach(function (m, i) {
@@ -220,10 +224,55 @@
     return h;
   };
 
+  /* 首屏右侧「AI 回答示意」面板：问题 → 推荐清单 → 引用信源 → 指标，逐步出现 */
+  function heroDemo(d, p) {
+    var h = '<div class="demo" data-demo>' +
+      '<div class="demo__bar"><span class="demo__dots"><i></i><i></i><i></i></span>' +
+        '<span>' + t(p + '.title', d.title) + '</span><span class="demo__live">LIVE</span></div>' +
+      '<div class="demo__body">' +
+        '<div class="demo__q" data-step' + (ED.on ? '' : ' data-type') + '>' + t(p + '.q', d.q) + '</div>' +
+        '<div class="demo__a"><span class="demo__avatar" data-step aria-hidden="true">AI</span><div class="demo__main">';
+    if (d.lead) h += '<p class="demo__lead" data-step>' + t(p + '.lead', d.lead) + '</p>';
+    h += '<ul class="demo__picks">';
+    (d.picks || []).forEach(function (it, i) {
+      var base = p + '.picks.' + i;
+      h += '<li class="demo__pick' + (it.badge ? ' demo__pick--top' : '') + '" data-step>' +
+        '<div class="demo__pickname">' + t(base + '.name', it.name) +
+          (it.badge ? '<span class="demo__badge">' + t(base + '.badge', it.badge) + '</span>' : '') + '</div>' +
+        (it.text ? '<div class="demo__picktext">' + t(base + '.text', it.text) + '</div>' : '') + '</li>';
+    });
+    h += '</ul>';
+    if (d.sources && d.sources.length) {
+      h += '<div class="demo__src" data-step>' + t(p + '.srcLabel', d.srcLabel || '') +
+        d.sources.map(function (x, i) { return '<span>' + t(p + '.sources.' + i, x) + '</span>'; }).join('') + '</div>';
+    }
+    h += '</div></div></div>';
+    if (d.stats && d.stats.length) {
+      h += '<div class="demo__stats" data-step>';
+      d.stats.forEach(function (x, i) {
+        h += '<div class="demo__stat"><b>' + t(p + '.stats.' + i + '.value', x.value) + '</b>' + t(p + '.stats.' + i + '.label', x.label) + '</div>';
+      });
+      h += '</div>';
+    }
+    if (d.foot) h += '<div class="demo__foot">' + t(p + '.foot', d.foot) + '</div>';
+    return h + '</div>';
+  }
+
+  /* 指标值不是数字（如平台名、「执行中」）时换成正文字体，避免大号数字体排中文 */
+  function metricCls(v) {
+    return /^[\s+\-−≥≤]*\d/.test(String(v == null ? '' : v)) ? 'metric__value' : 'metric__value metric__value--text';
+  }
+
   R.secHead = function (b, p) {
     var h = '<div class="sec-head' + (b.center ? ' sec-head--center' : '') + ' reveal">';
     if (b.kicker) h += '<div class="eyebrow">' + t(p + '.kicker', b.kicker) + '</div>';
-    if (b.title) h += '<h2 class="h2">' + t(p + '.title', b.title) + '</h2>';
+    /* 「A → B → C」形式的标题渲染成流程节点（编辑模式保持整段文本，便于回写） */
+    var parts = typeof b.title === 'string' && !ED.on && !/[：:]/.test(b.title) ? b.title.split(/\s*→\s*/) : [];
+    if (parts.length >= 3) {
+      h += '<h2 class="h2 h2--pipe">' + parts.map(function (x) {
+        return '<span class="pipe__node">' + esc(x) + '</span>';
+      }).join('<i class="pipe__arrow" aria-hidden="true"></i>') + '</h2>';
+    } else if (b.title) h += '<h2 class="h2">' + t(p + '.title', b.title) + '</h2>';
     if (b.desc) h += '<p class="lede">' + t(p + '.desc', b.desc) + '</p>';
     h += '</div>';
     return h;
@@ -281,7 +330,9 @@
 
   R.table = function (b, p) {
     var wrapCls = 'table-wrap reveal' + (b.stack ? ' table-wrap--stack' : '');
-    var tblCls = 'table' + (b.stack ? ' table--stack' : '');
+    /* 三列及以上的表格在手机上改成「一行一张卡」，不需要左右滑动 */
+    var stack = b.stack || (b.head || []).length >= 3;
+    var tblCls = 'table' + (stack ? ' table--stack' : '');
     var h = '<div class="' + wrapCls + '"><table class="' + tblCls + '"><thead><tr>';
     (b.head || []).forEach(function (c, i) { h += '<th>' + t(p + '.head.' + i, c) + '</th>'; });
     h += '</tr></thead><tbody>';
@@ -290,8 +341,9 @@
       h += '<tr' + hl + '>';
       r.forEach(function (c, j) {
         /* 窄屏堆叠时用表头做小标签 */
-        var lb = b.stack ? ' data-label="' + esc(t(p + '.head.' + j, (b.head || [])[j] || '')) + '"' : '';
-        h += '<td' + (b.numCols && b.numCols.indexOf(j) >= 0 ? ' class="num"' : '') + lb + '>' + t(p + '.rows.' + i + '.' + j, c) + '</td>';
+        var lb = ' data-label="' + esc(stripTags((b.head || [])[j] || '')) + '"';
+        var tdCls = (b.numCols && b.numCols.indexOf(j) >= 0 ? 'num' : '') + (/^\+\d/.test(String(c)) ? ' up' : '');
+        h += '<td' + (tdCls ? ' class="' + tdCls.replace(/^ /, '') + '"' : '') + lb + '>' + t(p + '.rows.' + i + '.' + j, c) + '</td>';
       });
       h += '</tr>';
     });
@@ -413,7 +465,7 @@
         h += '<div class="case__metrics">';
         it.metrics.forEach(function (m, j) {
           h += '<div class="metric"><div class="metric__label">' + t(p + '.items.' + i + '.metrics.' + j + '.label', m.label) + '</div>' +
-               '<div class="metric__value">' + t(p + '.items.' + i + '.metrics.' + j + '.value', m.value) + '</div></div>';
+               '<div class="' + metricCls(m.value) + '">' + t(p + '.items.' + i + '.metrics.' + j + '.value', m.value) + '</div></div>';
         });
         h += '</div>';
       }
@@ -461,7 +513,7 @@
         h += '<div class="cs__metrics">';
         it.metrics.forEach(function (m, j) {
           h += '<div class="metric"><div class="metric__label">' + t(base + '.metrics.' + j + '.label', m.label) + '</div>' +
-               '<div class="metric__value">' + t(base + '.metrics.' + j + '.value', m.value) + '</div></div>';
+               '<div class="' + metricCls(m.value) + '">' + t(base + '.metrics.' + j + '.value', m.value) + '</div></div>';
         });
         h += '</div>';
       }
@@ -525,6 +577,7 @@
     else if (b.layout === 'duo') cls = ' gallery--duo';
     else if (b.layout === 'phones') cls = ' gallery--phones';
     else if (b.layout === 'quad') cls = ' gallery--quad';
+    else if (b.layout === 'trio') cls = ' gallery--trio';
     var h = '<div class="gallery' + cls + ' reveal">';
     (b.items || []).forEach(function (it, i) {
       h += '<figure class="shot" style="margin:0"><img src="' + esc(it.src) + '" alt="' + esc(it.alt || '') + '" decoding="async">' +
@@ -789,6 +842,7 @@
     observeReveal(scope);
     observeBars(scope);
     observeNav(scope);
+    initFx(scope);
   }
 
   function observeReveal(scope) {
@@ -801,7 +855,7 @@
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: .06 });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: .01 });
     Array.prototype.forEach.call(els, function (e) { io.observe(e); });
   }
 
@@ -1077,6 +1131,340 @@
     var t = document.querySelector('.navmenu__btn');
     if (t) t.click();
   });
+
+  /* ============================================================
+     视觉动效层（纯增强：任何一项失败或被禁用，内容都照常完整显示）
+     ============================================================ */
+  var FX = { raf: 0, timers: [], io: null };
+  var REDUCED = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  function initFx(scope) {
+    var root = scope || document;
+    FX.timers.forEach(clearTimeout);
+    FX.timers = [];
+    try { fxFitTitle(root); } catch (e) {}
+    try { fxHero(root); } catch (e) {}
+    try { fxDemo(root); } catch (e) {}
+    try { fxCount(root); } catch (e) {}
+    try { fxSpot(root); } catch (e) {}
+    try { fxProgress(); } catch (e) {}
+    try { fxLightbox(); } catch (e) {}
+  }
+
+  /* --- 首屏主标题：某一行只差一点就会折行时，略微缩小字号让它保持一行
+         （只在缩小幅度不超过 22% 时生效；更长的标题仍按正常规则换行） --- */
+  function fxFitTitle(root) {
+    var h = root.querySelector('.hero__title');
+    if (!h) return;
+    h.style.fontSize = '';
+    var cw = h.clientWidth;
+    if (!cw) return;
+    var fs = parseFloat(window.getComputedStyle(h).fontSize) || 0;
+    h.style.whiteSpace = 'nowrap';
+    var max = 0;
+    Array.prototype.forEach.call(h.children, function (sp) { max = Math.max(max, sp.scrollWidth); });
+    h.style.whiteSpace = '';
+    if (!fs || max <= cw) return;
+    var k = cw / max;
+    if (k >= .78) h.style.fontSize = (Math.floor(fs * k * 10) / 10 - .2) + 'px';
+  }
+
+  /* --- 首屏节点网络：白色低透明度节点 + 连线 + 沿线流动的光点 --- */
+  function fxHero(root) {
+    if (FX.raf) { cancelAnimationFrame(FX.raf); FX.raf = 0; }
+    if (FX.io) { FX.io.disconnect(); FX.io = null; }
+    var cv = root.querySelector('.hero__fx');
+    if (!cv || !cv.getContext) return;
+    var ctx = cv.getContext('2d');
+    if (!ctx) return;
+    var W = 0, H = 0, dpr = 1, nodes = [], pulses = [], visible = true, last = 0;
+    var LINK = 150;
+
+    function size() {
+      var r = cv.getBoundingClientRect();
+      if (!r.width || !r.height) return false;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = r.width; H = r.height;
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var n = W < 720 ? 22 : Math.min(54, Math.round(W / 28));
+      LINK = W < 720 ? 120 : 160;
+      nodes = [];
+      for (var i = 0; i < n; i++) {
+        nodes.push({
+          x: Math.random() * W, y: Math.random() * H,
+          vx: (Math.random() - .5) * .22, vy: (Math.random() - .5) * .22,
+          r: Math.random() < .16 ? 2.4 : 1.3
+        });
+      }
+      pulses = [];
+      return true;
+    }
+
+    function draw(move) {
+      ctx.clearRect(0, 0, W, H);
+      var i, j, a, b, dx, dy, d;
+      for (i = 0; i < nodes.length; i++) {
+        a = nodes[i];
+        if (move) {
+          a.x += a.vx; a.y += a.vy;
+          if (a.x < -20) a.x = W + 20; else if (a.x > W + 20) a.x = -20;
+          if (a.y < -20) a.y = H + 20; else if (a.y > H + 20) a.y = -20;
+        }
+      }
+      ctx.lineWidth = 1;
+      for (i = 0; i < nodes.length; i++) {
+        a = nodes[i];
+        for (j = i + 1; j < nodes.length; j++) {
+          b = nodes[j];
+          dx = a.x - b.x; dy = a.y - b.y;
+          d = dx * dx + dy * dy;
+          if (d < LINK * LINK) {
+            d = Math.sqrt(d);
+            ctx.strokeStyle = 'rgba(255,255,255,' + (.2 * (1 - d / LINK)).toFixed(3) + ')';
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+            if (move && pulses.length < 9 && Math.random() < .0016) pulses.push({ a: a, b: b, t: 0 });
+          }
+        }
+      }
+      for (i = 0; i < nodes.length; i++) {
+        a = nodes[i];
+        ctx.fillStyle = a.r > 2 ? 'rgba(255,255,255,.75)' : 'rgba(255,255,255,.42)';
+        ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, 6.2832); ctx.fill();
+        if (a.r > 2) {
+          ctx.strokeStyle = 'rgba(255,255,255,.2)';
+          ctx.beginPath(); ctx.arc(a.x, a.y, a.r + 4, 0, 6.2832); ctx.stroke();
+        }
+      }
+      for (i = pulses.length - 1; i >= 0; i--) {
+        var pu = pulses[i];
+        pu.t += .014;
+        if (pu.t >= 1) { pulses.splice(i, 1); continue; }
+        var px = pu.a.x + (pu.b.x - pu.a.x) * pu.t, py = pu.a.y + (pu.b.y - pu.a.y) * pu.t;
+        ctx.fillStyle = 'rgba(255,255,255,.95)';
+        ctx.beginPath(); ctx.arc(px, py, 1.9, 0, 6.2832); ctx.fill();
+        ctx.fillStyle = 'rgba(255,255,255,.22)';
+        ctx.beginPath(); ctx.arc(px, py, 5, 0, 6.2832); ctx.fill();
+      }
+    }
+
+    function loop(ts) {
+      FX.raf = 0;
+      if (!cv.isConnected && !document.body.contains(cv)) return;
+      if (visible && !document.hidden) {
+        /* 约 30fps，足够顺滑，也给手机省电 */
+        if (ts - last > 30) { last = ts; draw(true); }
+        FX.raf = requestAnimationFrame(loop);
+      }
+    }
+    function start() { if (!FX.raf && !REDUCED) FX.raf = requestAnimationFrame(loop); }
+
+    if (!size()) return;
+    draw(false);
+    if (REDUCED) return;
+    start();
+    if ('IntersectionObserver' in window) {
+      FX.io = new IntersectionObserver(function (en) {
+        visible = en[0].isIntersecting;
+        if (visible) start();
+      });
+      FX.io.observe(cv);
+    }
+    if (!window.__fxHeroBound) {
+      window.__fxHeroBound = true;
+      var rt = 0, lastW = window.innerWidth;
+      window.addEventListener('resize', function () {
+        /* 手机上地址栏收起也会触发 resize，只在宽度变化时重建，避免闪动 */
+        if (window.innerWidth === lastW) return;
+        lastW = window.innerWidth;
+        clearTimeout(rt);
+        rt = setTimeout(function () { try { fxFitTitle(currentScope()); fxHero(currentScope()); } catch (e) {} }, 200);
+      });
+      document.addEventListener('visibilitychange', function () {
+        if (!document.hidden && window.__fxHeroResume) window.__fxHeroResume();
+      });
+    }
+    window.__fxHeroResume = start;
+  }
+
+  /* --- 首屏示意面板：问题逐字打出，回答分步出现 --- */
+  function fxDemo(root) {
+    var box = root.querySelector('[data-demo]');
+    if (!box || REDUCED || ED.on) return;
+    var steps = Array.prototype.slice.call(box.querySelectorAll('[data-step]'));
+    if (!steps.length) return;
+    box.classList.add('is-anim');
+    var later = function (fn, ms) { FX.timers.push(setTimeout(fn, ms)); };
+    var qEl = box.querySelector('[data-type]');
+    var delay = 500;
+    if (qEl) {
+      var full = qEl.textContent;
+      var chars = Array.from ? Array.from(full) : full.split('');
+      var per = Math.max(28, Math.min(70, 1100 / chars.length));
+      qEl.setAttribute('aria-label', full);
+      var paint = function (n) {
+        qEl.innerHTML = '';
+        qEl.appendChild(document.createTextNode(chars.slice(0, n).join('')));
+        if (n < chars.length) {
+          var caret = document.createElement('span'); caret.className = 'typed__caret'; qEl.appendChild(caret);
+          /* 未打出的部分透明占位，气泡宽度从一开始就固定，不会边打边撑开 */
+          var rest = document.createElement('span'); rest.className = 'typed__rest';
+          rest.appendChild(document.createTextNode(chars.slice(n).join(''))); qEl.appendChild(rest);
+        }
+      };
+      paint(0);
+      later(function () { qEl.classList.add('is-on'); }, 350);
+      chars.forEach(function (_, i) { later(function () { paint(i + 1); }, delay + per * (i + 1)); });
+      delay += per * chars.length + 380;
+      steps = steps.slice(1);
+    }
+    steps.forEach(function (el, i) {
+      later(function () { el.classList.add('is-on'); }, delay + i * 300);
+    });
+    /* 兜底：无论计时器是否被后台节流，到点一律显示完整内容 */
+    later(function () {
+      Array.prototype.forEach.call(box.querySelectorAll('[data-step]'), function (el) { el.classList.add('is-on'); });
+    }, delay + steps.length * 300 + 1500);
+  }
+
+  /* --- 数字滚动：只处理「纯数字 + 单位」的值，区间 / 箭头 / 文字原样显示 --- */
+  var COUNT_RE = /^(\s*[+]?)(\d[\d,]*(?:\.\d+)?)(\D*)$/;
+  function fxCount(root) {
+    if (REDUCED || ED.on || !('IntersectionObserver' in window) || !window.requestAnimationFrame) return;
+    var els = Array.prototype.slice.call(root.querySelectorAll('.hero__meta-item b, .stat__num, .metric__value, .demo__stat b'));
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        io.unobserve(en.target);
+        run(en.target);
+      });
+    }, { threshold: .4 });
+    function run(el) {
+      var full = el.__full, m = el.__m;
+      var num = parseFloat(m[2].replace(/,/g, ''));
+      var dec = (m[2].split('.')[1] || '').length;
+      var comma = m[2].indexOf(',') >= 0;
+      var t0 = 0, dur = 1300;
+      /* 示意面板里的数字要等面板出现后再滚 */
+      var st = el.closest ? el.closest('.demo.is-anim [data-step]') : null;
+      var wait = st && !st.classList.contains('is-on') ? 2600 : 0;
+      function fmt(v) {
+        var s = v.toFixed(dec);
+        if (comma) s = s.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return m[1] + s + m[3];
+      }
+      function tick(ts) {
+        if (!t0) t0 = ts;
+        var k = Math.min(1, (ts - t0) / dur);
+        var e = 1 - Math.pow(1 - k, 4);
+        el.textContent = k < 1 ? fmt(num * e) : full;
+        if (k < 1) requestAnimationFrame(tick);
+      }
+      el.textContent = fmt(0);
+      FX.timers.push(setTimeout(function () { requestAnimationFrame(tick); }, wait));
+      /* 兜底：后台标签页里 rAF 不跑，定时把最终值写回 */
+      FX.timers.push(setTimeout(function () { el.textContent = full; }, wait + dur + 1200));
+    }
+    els.forEach(function (el) {
+      if (el.__m || el.children.length) return;
+      var full = el.textContent;
+      var m = COUNT_RE.exec(full);
+      if (!m || parseFloat(m[2].replace(/,/g, '')) === 0) return;
+      el.__full = full; el.__m = m;
+      /* 固定最小宽度，滚动时旁边的文字不抖 */
+      io.observe(el);
+    });
+  }
+
+  /* --- 卡片光斑：鼠标位置写进 CSS 变量（仅有鼠标的设备） --- */
+  function fxSpot(root) {
+    if (!window.matchMedia || !window.matchMedia('(hover: hover)').matches) return;
+    Array.prototype.forEach.call(root.querySelectorAll('.card, .case, .stat, .flow__step'), function (el) {
+      if (el.__spot) return;
+      el.__spot = true;
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  }
+
+  /* --- 顶部阅读进度条 --- */
+  function fxProgress() {
+    if (window.__fxProgress) return;
+    window.__fxProgress = true;
+    var bar = document.createElement('div');
+    bar.className = 'scrollbar';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    var tick = false;
+    function upd() {
+      tick = false;
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - window.innerHeight;
+      var y = window.pageYOffset || doc.scrollTop || 0;
+      bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0).toFixed(4) + ')';
+    }
+    window.addEventListener('scroll', function () {
+      if (!tick) { tick = true; (window.requestAnimationFrame || setTimeout)(upd); }
+    }, { passive: true });
+    upd();
+  }
+
+  /* --- 截图放大：点图打开，再点一下放大到可读，点空白或 × 关闭 --- */
+  function fxLightbox() {
+    if (window.__fxLb) return;
+    window.__fxLb = true;
+    var lb = null, img = null, hint = null;
+    function tip() {
+      var en = curLang === 'en';
+      if (lb.classList.contains('is-zoom')) return en ? 'Tap image to shrink · tap × to close' : '再点图片缩小 · 点 × 关闭';
+      return en ? 'Tap image to zoom · tap outside to close' : '点图片放大 · 点空白处关闭';
+    }
+    function build() {
+      lb = document.createElement('div');
+      lb.className = 'lb';
+      lb.setAttribute('role', 'dialog');
+      lb.setAttribute('aria-modal', 'true');
+      lb.innerHTML = '<button type="button" class="lb__close" aria-label="Close">\u00D7</button>' +
+        '<div class="lb__stage"><img class="lb__img" alt=""></div><div class="lb__hint"></div>';
+      document.body.appendChild(lb);
+      img = lb.querySelector('.lb__img');
+      hint = lb.querySelector('.lb__hint');
+      lb.addEventListener('click', function (e) {
+        if (e.target === img) {
+          lb.classList.toggle('is-zoom');
+          lb.scrollTop = 0; lb.scrollLeft = 0;
+          hint.textContent = tip();
+          return;
+        }
+        close();
+      });
+    }
+    function close() {
+      if (!lb) return;
+      lb.classList.remove('is-open', 'is-zoom');
+      document.body.classList.remove('lb-open');
+    }
+    document.addEventListener('click', function (e) {
+      var el = e.target;
+      if (!el || el.tagName !== 'IMG' || !el.closest || !el.closest('.shot')) return;
+      if (ED.on || !el.naturalWidth) return;
+      if (!lb) build();
+      img.src = el.currentSrc || el.src;
+      img.alt = el.alt || '';
+      lb.classList.remove('is-zoom');
+      lb.classList.add('is-open');
+      lb.scrollTop = 0;
+      hint.textContent = tip();
+      document.body.classList.add('lb-open');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' || e.keyCode === 27) close();
+    });
+  }
+
 
   /* ---------- 启动 ---------- */
   var pageKey = document.body.getAttribute('data-page') || 'home';
