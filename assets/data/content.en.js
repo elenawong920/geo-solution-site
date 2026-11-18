@@ -10219,6 +10219,64 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "form",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Ad Format",
+              "title": "What the Ad Looks Like, and Why It Fits the Conversation",
+              "desc": "Three principles govern this placement: clearly labelled, separate from answers, and under user control. That is what lets it be seen without polluting the answer."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Clearly labelled",
+                  "desc": "Ads are marked as ads inside the conversation, so users know what they are looking at.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Separate from answers",
+                  "desc": "The ad sits in its own block and never enters the answer body. Recommendation and advertising stay distinct.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Targeted by task",
+                  "desc": "Not keyword matching but the task the user is working through — which is why hints matter more than word lists.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "Back to your page",
+                  "desc": "Each ad carries a headline, product image and destination link; the click lands on your own page and the behaviour after that is yours to capture.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/cgpt-ad-placement.svg",
+                  "alt": "Diagram of the ChatGPT ad slot relative to the question, the answer and the landing page",
+                  "cap": "<b>Placement diagram</b>　The answer body sits above; the ad is a separate block below, clearly labelled, and the click lands on the brand’s own page — everything after that is captured on the brand side."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What the dashboard reports",
+              "desc": "Ads Manager reports impressions, clicks and conversions, with bulk upload support; early advertisers include Newegg, Best Buy, Lowe's and VistaPrint. Everything after the click still depends on your own event pipeline."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "benchmark",
           "blocks": [
             {

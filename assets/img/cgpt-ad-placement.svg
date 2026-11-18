@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="t d">
+  <title id="t">ChatGPT 广告位示意</title>
+  <desc id="d">示意：用户在对话中提问，AI 给出回答正文，广告以独立卡片形式出现在回答下方，带「广告」标识，并可点击跳转到品牌落地页。</desc>
+  <rect width="1200" height="640" fill="#F6F7F9"/>
+
+  <!-- 对话面板 -->
+  <rect x="96" y="56" width="700" height="528" rx="18" fill="#FFFFFF" stroke="#E5E8EE"/>
+  <circle cx="126" cy="88" r="5" fill="#D9DEE7"/>
+  <circle cx="146" cy="88" r="5" fill="#D9DEE7"/>
+  <circle cx="166" cy="88" r="5" fill="#D9DEE7"/>
+  <text x="196" y="93" font-family="-apple-system,'PingFang SC',sans-serif" font-size="13" fill="#8A94A6">对话</text>
+  <line x1="96" y1="112" x2="796" y2="112" stroke="#EFF1F5"/>
+
+  <!-- 用户提问 -->
+  <rect x="392" y="140" width="372" height="60" rx="14" fill="#F1F3F6"/>
+  <rect x="416" y="162" width="300" height="8" rx="4" fill="#C6CDD8"/>
+  <rect x="416" y="180" width="200" height="8" rx="4" fill="#C6CDD8"/>
+
+  <!-- AI 回答 -->
+  <circle cx="140" cy="248" r="10" fill="#E1251B" opacity=".14"/>
+  <circle cx="140" cy="248" r="4" fill="#E1251B"/>
+  <rect x="164" y="236" width="560" height="8" rx="4" fill="#DDE2EA"/>
+  <rect x="164" y="256" width="520" height="8" rx="4" fill="#DDE2EA"/>
+  <rect x="164" y="276" width="574" height="8" rx="4" fill="#DDE2EA"/>
+  <rect x="164" y="296" width="384" height="8" rx="4" fill="#DDE2EA"/>
+
+  <!-- 广告卡片 -->
+  <rect x="164" y="336" width="574" height="176" rx="14" fill="#FFFFFF" stroke="#E5E8EE"/>
+  <rect x="164" y="336" width="574" height="176" rx="14" fill="none" stroke="#E1251B" stroke-opacity=".18"/>
+  <rect x="182" y="356" width="46" height="20" rx="6" fill="#FDECEA"/>
+  <text x="194" y="371" font-family="-apple-system,'PingFang SC',sans-serif" font-size="11.5" font-weight="700" fill="#E1251B">广告</text>
+
+  <rect x="182" y="392" width="96" height="96" rx="10" fill="#F1F3F6"/>
+  <rect x="206" y="416" width="48" height="48" rx="8" fill="#E2E6ED"/>
+
+  <rect x="298" y="396" width="300" height="10" rx="5" fill="#2A2F3A" opacity=".72"/>
+  <rect x="298" y="418" width="220" height="8" rx="4" fill="#C6CDD8"/>
+  <rect x="298" y="436" width="260" height="8" rx="4" fill="#C6CDD8"/>
+  <rect x="298" y="466" width="128" height="26" rx="13" fill="#E1251B"/>
+  <text x="317" y="484" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">查看详情</text>
+
+  <!-- 标注：与回答分离 -->
+  <path d="M752 424 L846 424" stroke="#9AA4B4" stroke-dasharray="4 4" fill="none"/>
+  <circle cx="846" cy="424" r="3.5" fill="#9AA4B4"/>
+  <text x="862" y="414" font-family="-apple-system,'PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#2A2F3A">与回答分离</text>
+  <text x="862" y="434" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5" fill="#6B7280">广告单独成块，</text>
+  <text x="862" y="452" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5" fill="#6B7280">不进入回答正文</text>
+
+  <!-- 标注：落地页 -->
+  <path d="M752 470 L846 500" stroke="#9AA4B4" stroke-dasharray="4 4" fill="none"/>
+  <circle cx="846" cy="500" r="3.5" fill="#9AA4B4"/>
+  <text x="862" y="496" font-family="-apple-system,'PingFang SC',sans-serif" font-size="13" font-weight="700" fill="#2A2F3A">落到你的页面</text>
+  <text x="862" y="516" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5" fill="#6B7280">点击进入品牌落地页，</text>
+  <text x="862" y="534" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12.5" fill="#6B7280">后续行为自己接</text>
+
+  <!-- 底部提示 -->
+  <text x="96" y="618" font-family="-apple-system,'PingFang SC',sans-serif" font-size="12" fill="#9AA4B4">示意画法，用于说明广告位关系；实际界面以平台为准。</text>
+</svg>
