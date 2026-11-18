@@ -2435,6 +2435,56 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "official-data",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "After the Official Data",
+              "title": "Now That ChatGPT Reports the Numbers, Is GEO Still Worth Paying For",
+              "desc": "On 10 November 2026 Businesses in ChatGPT opened up: brands can see how often they were cited and how often their site was clicked. Data got cheap. Judgement did not."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Which opportunities competitors hold",
+                  "desc": "Not the overall mention rate, but the recommendation pattern across audiences, budgets, features and scenarios — which questions are worth contesting and which can be won.",
+                  "list": [
+                    "Why a competitor wins “robot vacuum for pet hair”",
+                    "What changes when the budget moves to $800"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Why AI does not recommend you",
+                  "desc": "Your site states the specs; the answer still picks a rival. It may be SEO foundations, thin review coverage or weak community validation.",
+                  "list": [
+                    "Study what AI cites and why",
+                    "Decide whether the next budget goes to content, reviews or community"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "Whether the visibility is worth money",
+                  "desc": "Mention rate moving from 10% to 30% is good news — but did it grow on product-knowledge questions or on high-intent recommendation questions?",
+                  "list": [
+                    "Connect brand search, site visits, enquiries and sales",
+                    "Judge visibility with business metrics"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Our view",
+              "desc": "The official dashboard solves measurement, not competitive judgement. Search Console did not kill SEO — it moved the value from reporting numbers to moving them. GEO is on the same path: clients stop paying for access to data and start paying for better outcomes."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "ads",
           "blocks": [
             {
@@ -10697,7 +10747,7 @@ window.SITE_DATA_EN = {
                 {
                   "no": "03",
                   "title": "Official insights",
-                  "desc": "See Mentions (mentions and citations), Profile Views, Website Clicks and trends.",
+                  "desc": "See Mentions (how often your site was cited), Profile Views, Website Clicks and Discovery Topics.",
                   "list": []
                 },
                 {
@@ -10710,8 +10760,8 @@ window.SITE_DATA_EN = {
             },
             {
               "type": "notice",
-              "title": "What it means for our clients",
-              "desc": "Mentions is the platform’s own record of the brand being mentioned — it cross-checks the mention rate we measure: one side measured by us, the other logged by the platform. For clients already running GEO, it is an extra, free source placement."
+              "title": "A metric that is easy to misread",
+              "desc": "Mentions counts how often ChatGPT cites your website — not how often your brand name appears. If the answer recommends you without linking your site, that impression is not counted, so the official figure usually understates real exposure and cannot be used as a mention rate. The dashboard also covers only the last 28 days in aggregate, with no individual prompts, no cross-platform competitor view and no full attribution."
             }
           ]
         },
