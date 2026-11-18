@@ -375,6 +375,7 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .cards + .notice { margin-top: 18px; }
 .compare + .notice { margin-top: 18px; }
 .cards + .flow { margin-top: 18px; }
+.flow + .notice { margin-top: 18px; }
 /* 卡片组后面紧跟小标题时补一段呼吸，否则贴在一起 */
 .cards + .sec-head { margin-top: 48px; }
 .cards--2 { grid-template-columns: repeat(2, 1fr); }

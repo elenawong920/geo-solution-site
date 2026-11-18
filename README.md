@@ -61,6 +61,10 @@
 `attr-yuanbao-card.jpg` + `attr-yuanbao-jd.jpg`（元宝商卡与其跳转的京购商详）、`attr-qwen-card.jpg` + `attr-taobao-order.jpg`（千问商卡与无标识的淘宝订单，作反例）。
 竖版手机图用新增的 `gallery` 布局 `layout: "phones"`（两列 440px 居中，640px 以下塌成单列）；订单两张已补齐等高再入库。
 
+**投放页扩充（2026-11-18 下午）**：依据 OpenAI 官方指南 + 合作方一手投放观察（Nexad / Soku 白皮书）+ OpenAI Business Hub 说明，加四节：
+`#benchmark` 效率基准（渠道 CTR 对比表 + 五个行业 CTR 条形图 + Adobe/Criteo 第三方佐证）、`#testing` 12 周验证节奏、`#measure` 测量链路（点击→落地→站内→产品事件→付费）、`#channels` 三类渠道预算分工、`#business-hub` Business Hub（2026-11-10 Beta）与 Mentions 官方口径。
+注意：`bars` 区块若数值都在 5% 以内，必须显式给 `max`，否则按 100% 分母会画成细线。
+
 **海外 ChatGPT 投放页（2026-11-18）**：新建 `chatgpt-ads.html`，数据来自 OpenAI 官方《2026 ChatGPT Ads Holiday Guide》与 ads.openai.com。
 结构：hero（17 亿周对话 / +52% / +94% / 2–3 周）→ 机会（五个官方数字带来源口径）→ 四步投放法（4 卡 + 投放节奏 flow）→ 上线清单（账户/排期/测量/EQS/目录 五项）→ 广告与 GEO 对比 + 同做价值。
 入口：页脚「解决方案」列海外方案之后、海外页 `#ads` 末尾 CTA。数据均为美国市场口径，页面内注明来源与时间窗口。

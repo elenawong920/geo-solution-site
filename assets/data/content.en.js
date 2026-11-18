@@ -10064,12 +10064,16 @@ window.SITE_DATA_EN = {
           "href": "#opportunity"
         },
         {
-          "label": "The Four Steps",
+          "label": "Benchmarks",
+          "href": "#benchmark"
+        },
+        {
+          "label": "Four Steps",
           "href": "#playbook"
         },
         {
-          "label": "Launch Checklist",
-          "href": "#setup"
+          "label": "Business Hub",
+          "href": "#business-hub"
         },
         {
           "label": "Ads and GEO",
@@ -10215,6 +10219,85 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "benchmark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Benchmarks",
+              "title": "What Early Performance Actually Looks Like",
+              "desc": "These ranges tell you whether a test is worth running. They are not commitments — results depend on market, category, bidding stage and signal quality."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Channel",
+                "CTR range",
+                "How to read it"
+              ],
+              "rows": [
+                [
+                  "ChatGPT Ads",
+                  "1.5% – 4%",
+                  "Mid-funnel native content ads, now in the same league as search"
+                ],
+                [
+                  "Google Search",
+                  "3% – 6.6%",
+                  "Intent already formed; higher on brand and high-intent verticals"
+                ],
+                [
+                  "Social feed",
+                  "0.5% – 1.5%",
+                  "Reach scaled through creative and audience feedback"
+                ],
+                [
+                  "Display / banner",
+                  "0.05% – 0.1%",
+                  "Impression-led; clicks are not the core metric"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "Search and social ranges are public industry benchmarks; the ChatGPT Ads range comes from first-party cross-industry buying in the US and Canada."
+            },
+            {
+              "type": "bars",
+              "max": "5%",
+              "items": [
+                {
+                  "label": "AI tools / SaaS",
+                  "value": "4.0%"
+                },
+                {
+                  "label": "Content and productivity",
+                  "value": "3.7%"
+                },
+                {
+                  "label": "Online travel",
+                  "value": "3.5%"
+                },
+                {
+                  "label": "Consumer electronics",
+                  "value": "2.9%"
+                },
+                {
+                  "label": "B2B software",
+                  "value": "2.6%"
+                }
+              ],
+              "note": "Same channel, up to twofold difference by industry — the gap comes from how well the product fits the user’s current task, not from bidding skill. CPC splits the same way: about $1.8 for AI tools, about $3.5 for B2B software. Single-advertiser samples, directional only."
+            },
+            {
+              "type": "notice",
+              "title": "Third-party evidence",
+              "desc": "Adobe found AI-referred traffic converting about 54% better in retail; Criteo saw roughly 2× versus traditional search in some categories. Both point the same way: the value here is quality and depth, not cheap clicks."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "playbook",
           "blocks": [
             {
@@ -10345,6 +10428,189 @@ window.SITE_DATA_EN = {
                 0
               ],
               "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "testing",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Validation Rhythm",
+              "title": "Twelve Weeks for One Reviewable Test",
+              "desc": "Do not judge early tests on final ROAS — retention and signal quality are not stable yet. Read different metrics at each stage, then decide on budget."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "Weeks 1–2",
+                  "title": "Confirm traffic relevance",
+                  "desc": "CTR · CPC · landing sessions · creative A/B"
+                },
+                {
+                  "no": "Weeks 3–4",
+                  "title": "Validate on-site behaviour",
+                  "desc": "Onboarding · sign-up · trial events"
+                },
+                {
+                  "no": "Weeks 5–8",
+                  "title": "Watch conversion quality",
+                  "desc": "Activation · pre-purchase actions · early CPA"
+                },
+                {
+                  "no": "Weeks 9–12",
+                  "title": "Judge headroom",
+                  "desc": "Retention · LTV · budget expansion · audience stability"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In one line",
+              "desc": "Release budget stage by stage rather than in one bet. Each stage must answer one question: does this data support going to the next round?"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "measure",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Measurement Chain",
+              "title": "The Value Sits After the Click — Build the Chain First",
+              "desc": "Most of the effect of ChatGPT Ads happens after the click. Whatever segment of this chain is missing is the segment you cannot judge."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Ad click",
+                  "desc": "Ad click"
+                },
+                {
+                  "no": "02",
+                  "title": "Landing session",
+                  "desc": "Landing · GA4"
+                },
+                {
+                  "no": "03",
+                  "title": "On-site behaviour",
+                  "desc": "Pixel / CAPI signals"
+                },
+                {
+                  "no": "04",
+                  "title": "Product events",
+                  "desc": "Sign-up · activation · core features"
+                },
+                {
+                  "no": "05",
+                  "title": "Commercial result",
+                  "desc": "Payment · subscription · LTV"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Why this matters",
+              "desc": "The platform only reports impressions and clicks. Everything after that depends on your own event pipeline. Without the chain you can only compare CTR — the easiest metric to fool yourself with."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "channels",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Budget Split",
+              "title": "Three Channels, Three Stretches of the Journey",
+              "desc": "ChatGPT Ads should not replace existing channels. It enters as incremental test budget covering the stretch just before a decision."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Google Search · demand capture",
+                  "desc": "Users already know what to search. Best for product, brand and competitor terms and explicit needs.",
+                  "list": [
+                    "Keyword structure and search-term hygiene drive efficiency"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Meta · scale and reach",
+                  "desc": "Reach scaled through creative and audience feedback. Best for sparking interest, testing propositions and scaling.",
+                  "list": [
+                    "Strong at awareness and interest stages"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "ChatGPT Ads · intent top-up",
+                  "desc": "Users are asking, comparing and narrowing. Best for entering the judgement before purchase.",
+                  "list": [
+                    "Design hints around tasks, not keywords"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What the budget conversation should be",
+              "desc": "Not “should we run ChatGPT”, but “which stretch of the journey does each channel own”. Once the split is clear, extra budget has a reason behind it."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "business-hub",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Business Hub",
+              "title": "Beyond Ads, a Non-Auction Official Slot",
+              "desc": "On 10 November 2026 OpenAI opened Businesses in ChatGPT (Beta): enterprises can claim and verify their business information inside ChatGPT and see aggregate interaction data."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Claim and verify",
+                  "desc": "Complete business verification and get the official management entry point.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Profile management",
+                  "desc": "Maintain description, contact details, website, products and related information.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Official insights",
+                  "desc": "See Mentions (mentions and citations), Profile Views, Website Clicks and trends.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "Product feed and Agent",
+                  "desc": "Eligible businesses can publish product data (price, availability) and release a Business Agent to answer questions.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What it means for our clients",
+              "desc": "Mentions is the platform’s own record of the brand being mentioned — it cross-checks the mention rate we measure: one side measured by us, the other logged by the platform. For clients already running GEO, it is an extra, free source placement."
             }
           ]
         },

@@ -10064,12 +10064,16 @@ window.SITE_DATA = {
           "href": "#opportunity"
         },
         {
+          "label": "效率基准",
+          "href": "#benchmark"
+        },
+        {
           "label": "四步投放法",
           "href": "#playbook"
         },
         {
-          "label": "上线清单",
-          "href": "#setup"
+          "label": "Business Hub",
+          "href": "#business-hub"
         },
         {
           "label": "广告与 GEO",
@@ -10215,6 +10219,85 @@ window.SITE_DATA = {
         },
         {
           "type": "section",
+          "id": "benchmark",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "效率基准",
+              "title": "早期投放，效率落在什么区间",
+              "desc": "以下区间用于判断「值不值得测」，不是承诺值。实际结果取决于国家、品类、竞价阶段和回传质量。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "渠道",
+                "CTR 区间",
+                "怎么理解"
+              ],
+              "rows": [
+                [
+                  "ChatGPT 广告",
+                  "1.5% – 4%",
+                  "中漏斗原生内容广告，已进入搜索的同一量级"
+                ],
+                [
+                  "Google 搜索",
+                  "3% – 6.6%",
+                  "需求已成型，品牌词与高意图垂类更高"
+                ],
+                [
+                  "社交信息流",
+                  "0.5% – 1.5%",
+                  "靠素材与人群反馈放大覆盖"
+                ],
+                [
+                  "展示 / 横幅",
+                  "0.05% – 0.1%",
+                  "以曝光为主，点击不是核心指标"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "搜索与社交区间为行业公开基准；ChatGPT 广告区间来自合作方跨行业一手投放观察（美加市场）。"
+            },
+            {
+              "type": "bars",
+              "max": "5%",
+              "items": [
+                {
+                  "label": "AI 工具 / SaaS",
+                  "value": "4.0%"
+                },
+                {
+                  "label": "内容与生产力",
+                  "value": "3.7%"
+                },
+                {
+                  "label": "在线旅游",
+                  "value": "3.5%"
+                },
+                {
+                  "label": "消费电子",
+                  "value": "2.9%"
+                },
+                {
+                  "label": "B2B 软件",
+                  "value": "2.6%"
+                }
+              ],
+              "note": "同一渠道，不同行业差出一倍——差距来自「产品与用户当下任务的契合度」，而不是出价技巧。单次点击成本同样分化：AI 工具约 $1.8、B2B 软件约 $3.5。样本为单广告主量级，仅作方向性参考。"
+            },
+            {
+              "type": "notice",
+              "title": "第三方佐证",
+              "desc": "Adobe 观察到 AI 引荐流量的零售转化率比普通流量高约 54%；Criteo 在部分品类看到约 2 倍转化表现。共同指向一件事：这类流量的价值在质量与行为深度，不在便宜。"
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "playbook",
           "blocks": [
             {
@@ -10345,6 +10428,189 @@ window.SITE_DATA = {
                 0
               ],
               "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "testing",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "验证节奏",
+              "title": "12 周跑完一轮可复盘的测试",
+              "desc": "早期不要用最终 ROAS 判断成败——留存与回传还没稳定。按阶段看不同的指标，再决定是否加预算。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "第 1–2 周",
+                  "title": "确认流量相关性",
+                  "desc": "CTR · CPC · 落地页会话 · 素材 A/B"
+                },
+                {
+                  "no": "第 3–4 周",
+                  "title": "验证站内行为",
+                  "desc": "引导 · 注册 · 试用等关键事件"
+                },
+                {
+                  "no": "第 5–8 周",
+                  "title": "观察转化质量",
+                  "desc": "激活 · 付费前动作 · 初步 CPA"
+                },
+                {
+                  "no": "第 9–12 周",
+                  "title": "判断扩量空间",
+                  "desc": "留存 · LTV · 预算扩展 · 人群稳定"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "一句话",
+              "desc": "预算按阶段放，不是一次性押注。每一阶段都要能回答一个问题：这一步的数据，支持进入下一轮吗？"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "measure",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "测量链路",
+              "title": "价值发生在点击之后，链路必须提前打通",
+              "desc": "ChatGPT Ads 的效果多半藏在点击后的行为里。下面这条链路缺哪一段，就判断不了哪一段。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "广告点击",
+                  "desc": "Ad click"
+                },
+                {
+                  "no": "02",
+                  "title": "落地页会话",
+                  "desc": "Landing · GA4"
+                },
+                {
+                  "no": "03",
+                  "title": "站内行为",
+                  "desc": "Pixel / CAPI 回传"
+                },
+                {
+                  "no": "04",
+                  "title": "产品事件",
+                  "desc": "注册 · 激活 · 核心功能"
+                },
+                {
+                  "no": "05",
+                  "title": "商业结果",
+                  "desc": "付费 · 订阅 · LTV"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "为什么强调这条链路",
+              "desc": "对方平台只给到曝光与点击，往后的注册、试用、付费要靠自己的回传。链路不通，投放就只能比 CTR——那是最容易自欺的指标。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "channels",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "预算分工",
+              "title": "三类渠道，各管一段旅程",
+              "desc": "ChatGPT Ads 不建议替代现有渠道，而是作为新增测试预算，补上决策前的那一段。"
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Google 搜索 · 承接需求",
+                  "desc": "用户已经知道要搜什么。适合承接产品词、品牌词、竞品词与明确需求。",
+                  "list": [
+                    "关键词结构与搜索词治理决定效率"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Meta · 规模覆盖",
+                  "desc": "靠素材与人群反馈放大覆盖。适合激发兴趣、测试卖点、持续放量。",
+                  "list": [
+                    "偏曝光与兴趣阶段"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "ChatGPT Ads · 意图补充",
+                  "desc": "用户正在提问、比较、筛选方案。适合切入购买前的判断过程。",
+                  "list": [
+                    "按任务场景设计 Hint，而不是买关键词"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "预算讨论的重点",
+              "desc": "不该问「要不要投 ChatGPT」，而该问「每个渠道各承担用户旅程的哪一段」。分工清楚，加预算才加得有理有据。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "business-hub",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Business Hub",
+              "title": "除了广告，还有一块不用竞价的官方位置",
+              "desc": "2026 年 11 月 10 日，OpenAI 开放 Businesses in ChatGPT Beta：企业可认领并验证自己在 ChatGPT 中的商业信息，并查看互动的汇总数据。"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "认领与验证",
+                  "desc": "Claim Business 完成企业身份验证，获得官方管理入口。",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "资料管理",
+                  "desc": "维护企业介绍、联系方式、官网、产品与相关信息。",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "官方 Insights",
+                  "desc": "查看 Mentions（被提及 / 被引用）、Profile Views、Website Clicks 与趋势。",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "产品 Feed 与 Agent",
+                  "desc": "符合条件的企业可接入产品数据（价格、库存），并发布 Business Agent 回答用户问题。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "对我们的客户意味着什么",
+              "desc": "Mentions 是平台官方口径的「品牌被提及」，可以和我们监测的提及率互相交叉验证——一边是我们测的，一边是平台自己记的。对正在做 GEO 的客户，这是一个额外且免费的信源占位。"
             }
           ]
         },
