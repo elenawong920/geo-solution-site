@@ -60,7 +60,8 @@ function prepContent(rel) {
     'appliance.html': '#/appliance',
     'beauty.html': '#/beauty',
     'platform.html': '#/platform',
-    'api.html': '#/api'
+    'api.html': '#/api',
+    'chatgpt-ads.html': '#/chatgpt-ads'
   };
   Object.keys(routes).forEach(href => {
     s = s.split(`'${href}'`).join(`'${routes[href]}'`);
@@ -90,7 +91,7 @@ appJs = appJs.replace(
     __initialHash = __initialHash.slice(0, __initialSectionPos);
   }
   var pageKey = __initialHash || 'home';
-  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api'].includes(pageKey)) pageKey = 'home';
+  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'].includes(pageKey)) pageKey = 'home';
   document.body.setAttribute('data-page', pageKey);`
 );
 
@@ -121,7 +122,7 @@ appJs = appJs.replace(
   });
 
   /* ---------- hash 路由（单文件模式） ---------- */
-  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api'];
+  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
   function parseHash() {
     var raw = (location.hash || '').replace(/^#\\/?/, '');
     var sec = '';
@@ -249,7 +250,7 @@ appJs = appJs.replace(
 );
 
 /* ---- 组装单文件 ---- */
-const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api'];
+const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">

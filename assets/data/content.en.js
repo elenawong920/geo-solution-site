@@ -25,6 +25,10 @@ window.SITE_DATA_EN = {
             "href": "overseas.html"
           },
           {
+            "text": "Overseas ChatGPT Ads",
+            "href": "chatgpt-ads.html"
+          },
+          {
             "text": "Enterprise GEO Platform",
             "href": "platform.html"
           },
@@ -2679,6 +2683,17 @@ window.SITE_DATA_EN = {
               "icon": "※",
               "title": "Reddit Advertising · Independent Incremental Purchase",
               "desc": "Reddit Max AI automation · DPA dynamic product ads · conversational ad slots · full-day takeover. -17% CPA, 5–7× ROAS in consumer tech."
+            },
+            {
+              "type": "cta",
+              "title": "For the 2026 holiday season, start two weeks early",
+              "desc": "The official four-step playbook, the five things to finish before launch, Pixel and CAPI measurement, and how ads pair with GEO.",
+              "buttons": [
+                {
+                  "label": "Read the ads guide",
+                  "href": "chatgpt-ads.html"
+                }
+              ]
             }
           ]
         },
@@ -10036,6 +10051,351 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "Version and scope",
               "desc": "This page reflects the JD Cloud GEO API documentation V4 (2026-11-13). Chapters 1—8 cover the live /openapi/v1 endpoints; chapters 9—10 cover planned enterprise capabilities. Endpoints and models are called within what your account has enabled, and all business data and IDs shown are mock values. Full parameters, response fields and examples are in the complete manual."
+            }
+          ]
+        }
+      ]
+    },
+    "chatgpt-ads": {
+      "title": "ChatGPT Ads",
+      "nav": [
+        {
+          "label": "Opportunity",
+          "href": "#opportunity"
+        },
+        {
+          "label": "The Four Steps",
+          "href": "#playbook"
+        },
+        {
+          "label": "Launch Checklist",
+          "href": "#setup"
+        },
+        {
+          "label": "Ads and GEO",
+          "href": "#geo"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "hero",
+          "kicker": "Overseas · ChatGPT Ads",
+          "title": [
+            "Inside the conversation,",
+            "at the moment of decision"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "Shoppers no longer start in a search box — they ask ChatGPT for recommendations, compare prices and decide. In the 2026 holiday season, retail and ecommerce prompts exceed 1.7 billion every week.",
+          "sub": "Method from OpenAI’s 2026 ChatGPT Ads Holiday Guide; figures are US-market and sourced in the table below.",
+          "buttons": [
+            {
+              "label": "See the four steps",
+              "href": "#playbook"
+            },
+            {
+              "label": "Back to overseas GEO",
+              "href": "overseas.html",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "1.7B+",
+              "label": "Weekly retail and ecommerce prompts"
+            },
+            {
+              "value": "+52%",
+              "label": "2025 holiday product-search growth"
+            },
+            {
+              "value": "+94%",
+              "label": "Black Friday search peak"
+            },
+            {
+              "value": "2–3 wks",
+              "label": "Recommended launch lead time"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "opportunity",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Opportunity",
+              "title": "Holiday Search Has Moved Into the Chat Box",
+              "desc": "Four official numbers make one point: shopping decisions happen inside ChatGPT, and the peak is steep and concentrated — which is why campaigns must be live early."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Metric",
+                "Figure",
+                "Definition and source"
+              ],
+              "rows": [
+                [
+                  "Retail and ecommerce prompts",
+                  "1.7B+ per week",
+                  "OpenAI internal data, 1–30 September 2026"
+                ],
+                [
+                  "Holiday product-search lift",
+                  "+52%",
+                  "1 Nov–31 Dec 2025 vs weekday-matched October"
+                ],
+                [
+                  "Shopping chats comparing options",
+                  "~43%",
+                  "21 Sep–18 Oct 2026, share of comparison and evaluation conversations"
+                ],
+                [
+                  "Cyber Five average lift",
+                  "+47%",
+                  "27 Nov–1 Dec 2025 vs matched weekdays in the prior four weeks"
+                ],
+                [
+                  "Black Friday peak",
+                  "+94%",
+                  "Same window, single peak day"
+                ]
+              ],
+              "numCols": [
+                1
+              ],
+              "stack": true,
+              "note": "US-market figures from OpenAI’s 2026 ChatGPT Ads Holiday Guide."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "playbook",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "The Four Steps",
+              "title": "Early, Concentrated, Relevant, Reviewed",
+              "desc": "The official playbook contains no tricks — only basics. The hard part is finishing all of them before the peak arrives."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Launch early",
+                  "desc": "Start 2–3 weeks before your first key shopping day, leaving time to validate setup and let the system learn.",
+                  "list": [
+                    "Account, billing and verification sorted first",
+                    "Do not get stuck in review at peak"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Plan for the peak",
+                  "desc": "Run a dedicated holiday campaign when the product selection, schedule or budget differs; with a conversions objective, choose impression billing to cover purchases after clicks and eligible views.",
+                  "list": [
+                    "Prefer automated bidding",
+                    "Keep campaigns running, no gaps"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "Stay timely",
+                  "desc": "Build creative around seasonal products, holiday offers and shipping deadlines; one ad per meaningfully different product or claim.",
+                  "list": [
+                    "Context hints say who it is for and what it solves",
+                    "Prepare the next batch before the offer ends"
+                  ]
+                },
+                {
+                  "no": "04",
+                  "title": "Measure and optimise",
+                  "desc": "Review every 2–3 days against the pre-holiday baseline, and raise budgets gradually on the strongest performers.",
+                  "list": [
+                    "Every review ends with one clear next step",
+                    "Scale in steps, not jumps"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "T-3 wks",
+                  "title": "Launch and validate",
+                  "desc": "Account · billing · verification · catalog"
+                },
+                {
+                  "no": "T-2 wks",
+                  "title": "Delivery and calibration",
+                  "desc": "Conversion measurement · EQS · bids"
+                },
+                {
+                  "no": "Peak",
+                  "title": "Cyber Five",
+                  "desc": "Daily budget and stock checks"
+                },
+                {
+                  "no": "After",
+                  "title": "Review and archive",
+                  "desc": "Baseline comparison · creative archive"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In one line",
+              "desc": "Holiday campaigns are won in the two weeks before the peak — not on the peak days themselves."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "setup",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Launch Checklist",
+              "title": "Five Things to Finish Before You Spend",
+              "desc": "Taken from the guide’s “launch before the rush” and “conversion measurement” sections. Anything left to the peak week costs more."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Area",
+                "What to do",
+                "Why it must be early"
+              ],
+              "rows": [
+                [
+                  "Account and brand",
+                  "Open Ads Manager, add billing, complete required verification, upload brand logo and confirm the brand name",
+                  "Verification and review take time; delays are costliest at peak"
+                ],
+                [
+                  "Schedule and landing pages",
+                  "Lock the campaign schedule, budget and landing pages before launch",
+                  "Landing page rework never arrives in time"
+                ],
+                [
+                  "Conversion measurement",
+                  "Run Pixel and the Conversions API together with matched event IDs to avoid double counting",
+                  "Without measurement you cannot tell which campaign works"
+                ],
+                [
+                  "Signal quality",
+                  "Check Event Quality Score (EQS) and improve signal quality before major promotions",
+                  "Weak signals mean the system cannot learn and bids drift"
+                ],
+                [
+                  "Product catalog",
+                  "Upload the catalog early and keep price, promotion and availability current; Shopify merchants can sync with the official app",
+                  "Feed errors take time to fix and will not wait for the peak"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "geo",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Ads and GEO",
+              "title": "Ads Buy a Slot; GEO Wins the Default Recommendation",
+              "desc": "Inside ChatGPT, paid ads and answer recommendations are different places. After seeing an ad, users still ask “so which brand is best?” — and that answer cannot be bought."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "ChatGPT Ads",
+                "GEO optimisation (we run both)"
+              ],
+              "rows": [
+                [
+                  "Where it appears",
+                  "A labelled ad slot in the conversation",
+                  "Inside the answer’s recommendations and citations"
+                ],
+                [
+                  "How you get it",
+                  "Bidding, budget and context signals",
+                  "Content that is retrieved, cited and trusted"
+                ],
+                [
+                  "When you stop",
+                  "It disappears immediately",
+                  "Content keeps working after the work ends"
+                ],
+                [
+                  "How it is measured",
+                  "Impressions / clicks / conversions (Pixel + CAPI)",
+                  "Mention rate / top-three rate / cited sources"
+                ],
+                [
+                  "Best for",
+                  "Peaks, launches, clearance",
+                  "Default recommendation slots, long-tail coverage"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Why run both",
+              "desc": "Ads pull shoppers to you during the peak; GEO keeps you in the answer when they ask the follow-up question. Ads alone reset to zero when you stop; GEO alone misses the peak traffic."
             }
           ]
         }

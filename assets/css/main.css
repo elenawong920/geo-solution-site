@@ -303,6 +303,11 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .btn--ghost { border-color: var(--line-2); color: var(--ink); background: #fff; }
 .btn--ghost:hover { border-color: var(--jd-red); color: var(--jd-red); transform: translateY(-2px); }
 .btn--outline-light { border-color: rgba(255, 255, 255, .3); color: #fff; }
+/* Hero 是红底：主按钮必须反过来用白底红字，否则红底红字看不见 */
+.hero .btn--primary { background: #fff; color: var(--jd-red); box-shadow: 0 10px 26px rgba(0, 0, 0, .16); }
+.hero .btn--primary:hover { background: #fff; color: var(--jd-red-dark); }
+.hero .btn--ghost { background: transparent; border-color: rgba(255, 255, 255, .55); color: #fff; }
+.hero .btn--ghost:hover { background: rgba(255, 255, 255, .12); border-color: #fff; color: #fff; }
 .btn--outline-light:hover { background: rgba(255, 255, 255, .1); border-color: #fff; transform: translateY(-2px); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
 
@@ -369,6 +374,7 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .compare + .cards { margin-top: 20px; }
 .cards + .notice { margin-top: 18px; }
 .compare + .notice { margin-top: 18px; }
+.cards + .flow { margin-top: 18px; }
 /* 卡片组后面紧跟小标题时补一段呼吸，否则贴在一起 */
 .cards + .sec-head { margin-top: 48px; }
 .cards--2 { grid-template-columns: repeat(2, 1fr); }
