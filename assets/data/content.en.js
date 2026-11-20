@@ -4452,6 +4452,27 @@ window.SITE_DATA_EN = {
               ]
             },
             {
+              "type": "gallery",
+              "layout": "trio",
+              "items": [
+                {
+                  "src": "assets/img/aidoctor-entry.jpg",
+                  "alt": "The AI doctor entry inside the JD app pharmacy section",
+                  "cap": "<b>Entry</b>　Three home entries — pharmacy, internet hospital and health — all lead into the AI doctor, free and unlimited 24/7."
+                },
+                {
+                  "src": "assets/img/aidoctor-chat.jpg",
+                  "alt": "AI doctor conversation with an evidence-based answer and curated products",
+                  "cap": "<b>Answer</b>　The reply explains the mechanism with literature and guidelines, then follows with curated products — answer and shelf on one screen."
+                },
+                {
+                  "src": "assets/img/aidoctor-buy.jpg",
+                  "alt": "A brand product card with price, pack size and instant purchase",
+                  "cap": "<b>Conversion</b>　The card carries price, pack size and selling points with add-to-cart or buy-now, without leaving the conversation."
+                }
+              ]
+            },
+            {
               "type": "notice",
               "title": "Where the two paths differ",
               "desc": "Placements in the first-party entry are set by the platform and the agreement, so they are highly controllable. Public AI recommendations are decided by models and sources and can only be influenced through content and citations. They cannot share one metric set: public AI is judged on mention and top-three rates, the first-party entry on impressions, clicks and conversion."
