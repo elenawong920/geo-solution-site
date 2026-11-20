@@ -327,36 +327,33 @@ def sync_language(data: dict, parsed: dict, lang: str, chart_date: str) -> None:
     a = period_info(parsed["dates"]["a"])
     b = period_info(parsed["dates"]["b"])
     c = period_info(parsed["dates"]["c"])
-    # 期数 / 截止日取不到时不留空位（旧模板会渲染成「第  期」「截至  ·」）
-    c_zh = f"截至 {c['as_of']} · " if c.get("as_of") else ""
-    c_en = f"As of {c['as_of']} · " if c.get("as_of") else ""
     if lang == "zh":
         tabs[0]["panels"][0]["note"] = (
-            f"数据月份：{a['month']} · 来源：AI 产品榜 · 单位：月活跃用户（MAU）。"
-            "口径：GEO 客户重点关注的国内基础模型 App 名单，按 MAU 降序。"
+            f"最新数据日期：{a['month']} · AI 产品榜第 {a['issue']} 期 · 名单制（基模）· 单位：月活跃用户。"
+            "口径：GEO 客户关注入口名单制看板，组内按 MAU 降序，与三榜图同步更新。"
         )
         tabs[1]["panels"][0]["note"] = (
-            f"数据月份：{a['month']} · 来源：AI 产品榜（全球榜）· 单位：月活跃用户（MAU），按 MAU 降序。"
+            f"最新数据日期：{a['month']} · AI 产品榜第 {a['issue']} 期 · 海外取全球榜 · 按 MAU 降序，与三榜图同步更新。"
         )
         tabs[2]["panels"][0]["note"] = (
-            f"数据月份：{b['month']} · 来源：AI 产品榜（网站榜）· 国内 TOP10 · 单位：月访问量（含重复访问）。"
+            f"最新数据日期：{b['month']} · 网站榜第 {b['issue']} 期 · 国内 TOP10 · 单位：月访问量，与三榜图同步更新；含重复访问。"
         )
         tabs[3]["panels"][0]["note"] = (
-            f"{c_zh}来源：OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：T = 万亿 Token/周。"
+            f"截至 {c['as_of']} · OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：万亿 Token/周，与三榜图同步更新。"
         )
     else:
         tabs[0]["panels"][0]["note"] = (
-            f"Data month: {a['month_en']} · Source: AI Product Rankings · Unit: monthly active users (MAU). "
-            "Scope: China foundation-model apps GEO clients focus on, sorted by MAU."
+            f"Latest data: {a['month_en']} · AI Product Rankings No. {a['issue']} · curated foundation-model list · monthly active users. "
+            "Sorted by MAU within the group and synced with the three-ranking chart."
         )
         tabs[1]["panels"][0]["note"] = (
-            f"Data month: {a['month_en']} · Source: AI Product Rankings (global list) · Unit: monthly active users (MAU), sorted by MAU."
+            f"Latest data: {a['month_en']} · AI Product Rankings No. {a['issue']} · global ranking for overseas models · sorted by MAU and synced with the three-ranking chart."
         )
         tabs[2]["panels"][0]["note"] = (
-            f"Data month: {b['month_en']} · Source: AI Product Rankings (website list) · China TOP 10 · Unit: monthly visits (includes repeat visits)."
+            f"Latest data: {b['month_en']} · Website Rankings No. {b['issue']} · China TOP 10 · monthly visits, synced with the three-ranking chart; includes repeat visits."
         )
         tabs[3]["panels"][0]["note"] = (
-            f"{c_en}Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week."
+            f"As of {c['as_of']} · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart."
         )
     data["meta"]["updated"] = chart_date
 

@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -217,8 +217,8 @@ window.SITE_DATA_EN = {
           ],
           "meta": [
             {
-              "value": "800M+",
-              "label": "Combined MAU of China's top-5 AI apps"
+              "value": "1B+",
+              "label": "Daily active users on top AI platforms"
             },
             {
               "value": "68%",
@@ -232,44 +232,7 @@ window.SITE_DATA_EN = {
               "value": "10+",
               "label": "Leading LLM platforms covered"
             }
-          ],
-          "demo": {
-            "title": "AI search · sample answer",
-            "q": "Where is it safest to buy an air conditioner?",
-            "lead": "Weighing authenticity, delivery, installation and after-sales, the top picks are:",
-            "picks": [
-              {
-                "name": "JD self-operated",
-                "badge": "TOP-1 pick",
-                "text": "Direct genuine supply, delivery with installation, full-cycle after-sales"
-              },
-              {
-                "name": "Brand flagship store",
-                "text": "Full model range; official specs easy to verify"
-              },
-              {
-                "name": "Offline brand store",
-                "text": "Hands-on experience; compare prices yourself"
-              }
-            ],
-            "srcLabel": "Cited sources",
-            "sources": [
-              "Official brand materials",
-              "Authoritative media reviews",
-              "Q&A communities"
-            ],
-            "stats": [
-              {
-                "value": "86.6%",
-                "label": "Brand visibility"
-              },
-              {
-                "value": "78.9%",
-                "label": "TOP-1 recommendation"
-              }
-            ],
-            "foot": "Illustration · figures from the JD Air Conditioner case on this page (after one month)"
-          }
+          ]
         },
         {
           "type": "section",
@@ -280,23 +243,23 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Market Inflection Point",
               "title": "AI Search Is Restructuring the Traffic Ecosystem",
-              "desc": "The traffic gateway is moving from search indexing to social seeding, and now to AI generation. A brand AI does not recognise is simply absent from the answers users receive."
+              "desc": "Traffic power is shifting from \"indexing\" to \"seeding\" and then to \"generation\". If AI does not recognise you, you go silent in the world of user answers."
             },
             {
               "type": "eras",
               "items": [
                 {
-                  "kicker": "Stage 01 · SEO",
+                  "kicker": "Search-Dependent Era · SEO",
                   "title": "The Search-Dependent Era",
                   "desc": "Consumers habitually type \"which brand makes the best XX product\" into the search box before ordering, and build their picture of a brand from Baidu Baike endorsements and parameter rankings on vertical platforms."
                 },
                 {
-                  "kicker": "Stage 02 · Social seeding",
+                  "kicker": "Social Seeding Era · LSO / VSO",
                   "title": "The Social Seeding Era",
                   "desc": "Users no longer settle for passive search — they actively browse genuine user reviews on Douyin, Xiaohongshu and other platforms, so purchase decisions now carry strong social proof and experiential resonance."
                 },
                 {
-                  "kicker": "Stage 03 · GEO · Now",
+                  "kicker": "AI Decision Era · GEO",
                   "title": "The AI Decision Era",
                   "desc": "In the era of large models, more and more users turn to AI search tools to find answers and make decisions before buying. AI has become the new decision entry point.",
                   "now": true
@@ -315,7 +278,7 @@ window.SITE_DATA_EN = {
               "items": [
                 {
                   "title": "Invisible",
-                  "desc": "The brand barely exists in the content AI can retrieve, so AI never mentions you when users ask."
+                  "desc": "You are \"not there at all\" in the AI corpus — users never think of you when they ask."
                 },
                 {
                   "title": "Competitor Wins",
@@ -323,7 +286,7 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "title": "Stale Information",
-                  "desc": "New products, prices and policies are not picked up by AI; answers still cite outdated versions."
+                  "desc": "What you want users to see is either not indexed by AI or still cited from an outdated version."
                 },
                 {
                   "title": "Ranked Low",
@@ -349,7 +312,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Definition",
               "title": "What GEO Is and What It Solves for Brands",
-              "desc": "GEO (Generative Engine Optimization) is the growth discipline for AI search, Q&A and agent entry points. By building high-quality content and authoritative sources that large models can retrieve, understand and choose to cite, it lifts a brand's citation rate and recommendation placement in AI-generated answers."
+              "desc": "GEO (Generative Engine Optimization) is the growth discipline for AI search, Q&A and agent entry points. By \"feeding\" large models high-quality content, it lifts a brand's citation rate and recommendation placement in AI-generated answers."
             },
             {
               "type": "cards",
@@ -404,7 +367,7 @@ window.SITE_DATA_EN = {
                 [
                   "Brand mission",
                   "Optimise site rankings and traffic",
-                  "Build citable source assets and become the answer AI recommends first"
+                  "Become the \"single answer\" that AI generates"
                 ],
                 [
                   "Metrics",
@@ -437,7 +400,7 @@ window.SITE_DATA_EN = {
                 {
                   "no": "02",
                   "title": "Build a Brand-Friendly Source Asset Base",
-                  "desc": "Improve the structure, authority and crawlability of brand-friendly sources to raise the odds of being cited by AI."
+                  "desc": "Technical weighting of brand-friendly sources makes AI prefer citing brand information."
                 },
                 {
                   "no": "03",
@@ -460,7 +423,7 @@ window.SITE_DATA_EN = {
             {
               "type": "secHead",
               "kicker": "Determinism",
-              "title": "Same Question: Why You See the Brand and Your Users Don't",
+              "title": "The Same Question, Seen by You and Missed by Your Customer",
               "desc": "Every AI answer is reassembled from retrieval and generation, so a single hit proves nothing. We replace “can it be found” with “what share of the time is it found”, then push that share up with mechanism rather than luck."
             },
             {
@@ -478,7 +441,7 @@ window.SITE_DATA_EN = {
                 [
                   "What the result looks like",
                   "Hit or miss, decided in one shot",
-                  "Mention rate, TOP-3 recommendation rate, consistency rate — with a range"
+                  "Mention rate, top-three rate, consistency rate — with a range"
                 ],
                 [
                   "Does it hold next week",
@@ -521,7 +484,7 @@ window.SITE_DATA_EN = {
             {
               "type": "notice",
               "title": "What we measure",
-              "desc": "We report ratios — mention rate, TOP-3 recommendation rate, number of questions hit — not “we found it once on a given day”. The same question set re-run is reproducible, auditable and can be written into acceptance."
+              "desc": "We report ratios — mention rate, top-three rate, number of questions hit — not “we found it once on a given day”. The same question set re-run is reproducible, auditable and can be written into acceptance."
             }
           ]
         },
@@ -554,7 +517,7 @@ window.SITE_DATA_EN = {
                   "title": "Content & Source Strategy",
                   "list": [
                     "AIGC generation plus human editorial review",
-                    "Structure and crawlability optimisation to raise citation probability",
+                    "Technical crawler intervention to raise citation probability",
                     "One playbook per platform to match platform preferences"
                   ]
                 },
@@ -588,16 +551,16 @@ window.SITE_DATA_EN = {
               "type": "table",
               "head": [
                 "Capability",
-                "What it does and delivers"
+                "What it solves"
               ],
               "rows": [
                 [
                   "AI Perception Audit",
-                  "Multi-platform baseline sampling that diagnoses brand mentions, ranking, accuracy and competitor gaps in AI answers, plus category insight from social listening and full-funnel VOC"
+                  "Category insight built on social listening, journey analysis and full-funnel VOC collection"
                 ],
                 [
                   "Semantic Keyword Mining",
-                  "Keyword expansion, question-phrasing diversity and scenario segmentation, consolidated into a managed user-intent question bank"
+                  "Keyword expansion, question phrasing diversity and a scenario-segmented user question bank"
                 ],
                 [
                   "AIGC Content Generation",
@@ -605,23 +568,23 @@ window.SITE_DATA_EN = {
                 ],
                 [
                   "GEO Optimization",
-                  "Full coverage of high-value intents plus multi-source content placement, raising the probability of priority recommendation in AI answers"
+                  "Intent interception plus corpus-saturation feeding, ensuring priority recommendation in AI answers"
                 ],
                 [
                   "Performance Monitoring",
-                  "BI dashboards for multi-platform, multi-question, multi-frequency sampling, with original AI answer snapshots retained"
+                  "BI dashboard visualisation"
                 ],
                 [
                   "GEO Metrics Monitoring",
-                  "Continuous tracking of mention rate, TOP-3 recommendation rate, SOV and other core metrics, with competitor comparison and anomaly alerts"
+                  "Tracking mention rate, recommendation rate, SOV and other core GEO metrics"
                 ]
               ]
             },
             {
               "type": "secHead",
               "kicker": "Competitive Landscape",
-              "title": "The AI Model Landscape: Four Rankings That Matter for GEO",
-              "desc": "JD Technology continuously tracks AI platform traffic patterns to give brands an objective basis for choosing which platforms to prioritise."
+              "title": "The AI Model Landscape: Three Rankings That Matter for GEO",
+              "desc": "JD Technology continuously tracks AI platform traffic patterns to give brands an objective basis for platform selection."
             },
             {
               "type": "tabs",
@@ -632,7 +595,7 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Data month: 2026-10 · Source: AI Product Rankings · Unit: monthly active users (MAU). Scope: China foundation-model apps GEO clients focus on, sorted by MAU.",
+                      "note": "Latest data: 2026-10 · AI Product Rankings No.  · curated foundation-model list · monthly active users. Sorted by MAU within the group and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "Doubao (ByteDance)",
@@ -689,7 +652,7 @@ window.SITE_DATA_EN = {
                     {
                       "type": "bars",
                       "max": 100,
-                      "note": "Data month: 2026-10 · Source: AI Product Rankings (global list) · Unit: monthly active users (MAU), sorted by MAU.",
+                      "note": "Latest data: 2026-10 · AI Product Rankings No.  · global ranking for overseas models · sorted by MAU and synced with the three-ranking chart.",
                       "items": [
                         {
                           "label": "ChatGPT (OpenAI)",
@@ -736,11 +699,11 @@ window.SITE_DATA_EN = {
                   ]
                 },
                 {
-                  "label": "Web Monthly Visits · China",
+                  "label": "B2B Web Monthly Visits",
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "Data month: 2026-09 · Source: AI Product Rankings (website list) · China TOP 10 · Unit: monthly visits (includes repeat visits).",
+                      "note": "Latest data: 2026-09 · Website Rankings No.  · China TOP 10 · monthly visits, synced with the three-ranking chart; includes repeat visits.",
                       "items": [
                         {
                           "label": "DeepSeek",
@@ -801,57 +764,57 @@ window.SITE_DATA_EN = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week.",
+                      "note": "As of  · OpenRouter official weekly ranking · rolling 7-day window · trillions of tokens per week, synced with the three-ranking chart.",
                       "items": [
                         {
-                          "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "62.1T",
-                          "note": "MoM +1.5%"
+                          "label": "Hy4 flash (Tencent)",
+                          "value": "69.3T",
+                          "note": "MoM +48.7%"
                         },
                         {
-                          "label": "Hy4 flash (Tencent)",
-                          "value": "46.6T",
-                          "note": "MoM New entry"
+                          "label": "DS V4.1 Flash 1017 (DeepSeek)",
+                          "value": "62.2T",
+                          "note": "MoM +0.2%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
                           "value": "16T",
-                          "note": "MoM +3.2%"
+                          "note": "MoM 0.0%"
                         },
                         {
                           "label": "Hy4 (Tencent)",
-                          "value": "13T",
-                          "note": "MoM -18.8%"
+                          "value": "11.7T",
+                          "note": "MoM -10.0%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "10.9T",
-                          "note": "MoM -7.6%"
+                          "value": "10.7T",
+                          "note": "MoM -1.8%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "8.62T",
-                          "note": "MoM +6.7%"
+                          "value": "8.86T",
+                          "note": "MoM +2.8%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "7.63T",
-                          "note": "MoM +3.5%"
+                          "value": "7.53T",
+                          "note": "MoM -1.3%"
                         },
                         {
                           "label": "Step 5 Preview (StepFun)",
-                          "value": "6.39T",
-                          "note": "MoM +0.5%"
+                          "value": "5.75T",
+                          "note": "MoM -10.0%"
                         },
                         {
                           "label": "MiMo-V2.6-Flash (Xiaomi)",
-                          "value": "4.05T",
-                          "note": "MoM -2.6%"
+                          "value": "4.01T",
+                          "note": "MoM -1.0%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "3.67T",
-                          "note": "MoM Return"
+                          "value": "3.92T",
+                          "note": "MoM +6.8%"
                         }
                       ]
                     }
@@ -898,7 +861,7 @@ window.SITE_DATA_EN = {
                   "title": "Enterprise Platform · a combination",
                   "desc": "Monitoring, analysis and optimisation management combined into your own systems to the scope agreed in the proposal and contract.",
                   "list": [
-                    "You connect four interfaces; execution stays with JD Technology",
+                    "You connect four interfaces; execution stays with JD Cloud",
                     "It is not software that delivers results on its own"
                   ]
                 }
@@ -920,7 +883,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "End-to-End Delivery",
               "title": "Five Delivery Phases: From Baseline Diagnosis to Continuous Review",
-              "desc": "One clear flow from start to finish: every phase states its timing, core work, deliverables and client input."
+              "desc": "The former step list, three-phase timeline and delivery breakdown are now one clear flow. Every phase shows timing, work, deliverables and client input."
             },
             {
               "type": "flow",
@@ -987,7 +950,7 @@ window.SITE_DATA_EN = {
                   "04 Sources and Citation Growth",
                   "Ongoing from week 2",
                   "Publish through authoritative channels, coordinate media and communities, and optimise citations by platform",
-                  "Publication list with article links, source structure and citation optimisation records",
+                  "Publication list, selected article links, source structure and citation optimisation records",
                   "Confirm external messaging and publication content where required"
                 ],
                 [
@@ -998,7 +961,7 @@ window.SITE_DATA_EN = {
                   "Accept phase reports and confirm priorities for the next optimisation cycle"
                 ]
               ],
-              "note": "Timing is indicative for a standard project and varies by industry, question volume and content review requirements. The default no-publishing (citation-optimisation) route needs no knowledge-base build or article publication; client input is mainly weekly acceptance, with a typical ramp-up of about two weeks."
+              "note": "Timing is indicative for a standard project and varies by industry, question volume and content review requirements. The citation-optimisation track can proceed without a knowledge-base build or article publication, with a typical ramp-up of about two weeks."
             }
           ]
         },
@@ -1051,7 +1014,7 @@ window.SITE_DATA_EN = {
                   "Measures penetration of selling points, value propositions and campaign information"
                 ]
               ],
-              "note": "AI answer count is the sample size, not a performance metric. In the cases, “brand visibility” means brand mention rate, “share of exposure” means SOV, and “top-three rate” means TOP-3 recommendation rate. Where a project uses “positive/neutral sentiment”, the baseline must state whether neutral answers are included. Deduplicated and non-deduplicated SOV figures must never be mixed."
+              "note": "AI answer count is the sample size, not a performance metric. Where a project uses “positive/neutral sentiment”, the baseline must state whether neutral answers are included. Deduplicated and non-deduplicated SOV figures must never be mixed."
             },
             {
               "type": "secHead",
@@ -1138,7 +1101,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Case Studies",
               "title": "From 26% to 75%, From 3% to 24%",
-              "desc": "All cases below are based on like-for-like baseline and re-test data from real projects, showing how brand mention rates and recommendation placement moved from before to after optimisation."
+              "desc": "All cases below are based on re-running the keyword baseline on real projects, showing honestly how brand mention rates and recommendation placement moved from before to after optimisation."
             },
             {
               "type": "cases",
@@ -1153,15 +1116,15 @@ window.SITE_DATA_EN = {
                       "value": "DeepSeek / Doubao / Qwen"
                     },
                     {
-                      "label": "Before · benefit exposure rate",
+                      "label": "Single-benefit exposure rate",
                       "value": "26%"
                     },
                     {
-                      "label": "After · full-benefit exposure rate",
+                      "label": "Full-benefit exposure rate",
                       "value": "75%"
                     }
                   ],
-                  "foot": "Before optimisation AI answers surfaced a single benefit point; afterwards the full set of campaign benefits was presented."
+                  "foot": "After optimisation, coverage extended from a single benefit point to the complete benefit set."
                 },
                 {
                   "tag": "Domestic Case · Semiconductors",
@@ -1256,7 +1219,7 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "icon": "※",
               "title": "Speed to Results",
-              "desc": "Common optimisation approaches in the industry have long feedback loops, typically needing 20–30 days or more for a full effect. JD Technology GEO, backed by mature citation-optimisation techniques and structured content templates, works across multiple scenarios and audience segments and can show a clear lift in core metrics in as little as 1–2 weeks (the table below is single-week data)."
+              "desc": "Industry agencies commonly suffer from long optimisation cycles and lagged feedback, with a full effect cycle of roughly 20–30 days. JD Technology GEO, backed by mature technical methods and high-authority content templates, approaches the problem across multiple scenarios and audience segments, lifting core metrics significantly in just 1–2 weeks."
             },
             {
               "type": "table",
@@ -1324,7 +1287,7 @@ window.SITE_DATA_EN = {
                 "Metric",
                 "Before",
                 "After",
-                "Lift"
+                "MoM Growth"
               ],
               "numCols": [
                 2,
@@ -1344,7 +1307,7 @@ window.SITE_DATA_EN = {
                   "TOP-3 recommendation",
                   "8.49%",
                   "90.36%",
-                  "+81.87PP"
+                  "—"
                 ],
                 [
                   "Cookware · Where do I buy pots with safe materials?",
@@ -1365,7 +1328,7 @@ window.SITE_DATA_EN = {
                   "TOP-3 recommendation",
                   "8.06%",
                   "68.14%",
-                  "+60.08PP"
+                  "—"
                 ],
                 [
                   "Services · Where can I book a reliable home cleaning service?",
@@ -1393,7 +1356,7 @@ window.SITE_DATA_EN = {
                   "Brand visibility",
                   "60.62%",
                   "81.06%",
-                  "+20.44PP"
+                  "+20.98PP"
                 ]
               ],
               "note": "For cookware, information implanted across major AI platforms covers a varied range of styles, food-grade material certification and genuine after-sales guarantees. For services, the work focuses on the core requirement of \"self-operated and legitimate, transparent pricing, after-sales backup\"."
@@ -1468,7 +1431,7 @@ window.SITE_DATA_EN = {
                 [
                   "Dedicated landing page",
                   "Not possible",
-                  "AI platforms do not currently allow answers to link out directly to a brand's own landing page"
+                  "AI platforms do not allow direct outbound links to brand landing pages; it remains a redirect"
                 ]
               ],
               "numCols": [
@@ -1590,7 +1553,7 @@ window.SITE_DATA_EN = {
                   "no": "A",
                   "title": "Available now",
                   "list": [
-                    "Brand exposure monitoring (brand mention rate in AI answers)",
+                    "Brand exposure monitoring (mention rate in AI answers)",
                     "Ranking monitoring (top position in the recommendation order)",
                     "Citation monitoring (sources and citation counts)",
                     "Product-card exposure optimisation (Yuanbao, Doubao)"
@@ -1728,7 +1691,7 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "tone": "neutral",
               "title": "Commitment boundary",
-              "desc": "Performance commitments cover only monitorable metrics such as mention rate and TOP-3 recommendation rate, measured on the agreed monitoring standard with original answer snapshots. Cards and sales provide platform and order evidence for reviews but are never committed outcomes — scenarios we cannot attribute are stated plainly and kept out of the KPI."
+              "desc": "Performance commitments cover only monitorable metrics such as exposure rate and top-three rate, evidenced by platform dashboards. Cards and sales provide evidence for reviews but are never committed outcomes — scenarios we cannot attribute are stated plainly and kept out of the KPI."
             }
           ]
         },
@@ -1750,17 +1713,17 @@ window.SITE_DATA_EN = {
                 {
                   "no": "01",
                   "title": "JD Ecosystem Data Advantage",
-                  "desc": "Fuses trending-search data from Doubao (exclusive), JD.com, Xiaohongshu, Douyin, WeChat and Weibo, so the questions we optimise track real user intent more closely."
+                  "desc": "Fuses trending-search data from Doubao (exclusive), JD.com, Xiaohongshu, Douyin, WeChat and Weibo, so the questions we optimise are more accurate."
                 },
                 {
                   "no": "02",
                   "title": "No-publishing optimisation — no media buy required",
-                  "desc": "No reliance on publishing articles and no article-by-article client review: citation optimisation and structured schema bring the brand into the chain AI cites first. Live in as little as two weeks, with mention rates typically above 60%."
+                  "desc": "No articles and no client-side content review: citation optimisation and structured schema put the brand into the answer chain AI cites first. Live in as little as two weeks, with mention rates typically above 60%."
                 },
                 {
                   "no": "03",
                   "title": "Validated Across Industries",
-                  "desc": "Validated in 3C, home appliances, home services, healthcare, financial services, travel and culture, and more. The GEO team that serves JD's own businesses now serves clients — methods are proven in-house before delivery."
+                  "desc": "Proven in 3C, home appliances, travel and culture and other industries. The GEO team that builds it for JD.com now brings that capability to clients, so optimisation quality is better guaranteed."
                 }
               ]
             },
@@ -1774,7 +1737,7 @@ window.SITE_DATA_EN = {
               "type": "compare",
               "head": [
                 "Publishing route (common practice)",
-                "No-publishing route (JD Technology default)"
+                "No-publishing route (JD Cloud default)"
               ],
               "rows": [
                 [
@@ -1820,7 +1783,7 @@ window.SITE_DATA_EN = {
               "items": [
                 {
                   "title": "Full-Platform Coverage",
-                  "desc": "Fits mainstream AI platforms including Doubao, Qwen, DeepSeek, Tencent Yuanbao, Kimi and ERNIE Bot."
+                  "desc": "Fits mainstream AI platforms including Doubao, DeepSeek, Tencent Yuanbao, Kimi and Baidu ERNIE Bot."
                 },
                 {
                   "title": "Kickoff in 1 Week",
@@ -1918,15 +1881,15 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "q": "How soon do results show?",
-                  "a": "The first 1–2 weeks after kickoff are the ramp-up phase; core metrics can move in as little as two weeks and stabilise from week 3. From the cases on this page: a chip platform lifted overall share of exposure from 34% to 65% in the first month, and a PC brand's new product went from 3% to 24%."
+                  "a": "The first 1–2 weeks after kickoff are the ramp-up phase, with visible results from week 3. In past cases, some brands lifted visibility from 10% to over 75% within a month and a half."
                 },
                 {
                   "q": "Which industries suit GEO?",
-                  "a": "Industries with proven deployments include 3C, home appliances, home services, healthcare, financial services, travel and culture, industrial and B2B, and skincare and cosmetics — see the Solutions menu for each. Any industry where users rely on AI search for purchase or procurement decisions is a good fit."
+                  "a": "Industries already validated include automotive, financial services, maternal and baby, 3C and home appliances, FMCG, education and training, enterprise services, travel and culture, and health supplements. Any industry where consumers use AI search to make purchase decisions is a good fit."
                 },
                 {
                   "q": "What does the client need to do?",
-                  "a": "On the default no-publishing route, very little — one set of core brand materials, 15 minutes a week to accept results, and 30 minutes a month to join the review. If publishing or a knowledge base is needed, you also confirm external messaging and authoritative materials as required."
+                  "a": "Minimal — one set of core brand materials, 15 minutes a week to accept results, and 30 minutes a month to join the review."
                 },
                 {
                   "q": "What if results fall short?",
@@ -1934,32 +1897,11 @@ window.SITE_DATA_EN = {
                 },
                 {
                   "q": "Which AI platforms are covered?",
-                  "a": "In China: Doubao, Qwen, DeepSeek, Tencent Yuanbao, Kimi, ERNIE Bot and other mainstream AI platforms. Overseas: ChatGPT, Gemini, Claude, Perplexity and more — see the Overseas GEO Solution. 10+ large-model platforms in total."
+                  "a": "All mainstream AI platforms today, including DeepSeek, Doubao, Kimi, Tencent Yuanbao, Baidu ERNIE Bot, ChatGPT, Claude and 10+ large models in total."
                 },
                 {
                   "q": "What are the core deliverables?",
-                  "a": "An AI market status analysis report, a tailored GEO service plan, a brand-specific knowledge base, content distribution and indexing monitoring reports, and periodic GEO performance reports (with changes in citation rate, mention rate, TOP-3 recommendation rate and other key metrics)."
-                }
-              ]
-            },
-            {
-              "type": "cta",
-              "title": "Start with an AI Perception Audit",
-              "desc": "In week 1 of a project you receive baseline data across mainstream AI platforms, a competitor comparison and recommended KPIs. For project enquiries, contact your JD Technology sales or project lead.",
-              "buttons": [
-                {
-                  "label": "Visit geo.jdcloud.com",
-                  "href": "https://geo.jdcloud.com/"
-                },
-                {
-                  "label": "Enterprise GEO Platform",
-                  "href": "platform.html",
-                  "style": "ghost"
-                },
-                {
-                  "label": "Overseas GEO Solution",
-                  "href": "overseas.html",
-                  "style": "ghost"
+                  "a": "An AI market status analysis report, a tailored GEO service plan, a brand-specific knowledge base, content distribution and indexing monitoring reports, and periodic GEO performance reports (with changes in adoption rate, mention rate, TOP-3 ranking rate and other key metrics)."
                 }
               ]
             }
