@@ -94,6 +94,23 @@ run('git', ['fetch', '-q', 'origin', BRANCH], { cwd: tmp, env: gitEnv });
 run('git', ['checkout', '-q', '-B', BRANCH, `origin/${BRANCH}`], { cwd: tmp, env: gitEnv });
 ok(`已克隆 ${REPO} (${BRANCH})`);
 
+/* ---- 1.5 防覆盖闸门 ----
+   本脚本是「整树覆盖」式推送。若仓库在上次推送之后又被别处改过（例如设计分支合并、
+   他人直接提交），直接推会把那些改动抹掉。这里比对上次推送时的 HEAD，不一致就中止。 */
+const STATE = path.join(SRC, '.push-state.json');
+let lastSha = null;
+try { lastSha = JSON.parse(fs.readFileSync(STATE, 'utf8')).sha; } catch (e) { lastSha = null; }
+const headSha = run('git', ['rev-parse', 'HEAD'], { cwd: tmp }).trim();
+if (lastSha && lastSha !== headSha && process.env.PUSH_FORCE !== '1') {
+  console.error('✗ 仓库在上次推送后被其他来源改过，已中止以免覆盖：');
+  console.error(`    上次推送 HEAD：${lastSha.slice(0, 8)}`);
+  console.error(`    当前仓库 HEAD：${headSha.slice(0, 8)}`);
+  console.error('  处理：先把远端改动取回本工作区并合并，再重新推送；');
+  console.error('  确认要强制覆盖时，运行  PUSH_FORCE=1 node tools/push-github.js');
+  fs.rmSync(tmp, { recursive: true, force: true });
+  process.exit(1);
+}
+
 /* ---- 2. 同步文件 ---- */
 for (const item of ITEMS) {
   const from = path.join(SRC, item);
@@ -148,6 +165,10 @@ const status = run('git', ['status', '--porcelain'], { cwd: tmp }).trim();
 
 if (!status) {
   console.log('\n· 本地与 GitHub 完全一致，无需提交');
+  try {
+    fs.writeFileSync(path.join(SRC, '.push-state.json'),
+      JSON.stringify({ sha: headSha, at: new Date().toISOString() }, null, 2));
+  } catch (e) {}
   fs.rmSync(tmp, { recursive: true, force: true });
   process.exit(0);
 }
@@ -163,7 +184,15 @@ ok(`已提交 ${sha}`);
 run('git', ['push', 'origin', `${BRANCH}:${BRANCH}`], { cwd: tmp, env: gitEnv });
 ok(`已推送到 ${BRANCH}`);
 
+/* 推送成功后再取 HEAD，随后删临时目录 */
+const pushedSha = run('git', ['rev-parse', 'HEAD'], { cwd: tmp }).trim();
 fs.rmSync(tmp, { recursive: true, force: true });
+
+/* 记录本次推送后的 HEAD，供下次推送做防覆盖比对 */
+try {
+  fs.writeFileSync(path.join(SRC, '.push-state.json'),
+    JSON.stringify({ sha: pushedSha, at: new Date().toISOString() }, null, 2));
+} catch (e) {}
 
 const user = REPO.split('/')[0];
 const name = REPO.split('/')[1];
