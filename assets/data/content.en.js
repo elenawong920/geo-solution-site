@@ -4359,6 +4359,107 @@ window.SITE_DATA_EN = {
         },
         {
           "type": "section",
+          "id": "ai-doctor",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "A First-Party AI Entry",
+              "title": "Beyond Public AI: JD Health Is Itself an AI Health Entry",
+              "desc": "In public AI, pharma brands compete to be recommended. Inside JD Health’s AI doctor, answers and product cards can be designed together with the platform. Running both is what a complete AI footprint looks like."
+            },
+            {
+              "type": "stats",
+              "items": [
+                {
+                  "value": "150M",
+                  "label": "Users served by the AI doctor"
+                },
+                {
+                  "value": "98%",
+                  "label": "Proactive positive rating"
+                },
+                {
+                  "value": "317",
+                  "label": "Standard care pathways"
+                },
+                {
+                  "value": "88.9",
+                  "label": "Top score on MedBench"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Placement",
+                "What the brand can do"
+              ],
+              "rows": [
+                [
+                  "Question and answer",
+                  "Questions are generated from user behaviour (BI) and both question and answer can be shaped, putting the brand into the first answer users see"
+                ],
+                [
+                  "Product card",
+                  "Matching a configured Q&A surfaces the brand product card, joining answer and shelf in one step"
+                ],
+                [
+                  "Brand and generic-name exposure",
+                  "The brand name and generic name appear in the answer, capturing “which brand of X is best” questions"
+                ],
+                [
+                  "Brand card with product strengths",
+                  "The card carries dosage form, pack size and suitable users, cutting the cost of understanding"
+                ],
+                [
+                  "Priority product card",
+                  "The card sits higher in the result block and is seen first"
+                ],
+                [
+                  "Priority one-tap purchase",
+                  "The user moves from answer to checkout directly — the shortest path"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "Placements available for commercial cooperation in the JD Health AI doctor; final format and display rules are agreed case by case. Live in categories including vitamins, fish oil and medical skincare."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Entry point",
+                  "desc": "JD app home → internet hospital / pharmacy / health"
+                },
+                {
+                  "no": "02",
+                  "title": "Talk to the AI doctor",
+                  "desc": "Multi-turn Q&A · visual components capture symptoms"
+                },
+                {
+                  "no": "03",
+                  "title": "Intent matched",
+                  "desc": "A BI-generated question hits the configured set"
+                },
+                {
+                  "no": "04",
+                  "title": "Answer plus card",
+                  "desc": "Evidence-based answer carries the brand card and one-tap purchase"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Where the two paths differ",
+              "desc": "Placements in the first-party entry are set by the platform and the agreement, so they are highly controllable. Public AI recommendations are decided by models and sources and can only be influenced through content and citations. They cannot share one metric set: public AI is judged on mention and top-three rates, the first-party entry on impressions, clicks and conversion."
+            }
+          ]
+        },
+        {
+          "type": "section",
           "id": "cases",
           "tone": "dark",
           "blocks": [
