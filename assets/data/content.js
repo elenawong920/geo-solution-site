@@ -740,7 +740,7 @@ window.SITE_DATA = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "数据月份：2026 年 9 月 · 来源：AI 产品榜（网站榜）· 国内 TOP10 · 单位：月访问量（含重复访问）。",
+                      "note": "数据月份：2026 年 10 月 · 来源：AI 产品榜（网站榜）· 国内 TOP10 · 单位：月访问量（含重复访问）。",
                       "items": [
                         {
                           "label": "DeepSeek",
@@ -801,7 +801,7 @@ window.SITE_DATA = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "来源：OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：T = 万亿 Token/周。",
+                      "note": "截至 2026-11-22 · 来源：OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：T = 万亿 Token/周。",
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",

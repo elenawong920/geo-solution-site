@@ -379,6 +379,10 @@ def main() -> None:
         raise SystemExit("A 栏分组解析失败，已中止，不写入站点")
 
     date_tags = [clean(x) for x in re.findall(r'<div class="col-date">([\s\S]*?)</div>', source)]
+    # 参照栏（col-a2，QuestMobile 口径）也带 col-date，需剔除，否则三栏日期会整体错位
+    main_tags = [x for x in date_tags if "最新数据日期" in x]
+    if len(main_tags) >= 3:
+        date_tags = main_tags
     if len(date_tags) < 3:
         raise SystemExit("未读取到三栏日期口径，已中止")
     parsed["dates"]["a"], parsed["dates"]["b"], parsed["dates"]["c"] = date_tags[:3]

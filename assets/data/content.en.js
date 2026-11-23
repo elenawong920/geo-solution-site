@@ -740,7 +740,7 @@ window.SITE_DATA_EN = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "Data month: 2026-09 · Source: AI Product Rankings (website list) · China TOP 10 · Unit: monthly visits (includes repeat visits).",
+                      "note": "Data month: 2026-10 · Source: AI Product Rankings (website list) · China TOP 10 · Unit: monthly visits (includes repeat visits).",
                       "items": [
                         {
                           "label": "DeepSeek",
@@ -801,7 +801,7 @@ window.SITE_DATA_EN = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week.",
+                      "note": "As of 2026-11-22 · Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week.",
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
