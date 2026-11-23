@@ -11206,7 +11206,7 @@ window.SITE_DATA_EN = {
             1
           ],
           "desc": "Parents and students ask AI which institution is best and whether a programme is worth it. Whether you appear in that answer decides whether they ever contact you.",
-          "sub": "Universities · public-sector training · K12 enrichment · study abroad · 2026",
+          "sub": "Universities · study abroad · K12 enrichment · vocational certification · 2026",
           "buttons": [
             {
               "label": "See the evidence",
@@ -11435,7 +11435,7 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "How",
               "title": "Visible Offline, Answered Online",
-              "desc": "Universities and public institutions have long approval chains and must report upward: online-only work is invisible to leadership, offline-only spend disappears with the campaign. Connecting both completes the budget story."
+              "desc": "Universities have long approval chains and must report upward: online-only work is invisible to leadership, offline-only spend disappears with the campaign. Connecting both completes the budget story."
             },
             {
               "type": "flow",
@@ -11494,8 +11494,18 @@ window.SITE_DATA_EN = {
               "numCols": [
                 0
               ],
-              "stack": true,
-              "note": "One poster carries one question — the sentence a parent would actually ask — and points to a single action: search it on DeepSeek. The poster raises the question; the answer asset catches it."
+              "stack": true
+            },
+            {
+              "type": "gallery",
+              "layout": "stack",
+              "items": [
+                {
+                  "src": "assets/img/edu-poster-kv.jpg",
+                  "alt": "Example campus poster: one question — which university should I choose — pointing to a DeepSeek search",
+                  "cap": "<b>One poster, one question</b>　The headline is the sentence a parent would actually ask, and the call to action is always the same: search it on DeepSeek. The poster raises the question, the answer asset catches it — by the time they finish typing, they can see the university recommended by AI."
+                }
+              ]
             }
           ]
         },

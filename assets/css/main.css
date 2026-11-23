@@ -701,6 +701,7 @@ body.nav-open .nav__toggle span:nth-child(3) { transform: translateY(-5.5px) rot
 .compare + .notice { margin-top: 18px; }
 .cards + .flow { margin-top: 18px; }
 .flow + .notice { margin-top: 18px; }
+.table-wrap + .gallery { margin-top: 18px; }
 .cards--2 { grid-template-columns: repeat(2, 1fr); }
 .cards--3 { grid-template-columns: repeat(3, 1fr); }
 .cards--4 { grid-template-columns: repeat(4, 1fr); }
