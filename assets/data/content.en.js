@@ -45,6 +45,14 @@ window.SITE_DATA_EN = {
             "href": "education.html"
           },
           {
+            "text": "Local Services Solution",
+            "href": "local.html"
+          },
+          {
+            "text": "FMCG Solution",
+            "href": "fmcg.html"
+          },
+          {
             "text": "Culture and Tourism Solution",
             "href": "tourism.html"
           },
@@ -173,6 +181,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -2035,6 +2051,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3252,6 +3276,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3811,6 +3843,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3845,6 +3885,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -4999,6 +5047,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -5033,6 +5089,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -5688,6 +5752,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -5721,6 +5793,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -6324,6 +6404,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -6357,6 +6445,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -7076,6 +7172,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -7109,6 +7213,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -8017,6 +8129,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -8050,6 +8170,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -8931,6 +9059,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -9732,6 +9868,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -10408,6 +10552,14 @@ window.SITE_DATA_EN = {
             {
               "label": "Education & Training",
               "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -11142,6 +11294,14 @@ window.SITE_DATA_EN = {
               "href": "education.html"
             },
             {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -11176,6 +11336,14 @@ window.SITE_DATA_EN = {
               "label": "Education & Training",
               "href": "education.html",
               "active": true
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
             },
             {
               "label": "Culture & Tourism",
@@ -11789,6 +11957,1209 @@ window.SITE_DATA_EN = {
                   "note": "Vocational training is judged on cost per lead. GEO shows up directly in acquisition cost and sales cycle."
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "local": {
+      "title": "Local Services Solution",
+      "nav": [
+        {
+          "label": "Why Now",
+          "href": "#shift"
+        },
+        {
+          "label": "Four Blind Spots",
+          "href": "#pain"
+        },
+        {
+          "label": "Method",
+          "href": "#method"
+        },
+        {
+          "label": "Metrics",
+          "href": "#kpi"
+        },
+        {
+          "label": "Delivery",
+          "href": "#delivery"
+        },
+        {
+          "label": "Cases",
+          "href": "#cases"
+        },
+        {
+          "label": "Contact",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html",
+              "active": true
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for Local Services",
+          "title": [
+            "Make Your Service Brand",
+            "The Default Answer"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "Users no longer search for “house cleaning”. They ask which appliance cleaning service nearby is reliable. Miss that answer and you are not even compared.",
+          "sub": "Home services · laundry · appliance cleaning · repair · food delivery · 2026.11",
+          "buttons": [
+            {
+              "label": "Two live projects",
+              "href": "#cases"
+            },
+            {
+              "label": "The four-step loop",
+              "href": "#method",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "9.8→72.5%",
+              "label": "House-cleaning visibility"
+            },
+            {
+              "value": "930/930",
+              "label": "Delivery checkpoints met"
+            },
+            {
+              "value": "18 terms",
+              "label": "Four-dimension question set"
+            },
+            {
+              "value": "Daily",
+              "label": "Monitoring cadence"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "shift",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Why Now",
+              "title": "From Scrolling Three Pages to Asking One Question",
+              "desc": "For the same immediate need, the length of the path decides whether a service brand is seen at all."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Then · search-driven",
+                "Now · conversation-driven"
+              ],
+              "rows": [
+                [
+                  "Starting point",
+                  "Search “house cleaning / delivery app”",
+                  "“Which appliance cleaning nearby is reliable?”"
+                ],
+                [
+                  "Process",
+                  "Scroll, compare prices, read reviews",
+                  "AI gives three answers, order directly"
+                ],
+                [
+                  "Brand chance",
+                  "Rank on the first pages and you are compared",
+                  "Not in the answer, not even compared"
+                ],
+                [
+                  "Conclusion",
+                  "Compete for ranking",
+                  "Compete to be in the answer"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In one line",
+              "desc": "Local services compete for a seat in the answer. Ranking low still leaves a chance to be found; absent from the answer means absent."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "pain",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Four Blind Spots",
+              "title": "Immediacy, Context, Trust, Offers — the Hardest Things for a Machine to Read",
+              "desc": "More content will not fix it. These things have to be translated into citable facts."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Immediacy and location",
+                  "desc": "“Nearby” and “can you come today” carry time and location constraints AI cannot verify, so it defaults to not recommending.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Colloquial context",
+                  "desc": "Users say “hungry at midnight” or “cheap with kids”, but sources carry no matching scenario language.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Service promises",
+                  "desc": "Self-operated, certified staff, compensation and warranty are the trust anchors, yet they sit deep in detail pages AI never reads.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "Offers and entitlements",
+                  "desc": "Coupons, membership benefits and claim paths drive conversion but hide in campaign pages AI cannot repeat.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Before · brand language",
+                "After · repeatable claims"
+              ],
+              "rows": [
+                [
+                  "Original",
+                  "“Our delivery offers are generous, membership is great value, come and try.”",
+                  "“Every day 08:00–23:00, grab delivery vouchers on the hour, usable at a million merchants; open the app, switch to instant delivery, search the code to claim. Members get discount bundles and extra benefits.”"
+                ],
+                [
+                  "Repeatable elements",
+                  "0",
+                  "5: timing · value · scope · path · entitlement"
+                ],
+                [
+                  "What AI can do",
+                  "Mention the brand name",
+                  "Repeat when, how much, who can use it, how to claim"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Three rewriting moves",
+              "desc": "(1) State when and how much; (2) write the full path from app to channel to code; (3) say who can use it and what it includes, so AI dares to repeat it."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "method",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Method",
+              "title": "Users Do Not Ask Category Words — They Ask About Their Situation",
+              "desc": "Cross context, audience, need and time to get a real cluster of questions that carry transaction intent — 18 high-value prompts per category."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Dimension",
+                "Example values",
+                "A matching question"
+              ],
+              "rows": [
+                [
+                  "Context",
+                  "Ordering · cleaning · laundry · repair",
+                  "“Where can I book a reliable cleaning service?”"
+                ],
+                [
+                  "Audience",
+                  "Students · parents · fitness · groups · new users",
+                  "“Which delivery app is safest with kids?”"
+                ],
+                [
+                  "Need",
+                  "Value · reliability · discounts · speed",
+                  "“What offers do first-time delivery users get?”"
+                ],
+                [
+                  "Timing",
+                  "Breakfast · late night · weekend · weekday",
+                  "“Where can I book appliance cleaning at home?”"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Monitor",
+                  "desc": "Real prompts × two platforms, daily re-test"
+                },
+                {
+                  "no": "02",
+                  "title": "Attribute",
+                  "desc": "Trace each gap to a specific phrasing or source"
+                },
+                {
+                  "no": "03",
+                  "title": "Rebuild",
+                  "desc": "Rewrite claims and offers to be citable"
+                },
+                {
+                  "no": "04",
+                  "title": "Amplify",
+                  "desc": "Expand the source whitelist, weighted by platform"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Why daily",
+              "desc": "Local-service prompts carry time constraints — “tonight”, “nearby” — so answers change daily. Weekly sampling misses the drop."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Metrics",
+              "title": "Exposure Alone Is Not Enough — Position and Consistency Matter",
+              "desc": "Track exposure, position, claim recall and consecutive attainment; every conclusion drills down to a specific prompt."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Seen",
+                  "desc": "Brand exposure rate: share of target prompts mentioning the brand.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Accurate",
+                  "desc": "Claim recall rate: share of prompts repeating the specified offer or benefit.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Preferred",
+                  "desc": "Top-three recommendation rate.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "First",
+                  "desc": "Top-one rate: share of prompts ranking the brand first.",
+                  "list": []
+                },
+                {
+                  "no": "05",
+                  "title": "Consistent",
+                  "desc": "Attainment rate: checkpoints meeting KPI over total checkpoints.",
+                  "list": []
+                },
+                {
+                  "no": "06",
+                  "title": "Foundation",
+                  "desc": "Source scale: cumulative whitelisted sources and their structure.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "One definition",
+              "desc": "Drillable by business line, brand, platform and prompt; daily monitoring, monthly reviews — no argument over definitions at close-out."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery",
+              "title": "Four Standard Stages, Daily Monitoring, Monthly Review",
+              "desc": "A fixed cadence is what turns GEO from a one-off project into a standing capability."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Scope and diagnose",
+                  "desc": "Align business, platforms, KPI · brand visibility audit"
+                },
+                {
+                  "no": "02",
+                  "title": "Definitions and assets",
+                  "desc": "Offer-claim boundaries · claim and script library"
+                },
+                {
+                  "no": "03",
+                  "title": "Content and sources",
+                  "desc": "Claims and Q&A · platform-weighted distribution"
+                },
+                {
+                  "no": "04",
+                  "title": "Monitor and review",
+                  "desc": "Daily sampling on two platforms · weekly tracking, monthly report"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Cadence",
+                "What happens",
+                "Trigger"
+              ],
+              "rows": [
+                [
+                  "Monthly",
+                  "Attainment, gap movement and next month’s action list",
+                  "Routine"
+                ],
+                [
+                  "Quarterly",
+                  "KPI thresholds raised by stage (e.g. 40% → 60%, add TOP1)",
+                  "Stage review"
+                ],
+                [
+                  "Real time",
+                  "Exposure down week on week or negative coverage — respond fast",
+                  "Alert"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "Team: one strategist, two content, one data, one platform operations, plus a dedicated contact; surge response during promotions and holidays."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Cases",
+              "title": "Two Businesses, One Method",
+              "desc": "JD Services and JD Delivery: one fights for brand position across home-service categories, the other for consistent exposure in delivery."
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "A",
+                  "tag": "JD Services · home services",
+                  "title": "Four service categories lift together",
+                  "sub": "Cleaning, laundry, appliance cleaning and repair · Doubao + DeepSeek + Qwen · 4 core prompts · KPI: top-three ≥60%",
+                  "metrics": [
+                    {
+                      "label": "Cleaning visibility",
+                      "value": "9.8→72.51%"
+                    },
+                    {
+                      "label": "Cleaning top-three",
+                      "value": "12.06→65.36%"
+                    },
+                    {
+                      "label": "Laundry visibility",
+                      "value": "33.17→77.58%"
+                    },
+                    {
+                      "label": "Repair visibility",
+                      "value": "60.62→81.06%"
+                    }
+                  ],
+                  "pains": [
+                    "All four categories below 35% visibility",
+                    "Top-three rates mostly between 10% and 30%",
+                    "Trust signals — self-operated, certified staff, warranty — unread by AI"
+                  ],
+                  "solutions": [
+                    "Rewrite facts around reliability, price, home visit and after-sales",
+                    "Translate certification, process and warranty into checkable statements",
+                    "Optimise four categories in parallel to prove reusability"
+                  ],
+                  "note": "All four rose at once, so the method does not depend on one category being special — that is the basis for replicating across a multi-line group."
+                },
+                {
+                  "no": "B",
+                  "tag": "JD Delivery · instant retail",
+                  "title": "Fifteen prompts, full attainment for two months",
+                  "sub": "Doubao + DeepSeek · 15 exposure prompts · 90% KPI · consecutive attainment (in progress)",
+                  "metrics": [
+                    {
+                      "label": "Month-two attainment",
+                      "value": "100%"
+                    },
+                    {
+                      "label": "Checkpoints",
+                      "value": "480→930"
+                    },
+                    {
+                      "label": "Source whitelist",
+                      "value": "60→110"
+                    },
+                    {
+                      "label": "Average exposure",
+                      "value": "92%"
+                    }
+                  ],
+                  "pains": [
+                    "High-frequency instant scenario where answers shift with offers and time of day",
+                    "Checkpoints expand monthly, raising the bar continuously",
+                    "Claim recall needs stable triggers"
+                  ],
+                  "solutions": [
+                    "Daily monitoring by prompt, platform and day with instant alerts",
+                    "Whitelist expanded from 60 to 110 sources across news, content and deal guides",
+                    "Write time, amount, scope and claim path as repeatable claims"
+                  ],
+                  "note": "Delivery is a high-frequency instant decision — with expression and sources solid, exposure sits above the KPI line; claim recall comes from highly relevant phrasing."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What both share",
+              "desc": "A single hit comes from content; consistency comes from mechanism — context alignment, source weighting, recommendation reinforcement and output constraints together."
+            }
+          ]
+        }
+      ]
+    },
+    "fmcg": {
+      "title": "FMCG Solution",
+      "nav": [
+        {
+          "label": "Why Now",
+          "href": "#shift"
+        },
+        {
+          "label": "Four Blind Spots",
+          "href": "#pain"
+        },
+        {
+          "label": "Method",
+          "href": "#method"
+        },
+        {
+          "label": "Metrics",
+          "href": "#kpi"
+        },
+        {
+          "label": "Delivery",
+          "href": "#delivery"
+        },
+        {
+          "label": "Cases",
+          "href": "#cases"
+        },
+        {
+          "label": "Contact",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
+              "label": "Local Services",
+              "href": "local.html"
+            },
+            {
+              "label": "FMCG",
+              "href": "fmcg.html",
+              "active": true
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for FMCG",
+          "title": [
+            "Seen, Stated Correctly",
+            "and Trusted in AI Answers"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "Users no longer type “diapers” — they ask which nappy stops leaks at night. AI returns three answers, and whether your product card is among them decides who wins the order.",
+          "sub": "Baby care · festive gift boxes · ambient dairy · household care · 2026.11",
+          "buttons": [
+            {
+              "label": "Three anonymised cases",
+              "href": "#cases"
+            },
+            {
+              "label": "The four-step loop",
+              "href": "#method",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "0→64%",
+              "label": "Baby-care SKU visibility"
+            },
+            {
+              "value": "81.3%",
+              "label": "Dairy claim recall"
+            },
+            {
+              "value": "40+",
+              "label": "Four-dimension clusters"
+            },
+            {
+              "value": "Biweekly",
+              "label": "Monitoring cadence"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "shift",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Why Now",
+              "title": "From Scrolling Three Pages to Reading Three Sentences",
+              "desc": "For the same purchase intent, path length decides whether a brand is seen."
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Then · search-driven",
+                "Now · conversation-driven"
+              ],
+              "rows": [
+                [
+                  "Starting point",
+                  "Type a category word: “nappies / mooncakes”",
+                  "“Which nappy for a baby that leaks at night?”"
+                ],
+                [
+                  "Process",
+                  "Browse products, compare, read reviews",
+                  "AI gives three answers, tap into the product page"
+                ],
+                [
+                  "Brand chance",
+                  "Rank on the first pages and you are compared",
+                  "Not in the answer, not even compared"
+                ],
+                [
+                  "Conclusion",
+                  "Compete for ranking",
+                  "Compete to be in the answer"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "In one line",
+              "desc": "FMCG competes for a seat in the answer. Social content decides whether people talk about you; fields and facts decide whether AI dares to put you in those three sentences."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "pain",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Four Blind Spots",
+              "title": "Colloquial, Sensory, Bundled, Undeclared — the Hardest Things for a Machine to Read",
+              "desc": "Not more content, but turning the most colloquial and sensory parts into citable fact sentences."
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Colloquial context",
+                  "desc": "Users say “leaks” or “looks good as a gift”, but titles carry no matching scenario word, so AI cannot map need to product.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Sensory claims",
+                  "desc": "“Almost like fresh milk” and “tastes fresh” are subjective; AI only trusts verifiable process and ingredient facts.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Bundled SKUs",
+                  "desc": "A gift box is just several items in the catalogue — AI cannot recognise it as one gift set.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "Undeclared audience",
+                  "desc": "Without an explicit “suitable for whom” (sensitive skin, newborns, bulk buyers), AI will not recommend.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "compare",
+              "head": [
+                "Before · brand language",
+                "After · citable facts"
+              ],
+              "rows": [
+                [
+                  "Original",
+                  "“A new premium ambient milk, pure as fresh milk, tasty and fresh.”",
+                  "“Ambient pure milk, ultra-instant sterilisation; taste close to fresh milk, no refrigeration; suited to bulk buying and daily drinking.”"
+                ],
+                [
+                  "Citable elements",
+                  "0",
+                  "5: category · process · taste · storage · scenario"
+                ],
+                [
+                  "What AI can do",
+                  "Mention the brand name",
+                  "Say what it is and who it suits, and match parameters in the product card"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Three rewriting moves",
+              "desc": "(1) State what it is; (2) give objective parameters — process, pack size, ingredients, scenario; (3) declare who it suits."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "method",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Method",
+              "title": "Users Do Not Ask Category Words — They Ask About Their Situation",
+              "desc": "Cross context, audience, sensory benefit and budget for 40+ question clusters that carry purchase intent — exactly where AI product cards land."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Dimension",
+                "Example values",
+                "A matching question"
+              ],
+              "rows": [
+                [
+                  "Context",
+                  "Night use · gifting · reunion · stock-up · souvenir",
+                  "“Which nappy for a baby that leaks at night?”"
+                ],
+                [
+                  "Audience",
+                  "Newborn · sensitive skin · mothers · families",
+                  "“Recommended pull-up brands for sensitive skin”"
+                ],
+                [
+                  "Benefit",
+                  "Leak-proof · close to fresh milk · clean label",
+                  "“Which ambient milk tastes closest to fresh?”"
+                ],
+                [
+                  "Budget",
+                  "Premium · upper-mid · value",
+                  "“A respectable mooncake gift box for clients”"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Monitor",
+                  "desc": "Real prompts × multiple platforms, re-tested biweekly"
+                },
+                {
+                  "no": "02",
+                  "title": "Attribute",
+                  "desc": "Trace gaps to specific fields and sources"
+                },
+                {
+                  "no": "03",
+                  "title": "Rebuild",
+                  "desc": "Rewrite content and fields to be citable"
+                },
+                {
+                  "no": "04",
+                  "title": "Amplify",
+                  "desc": "Distribute by platform, weighted to each one’s behaviour"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Content alone is not enough",
+              "desc": "Platforms read structured facts, not advertorials. With content but no fields, AI mentions the brand but cannot render the product card — exposure without sales."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Metrics",
+              "title": "Visibility, Position and Conversion Together",
+              "desc": "Not mentions alone, but exposure, position, citation and traffic — drillable by category, brand, platform and prompt."
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Seen",
+                  "desc": "Brand / SKU exposure rate on target prompts.",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "Accurate",
+                  "desc": "Claim recall rate: how often product claims are repeated.",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "Preferred",
+                  "desc": "Top-three position rate.",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "Credible",
+                  "desc": "Content adoption rate: share of answers citing your sources.",
+                  "list": []
+                },
+                {
+                  "no": "05",
+                  "title": "Competitive",
+                  "desc": "Competitor position / share of voice in answers.",
+                  "list": []
+                },
+                {
+                  "no": "06",
+                  "title": "Commercial",
+                  "desc": "AI-channel store visits and conversion.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "One definition",
+              "desc": "Drillable by category, brand, platform and prompt with a weekly dashboard — no argument over definitions at close-out."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery",
+              "title": "Four Standard Stages, Biweekly Monitoring, Monthly Review",
+              "desc": "A fixed cadence is what turns GEO from a one-off project into a standing capability."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Scope and diagnose",
+                  "desc": "Align category, platforms, KPI · brand and competitor audit"
+                },
+                {
+                  "no": "02",
+                  "title": "Definitions and assets",
+                  "desc": "Fact boundaries · knowledge base, FAQ, fact sentences"
+                },
+                {
+                  "no": "03",
+                  "title": "Content and sources",
+                  "desc": "Fact sentences and Q&A · weighted distribution"
+                },
+                {
+                  "no": "04",
+                  "title": "Monitor and review",
+                  "desc": "Multi-model sampling · weekly and monthly reports"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Cadence",
+                "What happens",
+                "Trigger"
+              ],
+              "rows": [
+                [
+                  "Monthly",
+                  "Attainment, gap movement and next month’s actions",
+                  "Routine"
+                ],
+                [
+                  "Quarterly",
+                  "Re-plan content as platform algorithms and model versions change",
+                  "Quarterly review"
+                ],
+                [
+                  "Real time",
+                  "Exposure down 20% week on week, or negative coverage — respond within 48 hours",
+                  "Alert"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "Team: one strategist, two content, one data, one platform operations, plus a dedicated contact; surge response during promotions and holidays."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Cases",
+              "title": "Three Categories, Three Scenarios, One Method",
+              "desc": "Baby care, festive gift boxes and ambient dairy; brands anonymised, figures from project reviews."
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "A",
+                  "tag": "Baby care · premium pull-ups",
+                  "title": "From zero to 100% attainment",
+                  "sub": "A baby-care brand · Doubao single platform · 5 core prompts · 44 days",
+                  "metrics": [
+                    {
+                      "label": "SKU visibility",
+                      "value": "0 → 64%"
+                    },
+                    {
+                      "label": "KPI met",
+                      "value": "5/5"
+                    },
+                    {
+                      "label": "Attainment days",
+                      "value": "21–27"
+                    },
+                    {
+                      "label": "Sources",
+                      "value": "85"
+                    }
+                  ],
+                  "pains": [
+                    "All five prompts at 0% visibility — the brand was outside the candidate pool",
+                    "Visibility concentrated in a few scenarios with a single-source profile",
+                    "Thin content on night leak-proofing, newborn skin and parent reviews"
+                  ],
+                  "solutions": [
+                    "Layer the prompts: consolidate strong scenarios first, then night use and newborn skin",
+                    "Weight 85 sources, writing scenario and audience words into them",
+                    "Daily monitoring loop closing gaps with rolling content"
+                  ],
+                  "note": "Baby care depends on concrete scenario plus peer proof. A single platform can go from zero to consistent attainment — with limited budget, win one platform first."
+                },
+                {
+                  "no": "B",
+                  "tag": "Festive gift box · premium mooncake",
+                  "title": "Two platforms, 16 consecutive days at full attainment",
+                  "sub": "A platform-owned brand · Doubao + Qwen · 8 prompts × 2 platforms · 31 days",
+                  "metrics": [
+                    {
+                      "label": "Overall attainment",
+                      "value": "73.4%"
+                    },
+                    {
+                      "label": "Weekly rate",
+                      "value": "25.9% → 100%"
+                    },
+                    {
+                      "label": "Full attainment",
+                      "value": "16 days"
+                    },
+                    {
+                      "label": "Sources",
+                      "value": "10 → 50"
+                    }
+                  ],
+                  "pains": [
+                    "All 16 prompt-platform combinations at 0%",
+                    "The two platforms absorb content at different speeds",
+                    "Gift-giving semantics missing — AI did not see a gift set"
+                  ],
+                  "solutions": [
+                    "Maintain gift, souvenir, reunion and value-for-money scenarios",
+                    "Video sources on Doubao; news and authority media on Qwen",
+                    "Reallocate resources weekly, push the faster platform over the line first"
+                  ],
+                  "note": "Festive windows are short and spiky. Sequencing by platform beats spreading effort evenly — push the fast one through, then concentrate on the slow one."
+                },
+                {
+                  "no": "C",
+                  "tag": "Ambient dairy · premium milk",
+                  "title": "Claim recall of 81.3%",
+                  "sub": "A dairy brand · DeepSeek + Yuanbao · 10 prompt-platform pairs · 30 days",
+                  "metrics": [
+                    {
+                      "label": "Average recall",
+                      "value": "81.3%"
+                    },
+                    {
+                      "label": "KPI met",
+                      "value": "10/10"
+                    },
+                    {
+                      "label": "DeepSeek",
+                      "value": "78.8%"
+                    },
+                    {
+                      "label": "Daily attainment",
+                      "value": "76.0%"
+                    }
+                  ],
+                  "pains": [
+                    "Users repeatedly ask about “close to fresh”, “clean label”, “repeat purchase”",
+                    "Product pages rely on adjectives with no verifiable process, ingredient or scenario facts",
+                    "Sensory claims cannot be repeated by AI"
+                  ],
+                  "solutions": [
+                    "Translate sensation into repeatable claims: good cold, fresh at room temperature",
+                    "Add facts on process, ingredients and usage scenarios",
+                    "Maintain both platforms according to their absorption habits"
+                  ],
+                  "note": "For sensory-led FMCG, translate sensation into repeatable claims — when AI can repeat your process fact while answering “which tastes closest to fresh”, recall has happened."
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "What all three share",
+              "desc": "A single hit comes from content; consistency comes from mechanism — context alignment, source weighting, recommendation reinforcement and output constraints."
             }
           ]
         }

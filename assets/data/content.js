@@ -45,6 +45,14 @@ window.SITE_DATA = {
             "href": "education.html"
           },
           {
+            "text": "本地生活行业解决方案",
+            "href": "local.html"
+          },
+          {
+            "text": "快消品行业解决方案",
+            "href": "fmcg.html"
+          },
+          {
             "text": "文化旅游行业解决方案",
             "href": "tourism.html"
           },
@@ -173,6 +181,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -2035,6 +2051,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3252,6 +3276,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3811,6 +3843,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3845,6 +3885,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -4999,6 +5047,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -5033,6 +5089,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -5688,6 +5752,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -5721,6 +5793,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -6324,6 +6404,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -6357,6 +6445,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -7076,6 +7172,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -7109,6 +7213,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -8017,6 +8129,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -8050,6 +8170,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -8931,6 +9059,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -9732,6 +9868,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -10408,6 +10552,14 @@ window.SITE_DATA = {
             {
               "label": "教育培训",
               "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -11142,6 +11294,14 @@ window.SITE_DATA = {
               "href": "education.html"
             },
             {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -11176,6 +11336,14 @@ window.SITE_DATA = {
               "label": "教育培训",
               "href": "education.html",
               "active": true
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
             },
             {
               "label": "文化旅游",
@@ -11789,6 +11957,1209 @@ window.SITE_DATA = {
                   "note": "职业教育看的是「花多少钱拿到一条线索」，GEO 的价值直接体现在获客成本与销售周期上。"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "local": {
+      "title": "本地生活行业解决方案",
+      "nav": [
+        {
+          "label": "为什么变",
+          "href": "#shift"
+        },
+        {
+          "label": "四个读不懂",
+          "href": "#pain"
+        },
+        {
+          "label": "方法",
+          "href": "#method"
+        },
+        {
+          "label": "指标",
+          "href": "#kpi"
+        },
+        {
+          "label": "交付",
+          "href": "#delivery"
+        },
+        {
+          "label": "案例",
+          "href": "#cases"
+        },
+        {
+          "label": "联系我们",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html",
+              "active": true
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品 / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "京东科技 · GEO 本地生活行业方案",
+          "title": [
+            "让服务品牌",
+            "成为答案里的默认选择"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "用户不再搜「家政保洁」，而是问「附近哪家电清洗靠谱」。没进那句答案，连被比较的资格都没有。",
+          "sub": "覆盖家政 / 洗衣洗鞋 / 家电清洗 / 家电维修 / 外卖 · 2026.11",
+          "buttons": [
+            {
+              "label": "看两个实战项目",
+              "href": "#cases"
+            },
+            {
+              "label": "四步闭环",
+              "href": "#method",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "9.8→72.5%",
+              "label": "家政保洁展示度"
+            },
+            {
+              "value": "930/930",
+              "label": "外卖考核点全达标"
+            },
+            {
+              "value": "18 词",
+              "label": "四维交叉问题词"
+            },
+            {
+              "value": "日级",
+              "label": "监测频次"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "shift",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "为什么变",
+              "title": "决策入口之变：从翻三页到问一句",
+              "desc": "同一个即时需求，路径长度决定了服务品牌被看见的机会。"
+            },
+            {
+              "type": "compare",
+              "head": [
+                "过去 · 搜索式决策",
+                "现在 · 对话式决策"
+              ],
+              "rows": [
+                [
+                  "起点",
+                  "搜「家政保洁 / 外卖平台」",
+                  "「附近哪家电清洗靠谱」"
+                ],
+                [
+                  "过程",
+                  "翻列表、比价格、看评价",
+                  "AI 给 3 个答案，直接下单"
+                ],
+                [
+                  "品牌机会",
+                  "排进前几页，就被比较",
+                  "没进答案，连比较资格都没有"
+                ],
+                [
+                  "结论",
+                  "争排名",
+                  "争答案里有没有我"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "一句话",
+              "desc": "本地生活服务要争的，是答案里的席位。排名靠后还能被翻到，不在答案里就等于不存在。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "pain",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "四个读不懂",
+              "title": "即时、场景、信任、优惠——恰恰最不容易被机器理解",
+              "desc": "不是多写内容就能解决，而是要把这些话翻译成可引用的事实句。"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "即时与地域",
+                  "desc": "「附近」「现在能不能上门」有时效和地域限制，AI 难判断，默认不敢推荐。",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "场景口语",
+                  "desc": "用户说「半夜饿了」「带娃点啥划算」，信源里却没有对应场景词。",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "服务承诺",
+                  "desc": "自营、持证、赔付、质保是信任关键，却常写在详情页深处，AI 读不到。",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "优惠与权益",
+                  "desc": "券、会员权益、领取路径是转化核心，藏在活动页里 AI 无法复述。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "compare",
+              "head": [
+                "改写前 · 品牌语言",
+                "改写后 · 可复述观点"
+              ],
+              "rows": [
+                [
+                  "原文",
+                  "「我们的外卖优惠多多，会员超值，欢迎下单体验。」",
+                  "「每天 8–23 点整点抢外卖金券，百万商家可用；打开 APP 切到秒送，搜索指定口令领取。会员享折扣券包与多项附加权益。」"
+                ],
+                [
+                  "可复述要素",
+                  "0 个",
+                  "5 个：时点 · 面额 · 范围 · 路径 · 权益"
+                ],
+                [
+                  "AI 能做什么",
+                  "只能提一句品牌名",
+                  "能复述「什么时候、多少钱、谁能用、怎么领」"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "改写的三个动作",
+              "desc": "①把「什么时候、多少钱」写清；②把 APP → 频道 → 搜索口令写成全链路；③说清谁能用、含哪些权益，AI 才敢复述。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "method",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "方法",
+              "title": "用户不按品类词提问，而按「我的情况」提问",
+              "desc": "场景 × 人群 × 诉求 × 时段四维交叉，得到自带交易意图的真实问题簇——一个品类能拆出 18 个高价值问句。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "维度",
+                "取值示例",
+                "对应的问句"
+              ],
+              "rows": [
+                [
+                  "场景",
+                  "点餐 · 保洁 · 洗衣 · 清洗 · 维修",
+                  "「在哪能约到靠谱的家政保洁服务」"
+                ],
+                [
+                  "人群",
+                  "学生 · 带娃 · 减脂 · 聚餐 · 新客",
+                  "「带小孩点外卖哪个平台放心划算」"
+                ],
+                [
+                  "诉求",
+                  "划算 · 靠谱 · 优惠多 · 上门快",
+                  "「第一次点外卖有什么优惠」"
+                ],
+                [
+                  "时段",
+                  "早饭 · 夜宵 · 周末 · 工作日",
+                  "「家电用久了想找师傅上门清洗」"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "监测",
+                  "desc": "真实问题词 × 双平台日度复测"
+                },
+                {
+                  "no": "02",
+                  "title": "归因",
+                  "desc": "把缺口定位到具体表达与信源"
+                },
+                {
+                  "no": "03",
+                  "title": "重构",
+                  "desc": "按「可被引用」标准改写观点与权益"
+                },
+                {
+                  "no": "04",
+                  "title": "放大",
+                  "desc": "信源白名单扩容，按平台特性加权"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "为什么要日度监测",
+              "desc": "本地生活的问句带时效——「今晚」「附近」这类限制让答案天天变。周度监测看不到波动，日度才能抓到掉下来的那天。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "指标",
+              "title": "KPI 既看露出，也看首位与达标连续性",
+              "desc": "不只看提及，更看露出、推荐位、观点植入与连续达标——每条结论都能下钻到具体问句。"
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "基础 · 可见",
+                  "desc": "品牌露出率：目标问句提及本方品牌的比例。",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "基础 · 说准",
+                  "desc": "观点植入率：指定优惠 / 权益观点被复述的比例。",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "进阶 · 优先",
+                  "desc": "Top3 推荐度：进入前三推荐的比例。",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "进阶 · 首位",
+                  "desc": "Top1 首位率：被排在首位的比例。",
+                  "list": []
+                },
+                {
+                  "no": "05",
+                  "title": "机制 · 稳定",
+                  "desc": "达标率：达 KPI 线的考核点 / 总考核点。",
+                  "list": []
+                },
+                {
+                  "no": "06",
+                  "title": "机制 · 基础",
+                  "desc": "信源规模：累计白名单信源条数与结构。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "口径统一",
+              "desc": "可按业务 / 品牌 / 平台 / 问句四个维度下钻，日更监测、月报复盘——避免结项时在口径上扯皮。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "交付",
+              "title": "四阶段标准化交付，日度监测、月度复盘",
+              "desc": "节奏固定，才能把 GEO 从一次项目做成常驻能力。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "需求与诊断",
+                  "desc": "对齐业务 / 平台 / KPI · 品牌露出体检"
+                },
+                {
+                  "no": "02",
+                  "title": "口径与资产",
+                  "desc": "梳理权益表达边界 · 观点句与话术库"
+                },
+                {
+                  "no": "03",
+                  "title": "内容与信源",
+                  "desc": "观点句与问答内容 · 多平台分发加权"
+                },
+                {
+                  "no": "04",
+                  "title": "监测与复盘",
+                  "desc": "双平台日度采样 · 周跟踪月报纠偏"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "节奏",
+                "做什么",
+                "触发条件"
+              ],
+              "rows": [
+                [
+                  "每月",
+                  "输出指标达成、缺口变化与下月动作清单",
+                  "例行"
+                ],
+                [
+                  "每季",
+                  "KPI 口径随阶段升级（如 40% → 60%、新增 TOP1）",
+                  "阶段性复盘"
+                ],
+                [
+                  "实时",
+                  "露出率周环比明显下滑或负面收录，快速响应",
+                  "异常预警"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "团队配置：策略 1 人 + 内容 2 人 + 数据 1 人 + 平台运营 1 人，配专属对接人；大促与节庆期启动应急响应。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "实战案例",
+              "title": "两类业务，一套方法",
+              "desc": "京东服务与京东外卖两个真实项目：一个争到家服务的品牌占位，一个要外卖场景的品牌露出连续达标。"
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "A",
+                  "tag": "京东服务 · 到家服务",
+                  "title": "四大服务赛道同步跃迁",
+                  "sub": "家政保洁 / 洗护 / 清洗 / 维修四赛道，豆包 + DeepSeek + 通义千问 · 4 个核心问题词 · KPI：Top3 ≥60%",
+                  "metrics": [
+                    {
+                      "label": "家政保洁 展示度",
+                      "value": "9.8→72.51%"
+                    },
+                    {
+                      "label": "家政保洁 Top3",
+                      "value": "12.06→65.36%"
+                    },
+                    {
+                      "label": "洗衣机洗 · 展示度",
+                      "value": "33.17→77.58%"
+                    },
+                    {
+                      "label": "家电维修 展示度",
+                      "value": "60.62→81.06%"
+                    }
+                  ],
+                  "pains": [
+                    "四大服务赛道在 AI 答案里展示度均不足 35%",
+                    "Top3 推荐占比普遍在 10%–30% 区间",
+                    "自营保真、持证上门、标准流程、赔付质保等信任信息，AI 读不到"
+                  ],
+                  "solutions": [
+                    "围绕「正规、价格、上门、售后」四个核心诉求重写事实句",
+                    "把自营保真、持证上门、标准流程、赔付质保译成可核对的表达",
+                    "四赛道同步优化，验证方法可跨服务类目复用"
+                  ],
+                  "note": "四个赛道同期都在涨，说明方法不依赖某个品类的特殊性——这对多业务线的服务集团是复制的依据。"
+                },
+                {
+                  "no": "B",
+                  "tag": "京东外卖 · 即时零售",
+                  "title": "15 个问题词连续全量达标",
+                  "sub": "豆包 + DeepSeek · 15 个品牌露出问题词 · 90% KPI 口径 · 首月与次月持续达标（执行中）",
+                  "metrics": [
+                    {
+                      "label": "次月达标率",
+                      "value": "100%"
+                    },
+                    {
+                      "label": "考核点",
+                      "value": "480→930"
+                    },
+                    {
+                      "label": "信源白名单",
+                      "value": "60→110 条"
+                    },
+                    {
+                      "label": "露出均值",
+                      "value": "92%"
+                    }
+                  ],
+                  "pains": [
+                    "高频即时场景，答案随优惠与时段天天变",
+                    "考核点逐月扩容，达标压力持续上升",
+                    "观点植入需要稳定的表达触发"
+                  ],
+                  "solutions": [
+                    "按「问题词 × 平台 × 日」日度监测，异常即时预警",
+                    "信源白名单从 60 条扩到 110 条，覆盖资讯、内容与优惠导购",
+                    "把「整点、面额、可用范围、领取路径」写成可复述表达"
+                  ],
+                  "note": "外卖是高频即时决策——把表达与信源打牢，露出稳定压在 KPI 线之上；观点植入靠高相关表达稳定触发。"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "两个案例的共同点",
+              "desc": "单点露出靠内容，连续达标靠机制：场景语义校准 + 信源持续加权 + 观点与推荐强化 + 输出约束，四层协同才把「一次达标」变成「长期稳定」。"
+            }
+          ]
+        }
+      ]
+    },
+    "fmcg": {
+      "title": "快消品行业解决方案",
+      "nav": [
+        {
+          "label": "为什么变",
+          "href": "#shift"
+        },
+        {
+          "label": "四个读不懂",
+          "href": "#pain"
+        },
+        {
+          "label": "方法",
+          "href": "#method"
+        },
+        {
+          "label": "指标",
+          "href": "#kpi"
+        },
+        {
+          "label": "交付",
+          "href": "#delivery"
+        },
+        {
+          "label": "案例",
+          "href": "#cases"
+        },
+        {
+          "label": "联系我们",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
+              "label": "本地生活",
+              "href": "local.html"
+            },
+            {
+              "label": "快消品",
+              "href": "fmcg.html",
+              "active": true
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品 / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "京东科技 · GEO 快消品行业方案",
+          "title": [
+            "让品牌在 AI 答案里",
+            "被看见、被说准、被信任"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "用户不再输入「拉拉裤」，而是问「宝宝漏尿用哪款」。AI 给三个答案，你的商品卡在不在那三句里，决定了这一单归谁。",
+          "sub": "覆盖母婴 / 节庆礼盒 / 常温乳品 / 家清个护 · 2026.11",
+          "buttons": [
+            {
+              "label": "看三个脱敏案例",
+              "href": "#cases"
+            },
+            {
+              "label": "四步闭环",
+              "href": "#method",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "0→64%",
+              "label": "母婴 SKU 露出率"
+            },
+            {
+              "value": "81.3%",
+              "label": "常温乳品观点植入"
+            },
+            {
+              "value": "40+",
+              "label": "四维交叉问题簇"
+            },
+            {
+              "value": "双周",
+              "label": "监测频次"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "shift",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "为什么变",
+              "title": "决策入口之变：从翻三页到看三句",
+              "desc": "同一个购买意图，路径长度决定了品牌被看见的机会。"
+            },
+            {
+              "type": "compare",
+              "head": [
+                "过去 · 搜索式决策",
+                "现在 · 对话式决策"
+              ],
+              "rows": [
+                [
+                  "起点",
+                  "输入品类词「拉拉裤 / 月饼」",
+                  "「宝宝漏尿用哪款」"
+                ],
+                [
+                  "过程",
+                  "浏览商品、比价、看评价",
+                  "AI 给 3 个答案，点卡进商详"
+                ],
+                [
+                  "品牌机会",
+                  "排进前几页，就被比较",
+                  "没进答案，连比较资格都没有"
+                ],
+                [
+                  "结论",
+                  "争排名",
+                  "争答案里有没有我"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "一句话",
+              "desc": "快消品牌要争的，是答案里的席位。种草内容决定有没有人讨论你，字段与事实决定 AI 敢不敢把你排进那三句。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "pain",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "四个读不懂",
+              "title": "口语、体感、规格、人群——恰恰最不容易被机器理解",
+              "desc": "不是多写内容，而是把最口语、最靠体感表达的那部分，转成机器能引用的事实句。"
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "场景口语",
+                  "desc": "用户说「漏尿」「送礼有面子」，标题里却没有对应场景词，AI 无法把需求映射到商品。",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "口感体感",
+                  "desc": "「接近鲜奶」「好喝新鲜」是主观形容，AI 只采信可核对的工艺、配料等事实。",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "规格组合",
+                  "desc": "礼盒在商品库里只是几个单品，AI 认不出「这是一个送礼礼盒」。",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "人群适配",
+                  "desc": "缺「适合谁」的明确声明（敏感肌、新生儿、家庭囤货），AI 不敢推荐。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "compare",
+              "head": [
+                "改写前 · 品牌语言",
+                "改写后 · 可引用事实"
+              ],
+              "rows": [
+                [
+                  "原文",
+                  "「全新高端常温奶，口感如鲜奶般纯正，好喝又新鲜。」",
+                  "「常温纯牛奶，采用超瞬时杀菌工艺；口感接近鲜奶，无需冷藏；适合家庭囤货与日常饮用。」"
+                ],
+                [
+                  "可引用要素",
+                  "0 个",
+                  "5 个：品类 · 工艺 · 口感 · 储存 · 场景"
+                ],
+                [
+                  "AI 能做什么",
+                  "只能提一句品牌名",
+                  "能说清「这是什么、适合谁」，并在商品卡里对上参数"
+                ]
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "改写的三个动作",
+              "desc": "①先说清「这是什么」；②给客观参数：工艺、规格、成分、场景；③说清「适合谁」，AI 才敢推荐。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "method",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "方法",
+              "title": "用户不按品类词提问，而按「我的情况」提问",
+              "desc": "场景 × 人群 × 功效口感 × 预算四维交叉，得到 40+ 个自带交易意图的问题簇——这是 AI 商品卡最容易接住的位置。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "维度",
+                "取值示例",
+                "对应的问句"
+              ],
+              "rows": [
+                [
+                  "场景",
+                  "夜用 · 送礼 · 团聚 · 囤货 · 伴手礼",
+                  "「宝宝晚上睡觉漏尿用哪款纸尿裤」"
+                ],
+                [
+                  "人群",
+                  "新生儿 · 敏感肌 · 宝妈 · 家庭",
+                  "「敏感肌宝宝拉拉裤品牌推荐」"
+                ],
+                [
+                  "功效口感",
+                  "防漏亲肤 · 接近鲜奶 · 配料干净",
+                  "「口感接近鲜奶的常温奶有哪些」"
+                ],
+                [
+                  "预算",
+                  "高端 · 中高端 · 性价比",
+                  "「送客户的中秋礼盒有面子」"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "监测",
+                  "desc": "真实问句 × 多平台双周复测"
+                },
+                {
+                  "no": "02",
+                  "title": "归因",
+                  "desc": "把缺口定位到具体字段与信源"
+                },
+                {
+                  "no": "03",
+                  "title": "重构",
+                  "desc": "按「可被引用」标准改写内容与字段"
+                },
+                {
+                  "no": "04",
+                  "title": "放大",
+                  "desc": "多平台分发，按平台特性差异化加权"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "只做种草不够",
+              "desc": "多平台都读结构化事实，不读软文。只做种草不做字段，AI 会提品牌，但出不了商品卡——曝光有，成交没有。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "指标",
+              "title": "KPI 既看可见度，也看占位与转化",
+              "desc": "不能只看提及，更要看露出、占位、采纳与引流——每条结论都能下钻到品类、品牌、平台、问句。"
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "可见",
+                  "desc": "品牌 / SKU 露出率：目标问句提及品牌或单品的比例。",
+                  "list": []
+                },
+                {
+                  "no": "02",
+                  "title": "说准",
+                  "desc": "观点植入率：产品观点被 AI 复述的比例。",
+                  "list": []
+                },
+                {
+                  "no": "03",
+                  "title": "优先",
+                  "desc": "Top3 占位率：进入前三推荐的比例。",
+                  "list": []
+                },
+                {
+                  "no": "04",
+                  "title": "可信",
+                  "desc": "内容采纳率：AI 引用本方信源的比例。",
+                  "list": []
+                },
+                {
+                  "no": "05",
+                  "title": "竞争",
+                  "desc": "竞品占位 / SOV：与竞品在答案中的席位差异。",
+                  "list": []
+                },
+                {
+                  "no": "06",
+                  "title": "生意",
+                  "desc": "引流转化：AI 渠道进店 UV 与转化。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "口径统一",
+              "desc": "可按品类 / 品牌 / 平台 / 问句四个维度下钻，周更看板——避免结项时在口径上扯皮。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "delivery",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "交付",
+              "title": "四阶段标准化交付，双周监测、月度复盘",
+              "desc": "节奏固定，才能把 GEO 从一次项目做成常驻能力。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "需求与诊断",
+                  "desc": "对齐品类 / 平台 / KPI · 品牌与竞品体检"
+                },
+                {
+                  "no": "02",
+                  "title": "口径与资产",
+                  "desc": "梳理事实表达边界 · 知识库 / FAQ / 事实句"
+                },
+                {
+                  "no": "03",
+                  "title": "内容与信源",
+                  "desc": "事实句与问答内容 · 多平台分发加权"
+                },
+                {
+                  "no": "04",
+                  "title": "监测与复盘",
+                  "desc": "多模型多频次采样 · 周报月报纠偏"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "节奏",
+                "做什么",
+                "触发条件"
+              ],
+              "rows": [
+                [
+                  "每月",
+                  "输出指标达成、缺口变化与下月动作清单",
+                  "例行"
+                ],
+                [
+                  "每季",
+                  "按平台算法与大模型版本变化，重排内容策略",
+                  "季度迭代"
+                ],
+                [
+                  "实时",
+                  "露出率周环比跌 20% 或负面收录，48 小时响应",
+                  "异常预警"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "团队配置：策略 1 人 + 内容 2 人 + 数据 1 人 + 平台运营 1 人，配专属对接人；大促与节庆期启动应急响应。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "案例",
+              "title": "三个品类、三种场景、一套方法",
+              "desc": "母婴、节庆礼盒、常温乳品三条高价值决策链路；品牌信息均已脱敏，数据来自项目复盘。"
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "A",
+                  "tag": "母婴 · 高端拉拉裤单品",
+                  "title": "从 0 露出到连续 100% 达标",
+                  "sub": "某母婴品牌 · 豆包单平台 · 5 个核心问题词 · 44 天",
+                  "metrics": [
+                    {
+                      "label": "SKU 露出率",
+                      "value": "0 → 64%"
+                    },
+                    {
+                      "label": "KPI 完成",
+                      "value": "5/5"
+                    },
+                    {
+                      "label": "累计达标天",
+                      "value": "21–27 天"
+                    },
+                    {
+                      "label": "信源",
+                      "value": "85 条"
+                    }
+                  ],
+                  "pains": [
+                    "初始 5 个问题词 SKU 露出率均为 0，品牌不在 AI 候选池",
+                    "露出集中在少数场景，信源以单一平台为主",
+                    "夜用防漏、新生儿亲肤、宝妈口碑等场景缺内容"
+                  ],
+                  "solutions": [
+                    "问题词分层：先巩固优势场景，再补强夜用防漏与新生儿亲肤",
+                    "信源加权 85 条，把场景词与人群词写进信源",
+                    "日级监测复盘闭环，按缺口滚动补内容"
+                  ],
+                  "note": "母婴决策高度依赖「具体场景 + 人群口碑」。单平台深耕同样能从零到连续达标——预算有限时，先赢一个平台。"
+                },
+                {
+                  "no": "B",
+                  "tag": "节庆礼盒 · 高端月饼",
+                  "title": "双平台从 0 到连续 16 天全量达标",
+                  "sub": "某头部平台自有品牌 · 豆包 + 千问 · 8 个问题词 × 2 平台 · 31 天",
+                  "metrics": [
+                    {
+                      "label": "整体达标率",
+                      "value": "73.4%"
+                    },
+                    {
+                      "label": "周达标率",
+                      "value": "25.9% → 100%"
+                    },
+                    {
+                      "label": "连续全量达标",
+                      "value": "16 天"
+                    },
+                    {
+                      "label": "信源",
+                      "value": "10 → 50 条"
+                    }
+                  ],
+                  "pains": [
+                    "16 个「问题词—平台」组合露出均为 0%",
+                    "两平台采信节奏不同：千问快、豆包慢",
+                    "礼盒的「送礼场景」语义缺失，AI 认不出这是一个礼盒"
+                  ],
+                  "solutions": [
+                    "围绕高端礼盒 / 送礼 / 伴手礼 / 团聚 / 性价比维护场景",
+                    "豆包扩短视频信源池，千问重资讯与权威媒体",
+                    "按周滚动调配资源，先把快的平台推过线"
+                  ],
+                  "note": "节庆窗口短、爆发集中，按平台节奏调配资源比平均用力高效——先把快的推过线，再集中补慢的。"
+                },
+                {
+                  "no": "C",
+                  "tag": "常温乳品 · 高端常温奶",
+                  "title": "观点植入率做到 81.3%",
+                  "sub": "某乳企 · DeepSeek + 元宝 · 10 个「问题词 × 平台」× 30 天",
+                  "metrics": [
+                    {
+                      "label": "观点植入均值",
+                      "value": "81.3%"
+                    },
+                    {
+                      "label": "KPI 完成",
+                      "value": "10/10"
+                    },
+                    {
+                      "label": "双平台",
+                      "value": "DeepSeek 78.8%"
+                    },
+                    {
+                      "label": "日均达标率",
+                      "value": "76.0%"
+                    }
+                  ],
+                  "pains": [
+                    "用户高频问「接近鲜奶 / 配料干净 / 高端回购」",
+                    "商品页多是形容表达，缺可核对的工艺、配料、场景事实句",
+                    "体感型表达无法被 AI 复述"
+                  ],
+                  "solutions": [
+                    "把体感翻译成可复述的观点句：不冰也好喝、常温也新鲜",
+                    "补齐工艺、配料与适用场景的事实句",
+                    "双平台分别维护，按平台采信习惯调整表达"
+                  ],
+                  "note": "乳品这类体感型快消，要把体感翻译成可复述的观点句——AI 回答「哪款接近鲜奶」时能复述你的工艺事实，观点植入才算发生。"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "三个案例的共同点",
+              "desc": "单点露出靠内容，连续达标靠机制：场景语义校准 + 信源持续加权 + 推荐逻辑强化 + 输出约束，四层协同才把「一次达标」变成「长期稳定」。"
             }
           ]
         }
