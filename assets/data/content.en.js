@@ -41,6 +41,10 @@ window.SITE_DATA_EN = {
             "href": "insurance.html"
           },
           {
+            "text": "Education & Training",
+            "href": "education.html"
+          },
+          {
             "text": "Culture and Tourism Solution",
             "href": "tourism.html"
           },
@@ -165,6 +169,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -2023,6 +2031,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3236,6 +3248,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3791,6 +3807,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -3821,6 +3841,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -4971,6 +4995,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -5001,6 +5029,10 @@ window.SITE_DATA_EN = {
               "label": "Finance & Insurance",
               "href": "insurance.html",
               "active": true
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -5652,6 +5684,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -5681,6 +5717,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -6280,6 +6320,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -6309,6 +6353,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -7024,6 +7072,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -7053,6 +7105,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -7957,6 +8013,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -7986,6 +8046,10 @@ window.SITE_DATA_EN = {
             {
               "label": "Finance & Insurance",
               "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
             },
             {
               "label": "Culture & Tourism",
@@ -8863,6 +8927,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -9660,6 +9728,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -10334,6 +10406,10 @@ window.SITE_DATA_EN = {
               "href": "insurance.html"
             },
             {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
               "label": "Culture & Tourism",
               "href": "tourism.html"
             },
@@ -10993,6 +11069,716 @@ window.SITE_DATA_EN = {
               "type": "notice",
               "title": "Why run both",
               "desc": "Ads pull shoppers to you during the peak; GEO keeps you in the answer when they ask the follow-up question. Ads alone reset to zero when you stop; GEO alone misses the peak traffic."
+            }
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education & Training Solution",
+      "nav": [
+        {
+          "label": "Why Now",
+          "href": "#why"
+        },
+        {
+          "label": "What GEO Is",
+          "href": "#what"
+        },
+        {
+          "label": "Evidence",
+          "href": "#proof"
+        },
+        {
+          "label": "How",
+          "href": "#how"
+        },
+        {
+          "label": "Rhythm",
+          "href": "#loop"
+        },
+        {
+          "label": "Business Lines",
+          "href": "#scenes"
+        },
+        {
+          "label": "Metrics",
+          "href": "#kpi"
+        },
+        {
+          "label": "Cases",
+          "href": "#cases"
+        },
+        {
+          "label": "Contact",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "menu": [
+            {
+              "label": "Domestic GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "Overseas GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "Enterprise Platform",
+              "href": "platform.html"
+            },
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html"
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial & B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "Pharma & Healthcare",
+              "href": "pharma.html"
+            },
+            {
+              "label": "Finance & Insurance",
+              "href": "insurance.html"
+            },
+            {
+              "label": "Education & Training",
+              "href": "education.html",
+              "active": true
+            },
+            {
+              "label": "Culture & Tourism",
+              "href": "tourism.html"
+            },
+            {
+              "label": "Industrial / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C & Appliances",
+              "href": "appliance.html"
+            },
+            {
+              "label": "Skincare & Cosmetics",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "JD Technology · GEO for Education",
+          "title": [
+            "Make Your School or Institution",
+            "The First Recommendation in AI"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "Parents and students ask AI which institution is best and whether a programme is worth it. Whether you appear in that answer decides whether they ever contact you.",
+          "sub": "Universities · public-sector training · K12 enrichment · study abroad · 2026",
+          "buttons": [
+            {
+              "label": "See the evidence",
+              "href": "#proof"
+            },
+            {
+              "label": "Offline plus online",
+              "href": "#how",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "382M",
+              "label": "Doubao MAU, No.1 in China"
+            },
+            {
+              "value": "33.8%",
+              "label": "Gen Z who prefer AI for information"
+            },
+            {
+              "value": "93.3%",
+              "label": "Named recognition vs 28% generic"
+            },
+            {
+              "value": "12 wks",
+              "label": "Diagnosis to iteration"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Why Now",
+              "title": "Parents No Longer Scroll Links — They Ask AI",
+              "desc": "Some still type a brand name into a search box, but more ask for an answer. The top three answers become the shortlist."
+            },
+            {
+              "type": "stats",
+              "items": [
+                {
+                  "value": "382M",
+                  "label": "Doubao MAU · No.1 in China"
+                },
+                {
+                  "value": "167M",
+                  "label": "Qwen MAU · second pool"
+                },
+                {
+                  "value": "130M",
+                  "label": "DeepSeek MAU"
+                },
+                {
+                  "value": "80%",
+                  "label": "Adopt the top three answers directly"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Search → ask for an answer",
+                  "desc": "Instead of scanning ten links, users ask AI for a conclusion.",
+                  "list": [
+                    "Far fewer clicks through to the original site"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "Site visits → attention cut off",
+                  "desc": "The answer already satisfies the need, so SEO traffic stops at the AI exit.",
+                  "list": [
+                    "Falling site traffic is not falling demand"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "Ad slot → recommendation slot",
+                  "desc": "Ads buy exposure; recommendations buy mindshare and leads.",
+                  "list": [
+                    "Being recommended is itself an endorsement"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Sources",
+              "desc": "MAU figures from QuestMobile, June 2026 public data; adoption and behaviour figures from public industry research, compiled by JD Technology."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "what",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "What GEO Is",
+              "title": "Five Layers: From “Are You In the Answer” to “Why You”",
+              "desc": "Diagnosis is not just presence — it is the reason AI gives, the sources it cites and who it puts first."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Layer",
+                "What to look at",
+                "The question it answers"
+              ],
+              "rows": [
+                [
+                  "01 Visibility",
+                  "Whether the brand enters candidate answers, across how many questions, scenarios and languages",
+                  "Will you appear at all"
+                ],
+                [
+                  "02 Perception",
+                  "How AI defines your positioning, strengths and fit",
+                  "Who it thinks you are"
+                ],
+                [
+                  "03 Reason to recommend",
+                  "Why you are recommended, or why not, and whether the difference holds",
+                  "Why you rather than them"
+                ],
+                [
+                  "04 Sources",
+                  "Which sites, media and communities AI cites; which are controllable",
+                  "Why it trusts you"
+                ],
+                [
+                  "05 Action",
+                  "Whether users can reach site, enquiry and enrolment smoothly",
+                  "Where interest turns into a lead"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "proof",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Evidence",
+              "title": "Two Real Gaps: Seen, But Not Recommended",
+              "desc": "Two typical situations — a strong brand with almost no business capture, and high recognition when named but near-absence in generic questions."
+            },
+            {
+              "type": "split",
+              "wide": true,
+              "left": {
+                "type": "checks",
+                "title": "Soochow University · 48 questions × 6 platforms",
+                "desc": "Overall mention rate 22.6%, but programme-level mentions (camps, part-time degrees) only 10.1%.",
+                "items": [
+                  "Doubao leads MAU yet captures 0% of business",
+                  "Yuanbao strongest at 52%, Kimi only 3%",
+                  "Being mentioned is not being recommended"
+                ]
+              },
+              "right": {
+                "type": "checks",
+                "title": "Universiti Teknologi Malaysia · 30 prompts × 6 models",
+                "desc": "Recommendation rate 93.3% on brand terms, around 28% on generic study-abroad questions.",
+                "items": [
+                  "1,254 answer samples",
+                  "43.2% of citations come from agents",
+                  "Authoritative content share is low"
+                ]
+              }
+            },
+            {
+              "type": "bars",
+              "items": [
+                {
+                  "label": "Yuanbao",
+                  "value": "52%"
+                },
+                {
+                  "label": "Qwen",
+                  "value": "23%"
+                },
+                {
+                  "label": "Doubao",
+                  "value": "21%"
+                },
+                {
+                  "label": "DeepSeek",
+                  "value": "20%"
+                },
+                {
+                  "label": "ERNIE",
+                  "value": "10%"
+                },
+                {
+                  "label": "Kimi",
+                  "value": "3%"
+                }
+              ],
+              "note": "Soochow University mention rate across six platforms. The gap is not only high versus low — each platform has to be worked separately. Present in one and absent in another means absent."
+            },
+            {
+              "type": "notice",
+              "title": "The shared gap",
+              "desc": "Both cases show the same thing: strong recognition when named does not carry over to generic questions about scores, budget, major or city. That gap is the space worth contesting."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "how",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "How",
+              "title": "Visible Offline, Answered Online",
+              "desc": "Universities and public institutions have long approval chains and must report upward: online-only work is invisible to leadership, offline-only spend disappears with the campaign. Connecting both completes the budget story."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "Offline placement",
+                  "desc": "Metro ads · campus posters · boards · welcome kits"
+                },
+                {
+                  "no": "02",
+                  "title": "Search guidance",
+                  "desc": "“Search XXXX on DeepSeek” on the material"
+                },
+                {
+                  "no": "03",
+                  "title": "Online GEO",
+                  "desc": "Authoritative content · Q&A · source building"
+                },
+                {
+                  "no": "04",
+                  "title": "Monitoring loop",
+                  "desc": "Search verification · four-rate tracking · reviews"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "Stage",
+                "What the client receives",
+                "Which reporting gap it closes"
+              ],
+              "rows": [
+                [
+                  "Offline placement",
+                  "Site list · photos and video · design files",
+                  "Visible, photographable, reportable"
+                ],
+                [
+                  "Search guidance",
+                  "A search path that can be demonstrated live",
+                  "Leadership can search it themselves"
+                ],
+                [
+                  "Online GEO",
+                  "Screenshots, screen recordings and monitoring reports",
+                  "Measurable and comparable"
+                ],
+                [
+                  "Monitoring loop",
+                  "Stage report and close-out report",
+                  "Budget accounted for, next phase justified"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "One poster carries one question — the sentence a parent would actually ask — and points to a single action: search it on DeepSeek. The poster raises the question; the answer asset catches it."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "loop",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Delivery Rhythm",
+              "title": "Twelve Weeks: From Baseline to Default Choice",
+              "desc": "Same definition, same sample, same cadence on every re-test — only then are results comparable and reviewable."
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "W1–W2",
+                  "title": "Diagnose and baseline",
+                  "desc": "Cross-platform runs · competitors · sources · site audit"
+                },
+                {
+                  "no": "W3–W4",
+                  "title": "Strategy and knowledge base",
+                  "desc": "Knowledge anchors · intent matrix · content blueprint"
+                },
+                {
+                  "no": "W5–W9",
+                  "title": "Content and sources",
+                  "desc": "On-site content · page rework · media · community"
+                },
+                {
+                  "no": "W10–W12",
+                  "title": "Monitor and iterate",
+                  "desc": "Re-test · correction · monthly report"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "Mention",
+                  "title": "Are you in the answer",
+                  "desc": "How often the brand enters AI answers.",
+                  "list": []
+                },
+                {
+                  "no": "Accuracy",
+                  "title": "Is it right",
+                  "desc": "Whether fees, campuses and policies are stated correctly.",
+                  "list": []
+                },
+                {
+                  "no": "Sentiment",
+                  "title": "Is the context positive",
+                  "desc": "Whether the surrounding context is favourable.",
+                  "list": []
+                },
+                {
+                  "no": "Rank",
+                  "title": "Where you sit",
+                  "desc": "Whether you are the top or top-three choice.",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "Why all four together",
+              "desc": "Mention rate alone counts “mentioned but wrong” as success; rank alone hides factual errors. Measuring all four shows which layer the problem sits in."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "scenes",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Business Lines",
+              "title": "Different Lines Compete for Different Questions",
+              "desc": "Study abroad turns on agency rankings, K12 on local reputation, vocational training on pass rates. Pick the wrong terms and the budget is wasted."
+            },
+            {
+              "type": "table",
+              "head": [
+                "Business line",
+                "Typical questions",
+                "Where to contest"
+              ],
+              "rows": [
+                [
+                  "Test prep",
+                  "“Best IELTS sprint class”, “which GRE course”",
+                  "High ticket, long decision — lead with curriculum and faculty"
+                ],
+                [
+                  "International education",
+                  "“Study abroad agency ranking”, “US undergrad consultants”",
+                  "Agency comparison and outcomes, most exposed to agent platforms"
+                ],
+                [
+                  "K12 and enrichment",
+                  "“Best coding class for kids”, “enrichment centre near me”",
+                  "Local intent; the answer must lead to a visit"
+                ],
+                [
+                  "Camps and study tours",
+                  "“Family study tour recommendation”",
+                  "Narrative plus safety and service detail"
+                ],
+                [
+                  "University admissions",
+                  "“Is this major worth it”, “where can I apply with this score”",
+                  "Programme, employment outcomes and policy, structured"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Metrics and Commitment",
+              "title": "Commit to Evidence, Not Adjectives",
+              "desc": "Top-three exposure on core search terms is written into the contract, backed by screenshots, recordings and monitoring reports."
+            },
+            {
+              "type": "stats",
+              "items": [
+                {
+                  "value": "≥60%",
+                  "label": "Top-three exposure on core terms (contractual)"
+                },
+                {
+                  "value": "4",
+                  "label": "Metric families tracked"
+                },
+                {
+                  "value": "10+",
+                  "label": "Mainstream AI platforms covered"
+                },
+                {
+                  "value": "1",
+                  "label": "Document the client needs to supply"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "How the result is verified",
+              "desc": "(1) A live demonstration by search term showing the brand position in AI answers; (2) monthly tracking of the four rates by platform; (3) stage and close-out reports ready for filing. Final metrics are as agreed in the contract."
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "Cases",
+              "title": "What Education Clients Have Already Achieved",
+              "desc": "Three typical lines: study-abroad prep, kids coding, vocational certification. Names withheld at client request; figures from project reviews."
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "01",
+                  "tag": "Study abroad · international curriculum",
+                  "title": "From absent to No.1 on core terms",
+                  "sub": "On “Physics Bowl” and “international curriculum tutoring”, AI barely mentioned the brand",
+                  "metrics": [
+                    {
+                      "label": "Physics Bowl",
+                      "value": "No.1"
+                    },
+                    {
+                      "label": "Mention rate",
+                      "value": "Materially up"
+                    },
+                    {
+                      "label": "Enquiries",
+                      "value": "Clear growth"
+                    },
+                    {
+                      "label": "Platforms",
+                      "value": "All major"
+                    }
+                  ],
+                  "pains": [
+                    "Brand absent on core terms",
+                    "Faculty, awards and curriculum poorly covered",
+                    "Not listed as an option in decision scenarios"
+                  ],
+                  "solutions": [
+                    "Full-platform coverage across Yuanbao, Doubao, DeepSeek",
+                    "Rebuild Q&A around competition and course intent",
+                    "Foreground faculty and award records in answers"
+                  ],
+                  "note": "Study abroad is high-ticket with a long cycle. Appearing once is not enough — the brand has to recur across phrasings."
+                },
+                {
+                  "no": "02",
+                  "tag": "Kids coding · local enrichment",
+                  "title": "Sign-up conversion 3% → 11%",
+                  "sub": "Weak online trust and a broken offline handover kept monthly orders at 60",
+                  "metrics": [
+                    {
+                      "label": "Sign-up conversion",
+                      "value": "3% → 11%"
+                    },
+                    {
+                      "label": "Monthly orders",
+                      "value": "60 → 250+"
+                    },
+                    {
+                      "label": "Platform leads",
+                      "value": "Materially up"
+                    },
+                    {
+                      "label": "Trust issue",
+                      "value": "Eased"
+                    }
+                  ],
+                  "pains": [
+                    "Long parent decision cycle with weak online trust",
+                    "Competitors owned the “best coding class” answers",
+                    "Online leads did not reach the physical centre"
+                  ],
+                  "solutions": [
+                    "Take the top position on coding recommendation questions",
+                    "Make curriculum, faculty and trial visits citable",
+                    "Fuse online acquisition with offline service"
+                  ],
+                  "note": "Enrichment is local. If the answer cannot handle “is there one near me”, traffic arrives and leaves."
+                },
+                {
+                  "no": "03",
+                  "tag": "Vocational · certification",
+                  "title": "Cost per lead ¥300 → ¥70",
+                  "sub": "ESG certification training for managers and students, with almost no baseline exposure",
+                  "metrics": [
+                    {
+                      "label": "Sales leads",
+                      "value": "+60%"
+                    },
+                    {
+                      "label": "Sales cycle",
+                      "value": "12 → 5 days"
+                    },
+                    {
+                      "label": "Cost per lead",
+                      "value": "¥300 → ¥70"
+                    },
+                    {
+                      "label": "Category mindshare",
+                      "value": "Established"
+                    }
+                  ],
+                  "pains": [
+                    "No brand presence in AI search",
+                    "No authoritative content to cite in the category",
+                    "Uneven lead quality, high follow-up cost"
+                  ],
+                  "solutions": [
+                    "Own core terms on Doubao and DeepSeek",
+                    "Build authoritative content around certificate value",
+                    "Optimise the handover path to shorten decisions"
+                  ],
+                  "note": "Vocational training is judged on cost per lead. GEO shows up directly in acquisition cost and sales cycle."
+                }
+              ]
             }
           ]
         }

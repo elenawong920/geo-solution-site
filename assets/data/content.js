@@ -41,6 +41,10 @@ window.SITE_DATA = {
             "href": "insurance.html"
           },
           {
+            "text": "教育培训",
+            "href": "education.html"
+          },
+          {
             "text": "文化旅游行业解决方案",
             "href": "tourism.html"
           },
@@ -165,6 +169,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -2023,6 +2031,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3236,6 +3248,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3791,6 +3807,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -3821,6 +3841,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -4971,6 +4995,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -5001,6 +5029,10 @@ window.SITE_DATA = {
               "label": "金融保险",
               "href": "insurance.html",
               "active": true
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -5652,6 +5684,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -5681,6 +5717,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -6280,6 +6320,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -6309,6 +6353,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -7024,6 +7072,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -7053,6 +7105,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -7957,6 +8013,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -7986,6 +8046,10 @@ window.SITE_DATA = {
             {
               "label": "金融保险",
               "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
             },
             {
               "label": "文化旅游",
@@ -8863,6 +8927,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -9660,6 +9728,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -10334,6 +10406,10 @@ window.SITE_DATA = {
               "href": "insurance.html"
             },
             {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
               "label": "文化旅游",
               "href": "tourism.html"
             },
@@ -10993,6 +11069,716 @@ window.SITE_DATA = {
               "type": "notice",
               "title": "同时做的价值",
               "desc": "广告负责在峰值期把用户拉到眼前，GEO 负责用户追问时答案里仍然是你。只做广告，停投即归零；只做 GEO，抢不到峰值流量。"
+            }
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "教育培训行业解决方案",
+      "nav": [
+        {
+          "label": "为什么变",
+          "href": "#why"
+        },
+        {
+          "label": "GEO 是什么",
+          "href": "#what"
+        },
+        {
+          "label": "实证",
+          "href": "#proof"
+        },
+        {
+          "label": "怎么做",
+          "href": "#how"
+        },
+        {
+          "label": "闭环",
+          "href": "#loop"
+        },
+        {
+          "label": "业务线",
+          "href": "#scenes"
+        },
+        {
+          "label": "指标",
+          "href": "#kpi"
+        },
+        {
+          "label": "案例",
+          "href": "#cases"
+        },
+        {
+          "label": "联系我们",
+          "href": "index.html#contact"
+        },
+        {
+          "label": "解决方案",
+          "href": "#",
+          "menu": [
+            {
+              "label": "国内 GEO",
+              "href": "index.html"
+            },
+            {
+              "label": "海外 GEO",
+              "href": "overseas.html"
+            },
+            {
+              "label": "企业级中台",
+              "href": "platform.html"
+            },
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html"
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品与 B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "type": "industryBar",
+          "items": [
+            {
+              "label": "医药健康",
+              "href": "pharma.html"
+            },
+            {
+              "label": "金融保险",
+              "href": "insurance.html"
+            },
+            {
+              "label": "教育培训",
+              "href": "education.html",
+              "active": true
+            },
+            {
+              "label": "文化旅游",
+              "href": "tourism.html"
+            },
+            {
+              "label": "工业品 / B2B",
+              "href": "industrial.html"
+            },
+            {
+              "label": "3C 家电",
+              "href": "appliance.html"
+            },
+            {
+              "label": "护肤彩妆",
+              "href": "beauty.html"
+            }
+          ]
+        },
+        {
+          "type": "hero",
+          "kicker": "京东科技 · GEO 教育培训行业方案",
+          "title": [
+            "让学校和教育机构",
+            "成为 AI 的第一推荐"
+          ],
+          "accentLines": [
+            1
+          ],
+          "desc": "家长和学生在 AI 里问「哪家机构好」「这个专业值不值得读」，答案里有没有你，决定了他们会不会来咨询。",
+          "sub": "覆盖高校 / 政企培训 / 素质教育 / 留学语培 · 2026",
+          "buttons": [
+            {
+              "label": "看行业实证",
+              "href": "#proof"
+            },
+            {
+              "label": "线下 + 线上组合打法",
+              "href": "#how",
+              "style": "ghost"
+            }
+          ],
+          "meta": [
+            {
+              "value": "3.82 亿",
+              "label": "豆包月活，国内第一"
+            },
+            {
+              "value": "33.8%",
+              "label": "Z 世代首选 AI 获取信息"
+            },
+            {
+              "value": "93.3%",
+              "label": "点名认可 vs 28% 通用推荐"
+            },
+            {
+              "value": "12 周",
+              "label": "诊断到迭代闭环"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "why",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "为什么变",
+              "title": "家长不再翻链接，而是直接问 AI",
+              "desc": "搜索框里输入「XX 机构怎么样」的人还有，但更多家长直接要一个答案。答案里的前三条，就是他们的候选名单。"
+            },
+            {
+              "type": "stats",
+              "items": [
+                {
+                  "value": "3.82 亿",
+                  "label": "豆包月活 · 国内第一"
+                },
+                {
+                  "value": "1.67 亿",
+                  "label": "千问月活 · 第二流量池"
+                },
+                {
+                  "value": "1.30 亿",
+                  "label": "DeepSeek 月活"
+                },
+                {
+                  "value": "80%",
+                  "label": "用户直接采纳 Top3 答案"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 3,
+              "items": [
+                {
+                  "no": "01",
+                  "title": "搜索 → 索要答案",
+                  "desc": "从输入关键词翻十个链接，变成直接向 AI 要一个结论。",
+                  "list": [
+                    "点击原始网站的动作大幅减少"
+                  ]
+                },
+                {
+                  "no": "02",
+                  "title": "点击网站 → 注意力被截断",
+                  "desc": "AI 答案已经足够满足需求，SEO 流量被拦在 AI 出口之前。",
+                  "list": [
+                    "官网流量下滑不等于需求下滑"
+                  ]
+                },
+                {
+                  "no": "03",
+                  "title": "广告位 → 推荐位",
+                  "desc": "广告位换曝光，推荐位换心智与线索——后者才是家长决策的入口。",
+                  "list": [
+                    "被推荐本身就是权威背书"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "数据来源",
+              "desc": "月活数据来自 QuestMobile 2026 年 6 月公开口径；采纳率与用户行为数据来自行业公开研究，京东科技整理。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "what",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "GEO 是什么",
+              "title": "五层诊断：从「在不在答案里」到「为什么推荐你」",
+              "desc": "诊断不止看有没有出现，更要回答：AI 用什么理由描述你、引用了谁的信息、把谁排在前面。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "层级",
+                "要看什么",
+                "对应问题"
+              ],
+              "rows": [
+                [
+                  "01 可见度",
+                  "品牌是否进入候选答案，在多少问题、场景与语言中出现",
+                  "家长问这条路，你会不会出现"
+                ],
+                [
+                  "02 认知",
+                  "AI 如何定义你的定位、优势与适用场景",
+                  "它眼里的你是谁"
+                ],
+                [
+                  "03 推荐理由",
+                  "为什么推荐你、或不推荐你，差异化理由是否成立",
+                  "凭什么是你"
+                ],
+                [
+                  "04 信源",
+                  "AI 引用了哪些网站、媒体与社区，哪些可控、哪些要补",
+                  "它凭什么信你"
+                ],
+                [
+                  "05 行动",
+                  "用户能否顺畅到达官网、咨询、报名等转化入口",
+                  "看到了之后往哪走"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "proof",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "行业实证",
+              "title": "两个真实的缺口：被看见，但没被推荐",
+              "desc": "高校与教育机构最典型的两种处境——品牌有基础，但业务承接为零；点名时高度认可，通用提问里几乎不见。"
+            },
+            {
+              "type": "split",
+              "wide": true,
+              "left": {
+                "type": "checks",
+                "title": "苏州大学 · 48 问 × 6 平台体检",
+                "desc": "学校总提及率 22.6%，但研学营 / 同等学力等项目信息只有 10.1%。",
+                "items": [
+                  "豆包月活第一，业务承接 0%",
+                  "元宝 52% 最强，Kimi 仅 3%",
+                  "「学校被提到」不等于「项目被推荐」"
+                ]
+              },
+              "right": {
+                "type": "checks",
+                "title": "马来西亚理工大学 UTM · 30 题 × 6 模型",
+                "desc": "品牌词推荐率 93.3%，通用选校提问只有约 28%。",
+                "items": [
+                  "样本 1,254 条回答",
+                  "信源 43.2% 集中在留学中介",
+                  "权威内容占比偏低，可控性不足"
+                ]
+              }
+            },
+            {
+              "type": "bars",
+              "items": [
+                {
+                  "label": "元宝",
+                  "value": "52%"
+                },
+                {
+                  "label": "千问",
+                  "value": "23%"
+                },
+                {
+                  "label": "豆包",
+                  "value": "21%"
+                },
+                {
+                  "label": "DeepSeek",
+                  "value": "20%"
+                },
+                {
+                  "label": "文心一言",
+                  "value": "10%"
+                },
+                {
+                  "label": "Kimi",
+                  "value": "3%"
+                }
+              ],
+              "note": "苏州大学六大平台提及率（学校品牌维度）。差距不只是高与低，而是「每个平台都要单独做」——一家有、一家没有，等于没有。"
+            },
+            {
+              "type": "notice",
+              "title": "共同的机会缺口",
+              "desc": "两个案例指向同一件事：主动点名时的高度认可，没有迁移到「按分数、预算、专业、城市」提问的通用场景里。这部分空缺，正是可以争的位置。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "how",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "怎么做",
+              "title": "线下可见 + 线上承接：一套方案，两种效果",
+              "desc": "高校与政企的决策链长、要层层汇报：只有线上优化，领导看不见；只有线下投放，钱花完就没了。两者接起来，预算故事才完整。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "01",
+                  "title": "线下投放",
+                  "desc": "地铁广告 · 校园海报 · 展板 · 迎新物料"
+                },
+                {
+                  "no": "02",
+                  "title": "搜索引导",
+                  "desc": "物料上写「在 DeepSeek 搜 XXXX」"
+                },
+                {
+                  "no": "03",
+                  "title": "线上 GEO",
+                  "desc": "权威内容 · 问答建设 · 信源铺设"
+                },
+                {
+                  "no": "04",
+                  "title": "监测闭环",
+                  "desc": "搜索验证 · 四率监测 · 阶段复盘"
+                }
+              ]
+            },
+            {
+              "type": "table",
+              "head": [
+                "环节",
+                "客户拿到什么",
+                "解决哪个汇报问题"
+              ],
+              "rows": [
+                [
+                  "线下投放",
+                  "点位清单 · 上刊照片与视频 · 设计稿",
+                  "看得见、可拍照、能放进汇报"
+                ],
+                [
+                  "搜索引导",
+                  "一条可当场演示的搜索验证路径",
+                  "领导自己搜一遍就能看到结果"
+                ],
+                [
+                  "线上 GEO",
+                  "搜索截图与录屏 · 四率监测报告",
+                  "效果可量化、可对比"
+                ],
+                [
+                  "监测闭环",
+                  "阶段汇报 PPT · 结案报告",
+                  "预算有交代，下一期有依据"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true,
+              "note": "一张海报只讲一个问题：标题就是家长真实会问的那句话，落点统一到「打开 DeepSeek 搜一搜」。海报负责抛问题，答案点负责接住问题。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "loop",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "交付节奏",
+              "title": "12 周闭环：从基线诊断到持续首选",
+              "desc": "按同一口径、同样样本、同一节奏复测，效果才可比、可复盘。"
+            },
+            {
+              "type": "flow",
+              "items": [
+                {
+                  "no": "W1–W2",
+                  "title": "诊断与基线",
+                  "desc": "跨平台跑批 · 竞品 · 信源 · 站点审计"
+                },
+                {
+                  "no": "W3–W4",
+                  "title": "策略与知识库",
+                  "desc": "知识锚点 · 意图矩阵 · 内容蓝图"
+                },
+                {
+                  "no": "W5–W9",
+                  "title": "内容与信源",
+                  "desc": "站内内容 · 页面改造 · 权威媒体 · 社区"
+                },
+                {
+                  "no": "W10–W12",
+                  "title": "监测与迭代",
+                  "desc": "跨平台复测 · 答案纠偏 · 月度报告"
+                }
+              ]
+            },
+            {
+              "type": "cards",
+              "cols": 4,
+              "items": [
+                {
+                  "no": "提及率",
+                  "title": "进没进答案",
+                  "desc": "品牌进入 AI 答案的频率。",
+                  "list": []
+                },
+                {
+                  "no": "准确率",
+                  "title": "说得对不对",
+                  "desc": "专业、学费、校区、政策等事实是否正确。",
+                  "list": []
+                },
+                {
+                  "no": "正面率",
+                  "title": "语境正不正",
+                  "desc": "出现时的语境与倾向是否正面。",
+                  "list": []
+                },
+                {
+                  "no": "推荐率",
+                  "title": "排在第几",
+                  "desc": "是否位列 Top1 / Top3 首选。",
+                  "list": []
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "为什么要四个率一起看",
+              "desc": "只提提及率，会把「被提到但说错」也算成成绩；只看推荐率，会忽略基础事实错误。四率同测，才能说明白现在的问题在哪一层。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "scenes",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "业务线",
+              "title": "不同业务线，争的是不同的问题",
+              "desc": "教育集团的业务矩阵差异很大：留学看机构排名，K12 看本地口碑，职教看考证通过率。占位词定错，预算就白花。"
+            },
+            {
+              "type": "table",
+              "head": [
+                "业务线",
+                "典型提问",
+                "占位重点"
+              ],
+              "rows": [
+                [
+                  "大学考培",
+                  "「考研英语哪家好」「雅思冲刺班推荐」",
+                  "高客单、长决策，靠课程体系与师资背书"
+                ],
+                [
+                  "国际教育",
+                  "「留学中介排名」「美本申请机构」",
+                  "机构对比与成功案例，最容易被中介平台占据"
+                ],
+                [
+                  "K12 与素质教育",
+                  "「少儿编程推荐」「素质教育机构哪家好」",
+                  "本地化强，线上答案要能接住到店转化"
+                ],
+                [
+                  "文旅与研学",
+                  "「亲子研学推荐」「冬令营哪家专业」",
+                  "IP 叙事 + 安全与服务细节"
+                ],
+                [
+                  "高校招生",
+                  "「XX 专业怎么样」「这个分数能报哪」",
+                  "专业介绍、就业质量、招生政策结构化"
+                ]
+              ],
+              "numCols": [
+                0
+              ],
+              "stack": true
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "kpi",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "指标与承诺",
+              "title": "承诺绑定可核查的证据，而不是口头保证",
+              "desc": "核心搜索词 Top3 露出率写进合同，配合截图、录屏与监测报告三类证据，立项和结案都用得上。"
+            },
+            {
+              "type": "stats",
+              "items": [
+                {
+                  "value": "≥60%",
+                  "label": "核心词 Top3 露出率（合同口径）"
+                },
+                {
+                  "value": "4 类",
+                  "label": "四率监测体系"
+                },
+                {
+                  "value": "10+",
+                  "label": "主流 AI 平台覆盖"
+                },
+                {
+                  "value": "1 份",
+                  "label": "客户只需提供的核心资料"
+                }
+              ]
+            },
+            {
+              "type": "notice",
+              "title": "效果怎么被验证",
+              "desc": "①按引导词现场演示，真实呈现 AI 回答里的位置；②四率按平台持续追踪并出报告；③阶段汇报与结案报告可直接归档。正式指标以项目合同约定为准。"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "cases",
+          "blocks": [
+            {
+              "type": "secHead",
+              "kicker": "行业案例",
+              "title": "教育行业已经跑出来的结果",
+              "desc": "三类典型教育业务：留学备考、少儿编程、职业考证。名称按客户要求脱敏，数据来自项目复盘。"
+            },
+            {
+              "type": "caseStudy",
+              "items": [
+                {
+                  "no": "01",
+                  "tag": "留学备考 · 国际课程",
+                  "title": "核心词从缺席到 TOP1",
+                  "sub": "「物理碗竞赛」「国际课程辅导」等高意图词下，AI 原本几乎不提及该品牌",
+                  "metrics": [
+                    {
+                      "label": "物理碗竞赛",
+                      "value": "TOP 1"
+                    },
+                    {
+                      "label": "品牌提及率",
+                      "value": "显著提升"
+                    },
+                    {
+                      "label": "咨询量",
+                      "value": "明显增长"
+                    },
+                    {
+                      "label": "平台覆盖",
+                      "value": "全平台"
+                    }
+                  ],
+                  "pains": [
+                    "核心词下 AI 回答不出现品牌",
+                    "师资、竞赛成果、课程体系等关键信息覆盖不足",
+                    "留学决策场景未被列为推荐选项"
+                  ],
+                  "solutions": [
+                    "全平台覆盖：元宝、豆包、DeepSeek 等同步优化",
+                    "核心词精准匹配：按竞赛与课程意图重建问答",
+                    "专业形象塑造：在答案中突出师资与获奖成果"
+                  ],
+                  "note": "留学备考是典型的高客单、长决策品类，家长会反复比较——答案里出现一次不够，要在不同问法里反复出现。"
+                },
+                {
+                  "no": "02",
+                  "tag": "少儿编程 · 本地素质教育",
+                  "title": "注册转化 3% → 11%",
+                  "sub": "线上引流信任不足、线下服务断层，月均订单长期停在 60 单",
+                  "metrics": [
+                    {
+                      "label": "注册转化率",
+                      "value": "3% → 11%"
+                    },
+                    {
+                      "label": "月均订单",
+                      "value": "60 → 250+"
+                    },
+                    {
+                      "label": "核心平台线索",
+                      "value": "显著提升"
+                    },
+                    {
+                      "label": "信任问题",
+                      "value": "明显缓解"
+                    }
+                  ],
+                  "pains": [
+                    "家长决策周期长，线上信息难以建立信任",
+                    "AI 回答里「少儿编程推荐」被竞品占据",
+                    "线上线索与线下到店断层"
+                  ],
+                  "solutions": [
+                    "抢占「少儿编程推荐」类问答的首位",
+                    "把课程体系、师资与到店体验写进可引用的内容",
+                    "线上引流与线下服务融合，缩短决策链路"
+                  ],
+                  "note": "素质教育本地化强，AI 答案必须能接住「我家附近有没有」这类问题，否则流量来了也留不下。"
+                },
+                {
+                  "no": "03",
+                  "tag": "职业教育 · 考证培训",
+                  "title": "获客成本 300 元 → 70 元",
+                  "sub": "ESG 考证与实战培训，面向企业管理者与专业学生，基线曝光极低",
+                  "metrics": [
+                    {
+                      "label": "销售线索量",
+                      "value": "+60%"
+                    },
+                    {
+                      "label": "平均销售周期",
+                      "value": "12 天 → 5 天"
+                    },
+                    {
+                      "label": "单线索成本",
+                      "value": "300 → 70 元"
+                    },
+                    {
+                      "label": "品类心智",
+                      "value": "建立"
+                    }
+                  ],
+                  "pains": [
+                    "AI 搜索中基本没有品牌露出",
+                    "该品类尚无可引用的权威内容",
+                    "线索质量参差，销售跟进成本高"
+                  ],
+                  "solutions": [
+                    "豆包 / DeepSeek 核心词精准占位",
+                    "建立专业权威内容，强化证书与课程价值",
+                    "优化线索承接路径，缩短决策链路"
+                  ],
+                  "note": "职业教育看的是「花多少钱拿到一条线索」，GEO 的价值直接体现在获客成本与销售周期上。"
+                }
+              ]
             }
           ]
         }

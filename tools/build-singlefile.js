@@ -61,7 +61,8 @@ function prepContent(rel) {
     'beauty.html': '#/beauty',
     'platform.html': '#/platform',
     'api.html': '#/api',
-    'chatgpt-ads.html': '#/chatgpt-ads'
+    'chatgpt-ads.html': '#/chatgpt-ads',
+    'education.html': '#/education'
   };
   Object.keys(routes).forEach(href => {
     s = s.split(`'${href}'`).join(`'${routes[href]}'`);
@@ -91,7 +92,7 @@ appJs = appJs.replace(
     __initialHash = __initialHash.slice(0, __initialSectionPos);
   }
   var pageKey = __initialHash || 'home';
-  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'].includes(pageKey)) pageKey = 'home';
+  if (!['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads', 'education'].includes(pageKey)) pageKey = 'home';
   document.body.setAttribute('data-page', pageKey);`
 );
 
@@ -122,7 +123,7 @@ appJs = appJs.replace(
   });
 
   /* ---------- hash 路由（单文件模式） ---------- */
-  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
+  var PAGES = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'education', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
   function parseHash() {
     var raw = (location.hash || '').replace(/^#\\/?/, '');
     var sec = '';
@@ -250,7 +251,7 @@ appJs = appJs.replace(
 );
 
 /* ---- 组装单文件 ---- */
-const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
+const pages = ['home', 'overseas', 'insight', 'pharma', 'insurance', 'education', 'tourism', 'industrial', 'appliance', 'beauty', 'platform', 'api', 'chatgpt-ads'];
 
 const html = `<!DOCTYPE html>
 <html lang="zh-CN">
