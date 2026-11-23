@@ -41,7 +41,7 @@ window.SITE_DATA = {
             "href": "insurance.html"
           },
           {
-            "text": "教育培训",
+            "text": "教育培训行业解决方案",
             "href": "education.html"
           },
           {

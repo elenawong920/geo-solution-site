@@ -41,7 +41,7 @@ window.SITE_DATA_EN = {
             "href": "insurance.html"
           },
           {
-            "text": "Education & Training",
+            "text": "Education & Training Solution",
             "href": "education.html"
           },
           {
