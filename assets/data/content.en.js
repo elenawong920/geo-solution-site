@@ -805,53 +805,53 @@ window.SITE_DATA_EN = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "63.3T",
-                          "note": "MoM +1.4%"
+                          "value": "65T",
+                          "note": "MoM +2.7%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "15.3T",
-                          "note": "MoM -1.9%"
+                          "value": "15.4T",
+                          "note": "MoM +0.7%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "11.6T",
-                          "note": "MoM +7.4%"
-                        },
-                        {
-                          "label": "GPT-6 Luna (OpenAI)",
-                          "value": "8.51T",
-                          "note": "MoM -2.6%"
-                        },
-                        {
-                          "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "7.06T",
-                          "note": "MoM -2.6%"
+                          "value": "12.2T",
+                          "note": "MoM +5.2%"
                         },
                         {
                           "label": "Hy4 flash (Tencent)",
-                          "value": "6.51T",
-                          "note": "MoM Return"
+                          "value": "10.2T",
+                          "note": "MoM +56.7%"
+                        },
+                        {
+                          "label": "GPT-6 Luna (OpenAI)",
+                          "value": "8.31T",
+                          "note": "MoM -2.4%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5 (Anthropic)",
+                          "value": "6.97T",
+                          "note": "MoM -1.3%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "4.2T",
-                          "note": "MoM +2.2%"
+                          "value": "4.29T",
+                          "note": "MoM +2.1%"
                         },
                         {
                           "label": "Kimi K3.1 Pro (Moonshot AI)",
-                          "value": "3.88T",
-                          "note": "MoM +9.6%"
+                          "value": "4.07T",
+                          "note": "MoM +4.9%"
                         },
                         {
-                          "label": "Step 5 Preview (StepFun)",
-                          "value": "3.84T",
-                          "note": "MoM -20.0%"
+                          "label": "Nemotron 3 Ultra (NVIDIA)",
+                          "value": "3.93T",
+                          "note": "MoM Return"
                         },
                         {
                           "label": "MiMo-V2.6-Flash (Xiaomi)",
-                          "value": "3.83T",
-                          "note": "MoM -2.0%"
+                          "value": "3.7T",
+                          "note": "MoM -3.4%"
                         }
                       ]
                     }

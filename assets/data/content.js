@@ -805,53 +805,53 @@ window.SITE_DATA = {
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",
-                          "value": "63.3T",
-                          "note": "环比 +1.4%"
+                          "value": "65.0T",
+                          "note": "环比 +2.7%"
                         },
                         {
                           "label": "DS V4.1 Flash（DeepSeek）",
-                          "value": "15.3T",
-                          "note": "环比 -1.9%"
+                          "value": "15.4T",
+                          "note": "环比 +0.7%"
                         },
                         {
                           "label": "GLM 5.3 Flash（智谱）",
-                          "value": "11.6T",
-                          "note": "环比 +7.4%"
-                        },
-                        {
-                          "label": "GPT-6 Luna（OpenAI）",
-                          "value": "8.51T",
-                          "note": "环比 -2.6%"
-                        },
-                        {
-                          "label": "Claude Opus 5.5（Anthropic）",
-                          "value": "7.06T",
-                          "note": "环比 -2.6%"
+                          "value": "12.2T",
+                          "note": "环比 +5.2%"
                         },
                         {
                           "label": "Hy4 flash（腾讯）",
-                          "value": "6.51T",
-                          "note": "环比 重回"
+                          "value": "10.2T",
+                          "note": "环比 +56.7%"
+                        },
+                        {
+                          "label": "GPT-6 Luna（OpenAI）",
+                          "value": "8.31T",
+                          "note": "环比 -2.4%"
+                        },
+                        {
+                          "label": "Claude Opus 5.5（Anthropic）",
+                          "value": "6.97T",
+                          "note": "环比 -1.3%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash（MiniMax）",
-                          "value": "4.2T",
-                          "note": "环比 +2.2%"
+                          "value": "4.29T",
+                          "note": "环比 +2.1%"
                         },
                         {
                           "label": "Kimi K3.1 Pro（月之暗面）",
-                          "value": "3.88T",
-                          "note": "环比 +9.6%"
+                          "value": "4.07T",
+                          "note": "环比 +4.9%"
                         },
                         {
-                          "label": "Step 5 Preview（阶跃星辰）",
-                          "value": "3.84T",
-                          "note": "环比 -20.0%"
+                          "label": "Nemotron 3 Ultra（NVIDIA）",
+                          "value": "3.93T",
+                          "note": "环比 重回"
                         },
                         {
                           "label": "MiMo-V2.6-Flash（小米）",
-                          "value": "3.83T",
-                          "note": "环比 -2.0%"
+                          "value": "3.70T",
+                          "note": "环比 -3.4%"
                         }
                       ]
                     }
