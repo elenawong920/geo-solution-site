@@ -11364,14 +11364,14 @@ window.SITE_DATA_EN = {
               "type": "secHead",
               "kicker": "Evidence",
               "title": "Two Real Gaps: Seen, But Not Recommended",
-              "desc": "Two typical situations — a strong brand with almost no business capture, and high recognition when named but near-absence in generic questions."
+              "desc": "Two typical situations — a strong brand with almost no business capture, and high recognition when named but near-absence in generic questions. School names withheld at client request."
             },
             {
               "type": "split",
               "wide": true,
               "left": {
                 "type": "checks",
-                "title": "Soochow University · 48 questions × 6 platforms",
+                "title": "A 211 university in East China · 48 questions × 6 platforms",
                 "desc": "Overall mention rate 22.6%, but programme-level mentions (camps, part-time degrees) only 10.1%.",
                 "items": [
                   "Doubao leads MAU yet captures 0% of business",
@@ -11381,7 +11381,7 @@ window.SITE_DATA_EN = {
               },
               "right": {
                 "type": "checks",
-                "title": "Universiti Teknologi Malaysia · 30 prompts × 6 models",
+                "title": "A Malaysian technology university · 30 prompts × 6 models",
                 "desc": "Recommendation rate 93.3% on brand terms, around 28% on generic study-abroad questions.",
                 "items": [
                   "1,254 answer samples",
@@ -11418,7 +11418,7 @@ window.SITE_DATA_EN = {
                   "value": "3%"
                 }
               ],
-              "note": "Soochow University mention rate across six platforms. The gap is not only high versus low — each platform has to be worked separately. Present in one and absent in another means absent."
+              "note": "Mention rate for that university across six platforms. The gap is not only high versus low — each platform has to be worked separately. Present in one and absent in another means absent."
             },
             {
               "type": "notice",
