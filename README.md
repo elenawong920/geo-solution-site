@@ -64,6 +64,11 @@
 `attr-yuanbao-card.jpg` + `attr-yuanbao-jd.jpg`（元宝商卡与其跳转的京购商详）、`attr-qwen-card.jpg` + `attr-taobao-order.jpg`（千问商卡与无标识的淘宝订单，作反例）。
 竖版手机图用新增的 `gallery` 布局 `layout: "phones"`（两列 440px 居中，640px 以下塌成单列）；订单两张已补齐等高再入库。
 
+**页脚改版（2026-11-24）**：解决方案列从 13 项单列拆成「通用方案（4）+ 行业方案（9）」两列，页脚变 4 列；
+手机端改 2×2 网格、行业列通栏内两列。数据侧给 footer 列加了 `kind:'industry'` 标记，渲染器输出 `.footer__col--industry`。
+**推送脚本改造**：`tools/push-github.js` 改用常驻副本 `.push-cache/`（首次全量、之后增量），单次推送从 5 分钟降到约 25 秒；
+`.push-cache/` 与 `.push-state.json` 都是本地文件，不进 ITEMS、不上仓库。
+
 **本地生活 + 快消品行业页（2026-11-23 下午）**：新建 `local.html`、`fmcg.html`，素材来自两份行业方案 PPT。
 两页共用一套骨架：决策入口之变（过去 vs 现在 compare）→ 四个读不懂（4 卡 + 改写前后 compare）→ 四维提问图谱 + 四步闭环 →
 KPI 六项 → 四阶段交付 → 实战案例（caseStudy）→ 共性总结。
