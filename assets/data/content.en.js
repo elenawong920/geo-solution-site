@@ -31,7 +31,12 @@ window.SITE_DATA_EN = {
           {
             "text": "Enterprise GEO Platform",
             "href": "platform.html"
-          },
+          }
+        ]
+      },
+      {
+        "title": "Industries",
+        "items": [
           {
             "text": "Pharma and Healthcare Solution",
             "href": "pharma.html"
@@ -68,7 +73,8 @@ window.SITE_DATA_EN = {
             "text": "Skincare and Colour Cosmetics Solution",
             "href": "beauty.html"
           }
-        ]
+        ],
+        "kind": "industry"
       },
       {
         "title": "Capabilities",

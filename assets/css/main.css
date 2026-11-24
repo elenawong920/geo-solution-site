@@ -1165,7 +1165,11 @@ body.lb-open { overflow: hidden; }
 .footer__brand { max-width: 400px; }
 .footer__brand img { height: 20px; margin-bottom: 14px; filter: brightness(0) invert(1); }
 .footer__brand p { font-size: 13px; line-height: 1.75; margin: 0; }
-.footer__cols { display: flex; gap: 48px; flex-wrap: wrap; }
+.footer__cols { display: flex; gap: 40px; flex-wrap: wrap; }
+/* 方案拆成「通用 / 行业」两列后共 4 列，收紧品牌区与列宽，避免过早换行 */
+.footer__brand { flex: 0 1 340px; }
+.footer__col { flex: 0 0 auto; min-width: 132px; }
+.footer__col--industry { min-width: 168px; }
 .footer__col h4 { font-size: 13px; color: #fff; margin: 0 0 12px; font-weight: 700; }
 .footer__col a, .footer__col span { display: block; font-size: 13px; line-height: 2.1; color: rgba(255, 255, 255, .55); }
 .footer__col a { transition: color .18s; }
@@ -1727,7 +1731,11 @@ body.editing .edit-bar { display: flex; }
 
   /* 页脚 */
   .footer { padding: 38px 0 calc(24px + env(safe-area-inset-bottom)); }
-  .footer__cols { gap: 28px; }
+  .footer__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 26px; }
+  .footer__col { min-width: 0; }
+  .footer__col--industry { grid-column: 1 / -1; }
+  .footer__col:first-child { grid-column: 1 / -1; }
+  .footer__col--industry .footer__links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
   .footer__bottom { flex-direction: column; gap: 6px; padding-bottom: 46px; }
 
   /* 卡片内边距收窄 */

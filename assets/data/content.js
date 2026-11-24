@@ -14,7 +14,7 @@ window.SITE_DATA = {
     "copy": "© 2026 京东科技 · GEO 解决方案",
     "cols": [
       {
-        "title": "解决方案",
+        "title": "通用方案",
         "items": [
           {
             "text": "国内 GEO 解决方案",
@@ -31,7 +31,12 @@ window.SITE_DATA = {
           {
             "text": "企业级 GEO 中台解决方案",
             "href": "platform.html"
-          },
+          }
+        ]
+      },
+      {
+        "title": "行业方案",
+        "items": [
           {
             "text": "医药健康行业解决方案",
             "href": "pharma.html"
@@ -68,7 +73,8 @@ window.SITE_DATA = {
             "text": "护肤彩妆行业解决方案",
             "href": "beauty.html"
           }
-        ]
+        ],
+        "kind": "industry"
       },
       {
         "title": "能力",

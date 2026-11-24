@@ -722,15 +722,16 @@
           '<p>' + esc(D.footer.brand) + '</p></div>' +
         '<div class="footer__cols">' +
           (D.footer.cols || []).map(function (c) {
-            return '<div class="footer__col"><h4>' + esc(c.title) + '</h4>' +
-              (c.items || []).map(function (it) {
+            var cls = 'footer__col' + (c.kind === 'industry' ? ' footer__col--industry' : '');
+            return '<div class="' + cls + '"><h4>' + esc(c.title) + '</h4>' +
+              '<div class="footer__links">' + (c.items || []).map(function (it) {
                 if (!it.href) return '<span>' + esc(it.text) + '</span>';
                 /* 站外链接（如京东灵境官网）新开标签，不打断当前方案页 */
                 var ext = /^https?:/i.test(it.href) ? ' target="_blank" rel="noopener noreferrer"' : '';
                 /* 站外条目标一个箭头，提示会跳出本站 */
                 var mark = ext ? ' <span class="footer__ext" aria-hidden="true">\u2197</span>' : '';
                 return '<a href="' + esc(it.href) + '"' + ext + '>' + esc(it.text) + mark + '</a>';
-              }).join('') + '</div>';
+              }).join('') + '</div></div>';
           }).join('') +
         '</div></div>' +
         '<div class="footer__bottom"><span>' + esc(D.footer.copy) + '</span>' +
