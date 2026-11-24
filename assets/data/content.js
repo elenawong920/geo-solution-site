@@ -6,7 +6,7 @@ window.SITE_DATA = {
     "brand": "京东科技",
     "title": "京东科技 GEO 生成式引擎优化",
     "version": "v1.0",
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "updatedLabel": "更新于"
   },
   "footer": {
@@ -825,57 +825,57 @@ window.SITE_DATA = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "截至 2026-11-22 · 来源：OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：T = 万亿 Token/周。",
+                      "note": "截至 2026-11-23 · 来源：OpenRouter 官方周榜 · 滚动 7 天窗口 · 单位：T = 万亿 Token/周。",
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017（DeepSeek）",
-                          "value": "65.0T",
-                          "note": "环比 +2.7%"
-                        },
-                        {
-                          "label": "DS V4.1 Flash（DeepSeek）",
-                          "value": "15.4T",
-                          "note": "环比 +0.7%"
-                        },
-                        {
-                          "label": "GLM 5.3 Flash（智谱）",
-                          "value": "12.2T",
-                          "note": "环比 +5.2%"
+                          "value": "66.8T",
+                          "note": "环比 +2.8%"
                         },
                         {
                           "label": "Hy4 flash（腾讯）",
-                          "value": "10.2T",
-                          "note": "环比 +56.7%"
+                          "value": "23.5T",
+                          "note": "环比 +130.4%"
+                        },
+                        {
+                          "label": "DS V4.1 Flash（DeepSeek）",
+                          "value": "15.5T",
+                          "note": "环比 +0.6%"
+                        },
+                        {
+                          "label": "GLM 5.3 Flash（智谱）",
+                          "value": "12.9T",
+                          "note": "环比 +5.7%"
                         },
                         {
                           "label": "GPT-6 Luna（OpenAI）",
-                          "value": "8.31T",
-                          "note": "环比 -2.4%"
+                          "value": "8.34T",
+                          "note": "环比 +0.4%"
                         },
                         {
                           "label": "Claude Opus 5.5（Anthropic）",
-                          "value": "6.97T",
-                          "note": "环比 -1.3%"
+                          "value": "6.61T",
+                          "note": "环比 -5.2%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash（MiniMax）",
-                          "value": "4.29T",
-                          "note": "环比 +2.1%"
+                          "value": "4.45T",
+                          "note": "环比 +3.7%"
                         },
                         {
                           "label": "Kimi K3.1 Pro（月之暗面）",
                           "value": "4.07T",
-                          "note": "环比 +4.9%"
+                          "note": "环比 0.0%"
                         },
                         {
                           "label": "Nemotron 3 Ultra（NVIDIA）",
-                          "value": "3.93T",
-                          "note": "环比 重回"
+                          "value": "4.00T",
+                          "note": "环比 +1.8%"
                         },
                         {
-                          "label": "MiMo-V2.6-Flash（小米）",
-                          "value": "3.70T",
-                          "note": "环比 -3.4%"
+                          "label": "GLM 5.3（智谱）",
+                          "value": "3.59T",
+                          "note": "环比 新入榜"
                         }
                       ]
                     }
