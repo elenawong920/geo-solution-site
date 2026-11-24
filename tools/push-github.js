@@ -83,17 +83,28 @@ if (/successfully authenticated/i.test(authOut)) {
 }
 
 /* ---- 1. 克隆 ---- */
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'geo-push-'));
-step(`临时目录 ${tmp}`);
+/* 用常驻缓存目录复用对象库：首次全量，之后只做增量 fetch。
+   之前每次 mktemp 全量克隆，仓库资产变大后单次要 5 分钟以上。 */
+const tmp = path.join(SRC, '.push-cache');
 const gitEnv = {
   ...process.env,
   GIT_SSH_COMMAND: `ssh -i ${KEY} -o StrictHostKeyChecking=no -o BatchMode=yes`
 };
-run('git', ['init', '-q'], { cwd: tmp });
-run('git', ['remote', 'add', 'origin', `git@github.com:${REPO}.git`], { cwd: tmp });
-run('git', ['fetch', '-q', 'origin', BRANCH], { cwd: tmp, env: gitEnv });
+const fresh = !fs.existsSync(path.join(tmp, '.git'));
+if (fresh) {
+  fs.mkdirSync(tmp, { recursive: true });
+  run('git', ['init', '-q'], { cwd: tmp });
+  run('git', ['remote', 'add', 'origin', `git@github.com:${REPO}.git`], { cwd: tmp });
+} else if (!fs.readdirSync(tmp).includes('.git')) {
+  run('git', ['init', '-q'], { cwd: tmp });
+  run('git', ['remote', 'add', 'origin', `git@github.com:${REPO}.git`], { cwd: tmp });
+}
+step(`工作副本 ${tmp}${fresh ? '（首次，需全量拉取）' : '（增量）'}`);
+run('git', ['fetch', '-q', '--prune', 'origin', BRANCH], { cwd: tmp, env: gitEnv });
 run('git', ['checkout', '-q', '-B', BRANCH, `origin/${BRANCH}`], { cwd: tmp, env: gitEnv });
-ok(`已克隆 ${REPO} (${BRANCH})`);
+run('git', ['reset', '-q', '--hard', `origin/${BRANCH}`], { cwd: tmp });
+run('git', ['clean', '-qfd'], { cwd: tmp });
+ok(`已同步 ${REPO} (${BRANCH})`);
 
 /* ---- 1.5 防覆盖闸门 ----
    本脚本是「整树覆盖」式推送。若仓库在上次推送之后又被别处改过（例如设计分支合并、
@@ -108,7 +119,7 @@ if (lastSha && lastSha !== headSha && process.env.PUSH_FORCE !== '1') {
   console.error(`    当前仓库 HEAD：${headSha.slice(0, 8)}`);
   console.error('  处理：先把远端改动取回本工作区并合并，再重新推送；');
   console.error('  确认要强制覆盖时，运行  PUSH_FORCE=1 node tools/push-github.js');
-  fs.rmSync(tmp, { recursive: true, force: true });
+  /* 保留缓存，下次增量 */
   process.exit(1);
 }
 
@@ -170,7 +181,7 @@ if (!status) {
     fs.writeFileSync(path.join(SRC, '.push-state.json'),
       JSON.stringify({ sha: headSha, at: new Date().toISOString() }, null, 2));
   } catch (e) {}
-  fs.rmSync(tmp, { recursive: true, force: true });
+  /* 保留缓存，下次增量 */
   process.exit(0);
 }
 console.log('\n变更清单：');
@@ -187,8 +198,6 @@ ok(`已推送到 ${BRANCH}`);
 
 /* 推送成功后再取 HEAD，随后删临时目录 */
 const pushedSha = run('git', ['rev-parse', 'HEAD'], { cwd: tmp }).trim();
-fs.rmSync(tmp, { recursive: true, force: true });
-
 /* 记录本次推送后的 HEAD，供下次推送做防覆盖比对 */
 try {
   fs.writeFileSync(path.join(SRC, '.push-state.json'),
