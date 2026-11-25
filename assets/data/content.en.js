@@ -6,7 +6,7 @@ window.SITE_DATA_EN = {
     "brand": "JD Technology",
     "title": "JD Technology GEO — Generative Engine Optimization",
     "version": "v1.0",
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "updatedLabel": "Updated"
   },
   "footer": {
@@ -831,57 +831,57 @@ window.SITE_DATA_EN = {
                   "panels": [
                     {
                       "type": "bars",
-                      "note": "As of 2026-11-23 · Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week.",
+                      "note": "As of 2026-11-24 · Source: OpenRouter official weekly ranking · rolling 7-day window · Unit: T = trillion tokens per week.",
                       "items": [
                         {
                           "label": "DS V4.1 Flash 1017 (DeepSeek)",
-                          "value": "66.8T",
-                          "note": "MoM +2.8%"
+                          "value": "70T",
+                          "note": "MoM +4.8%"
                         },
                         {
                           "label": "Hy4 flash (Tencent)",
-                          "value": "23.5T",
-                          "note": "MoM +130.4%"
+                          "value": "28.8T",
+                          "note": "MoM +22.6%"
                         },
                         {
                           "label": "DS V4.1 Flash (DeepSeek)",
-                          "value": "15.5T",
-                          "note": "MoM +0.6%"
+                          "value": "15T",
+                          "note": "MoM -3.2%"
                         },
                         {
                           "label": "GLM 5.3 Flash (Zhipu)",
-                          "value": "12.9T",
-                          "note": "MoM +5.7%"
+                          "value": "13.2T",
+                          "note": "MoM +2.3%"
                         },
                         {
                           "label": "GPT-6 Luna (OpenAI)",
-                          "value": "8.34T",
-                          "note": "MoM +0.4%"
+                          "value": "8.14T",
+                          "note": "MoM -2.4%"
                         },
                         {
                           "label": "Claude Opus 5.5 (Anthropic)",
-                          "value": "6.61T",
-                          "note": "MoM -5.2%"
+                          "value": "6.44T",
+                          "note": "MoM -2.6%"
                         },
                         {
                           "label": "MiniMax M3.1 Flash (MiniMax)",
-                          "value": "4.45T",
-                          "note": "MoM +3.7%"
+                          "value": "4.57T",
+                          "note": "MoM +2.7%"
                         },
                         {
                           "label": "Kimi K3.1 Pro (Moonshot AI)",
-                          "value": "4.07T",
-                          "note": "MoM 0.0%"
+                          "value": "4.39T",
+                          "note": "MoM +7.9%"
                         },
                         {
                           "label": "Nemotron 3 Ultra (NVIDIA)",
-                          "value": "4T",
-                          "note": "MoM +1.8%"
+                          "value": "4.17T",
+                          "note": "MoM +4.3%"
                         },
                         {
                           "label": "GLM 5.3 (Zhipu)",
-                          "value": "3.59T",
-                          "note": "MoM New entry"
+                          "value": "3.78T",
+                          "note": "MoM +5.3%"
                         }
                       ]
                     }
